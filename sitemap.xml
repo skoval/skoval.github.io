@@ -3,16 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/contact/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/french-open-2017/</loc>
-    <lastmod>2017-05-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/2017/05/27/mens-clay-trends/</loc>
     <lastmod>2017-05-27T00:00:00+00:00</lastmod>
   </url>
@@ -543,6 +533,11 @@
   </url>
   
   <url>
+    <loc>/post/contact/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/features/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
@@ -563,14 +558,7 @@
   </url>
   
   <url>
-    <loc>/categories/articles/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -581,19 +569,25 @@
   </url>
   
   <url>
-    <loc>/tags/media/</loc>
+    <loc>/categories/data-science/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2017-05-30T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/programming/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/programming/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -605,20 +599,38 @@
   </url>
   
   <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/research/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/research/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/software/</loc>
+    <loc>/tags/sports-analytics/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/sports-analytics/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-05-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -629,7 +641,19 @@
   </url>
   
   <url>
+    <loc>/categories/stories/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/tennis-news/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

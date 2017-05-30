@@ -6,19 +6,10 @@
     <description>Recent content in Posts on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 May 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>French Open 2017</title>
-      <link>/post/french-open-2017/</link>
-      <pubDate>Tue, 30 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/french-open-2017/</guid>
-      <description>This is a test blog post.</description>
-    </item>
     
     <item>
       <title>Clay Court Performance Trends of French Open Title Men&#39;s Top 4</title>
@@ -1037,13 +1028,23 @@ View image | gettyimages.</description>
     </item>
     
     <item>
+      <title>Contact Information</title>
+      <link>/post/contact/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/contact/</guid>
+      <description>E-mail: [s.a.kovalchik@gmail.com](s.a.kovalchik@gmail.com
+Twitter: @StatsOnTheT</description>
+    </item>
+    
+    <item>
       <title>Features</title>
       <link>/post/features/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>/post/features/</guid>
       <description>Below is a selection of news features on my research.
- Preethi Ramamoorthy (05 May 2017), The Hindu: Tennis enters the matrix.
+ Preethi Ramamoorthy (05 May 2017), The Hindu: Tennis enters the matrix
  Greg Garber (04 Feb 2017), ESPN: Australian Open introduced new advanced statistical metrics
  Christopher Clarey (13 Jan 2017), New York Times: At the Australian Open, Tennis Joins Its Sports Brethren on a New Surface: Data Analytics
  Stephanie Kovalchik (12 Jan 2017), The Conversation: Shorter or longer tennis matches: what’s the right balance?</description>
@@ -1057,7 +1058,7 @@ View image | gettyimages.</description>
       <guid>/post/research/</guid>
       <description>Selected research. Full list can be found on Google Scholar.
  Farrow, D., Reid, M., Buszard, T., &amp;amp; Kovalchik, S. (2017). Charting the development of sport expertise: challenges and opportunities. International Review of Sport and Exercise Psychology, 1-20.
- Albert, J., &amp;amp; Kovalchik, S. (2017). The Do&amp;rsquo;s and Don&amp;rsquo;ts of Sports Metrics: The Tennis ATP Leaderboard. CHANCE, 30(1), 26-34.
+ Albert, J., &amp;amp; Kovalchik, S. (2017). The Do’s and Don’ts of Sports Metrics: The Tennis ATP Leaderboard. CHANCE, 30(1), 26-34.
  Kovalchik, S. A., Bane, M. K., &amp;amp; Reid, M. (2016). Getting to the top: an analysis of 25 years of career rankings trajectories for professional women’s tennis.</description>
     </item>
     
@@ -1080,16 +1081,6 @@ View image | gettyimages.</description>
       
       <guid>/2015/08/31/serena-williams-only-obstacle/</guid>
       <description>After a 21-minute opening match at the US Open that ended with her opponent&amp;rsquo;s retirement, Serena Williams is now 6 victories from her first Calendar Slam and 22nd career major title, tying her with Steffi Graf for the woman with the most Slam titles in the Open Era. Williams comes to Flushing Methods with a season match record of 48 wins to 2 losses—a record so close to perfection that you couldn’t blame her if she strutted onto Arthur Ashe and talked trash on a changeover or two (young Aussies, take note).</description>
-    </item>
-    
-    <item>
-      <title>Contact Information</title>
-      <link>/post/contact/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/post/contact/</guid>
-      <description>E-mail: s.a.kovalchik@gmail.com
-Twitter: @StatsOnTheT</description>
     </item>
     
   </channel>

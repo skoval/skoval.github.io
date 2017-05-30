@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>Media</title>
-      <link>/tags/media/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/media/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Programming</title>
       <link>/tags/programming/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
@@ -48,11 +39,38 @@
     </item>
     
     <item>
+      <title>Research</title>
+      <link>/tags/research/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sports Analytics</title>
+      <link>/tags/sports-analytics/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sports-analytics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Stories</title>
       <link>/tags/stories/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>/tags/stories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tennis News</title>
+      <link>/tags/tennis-news/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tennis-news/</guid>
       <description></description>
     </item>
     
