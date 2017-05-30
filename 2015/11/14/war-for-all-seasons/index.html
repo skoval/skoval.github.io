@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAR for All Seasons</title>
+<meta name="description" content="A blog that puts the numbers to tennis">
+<meta name="generator" content="Hugo 0.21" />
+<meta property="og:title" content="WAR for All Seasons" />
+<meta property="og:description" content="Last week I asked whether WAR, a comprehensive statistic of player value, has a place in tennis. Although WAR was developed for and has been primarily used in team sports to estimate a player&rsquo;s contribution to team wins, its potential applications are much broader. WAR, in its most general sense, is about giving perspective to a player&rsquo;s performance by comparing the outcomes of a player&rsquo;s outings to a common standard: the replacement player." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2015/11/14/war-for-all-seasons/" />
+
+
+
+<meta property="article:published_time" content="2015-11-14T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2015-11-14T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="/js/scripts.js"></script>
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+					<a class="logo__link" href="/" title="Stats On the T" rel="home">
+						<h1 class="logo__title">Stats On the T</h1>
+						<h2 class="logo__tagline">Dedicated to data, statistics, and tennis</h2>
+					</a>
+				</div>
+			</div>
+			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<ul class="menu__list">
+		<li class="menu__item "><a class="menu__link" href="/post/contact/">CONTACT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/features/">FEATURES</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/research/">RESEARCH</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
+	</ul>
+</nav>
+		</header>
+		<div class="wrapper clearfix">
+
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">WAR for All Seasons</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2015-11-14T00:00:00">November 14, 2015</time>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+			
+
+<p>Last week I asked whether <a href="http://on-the-t.com/2015/11/07/Developing-WAR-for-Tennis/">WAR</a>, a comprehensive statistic of player value, has a place in tennis. Although <a href="http://www.baseball-reference.com/blog/archives/6063">WAR was developed</a> for and has been primarily used in team sports to estimate a player&rsquo;s contribution to team wins, its potential applications are much broader. WAR, in its most general sense, is about giving perspective to a player&rsquo;s performance by comparing the outcomes of a player&rsquo;s outings to a common standard: the replacement player.</p>
+
+<figure style="float:right;">
+  <img src="/assets/shakespeare-tennis.jpg"/>
+</figure>
+
+<p>Providing context for wins is an interest of all sports and comes up most often when making cross-generation comparisons. Was Babe Ruth the greatest hitter of all time? Who was the more accomplished tennis player: Rod Laver or Jimmy Connors? Sport has traditionally used all-time-highest records in <a href="http://ftw.usatoday.com/2015/06/roger-federer-stats-best-tennis-player-ever-goat-wimbledon-us-open-stats">greatest of all time</a> debates. This points to a tradition of assigning &ldquo;the best&rdquo; to the player who most dominated the sport during their career, whatever the standard at the time. WAR formalizes this way of thinking by providing a method to adjust a player&rsquo;s achievements for the baseline level of competition at the time those achievements were earned.</p>
+
+<blockquote>
+<p>Would WAR give us a different perspective on player achievement than wins alone?</p>
+</blockquote>
+
+<p>As an initial testing ground for the usefulness of a WAR-like statistic in tennis, I thought it would be interesting to apply it to the debate over Novak Djokovic&rsquo;s greatest season up to this point in his career. Was his breakout run in 2011 his most impressive year, or has he outdone himself with his accomplishments in 2015?</p>
+
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:445px;float:left;padding:2%;"><div style="overflow:hidden;position:relative;height:0;padding:66.666667% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/478976630?et=R3VPpDgaQZ9C0zs6bXh3Pg&viewMoreLink=on&sig=mbnJLN7XG3HPI_0TF4pbeJU9uQO8A8Bl8ivP6Xv_z5s=&caption=true" width="445" height="297" scrolling="no" frameborder="0" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div><p style="margin:0;"></p><div style="padding:0;margin:0 0 0 10px;text-align:left;"><a href="http://www.gettyimages.com/detail/478976630" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">View image</a> | <a href="http://www.gettyimages.com" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">gettyimages.com</a></div></div>
+
+<p>Even without the wins Djokovic could earn at the end-of-year <a href="http://www.atpworldtour.com/en/tournaments/barclays-atp-world-tour-finals/605/overview">Tour Finals</a> (which begin on Sunday) he has already won <a href="http://www.foxsports.com.au/the-crowd/novak-djokovics-record-breaking-season-could-propel-him-into-becoming-the-greatest-ever/story-fnvoi4su-1227605029620">78 matches in 2015</a>, 8 more than in 2011. Wins alone would suggest that 2015 has been Djokovic&rsquo;s greater year. Yet this assumes that every win in each season was of equal importance, overlooking changes in the strength of the tour over four years and differences in the mix of opponents faced in each season. For example, in 2011, Djokovic waged racquets 6 times with a Rafael Nadal who was much stronger and more confident than the Nadal of 2015.</p>
+
+<p>To see more precisely whether differences in the quality of the opponents Djokovic faced in 2011 and 2015 should shift our opinion about his <em>best season</em>, we turn to WAR.</p>
+
+<hr />
+
+<h2 id="defining-a-replacement-player">Defining a Replacement Player</h2>
+
+<p>Replacement players put the &ldquo;R&rdquo; in WAR. For the MLB, a replacement player is defined by the ability of players in the minor leagues, the pool of the lowest cost alternates for the current roster. In this way, the expected wins with a replacement player represent a minimum level of win production for the highest level of the sport.</p>
+
+<p>The Challenger Tour is something like the minors of men&rsquo;s tennis. However, the division between the Challenger and ATP Tour is less strict, as players can participate in tournaments for the Challenger and ATP Tour in the same season. It is all dependent on a player&rsquo;s ability to qualify for the tournaments in which he wants to compete.</p>
+
+<p>Although tennis doesn&rsquo;t have a direct analog for the minor leagues it does have a literal replacement player&mdash;the lucky loser. <a href="https://en.wikipedia.org/wiki/Lucky_loser">Lucky losers</a> are players who fail to qualify but make it into the main draw because another player isn&rsquo;t able to compete. A lucky loser would be a natural choice to define the baseline of performance on the ATP Tour.</p>
+
+<p>Because lucky losers only arise when a top player or qualifier withdrawals, they are rare. To avoid an unstable estimate for the baseline ability due to the small number of lucky losers in a season, I will use all qualifiers and lucky losers competing at the Grand Slams and Masters tournaments in a given season. Players who earn a wild card into a draw will be exclude, as factors other than playing ability (not <a href="http://www.foxsports.com/mlb/just-a-bit-outside/story/mlb-postseason-wild-card-game-pittsburgh-pirates-unfair-091715">unlike wild card systems</a> in other sports) can <a href="http://thetennisisland.com/2015/01/13/the-great-sydney-wildcard-debate-breaking-down-the-rules/">influence the selection</a> of wild cards.</p>
+
+<p>Using this definition of &ldquo;replacement player&rdquo;, there were 97 replacement players in 2011 and 88 in 2015 (through the end of September 2015). Using a 12-month <a href="http://on-the-t.com/2015/09/26/Converting-Clutch-Into-Wins/">Pythagorean break point win expectation</a> to define a player&rsquo;s strength, the combined strength for a typical replacement player was a weighted Pythagorean average, weighting the individual Pythagorean strengths of each player by the number of Tour matches they played. For 2011, the average replacement strength was 41.5%. In 2015, the win expectations for replacement players were notably lower, having an average replacement strength of 38.6%.</p>
+
+<hr />
+
+<h2 id="opponent-strength">Opponent Strength</h2>
+
+<p>Having calculated a replacement strength for the 2011 and 2015 seasons, the next step in deriving WAR for each season is to compute the strength of Djokovic&rsquo;s opponents in 2011 and 2015 at the time he faced them. As with the replacement strength, I use the 12-month Pythagorean win expectation, using the 12 months up to but not including the day of the opponent&rsquo;s match against Djokovic.</p>
+
+<iframe width="900" height="700" frameborder="0" scrolling="no" src="https://plot.ly/~on-the-t/710.embed"></iframe>
+
+<p>When the matches are ordered according to the estimated strength of the opponent, in terms of the pre-match Pythagorean win expectation, there are 10 matches that cluster around 85 to 88% in 2011 (Figure 1). By hovering over the bar, you can see the opponent and tournament of each match. The 10 toughest matches were played against Rafael Nadal or Roger Federer. There were 2 matches that could be considered a &ldquo;cake walk&rdquo;, where the opponent strength was less than 20%. Of the 6 losses in 2011, all but 1 (the loss to Nishikori at Basel) were against opponents who had a 73% or greater Pythagorean strength.</p>
+
+<iframe width="900" height="700" frameborder="0" scrolling="no" src="https://plot.ly/~on-the-t/714.embed"></iframe>
+
+<p>In 2015, Djokovic had fewer opponents with a strength over 80% (8 vs 10 in 2011). However, two matchups were against Roger Federer when he had a Pythagorean strength exceeding 90% (one at he US Open Final and the other at the Western and Southern Open Final), which would have made these slightly tougher in expectation than any match in 2011 (Figure 2). Only one match was a clear cake walk in 2015. And, of the 5 losses, 3 were against opponents with a strength over 70%.</p>
+
+<hr />
+
+<h2 id="bringing-it-all-together">Bringing it All Together</h2>
+
+<p>The breakdown of opponent strength in the 2011 and 2015 seasons show how variable the mix of opponents can be for a tennis player from one year to the next. This is where WAR can be of value. Armed with the numbers for opponent and replacement strength, we can now propose a estimate for WAR for tennis.</p>
+
+<p>In words, we want to calculate</p>
+
+<p>$$
+WAR = Wins\;Over\;Replacement - Losses\;Over\;Replacement
+$$</p>
+
+<p>where we credit a player for how many more wins they earn over what would be expected of the replacement player facing the same opponents and penalize them for losses that would not have been expected of the replacement player. The estimate for this metric is</p>
+
+<p>$$
+WAR = (Actual\;Wins - Replacement\;Expected\;Wins) - (Actual\;Losses - Replacement\;Expected\;Losses)
+$$</p>
+
+<p>where the expected wins and losses for the replacement player are determined by the sum of win probabilities (loss probabilities) from a <a href="https://en.wikipedia.org/wiki/Bradley%E2%80%93Terry_model">Bradley-Terry formula</a> using the Pythagorean expectation as the player&rsquo;s estimated ability.</p>
+
+<iframe width="900" height="700" frameborder="0" scrolling="no" src="https://plot.ly/~on-the-t/745.embed"></iframe>
+
+<p>Figure 3 shows the cumulative change in WAR over the course of the 2011 and 2015 seasons. For most of the season, the overall achievement in 2015 was slightly below that of 2011, differing an effective 3 matches earned. By the 76th match, however, Djokovic&rsquo;s 2015 season had caught up with 2011 boosted by a string of strong wins during the hard court Asian circuit. Interestingly, this was the same time that Djokovic claimed 2015 as his career <a href="http://www.usatoday.com/story/sports/tennis/2015/10/14/nishikori-holds-off-kyrgios-to-advance-in-shanghai/73913952/">best season</a>. By the Shanghai final of 2015, Djokovic had surpassed his 2011 season-ending WAR of +38.9 matches. Going into the ATP Tour Finals his 2015 WAR stands at +44.4 matches, a difference of 5.5 earned matches over 2011.</p>
+
+<p>Djokovic&rsquo;s WAR stats argue for calling 2015 his greatest season not because his matches have been tougher but because he has played and won more matches of comparable difficulty as in 2011. With the start of the Tour Finals on Sunday, Djokovic will have still more opportunity to extend the impressiveness of what is already a standout season.</p>
+
+<p>{% include twitter_plug.html %}</p>
+
+		</div>
+		
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Tennis Data Scientist at the Game Insight Group at Tennis Australia and researcher at the Institute of Sport Exercise and Active Living at Victoria University.
+	</div>
+</div>
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="/2015/11/07/developing-war-for-tennis/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Initial Thoughts on Developing WAR for Tennis</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next col-1-2">
+		<a class="post-nav__link" href="/2015/11/28/best-season-debate/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">Another Take on the Best Season Debate</p></a>
+	</div>
+</nav>
+
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'on-the-t-com';
+    var disqus_identifier = '\/2015\/11\/14\/war-for-all-seasons\/';
+    var disqus_title = 'WAR for All Seasons';
+    var disqus_url = '\/2015\/11\/14\/war-for-all-seasons\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</div>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="/" />
+	</form>
+</div>
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/contact/">Contact Information</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/french-open-2017/">French Open 2017</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/27/mens-clay-trends/">Clay Court Performance Trends of French Open Title Men&#39;s Top 4</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/22/top-contenders-french-open/">Return Leaders Among ATP&#39;s Top Contenders for French Open Title</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/21/top-contenders-french-open/">Serve Leaders Among ATP&#39;s Top Contenders for French Open Title</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/20/new-ranking-system/">WTA Tennis Rankings Aren&#39;t Working</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/15/clayray-2017/">Should We Be Surprised by Murray&#39;s 2017 Clay Performance So Far?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/07/official-bias/">Officials Are Human Too</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/04/29/murray-serve-volley/">Are Net Points Murray&#39;s Kryptonite?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/04/21/serena-return/">Can Serena Williams be a Champion and Mom?</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/articles">Articles</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/research">Research</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/software">Software</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/tennis-news">Tennis-News</a></li>
+		</ul>
+	</div>
+</div>
+	
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="/tags/data-science" title="data-science">data-science</a>
+		<a class="widget__link widget__link--taglist" href="/tags/media" title="media">media</a>
+		<a class="widget__link widget__link--taglist" href="/tags/programming" title="programming">programming</a>
+		<a class="widget__link widget__link--taglist" href="/tags/r" title="r">r</a>
+		<a class="widget__link widget__link--taglist" href="/tags/stories" title="stories">stories</a>
+	</div>
+</div>
+</aside>
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">&copy; 2017 Stats On the T. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+

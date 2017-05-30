@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charting Serve Locations</title>
+<meta name="description" content="A blog that puts the numbers to tennis">
+<meta name="generator" content="Hugo 0.21" />
+<meta property="og:title" content="Charting Serve Locations" />
+<meta property="og:description" content="One of the many things I miss after the dissolution of Bill Simmons&rsquo; sports blog Grantland is Kirk Goldsberry&rsquo;s NBA shot charts. The classic version of the Goldsberry shot chart is a plot of hexagonal bins showing the locations and frequency of where a player takes shots overlaid onto a representation of the basketball court. Combined with heavy annotation and a lot of style, the charts are both effective at communicating shot tendencies and a pure pleasure to read (an example for Steph Curry is shown to the right)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2016/08/18/charting-serve-locations/" />
+
+
+
+<meta property="article:published_time" content="2016-08-18T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2016-08-18T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="/js/scripts.js"></script>
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+					<a class="logo__link" href="/" title="Stats On the T" rel="home">
+						<h1 class="logo__title">Stats On the T</h1>
+						<h2 class="logo__tagline">Dedicated to data, statistics, and tennis</h2>
+					</a>
+				</div>
+			</div>
+			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<ul class="menu__list">
+		<li class="menu__item "><a class="menu__link" href="/post/contact/">CONTACT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/features/">FEATURES</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/research/">RESEARCH</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
+	</ul>
+</nav>
+		</header>
+		<div class="wrapper clearfix">
+
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">Charting Serve Locations</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2016-08-18T00:00:00">August 18, 2016</time>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+			
+
+<p>One of the many things I miss after the dissolution of Bill Simmons&rsquo; sports blog <a href="https://en.wikipedia.org/wiki/Grantland">Grantland</a> is Kirk Goldsberry&rsquo;s NBA shot charts. The classic version of the Goldsberry shot chart is a plot of hexagonal bins showing the locations and frequency of where a player takes shots overlaid onto a representation of the basketball court. Combined with heavy annotation and a lot of style, the charts are both effective at communicating shot tendencies and a pure pleasure to read (an example for Steph Curry is shown to the right).</p>
+
+<p><img src="/assets/curry_shot_chart.jpg" width="300" style="float:right;" /></p>
+
+<p>Fortunately, Goldsberry continues to post new charts on <a href="https://www.instagram.com/kirkgoldsberry/?hl=en">Instagram</a>.</p>
+
+<p>The question I have been asking myself for a long time, is why tennis doesn&rsquo;t have it&rsquo;s own &ldquo;shot chart&rdquo;?</p>
+
+<p>Tennis, like the NBA, is a sport largely defined by player and ball movement around the court. So the value of having appealing and informative charts for summarizing spatial information about ball and player position is a no-brainer. It&rsquo;s just a matter of bringing the right data and tools together.</p>
+
+<h2 id="serve-location-charts-with-ggplot2">Serve Location Charts with ggplot2</h2>
+
+<p>In this post, I want to show how a basic version of a &ldquo;shot chart&rdquo; can be made with <strong>ggplot2</strong> to show serve location patterns. Below is a snippet of the R Code for drawing a representation of a court and plotting the frequency of shot locations with <strong>geom_hex</strong>.</p>
+
+<pre class="r">
+<code>
+court_rect <- data.frame(
+  x = c(-11.89, -11.89, 11.89, 11.89), 
+  y = c(-6.5, 6.5, 6.5, -6.5))
+
+court_trace <- data.frame(x = c(-11.89, -11.89, 0, 0, 0, 0, 0, 0, 
+                               11.89, 11.89, -11.89, -11.89, 11.89, 
+                               11.89, -11.89, -6.4, -6.4, 6.4, 6.4, 
+                               6.4, -6.4),
+                         y = c(5.49, -5.49, -5.49, -6.5, -6.5, 6.5, 
+                               6.5, -5.49, -5.49, 5.49, 5.49, 4.115, 
+                               4.115, -4.115, -4.115, -4.115, 4.115, 
+                               4.115, -4.115, 0, 0))
+
+
+labeller_function &lt;- function(variable, value){
+    
+    labels &lt;- list(
+        &quot;1&quot; = &quot;First&quot;,
+        &quot;2&quot; = &quot;Second&quot;
+    )
+    
+labels[value]   
+}
+
+ggplot(data = federer, aes(x = center_x, y = center_y)) +
+  facet_grid(serve ~ ., labeller = labeller_function) +
+  geom_rect(aes(xmin = -11.89, xmax = 11.89, ymin = -5.49, ymax = 5.49), 
+    fill = '#1e90ff') +
+  geom_path(data = court_trace, aes(x = x, y = y), 
+    color = &quot;black&quot;, size = 1) +
+  geom_hex(colour = &quot;white&quot;, binwidth = c(.5, .5)) +
+  scale_fill_gradientn(name = &quot;Frequency&quot;, colours = heat.colors(30), 
+    guide = &quot;legend&quot;, breaks = seq(0, 30, by = 5)) +
+  scale_y_continuous(&quot;&quot;, lim = c(-7, 7), breaks = NULL) +
+  scale_x_continuous(&quot;&quot;, lim = c(-12, 12), breaks = NULL) +
+  theme_hc()
+  </code>
+  </pre>
+
+<p>The serves that are shown are Roger Federer&rsquo;s first and second serve locations over all of his matches at the 2016 Australian Open. Both good serves and faults are included. All serves have been oriented so that the server serves from the right side and good serves land in the left side service box.</p>
+
+<p>The resulting chart creates hexagons of fixed size of 0.5 meters along the length and width of the court. Within each hexagonal region, the plot counts the number of shots landing in the region and applies a color gradient to these colors.</p>
+
+<p>We see from his that the high-frequency areas for the first serve are deep down the T and wide. On the second serve, the depth is notably less and there is much greater uniformity in the distribution of locations across the width of the service box. As expected, faults on the second serve are also much less common.</p>
+
+<p><img src="/assets/geom-hex-1.png" width = "800" /></p>
+
+<h2 id="serve-location-charts-with-hextri">Serve Location Charts with hextri</h2>
+
+<p>The <strong>hextri</strong> <a href="https://cran.r-project.org/package=hextri">package of Thomas Lumley</a> is another way to perform hexagonal binning. Some advantages with <strong>hextri</strong> is that it scales the size of the hexagon with the frequency of points in the region. This frees up color to be used for an additional variable other than location frequency.</p>
+
+<p>Another advantage with this package, is that it can calculate multiple classes within the same hexagon and display the relative frequency of each class as triangles. The resulting bins can be plotted directly with <strong>hextri</strong> or the polygons can be extracted and supplied to <strong>ggplot</strong>.</p>
+
+<p>Using the same set of Federer serves, the example below shows how <strong>hextri</strong> and <strong>ggplot</strong> can be combined to make a direct comparison of first and second serve locations.</p>
+
+<pre class="r">
+<code>
+all_hex <- hextri(federer$center_x, federer$center_y, class = federer$serve, 
+                  col = heat.colors(30)[c(5, 20)], nbins = 15, style = "size")
+
+col.group <- unique(all_hex$col)
+
+all_hex.df <- data.frame(
+       x = all_hex$x[!is.na(all_hex$x)], 
+       y = all_hex$y[!is.na(all_hex$x)], 
+       tri = rep(1:length(all_hex$col), rep(3, length(all_hex$col))), 
+       col = rep(all_hex$col, rep(3, length(all_hex$col))))
+            
+ggplot() +
+  geom_rect(aes(xmin = -11.89, xmax = 11.89, ymin = -5.49, ymax = 5.49), fill = '#1e90ff') +
+  geom_path(data = court_trace, aes(x = x, y = y), color = "black", 
+    size = 1) +
+  geom_polygon(data=all_hex.df, aes(x=x, y=y, group=tri, fill=col), 
+    alpha = 1) +
+  scale_fill_identity(name = "", guide = "legend", 
+    labels = c("First", "Second")) + coord_equal()  +
+  scale_y_continuous("", lim = c(-7, 7), breaks = NULL) +
+  scale_x_continuous("", lim = c(-12, 12), breaks = NULL) +
+  theme_hc() + 
+  theme(legend.position = "bottom")
+ </code>
+</pre>
+
+<p>The resulting chart below does a better job of showing that shallow serves to the center of the court would be highly unlikely on a first serve from Federer.</p>
+
+<p><img src="/assets/hexbin-2.png" width = "800" /></p>
+
+<h2 id="some-thoughts">Some Thoughts</h2>
+
+<p>The code above create the most basic version of a shot chart for tennis serves. There are still a lot of things that could be done to improve on these versions. Work that has <a href="http://toddwschneider.com/posts/ballr-interactive-nba-shot-charts-with-r-and-shiny/">been done in R with NBA data</a> suggests some possible improvements. One that I am particularly interested in is showing player shot location patterns compared to average.</p>
+
+<p>Earlier, I mentioned that the development of visualizations like these needed data + tools. Although Hawkeye has made more partnerships with individuals and organizations, like Tennis Australia where I work, to use tracking data for research purposes, those data remain largely closed. By comparison, tracking data for the MLB and NBA have been much more accessible. And I don&rsquo;t think it is a coincidence that these sports have also made some of the greatest advances in sports statistics and popular analytics. Although not the main topic of this post, I did want to acknowledge that tennis&rsquo; analytics problem is as much about data openness as methods development.</p>
+
+<p>{% include twitter_plug.html %}</p>
+
+		</div>
+		
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Tennis Data Scientist at the Game Insight Group at Tennis Australia and researcher at the Institute of Sport Exercise and Active Living at Victoria University.
+	</div>
+</div>
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="/2016/08/06/klaassen-magnus-hypothesis-22/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Klaassen &amp; Magnus&#39;s 22 Myths of Tennis&amp;mdash; Myth 22</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next col-1-2">
+		<a class="post-nav__link" href="/2016/08/20/charting-shots-over-expectations/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">Charting Shots Over Expectations</p></a>
+	</div>
+</nav>
+
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'on-the-t-com';
+    var disqus_identifier = '\/2016\/08\/18\/charting-serve-locations\/';
+    var disqus_title = 'Charting Serve Locations';
+    var disqus_url = '\/2016\/08\/18\/charting-serve-locations\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</div>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="/" />
+	</form>
+</div>
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/contact/">Contact Information</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/french-open-2017/">French Open 2017</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/27/mens-clay-trends/">Clay Court Performance Trends of French Open Title Men&#39;s Top 4</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/22/top-contenders-french-open/">Return Leaders Among ATP&#39;s Top Contenders for French Open Title</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/21/top-contenders-french-open/">Serve Leaders Among ATP&#39;s Top Contenders for French Open Title</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/20/new-ranking-system/">WTA Tennis Rankings Aren&#39;t Working</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/15/clayray-2017/">Should We Be Surprised by Murray&#39;s 2017 Clay Performance So Far?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/07/official-bias/">Officials Are Human Too</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/04/29/murray-serve-volley/">Are Net Points Murray&#39;s Kryptonite?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/04/21/serena-return/">Can Serena Williams be a Champion and Mom?</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/articles">Articles</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/research">Research</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/software">Software</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/tennis-news">Tennis-News</a></li>
+		</ul>
+	</div>
+</div>
+	
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="/tags/data-science" title="data-science">data-science</a>
+		<a class="widget__link widget__link--taglist" href="/tags/media" title="media">media</a>
+		<a class="widget__link widget__link--taglist" href="/tags/programming" title="programming">programming</a>
+		<a class="widget__link widget__link--taglist" href="/tags/r" title="r">r</a>
+		<a class="widget__link widget__link--taglist" href="/tags/stories" title="stories">stories</a>
+	</div>
+</div>
+</aside>
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">&copy; 2017 Stats On the T. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+

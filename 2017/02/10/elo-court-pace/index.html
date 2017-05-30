@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elo Prediction Accuracy and Court Pace</title>
+<meta name="description" content="A blog that puts the numbers to tennis">
+<meta name="generator" content="Hugo 0.21" />
+<meta property="og:title" content="Elo Prediction Accuracy and Court Pace" />
+<meta property="og:description" content="With only two of the top 8 seeds reaching the quarterfinals at the first Grand Slam of the year, the 2017 Australian Open was a trainwreck for most prediction models. Even the Elo forecasting system, one of the most accurate open prediction approaches in tennis, couldn&rsquo;t have anticipated the unusual conditions of this year&rsquo;s Major down under.
+Or could it have?
+We know that one of the contributing factors for the higher number of upsets at the Australian Open was a higher than normal serve percentage." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2017/02/10/elo-court-pace/" />
+
+
+
+<meta property="article:published_time" content="2017-02-10T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-02-10T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="/js/scripts.js"></script>
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+					<a class="logo__link" href="/" title="Stats On the T" rel="home">
+						<h1 class="logo__title">Stats On the T</h1>
+						<h2 class="logo__tagline">Dedicated to data, statistics, and tennis</h2>
+					</a>
+				</div>
+			</div>
+			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<ul class="menu__list">
+		<li class="menu__item "><a class="menu__link" href="/post/contact/">CONTACT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/features/">FEATURES</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/research/">RESEARCH</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
+	</ul>
+</nav>
+		</header>
+		<div class="wrapper clearfix">
+
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">Elo Prediction Accuracy and Court Pace</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2017-02-10T00:00:00">February 10, 2017</time>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+			<p>With only two of the top 8 seeds reaching the quarterfinals at the first Grand Slam of the year, the 2017 Australian Open was a trainwreck for most prediction models. Even the Elo forecasting system, one of the most accurate open prediction approaches in tennis, couldn&rsquo;t have anticipated the unusual conditions of this year&rsquo;s Major down under.</p>
+
+<p><em>Or could it have?</em></p>
+
+<p>We know that one of the contributing factors for the higher number of upsets at the Australian Open was a higher than normal serve percentage. When we look at the average service points won by tournament, we see that there has been a general increasing trend across surfaces. On hard courts, for example, serve percentages have increased 3 percentage points over 20 years. Whether owing to a surface, ball or equipment effect, the 2017 Australian Open was still an outlier, <a href="http://www.economist.com/blogs/gametheory/2017/01/pace-play-tennis">departing even further</a> from these trends.</p>
+
+<iframe width="800" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~on-the-t/1116.embed"></iframe>
+
+<p><em>But why might a shift in serve advantage matter when it comes to prediction?</em></p>
+
+<p>There are a number of reasons to expect prediction performance to vary with the overall level of serve advantage at an event. When players are performing systematically better on serve, it can reflect conditions&mdash;like the speed of the court&mdash;as well as the prevailing style of play&mdash;shorter versus longer points&mdash;that could benefit specific players over others. Standard prediction methods ignore these factors which raises the question of whether they should.</p>
+
+<p>We can get some idea of the answer to that question by looking at how prediction error is or is not related to a player&rsquo;s overall ability on serve.</p>
+
+<p>The chart below plot&rsquo;s each player&rsquo;s yearly root mean squared error in Elo predictions against their service z-score for the year. The z-score measures how they compare to the average server on tour in that year in units of standard deviation, the most negative values being the poorest servers and the most positive values the best servers.</p>
+
+<p>Looking for all ATP matches from 1991 thru 2016, we find some clear structure in the error-serve relationship. The RMSE tends to be lowest for the worst servers but the most variable. For average and moderately above average servers the error rate increases but the variance becomes more narrow. Then, in the opposite extreme of the Karlovics of the sport, the error tends to decrease again.</p>
+
+<iframe width="800" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~on-the-t/1118.embed"></iframe>
+
+<p>What is this sigmoidal shape telling us? It seems to suggest that there is a cost in accuracy as players perform closer to the average on serve. The different colors indicate the service advantage of the event. Because there is considerable overlap in the colors, it further tells us that this relationship does not vary strongly from one event to the next, that is, when it comes to the error pattern, it matters most whether a serve is a weaker or stronger server and not exactly where he is playing. Although the event could determine how well a server performs at a particular point in the calendar.</p>
+
+<p>To see if the error tends to be in one particular direction, we can look at the mean error. Below is the mean of the player&rsquo;s predicted win chance against the actual win, as before, grouped per player and year. A positive difference suggests that Elo tends to be more optimistic than not. We see that the error is more positive across the range of z-scores than negative, so it tends to attribute greater confidence in player&rsquo;s than they perform.</p>
+
+<iframe width="800" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~on-the-t/1120.embed"></iframe>
+
+<p>Interestingly, the direction of the error does appear to vary with the serve rating of the event. Whereas the average behavior we see in gray pertains to most events below a rating of 0.64 (that is, 64% serve percentage on average), the events above this level tend to have a negative correlation so the bias approaches zero for the best servers in the events with a higher overall service rating.</p>
+
+<p>There is still a lot to unpack to understand the causes behind this error pattern. For now, at least, it does suggest that reducing error for the middle pack of servers could be an important strategy for improving forecasting performance in the sport.</p>
+
+<p>{% include twitter_plug.html %}</p>
+
+		</div>
+		
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Tennis Data Scientist at the Game Insight Group at Tennis Australia and researcher at the Institute of Sport Exercise and Active Living at Victoria University.
+	</div>
+</div>
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="/2017/01/30/ao2017-replaying-mens-final/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">How the 2017 Australian Open Men&#39;s Final Was Won</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next col-1-2">
+		<a class="post-nav__link" href="/2017/02/17/elo-error/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">Error Patterns with Elo Predictions</p></a>
+	</div>
+</nav>
+
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'on-the-t-com';
+    var disqus_identifier = '\/2017\/02\/10\/elo-court-pace\/';
+    var disqus_title = 'Elo Prediction Accuracy and Court Pace';
+    var disqus_url = '\/2017\/02\/10\/elo-court-pace\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</div>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="/" />
+	</form>
+</div>
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/contact/">Contact Information</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/french-open-2017/">French Open 2017</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/27/mens-clay-trends/">Clay Court Performance Trends of French Open Title Men&#39;s Top 4</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/22/top-contenders-french-open/">Return Leaders Among ATP&#39;s Top Contenders for French Open Title</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/21/top-contenders-french-open/">Serve Leaders Among ATP&#39;s Top Contenders for French Open Title</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/20/new-ranking-system/">WTA Tennis Rankings Aren&#39;t Working</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/15/clayray-2017/">Should We Be Surprised by Murray&#39;s 2017 Clay Performance So Far?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/07/official-bias/">Officials Are Human Too</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/04/29/murray-serve-volley/">Are Net Points Murray&#39;s Kryptonite?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/04/21/serena-return/">Can Serena Williams be a Champion and Mom?</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/articles">Articles</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/research">Research</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/software">Software</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/tennis-news">Tennis-News</a></li>
+		</ul>
+	</div>
+</div>
+	
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="/tags/data-science" title="data-science">data-science</a>
+		<a class="widget__link widget__link--taglist" href="/tags/media" title="media">media</a>
+		<a class="widget__link widget__link--taglist" href="/tags/programming" title="programming">programming</a>
+		<a class="widget__link widget__link--taglist" href="/tags/r" title="r">r</a>
+		<a class="widget__link widget__link--taglist" href="/tags/stories" title="stories">stories</a>
+	</div>
+</div>
+</aside>
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">&copy; 2017 Stats On the T. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+

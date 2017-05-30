@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Stats On the T</title>
+    <link>/categories/articles/</link>
+    <description>Recent content in Articles on Stats On the T</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/articles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Research</title>
+      <link>/post/research/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/research/</guid>
+      <description>Selected research. Full list can be found on Google Scholar.
+ Farrow, D., Reid, M., Buszard, T., &amp;amp; Kovalchik, S. (2017). Charting the development of sport expertise: challenges and opportunities. International Review of Sport and Exercise Psychology, 1-20.
+ Albert, J., &amp;amp; Kovalchik, S. (2017). The Do&amp;rsquo;s and Don&amp;rsquo;ts of Sports Metrics: The Tennis ATP Leaderboard. CHANCE, 30(1), 26-34.
+ Kovalchik, S. A., Bane, M. K., &amp;amp; Reid, M. (2016). Getting to the top: an analysis of 25 years of career rankings trajectories for professional women’s tennis.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Klaassen &amp; Magnus&#39;s 22 Myths of Tennis&amp;mdash; Myth 22</title>
+<meta name="description" content="A blog that puts the numbers to tennis">
+<meta name="generator" content="Hugo 0.21" />
+<meta property="og:title" content="Klaassen &amp; Magnus&#39;s 22 Myths of Tennis&amp;mdash; Myth 22" />
+<meta property="og:description" content="While most of the sports world has had been focused on the start of the summer Olympics this week, a small group of diehard sports statisticians were attending the Joint Statistical Meetings in Chicago and catching up with recent advances in sports analytics. During my time there, I was fortunate to participate in a panel entitled &ldquo;Harnessing the Extraordinary Power of Statistics in Sports&rdquo;. The panel was organized by Michael Lopez, of Skidmore College and twitter fame @StatsByLopez, and chaired by Michael Schuckers at St." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2016/08/06/klaassen-magnus-hypothesis-22/" />
+
+
+
+<meta property="article:published_time" content="2016-08-06T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2016-08-06T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="/js/scripts.js"></script>
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+					<a class="logo__link" href="/" title="Stats On the T" rel="home">
+						<h1 class="logo__title">Stats On the T</h1>
+						<h2 class="logo__tagline">Dedicated to data, statistics, and tennis</h2>
+					</a>
+				</div>
+			</div>
+			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<ul class="menu__list">
+		<li class="menu__item "><a class="menu__link" href="/post/contact/">CONTACT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/features/">FEATURES</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/research/">RESEARCH</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
+	</ul>
+</nav>
+		</header>
+		<div class="wrapper clearfix">
+
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">Klaassen &amp; Magnus&#39;s 22 Myths of Tennis&amp;mdash; Myth 22</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2016-08-06T00:00:00">August 06, 2016</time>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+			
+
+<p><img src="/assets/jsm2016logo4.png" style = "float:left; padding:2%;" /></p>
+
+<p>While most of the sports world has had been focused on the start of the summer Olympics this week, a small group of diehard sports statisticians were attending the Joint Statistical Meetings in Chicago and catching up with recent advances in sports analytics. During my time there, I was fortunate to participate in a panel entitled &ldquo;Harnessing the Extraordinary Power of Statistics in Sports&rdquo;. The panel was organized by Michael Lopez, of Skidmore College and twitter fame <a href="https://statsbylopez.com">@StatsByLopez</a>, and chaired by <a href="https://www.stlawu.edu/people/michael-schuckers">Michael Schuckers</a> at St. Lawrence University. The other participants on the panel were <a href="https://twitter.com/bmacnhl?lang=fr">Brian Macdonald</a>, a statistician for the NHL&rsquo;s Florida Panthers; <a href="http://www.lockanalytics.com">Dennis Lock</a>, who crunches number for the NFL&rsquo;s Miami Dolphins; and <a href="http://dcervone.com">Dan Cervone</a>, a current member of the <a href="http://www.xyresearch.com">XY Research</a> group who will be starting a position as a data scientist with the MLB&rsquo;s LA Dodgers later this year.</p>
+
+<figure>
+    <img src="/assets/jsm2016panel.jpg" width = "400" style ="float:right;padding:2%;" />
+    <figcaption style="color:green;"><b>Caption:</b> From left to right, Michael Schuckers, Brian Macdonald, Me, Dan Cervone, Dennis Lock</figcaption>
+</figure>
+
+<p>As the only panelist from an individual sport, one of the questions I was asked to tackle was what makes doing statistical analysis for individual sports unique from team sports. My answer was that, on the one hand, analysis of performance in individual sports is easier because, as fewer players are involved, determining a player&rsquo;s contribution to the outcomes of a game is less complex. On the other hand, individual sports like tennis, golf, or diving, typically involve more in-between-play when the athlete is preparing for the next activity and left to his or her own thoughts. In fact, 80% of a tennis match is in-between time (which might you question why you paid so much for those last grand slam tickets!).</p>
+
+<p>What does the in-between-time of individual sports have to do with stats? I think the simple answer to that is: we don&rsquo;t know. How much a player&rsquo;s thoughts, mental routines, and general mentality on the court influence their performance are all open questions. The distinct mental styles of players like Ivan Lendl and Fabio Fognini suggest that the inner game exists and matters, but sports analytics has only started to make progress towards evaluating the mental side of the game.</p>
+
+<p>It turns out that this topic is a fitting segue for the final of Klaassen and Magnus&rsquo;s 22 myths of tennis. In the last of their myths, K&amp;M take on the question of whether missed breaks create a discouragement effect that makes it harder for servers to hold the game following missed break point opportunities. If players systematically under-perform after a missed break opportunity, it would be one way we could conclude that the inner game affects player performance.</p>
+
+<h1 id="myth-22-after-missing-breakpoint-s-there-is-an-increased-probability-of-being-broken-in-the-next-game">Myth 22 &ldquo;After missing breakpoint(s) there is an increased probability of being broken in the next game&rdquo;</h1>
+
+<p>Like most of the analyses we have seen in our march through the myths of <a href="https://global.oup.com/academic/product/analyzing-wimbledon-9780199355952?cc=us&amp;lang=en&amp;#">Analyzing Wimbledon</a>, K&amp;M prefer to test their theories with the baseline model: a model of point outcomes on serve that includes both the difference and sum of the server and returner&rsquo;s rankings as controls for player quality.</p>
+
+<p>To test the <em>discouragement theory</em> implied by myth 22, they extend the baseline model to include an indicator for a missed chance in the previous game. The &ldquo;missed chance&rdquo; is defined as a previous game in which the current server had break point chances but failed to convert any of them. When they apply this model to a sample of matches from Wimbledon, they find no evidence of a discouragement effect for men but they do find a significant effect for women, with WTA players having an average decrease in their chance of winning a point on serve of 4% after a missed break.</p>
+
+<h2 id="revisiting-myth-22">Revisiting Myth 22</h2>
+
+<p>In addition to expanding the tournaments represented in the analysis, I was interested in what a matched analysis would conclude. Since missed break chances might be more common for some types of players than others, it could induce an imbalance in player quality when comparing service games after a missed break to all other service games. Worrying that a regression model with player rankings might not adequately account for such a selection bias, I wanted to look at the missed break question using a matching approach.</p>
+
+<p>The data set I started with is shown below. All the counts are service games that come from many thousands of matches over the past 5 years for both the men&rsquo;s and women&rsquo;s tours. The first two columns of the ATP and WTA tables are the break point distributions before service games that the server lost, while the final two columns is the distribution for the return game prior to a service hold. We can see that that break point chances are more common for players who tend to hold service, indicating the effect of player quality. Also, we see that there is more than a 10% chance that 2 or more breaks occur.</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Break Point Chances</th>
+<th align="center">ATP Misses</th>
+<th align="center">Percentage</th>
+<th align="center">ATP Breaks</th>
+<th align="center">Percentage</th>
+<th align="center">WTA Misses</th>
+<th align="center">Percentage</th>
+<th align="center">WTA Breaks</th>
+<th align="center">Percentage</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">15,407</td>
+<td align="center">72%</td>
+<td align="center">56,973</td>
+<td align="center">69%</td>
+<td align="center">7,207</td>
+<td align="center">57%</td>
+<td align="center">12,240</td>
+<td align="center">53%</td>
+</tr>
+
+<tr>
+<td align="center">1</td>
+<td align="center">3,396</td>
+<td align="center">16%</td>
+<td align="center">14,233</td>
+<td align="center">17%</td>
+<td align="center">2,995</td>
+<td align="center">24%</td>
+<td align="center">6,308</td>
+<td align="center">27%</td>
+</tr>
+
+<tr>
+<td align="center">2</td>
+<td align="center">1,719</td>
+<td align="center">8%</td>
+<td align="center">7,134</td>
+<td align="center">9%</td>
+<td align="center">1,557</td>
+<td align="center">12%</td>
+<td align="center">2,993</td>
+<td align="center">13%</td>
+</tr>
+
+<tr>
+<td align="center">3</td>
+<td align="center">707</td>
+<td align="center">3%</td>
+<td align="center">2,923</td>
+<td align="center">4%</td>
+<td align="center">568</td>
+<td align="center">5%</td>
+<td align="center">1,158</td>
+<td align="center">5%</td>
+</tr>
+
+<tr>
+<td align="center">4</td>
+<td align="center">204</td>
+<td align="center">1%</td>
+<td align="center">910</td>
+<td align="center">1%</td>
+<td align="center">198</td>
+<td align="center">2%</td>
+<td align="center">340</td>
+<td align="center">1%</td>
+</tr>
+
+<tr>
+<td align="center">5</td>
+<td align="center">56</td>
+<td align="center">0%</td>
+<td align="center">274</td>
+<td align="center">0%</td>
+<td align="center">65</td>
+<td align="center">1%</td>
+<td align="center">120</td>
+<td align="center">1%</td>
+</tr>
+
+<tr>
+<td align="center">6</td>
+<td align="center">19</td>
+<td align="center">0%</td>
+<td align="center">81</td>
+<td align="center">0%</td>
+<td align="center">19</td>
+<td align="center">0%</td>
+<td align="center">31</td>
+<td align="center">0%</td>
+</tr>
+
+<tr>
+<td align="center">7</td>
+<td align="center">6</td>
+<td align="center">0%</td>
+<td align="center">31</td>
+<td align="center">0%</td>
+<td align="center">3</td>
+<td align="center">0%</td>
+<td align="center">11</td>
+<td align="center">0%</td>
+</tr>
+
+<tr>
+<td align="center">8</td>
+<td align="center">2</td>
+<td align="center">0%</td>
+<td align="center">12</td>
+<td align="center">0%</td>
+<td align="center">1</td>
+<td align="center">0%</td>
+<td align="center">2</td>
+<td align="center">0%</td>
+</tr>
+
+<tr>
+<td align="center">9</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">5</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">2</td>
+<td align="center">0%</td>
+</tr>
+
+<tr>
+<td align="center">10</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+</tr>
+
+<tr>
+<td align="center">11</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">1</td>
+<td align="center">0%</td>
+</tr>
+
+<tr>
+<td align="center">12</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">2</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+</tr>
+</tbody>
+</table>
+
+<p>For the matching approach to testing myth 22, I first found all the games where a player had break point chances but did not end up converting (the &ldquo;treatment&rdquo; cases) and then found a matching return game for the same returner and match in which the player never had a break point opportunity (the &ldquo;control&rdquo; cases). Thus, every missed break got a comparable return game from the same match to serve as its control group.</p>
+
+<p>Because of the range in break point chances shown above, I was curious whether there might be a dose effect for discouragement. In other words, if players get discouraged does it increase with the number of break point chances, such that a player who had 5 chances to break and never did is even more unlikely to hold serve than if he had missed just one chance? To look at this question, I repeated the matching analysis above for difference break point thresholds (i.e. 1 or more, 2 or more, etc.).</p>
+
+<p>Two other features make my re-analysis different from K&amp;M&rsquo;s original approach. First, the outcome I consider is winning the next service game not just winning points in the next service game. Although a decrease in winning points on serve would imply a decrease in winning the service game, I think it makes more sense to look directly at the service hold probability since that is the central question of myth 22. Second, I also include the effect of converting a chance to break on the next service game hold to see if their is a symmetrical <em>encouragement effect</em> form breaks of service.</p>
+
+<p>What was found for male players? Figure 1 shows the percentage the players in the matched groups held serve after different types of return games. In general, we see the lowest average for service games following a return game in which a player never had a chance to break. Next we find a general increase in the service hold chance after a missed chance to break, that is about 1 percentage point in magnitude compared to no break chances. This is curious because it is the opposite direction of the effect implied by the discouragement theory, as players appear to be slightly more likely to hold after a missed chance.</p>
+
+<div>
+    <a href="https://plot.ly/~on-the-t/876/" target="_blank" title="Control, Missed Chance, Broke Service" style="display: block; text-align: center;"><img src="https://plot.ly/~on-the-t/876.png" alt="Control, Missed Chance, Broke Service" style="max-width: 100%;width: 800px;"  width="800" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="on-the-t:876"  src="https://plot.ly/embed.js" async></script>
+</div>
+
+<p>The final set of points are those that correspond to the service games after a break point conversion. Here, we see even higher chances of a service hold (2 percentage points, on average), though the confidence intervals overlap more as we increase the break point threshold from 1 to 4 and the sample size of service games becomes smaller. Although the general pattern is already present for even one missed break point chance, there does apppear to be an upward trend in the effect as the number of break point chances increases.</p>
+
+<p>When we shift to the women&rsquo;s game, the pattern is strikingly different. There is a smaller difference between return games with no break points and those with one or more missed break point chances. However, the effect is in the negative direction, implying a small but consistent discouragement effect. The opposite is found for service holds after a successful break of service. In this case, as was found for ATP players, service holds are generally more likely. But the differences in the averages are smaller than was found for the men and evidence of any dose effect is also less clear.</p>
+
+<div>
+    <a href="https://plot.ly/~on-the-t/878/" target="_blank" title="Control, Missed Chance, Broke Service" style="display: block; text-align: center;"><img src="https://plot.ly/~on-the-t/878.png" alt="Control, Missed Chance, Broke Service" style="max-width: 100%;width: 800px;"  width="800" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="on-the-t:878"  src="https://plot.ly/embed.js" async></script>
+</div>
+
+<h2 id="summary">Summary</h2>
+
+<p>Our reassessment of the last of K&amp;M&rsquo;s series of tennis myths brought us more examples of how player performance may and may not be affected by the score. In this case, a matched analysis found evidence that, counter to traditional thought, male players tend to be more determined to hold service after a missed chance to break but even more determined to maintain a lead after a successful break.</p>
+
+<p>The same characteristics weren&rsquo;t observed for women. Like K&amp;M found, female players show more evidence of being discouraged by a missed break chance. At the same time, breaking service appears to give them some but less pronounced of a psychological boost to hold their subsequent service game.</p>
+
+<p>If the review of K&amp;M&rsquo;s myths has taught as anything it is to never accept conventional wisdom in tennis if it doesn&rsquo;t have solid data to back it up. Again and again, we have seen how evidence from many matches can run counter to convention. At the same time, we have seen that our conclusions can sometimes depend on the data sources and methods used. These are all reasons to encourage more sports researchers to turn their attention to tennis and support efforts to improve methods and the quality and availability of data being used in the field.</p>
+
+<p>I hope the K&amp;M posts on this blog have gone some way toward meeting that goal.</p>
+
+<p>{% include twitter_plug.html %}</p>
+
+		</div>
+		
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Tennis Data Scientist at the Game Insight Group at Tennis Australia and researcher at the Institute of Sport Exercise and Active Living at Victoria University.
+	</div>
+</div>
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="/2016/07/30/klaassen-magnus-hypothesis-21/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Klaassen &amp; Magnus&#39;s 22 Myths of Tennis&amp;mdash; Myth 21</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next col-1-2">
+		<a class="post-nav__link" href="/2016/08/18/charting-serve-locations/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">Charting Serve Locations</p></a>
+	</div>
+</nav>
+
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'on-the-t-com';
+    var disqus_identifier = '\/2016\/08\/06\/klaassen-magnus-hypothesis-22\/';
+    var disqus_title = 'Klaassen \x26 Magnus\x27s 22 Myths of Tennis\x26mdash; Myth 22';
+    var disqus_url = '\/2016\/08\/06\/klaassen-magnus-hypothesis-22\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</div>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="/" />
+	</form>
+</div>
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/contact/">Contact Information</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/french-open-2017/">French Open 2017</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/27/mens-clay-trends/">Clay Court Performance Trends of French Open Title Men&#39;s Top 4</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/22/top-contenders-french-open/">Return Leaders Among ATP&#39;s Top Contenders for French Open Title</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/21/top-contenders-french-open/">Serve Leaders Among ATP&#39;s Top Contenders for French Open Title</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/20/new-ranking-system/">WTA Tennis Rankings Aren&#39;t Working</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/15/clayray-2017/">Should We Be Surprised by Murray&#39;s 2017 Clay Performance So Far?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/07/official-bias/">Officials Are Human Too</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/04/29/murray-serve-volley/">Are Net Points Murray&#39;s Kryptonite?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/04/21/serena-return/">Can Serena Williams be a Champion and Mom?</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/articles">Articles</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/research">Research</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/software">Software</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/tennis-news">Tennis-News</a></li>
+		</ul>
+	</div>
+</div>
+	
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="/tags/data-science" title="data-science">data-science</a>
+		<a class="widget__link widget__link--taglist" href="/tags/media" title="media">media</a>
+		<a class="widget__link widget__link--taglist" href="/tags/programming" title="programming">programming</a>
+		<a class="widget__link widget__link--taglist" href="/tags/r" title="r">r</a>
+		<a class="widget__link widget__link--taglist" href="/tags/stories" title="stories">stories</a>
+	</div>
+</div>
+</aside>
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">&copy; 2017 Stats On the T. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+

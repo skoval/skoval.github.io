@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Media on Stats On the T</title>
+    <link>/tags/media/</link>
+    <description>Recent content in Media on Stats On the T</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/media/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Features</title>
+      <link>/post/features/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/features/</guid>
+      <description>Below is a selection of news features on my research.
+ Preethi Ramamoorthy (05 May 2017), The Hindu: Tennis enters the matrix.
+ Greg Garber (04 Feb 2017), ESPN: Australian Open introduced new advanced statistical metrics
+ Christopher Clarey (13 Jan 2017), New York Times: At the Australian Open, Tennis Joins Its Sports Brethren on a New Surface: Data Analytics
+ Stephanie Kovalchik (12 Jan 2017), The Conversation: Shorter or longer tennis matches: what’s the right balance?</description>
+    </item>
+    
+  </channel>
+</rss>

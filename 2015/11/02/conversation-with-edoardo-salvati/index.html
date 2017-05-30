@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Future of Tennis Data&amp;mdash;A Conversation with Edoardo Salvati</title>
+<meta name="description" content="A blog that puts the numbers to tennis">
+<meta name="generator" content="Hugo 0.21" />
+<meta property="og:title" content="The Future of Tennis Data&amp;mdash;A Conversation with Edoardo Salvati" />
+<meta property="og:description" content="Earlier this week, FiveThirtyEight writer Oliver Roeder published an article entitled &ldquo;Can An Astrophysicist Change The Way We Watch Sports?&rdquo; The piece documents the efforts of Matt Ginsberg (the astrophysicist in question) to develop a system for real-time predictions of shot-making for the NBA and, at the same time, raises a number of broad questions about the future of advanced analytics in sports and sports broadcasting. One of the questions that most intrigued me is whether, as the title of the article suggests, any one person can &ldquo;revolutionize&rdquo; how we experience sports?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2015/11/02/conversation-with-edoardo-salvati/" />
+
+
+
+<meta property="article:published_time" content="2015-11-02T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2015-11-02T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="/js/scripts.js"></script>
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+					<a class="logo__link" href="/" title="Stats On the T" rel="home">
+						<h1 class="logo__title">Stats On the T</h1>
+						<h2 class="logo__tagline">Dedicated to data, statistics, and tennis</h2>
+					</a>
+				</div>
+			</div>
+			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<ul class="menu__list">
+		<li class="menu__item "><a class="menu__link" href="/post/contact/">CONTACT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/features/">FEATURES</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/research/">RESEARCH</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
+	</ul>
+</nav>
+		</header>
+		<div class="wrapper clearfix">
+
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">The Future of Tennis Data&amp;mdash;A Conversation with Edoardo Salvati</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2015-11-02T00:00:00">November 02, 2015</time>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+			<p>Earlier this week, <em>FiveThirtyEight</em> writer Oliver Roeder published an article entitled <a href="http://fivethirtyeight.com/features/can-an-astrophysicist-change-the-way-we-watch-sports/">&ldquo;Can An Astrophysicist Change The Way We Watch Sports?&rdquo;</a> The piece documents the efforts of Matt Ginsberg (the astrophysicist in question) to develop a system for real-time predictions of shot-making for the NBA and, at the same time, raises a number of broad questions about the future of advanced analytics in sports and sports broadcasting. One of the questions that most intrigued me is whether, as the title of the article suggests, any <em>one</em> person can &ldquo;revolutionize&rdquo; how we experience sports?</p>
+
+<p><img src="http://fathom.info/wp-content/uploads/2014/02/ball.png" width="50%" height="50%" style="float:right;" /></p>
+
+<p>The idea of one individual single-handedly (or perhaps with the aid of a programming whiz of a son and the financial backing of a dealmaking tycoon) advancing the science of sport has its romantic appeal. But, when it comes to improving the quality and richness of information about sport, I suspect that crowds will make the real breakthroughs&mdash;just as they have with creating a free online <a href="https://en.wikipedia.org/wiki/The_Wisdom_of_Crowds">encyclopedia</a>, digitizing text, or <a href="http://cacm.acm.org/magazines/2012/3/146255-gaining-wisdom-from-crowds/fulltext">translating the Web</a>.</p>
+
+<p>Consider tennis and the problem of stroke-by-stroke data (i.e. every forehand, slice, etc. and the sequence they were played). Despite a global audience tuning in to every professional tennis match these days, until a few years ago, there was no public data source with information about the strokes played in any professional tennis match. And if we think about how this information could be gathered and made available to the public in a routine way, one could imagine that some genius could one day teach a machine to read &ldquo;overheads&rdquo; and &ldquo;winners&rdquo; off of a video recording of a match and that said genius would have the magnanimity <em>not</em> to sell this machine to the highest bidder. Until that day comes, a collaborative effort will be needed.</p>
+
+<p><img src="http://www.feeltennis.net/wp-content/uploads/2012/08/tennis-ball-trajectory1.jpg" width="50%" height="50%" style="float:left;padding:2%;" /></p>
+
+<p>The <a href="http://www.tennisabstract.com/blog/2013/11/26/the-match-charting-project/">Match Charting Project</a> (MCP) is the most successful effort of this kind. Conceptualized in <a href="http://www.tennisabstract.com/blog/2015/07/24/the-match-charting-project-hits-1000/">2012</a> and <a href="http://www.tennisabstract.com/blog/2013/11/26/the-match-charting-project/">launched in 2013</a> by Jeff Sackmann, creator of <a href="http://tennisabstract.com/">Tennis Abstract</a> and <a href="http://heavytopspin.com/">Heavy Topspin</a>, the MCP enlists volunteers to become &ldquo;citizen scorers&rdquo; for every stroke in professional tennis matches of their choosing. Sackmann provides volunteers with an Excel spreadsheet to assist with charting in a standardized way and pushes new matches to a <a href="https://github.com/JeffSackmann/tennis_MatchChartingProject">Github repo</a> where anyone can access them.</p>
+
+<p>A little more than one month ago, the MCP could boast 1,100 charted matches by 57 different contributors; today there are 1,300. When I did a <a href="http://on-the-t.com/2015/09/19/Charting-Match-Charting/">brief analysis</a> of the distribution of charted matches across contributors, I found a very skewed distribution with a handful of contributors accounting for 20+ matches and the large majority only a few. This made me curious about who the &ldquo;super&rdquo;-contributors are and what their motivations to chart and their charting processes tell us about the future of the MCP and similar efforts.</p>
+
+<p><img src="http://images.onesite.com/websphereusergroup.org/user/alexisstreet/117d6dc9a564e504a7e53eb844cda650.jpg?v=248400" width="50%" height="50%" style="float:right;padding:2%;" /></p>
+
+<p>As luck would have it, I recently became acquainted with Edoardo (Edo) Salvati, an MCP super-contributor. Edo is a native of Rome, currently living in Milan, a mountaineer and an avid reader of <em>The Economist</em>. He is currently doing business development for a boutique law firm, while developing a blog on sports. Recently, Edo was kind enough to answer some questions about the story behind his involvement with the MCP. Below is a transcript of that conversation.</p>
+
+<hr />
+
+<p><b>Q1.  How did you get interested in tennis?</b></p>
+
+<p><em>When I was growing up, I was looking for a sport that could provide a more relatable and less brutal experience than football (both by playing it and watching on TV), which is something of a religion in Italy. Tennis&mdash;with its fair play, calm and sportsmanship&mdash;was a natural antidote. My first vivid memory is Stefan Edberg’s Wimbledon semifinal loss to Michael Stich in 1991, when he lost the match without dropping serve. Also, my first taste of a statistical oddity in sport. I remember watching my first matches, like the 1992 US Open final, on a black and white TV my family owned that had terrible reception. When I was still enthralled despite the fluttering lines of grey caused by the bad signal, I knew I was hooked!</em></p>
+
+<p><b>Q2.  What is your current involvement with the sport? Are you a player, fan, commentator, or would you describe your relationship to the sport in some other way?</b></p>
+
+<p><em>I am a sports addict. Really, I need a daily dose of almost any kind of sport, whether it be watching it on TV, reading online commentary, or playing. As for tennis, it is my favorite sport right now and I am a long-time fan. I am a good player at an amateur level, but back issues sometimes limit my ability to play. Recently, I have started writing about the game. A piece on the umpiring of Eva at this year&rsquo;s US Open final was published in an online Italian sports magazine.</em></p>
+
+<p><b>Q3. Which tours do you follow?</b></p>
+
+<p><em>Primarily the men&rsquo;s Grand Slams, ATP matches, and occasionally Davis Cup. I don’t normally watch women’s matches, unless it’s a really big match, as I don’t derive the same entertainment value from the women&rsquo;s game as from the men’s game. But I stay up-to-date with results for the WTA.</em></p>
+
+<p><b>Q4. How do you follow what is happening in the sport? In other words, which tennis media, commentators, or players are your main sources of info about the game?</b></p>
+
+<p><em>I rely on two main sources: the Internet and TV. I read sports articles from English-speaking news outlets (ESPN, Grantland [when it was in operation], FiveThirtyEight, Heavytopspin, etc.) and from the tour and tournament websites. There are also a few tennis websites in Italian worth reading that I follow. In Italy, there are three TV channels regularly broadcasting tennis matches: Supertennis TV, which is owned by the Italian tennis federation and has rights to several ATP 500s, WTA Premier/International events and Davis Cup ties; Sky Sport TV, which has rights to Wimbledon and the ATP Masters tournaments; and Eurosport (a sort of European ESPN, where Mats Wilander commentates), which has rights to the other 3 Slams, some ATP 250s, and most of the remaining WTA International events.</em></p>
+
+<p><b>Q5. You have expressed some criticism about some kinds of tennis writing (or perhaps views of fans?). Could you describe what you think are problems with the current state of tennis media?</b></p>
+
+<p><em>Overall, the Italian sports media lacks a statistical approach to tennis analysis. When numbers are used, they are usually to back up an opinion rather than as part of a larger more objective analysis. There are a couple of websites where well-written Italian commentary articles can be found, but these still shy away from statistics. I think one reason for this is that fans have gotten to use to commentary that is more like a bar-room chitchat than an informed debate. It will take a serious cultural shift for commentators and fans for this to change.</em></p>
+
+<p><em>Just to give an example, some days ago, the Financial Times published a <a href="http://www.ft.com/cms/s/2/efaeed40-725c-11e5-bdb1-e6e4767162cc.html">one-to-one interview</a> with Novak Djokovic. The most important financial newspaper in Italy had the essay translated for its sports section by one of their translators who had no clue about tennis. The final result was full of mistakes about the game, which made for a poor reading experience.</em></p>
+
+<p><b>Q6. When and how did you first learn about Heavy Topspin/Tennis Abstract?</b></p>
+
+<p><em>At the beginning of 2015, as I was reading through the major American sports media outlets, I read a tennis article by Carl Bialik of FiveThirtyEight that quoted Jeff Sackmann and his project/blog.</em></p>
+
+<p><b>Q7. How did you end up getting involved with the Match Charting Project?</b></p>
+
+<p><em>I congratulated Sackmann by email and asked if there was a way to determine a player’s record with specific umpires (say, Roger Federer&rsquo;s match record with Pascal Maria). In our exchange he mentioned the MCP. I promised that I would have a look at the charting file for the project and try it out when I had the chance.</em></p>
+
+<p><b>Q8. What motivated you to participate?</b></p>
+
+<p><em>I was impressed by Sackmann’s work, which put attempts at analysis posted on the ATP&rsquo;s site to shame. I also learned more about the motivation for the project from his talk at the <a href="http://www.sloansportsconference.com/?p=15758">Sloan conference</a>, after reading about it on ESPN/Grantland. I admire the fact that it’s an independent project that already provides a quick and powerful search engine for most anything related to a player’s career or performance. As a tennis fan, I felt I had to contribute.</em></p>
+
+<p><b>Q9. Have you ever scored before? Or been involved with another effort like this?</b></p>
+
+<p><em>I have never scored before or been involved in a similar project. The MCP is one of a kind.</em></p>
+
+<p><b>Q10. How did you learn to chart?</b></p>
+
+<p><em>It has been a learning process. I downloaded the spreadsheet, carefully read the instruction worksheet and dove right in. My first match was the 2015 Monte Carlo Masters semifinal between Djokovic and Nadal. Obviously, there were a lot of shots and it took a very long to chart. Also, charting is more complicated for left-hand players  I had to alternate between typing, pressing the pause button on the remote control and flipping through the instructions to be sure my coding was correct. Sometimes I had to do this multiple times for one point. There were times I would have to start over, especially in long rallies, because I had made a mistake or missed a shot. The process is the same today, but now I have the coding system memorized so I can chart much faster. It is like learning a language: the more you practice, the greater your fluency. It can be frustrating at first but it becomes more and more rewarding overtime.</em></p>
+
+<blockquote>
+<p>It is like learning a language: the more you practice, the greater your fluency.</p>
+</blockquote>
+
+<p><b>Q11. How do you decide which matches to chart?</b></p>
+
+<p><em>Basically, it is a top-down approach, as it all depends on what matches I can record. Having a complete match recorded is not always possible since the TV guide that is linked to the schedule of recordings is often unreliable. If I have several recorded matches to choose from, I decide according to who’s playing, the length or importance of the match, and its overall appeal. I have a preference for charting men&rsquo;s matches, Slam finals or Tour finals. But I can also chart a 250 R32 which, normally, is less challenging.</em></p>
+
+<p><b>Q12. What is the experience of charting like? Do you do anything in particular to prepare? Do you use Jeff Sackmann’s spreadsheet, the Android app, or something else? </b></p>
+
+<p><em>If you are a tennis fan or player (and being either one helps) charting makes you experience a match to a different level of understanding. Rallies become trajectories, the court is a landing spot divided in sectors, shots aren’t just the effect of Newton’s third law of motion, but are defined by where and how they are hit. You get to really appreciate the kinetic beauty of an exchange between two elite competitors. The spreadsheet becomes a living object, like the green, cascading code in “The Matrix” (but less ominous for humanity!). The code itself reminds me of the chess notation.</em></p>
+
+<p><em>Charting requires time; no question about that. And, the more points played, the longer it takes. But then, when you’re done charting matches like the 2015 French Open final or the 2015 US Open final, you feel you have really accomplished something.</em></p>
+
+<p><em>I don’t do anything in particular to prepare. I try to find a moment of the day when I know I won’t be interrupted. I check if the match I have recorded is complete. I open the spreadsheet on my laptop and type on the keyboard with my right hand, while I control the remote with my left.</em></p>
+
+<p><b>Q13. Do you chart live matches or only recorded ones?</b></p>
+
+<p><em>I only chart recorded matches. Live rallies are played too fast for me to input all the information required. I don’t know if any contributor is live-charting, except for Sackmann himself as I know he can chart live.</em></p>
+
+<p><b>Q14. What happens after you have charted a match?</b></p>
+
+<p><em>I send the spreadsheet to Sackmann and it gets uploaded to the MCP database, where it displays a wide range of detailed data about the match made available to anyone on the TennisAbstract website. He handles the data processing and end-user stats, which is one of the most valuable products of the project.</em></p>
+
+<p><b>Q15. How many matches have you charted? How many have you attempted to chart?</b></p>
+
+<p><em>At the time of writing, I have charted 76 matches. After having charted two matches that had already been charted, I now make sure to check the database first and “claim” a match on the MCP sheet that lists the matches that are being charted (to avoid duplicating the contributors work). I have never only attempted to chart a match. After having established myself among the top contributors by number of matches, I am now more interested in the quality of the matches I chart, rather than becoming the number 1 contributor (Lowell, currently with the most logged matches after Sackmann, has almost 100 matches more than I do). Also, I am quite happy with my contribution, considering that I started not too long ago. After the first match, I thought I&rsquo;d never reach double digits.</em></p>
+
+<p><b>Q16. If you have ever started charting and not finished, what was the reason why?</b></p>
+
+<p><em>I recently started charting the 2009 Rome Masters semifinal between Federer and Djokovic but had to stop after a few games because the recording was corrupted and too many points were missing. I am not aware of the quality of the video until I am actually watching the match. But this was the first and hopefully last time that happens.</em></p>
+
+<p><b>Q17. What is difficult about charting? Are there ways charting could be made easier?</b></p>
+
+<p><em>Once you have familiarized with the code, the input is immediate. What I still find tricky is deciding which letter/number to assign to a specific shot. Some shots can land in a part of the court that is exactly in between the set of letters/numbers provided by the code. Apparently similar shots can have a different coding within the same point, because, on a closer look, the ball ends up going in a slightly different direction. Another major decision is the distinction between forced and unforced errors, which is even a problem for official scoring. Also, the classification of shots type, direction and length can be affected by factors like the TV camera angle or position, quality of the video, replays or commercial breaks, which sometimes can be annoying or disrupt the charting. However, the code is exhaustive for the purpose of the data collection and the spreadsheet is self-populating so that you can focus on charting. The &ldquo;close calls&rdquo; could be made easier by adding additional letters/numbers, but then the overall input process would become too burdensome and redundant. I think it is a well-balanced tool as it is.</em></p>
+
+<p><b>Q18. What are some questions you hope the MCP can help to answer?</b></p>
+
+<p><em>I am not a statistician nor a stats proselyte, but I can see a big role for stats in interpreting a match, understanding trends, providing a source for analysis, and helping to find ‘law and order’ in tennis. The MCP is unique because it is a shot-by-shot tracking software. These data make a wide range of analysis possible, as testified by the writings on Sackmann’s blog.</em></p>
+
+<p>{% include twitter_plug.html %}</p>
+
+		</div>
+		
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Tennis Data Scientist at the Game Insight Group at Tennis Australia and researcher at the Institute of Sport Exercise and Active Living at Victoria University.
+	</div>
+</div>
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="/2015/10/24/breakpoints-more-decisive-for-wta/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Break Points are More Decisive for WTA</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next col-1-2">
+		<a class="post-nav__link" href="/2015/11/07/developing-war-for-tennis/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">Initial Thoughts on Developing WAR for Tennis</p></a>
+	</div>
+</nav>
+
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'on-the-t-com';
+    var disqus_identifier = '\/2015\/11\/02\/conversation-with-edoardo-salvati\/';
+    var disqus_title = 'The Future of Tennis Data\x26mdash;A Conversation with Edoardo Salvati';
+    var disqus_url = '\/2015\/11\/02\/conversation-with-edoardo-salvati\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</div>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="/" />
+	</form>
+</div>
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/contact/">Contact Information</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/french-open-2017/">French Open 2017</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/27/mens-clay-trends/">Clay Court Performance Trends of French Open Title Men&#39;s Top 4</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/22/top-contenders-french-open/">Return Leaders Among ATP&#39;s Top Contenders for French Open Title</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/21/top-contenders-french-open/">Serve Leaders Among ATP&#39;s Top Contenders for French Open Title</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/20/new-ranking-system/">WTA Tennis Rankings Aren&#39;t Working</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/15/clayray-2017/">Should We Be Surprised by Murray&#39;s 2017 Clay Performance So Far?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/07/official-bias/">Officials Are Human Too</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/04/29/murray-serve-volley/">Are Net Points Murray&#39;s Kryptonite?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/04/21/serena-return/">Can Serena Williams be a Champion and Mom?</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/articles">Articles</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/research">Research</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/software">Software</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/tennis-news">Tennis-News</a></li>
+		</ul>
+	</div>
+</div>
+	
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="/tags/data-science" title="data-science">data-science</a>
+		<a class="widget__link widget__link--taglist" href="/tags/media" title="media">media</a>
+		<a class="widget__link widget__link--taglist" href="/tags/programming" title="programming">programming</a>
+		<a class="widget__link widget__link--taglist" href="/tags/r" title="r">r</a>
+		<a class="widget__link widget__link--taglist" href="/tags/stories" title="stories">stories</a>
+	</div>
+</div>
+</aside>
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">&copy; 2017 Stats On the T. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+

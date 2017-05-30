@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AO Leaderboard&amp;mdash; Backhand Speeds</title>
+<meta name="description" content="A blog that puts the numbers to tennis">
+<meta name="generator" content="Hugo 0.21" />
+<meta property="og:title" content="AO Leaderboard&amp;mdash; Backhand Speeds" />
+<meta property="og:description" content="Hard to believe that it is only a few months before the start of the 2017 ATP and WTA seasons. Preparations for the 2017 AO in Melbourne are already in high gear. There will be a lot of developments you can expect to see come January, including some new stats using Hawk-Eye ball and player tracking data. These stats were developed by Tennis Australia&rsquo;s Game Insight Group&mdash; a team of scientists TA has brought together to advance the use of analytics in tennis." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2016/10/22/aoleaderboard-backhand-speed/" />
+
+
+
+<meta property="article:published_time" content="2016-10-22T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2016-10-22T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="/js/scripts.js"></script>
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+					<a class="logo__link" href="/" title="Stats On the T" rel="home">
+						<h1 class="logo__title">Stats On the T</h1>
+						<h2 class="logo__tagline">Dedicated to data, statistics, and tennis</h2>
+					</a>
+				</div>
+			</div>
+			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<ul class="menu__list">
+		<li class="menu__item "><a class="menu__link" href="/post/contact/">CONTACT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/features/">FEATURES</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/research/">RESEARCH</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
+	</ul>
+</nav>
+		</header>
+		<div class="wrapper clearfix">
+
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">AO Leaderboard&amp;mdash; Backhand Speeds</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2016-10-22T00:00:00">October 22, 2016</time>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+			<p>Hard to believe that it is only a few months before the start of the 2017 ATP and WTA seasons. Preparations for the 2017 AO in Melbourne are already in high gear. There will be a lot of developments you can expect to see come January, including some new stats using Hawk-Eye ball and player tracking data. These stats were developed by Tennis Australia&rsquo;s Game Insight Group&mdash; a team of scientists TA has brought together to advance the use of analytics in tennis. As a data scientist for the GIG, I wanted to preview these developments and some of the things we are learning from tracking data.</p>
+
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:594px;left:float;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com/detail/540140726" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:66.666667% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/540140726?et=-98qAEG5TNFwrLCMXVltMA&viewMoreLink=on&sig=QTSgu3MfjmwmFVE9-V_uIb-qwEMZ_sMlP-3ALSPX0YU=&caption=true" width="594" height="396" scrolling="no" frameborder="0" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div><p style="margin:0;"></p></div>
+
+<p>The stat I want to present to you today is backhand stroke speeds. This is just one of a large suite of new measures that look at characteristics of shot in more detail than ever before. Now, a backhand speed isn&rsquo;t a difficult thing to calculate with tracking data but tournaments rarely if ever do. Occasionally, we might see a broadcast display the speed of a shot during a rally but this doesn&rsquo;t give us enough information to say what is a <em>typical</em> speed of a shot or which players hit the fastest shot on average. That needs to change and we hope the AO stats will help to move in that direction.</p>
+
+<p>The actual data we have compiled includes tracking data from the 3 past Australian Open tournaments, 2014 to 2016. The 7 courts with the biggest seating capacity have had Hawk-eye in the past. These aren&rsquo;t all of the courts but they cover 70% of the men&rsquo;s and women&rsquo;s singles events. The speeds shown below represent the speed at impact for all backhand groundstrokes that were in play or ended the point in a winner, so errors and other shot types aren&rsquo;t represented. Also, to ensure stability in the estimates only players with 2 or more matches in the combined 3-year dataset were included.</p>
+
+<p>The first figure below shows the backhand speed characteristics for ATP players. Because I haven&rsquo;t made any exclusions based on the sample size of shots (beyond the requirement of 2 or more matches), I have included the interquartile range and scaled the point denoting the median with respect to the sample size of shots. More on that later.</p>
+
+<p>Among the men, these data suggest that player averages on the pace of the backhand range from 75 to 60 mph. Much less than the speed of a first serve but still impressive when one considers that it is the shot that is the most difficult to generate power.</p>
+
+<iframe width="900" height="1500" frameborder="0" scrolling="no" src="https://plot.ly/~on-the-t/975.embed"></iframe>
+
+<p>We have often heard Stan Wawrinka described as the best one-handed backhand in the game. We find Wawrinka right at the top of average speeds, clocking in at 75 mph, which gives some justification to that claim. However, we also see that he has a massive lower tail on his serve, which could indicate a lack of consistency or greater use of spin on the backhand. Some others in the 74-75 mph group are Kei Nishikori, Fernando Verdasco and Lucas Pouille.</p>
+
+<p>While Djokovic and Nadal are also near the top of the speed rankings at 72 and 71 mph, respectively, we see a lot of the big servers (Raonic, Isner, Pospisil) and other top players like Andy Murray, Roger Federer, and Jo-Wilfried Tsonga, in the under 70 mph group. This could indicate a tradeoff where the mechanical and physiological skills that make for a very powerful serve cost some power on the backhand.</p>
+
+<p>When we turn to the WTA, we find median impact speeds that are in the same range of the men&rsquo;s. It is also interesting to see that the spread in the backhand speed among the female players is much tighter at the top, suggesting somewhat more consistency in the speed characteristics on the WTA than the ATP. Both of these suggest that flat two-handed backhands are more of a norm for the WTA while the ATP might have more variety of spin on the backhand that could slow the pace but increase the unpredictability of their shots.</p>
+
+<p>We have to regret the retirement of Li Na when we see that she had the hardest-hitting backhand in recent AO history. American, Madison Keys, is also right up there in terms of power. Kvitova, Azarenka, and Muguruza also reach impressive speeds (median of 71 mph or more) on the backhand. Serena Williams, Venus Williams and Karolina Pliskova are in the 70 mph and below group, which could, again, reflect a tradeoff between big serving and ripping backhands.</p>
+
+<iframe width="900" height="1500" frameborder="0" scrolling="no" src="https://plot.ly/~on-the-t/972.embed"></iframe>
+
+<p>Speed is only one dimension of a shot and these rankings show us that the best players aren&rsquo;t necessarily the players that hit the hardest. Quality of a shot has to do with many factors: how close it comes to a line, how open the court is, and how much it takes the opponent by surprise. Although the pace of a shot can&rsquo;t tell us everything about a shot&rsquo;s quality, it does, I think, give us insight into a player&rsquo;s style. Players with a flatter and more attacking game should feature high on the pace charts, whereas the players with more variety, spin, or who wait for their opportunities should not.</p>
+
+<p>{% include twitter_plug.html %}</p>
+
+		</div>
+		
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Tennis Data Scientist at the Game Insight Group at Tennis Australia and researcher at the Institute of Sport Exercise and Active Living at Victoria University.
+	</div>
+</div>
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="/2016/10/14/clutch-differentials/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Clutch Edge at the 2016 U.S. Open</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next col-1-2">
+		<a class="post-nav__link" href="/2016/10/29/aoleaderboard-line-hitting/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">AO Leaderboard&amp;mdash; Line Hitting</p></a>
+	</div>
+</nav>
+
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'on-the-t-com';
+    var disqus_identifier = '\/2016\/10\/22\/aoleaderboard-backhand-speed\/';
+    var disqus_title = 'AO Leaderboard\x26mdash; Backhand Speeds';
+    var disqus_url = '\/2016\/10\/22\/aoleaderboard-backhand-speed\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</div>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="/" />
+	</form>
+</div>
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/contact/">Contact Information</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/french-open-2017/">French Open 2017</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/27/mens-clay-trends/">Clay Court Performance Trends of French Open Title Men&#39;s Top 4</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/22/top-contenders-french-open/">Return Leaders Among ATP&#39;s Top Contenders for French Open Title</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/21/top-contenders-french-open/">Serve Leaders Among ATP&#39;s Top Contenders for French Open Title</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/20/new-ranking-system/">WTA Tennis Rankings Aren&#39;t Working</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/15/clayray-2017/">Should We Be Surprised by Murray&#39;s 2017 Clay Performance So Far?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/07/official-bias/">Officials Are Human Too</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/04/29/murray-serve-volley/">Are Net Points Murray&#39;s Kryptonite?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/04/21/serena-return/">Can Serena Williams be a Champion and Mom?</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/articles">Articles</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/research">Research</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/software">Software</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/tennis-news">Tennis-News</a></li>
+		</ul>
+	</div>
+</div>
+	
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="/tags/data-science" title="data-science">data-science</a>
+		<a class="widget__link widget__link--taglist" href="/tags/media" title="media">media</a>
+		<a class="widget__link widget__link--taglist" href="/tags/programming" title="programming">programming</a>
+		<a class="widget__link widget__link--taglist" href="/tags/r" title="r">r</a>
+		<a class="widget__link widget__link--taglist" href="/tags/stories" title="stories">stories</a>
+	</div>
+</div>
+</aside>
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">&copy; 2017 Stats On the T. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+

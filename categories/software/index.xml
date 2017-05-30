@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Stats On the T</title>
+    <link>/categories/software/</link>
+    <description>Recent content in Software on Stats On the T</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Software</title>
+      <link>/post/software/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/post/software/</guid>
+      <description>Software for tennis data analysis.
+ deuce
+ Sports Analytics with R Tutorial
+  </description>
+    </item>
+    
+  </channel>
+</rss>
