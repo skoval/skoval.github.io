@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drafts on Stats On the T</title>
+    <link>/draft/</link>
+    <description>Recent content in Drafts on Stats On the T</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 Oct 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/draft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Future of Tennis Data&amp;mdash;A Conversation with Edoardo Salvati</title>
+      <link>/2015/10/31/conversation-with-edoardo-salvati/</link>
+      <pubDate>Sat, 31 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/10/31/conversation-with-edoardo-salvati/</guid>
+      <description>Earlier this week, FiveThirtyEight writer Oliver Roeder published an article entitled &amp;ldquo;Can An Astrophysicist Change The Way We Watch Sports?&amp;rdquo; The piece documents the efforts of Matt Ginsberg (the astrophysicist in question) to develop a system for real-time predictions of shot-making for the NBA and, at the same time, raises a number of broad questions about the future of advanced analytics in sports and sports broadcasting. One of the questions that most intrigued me is whether, as the title of the article suggests, any one person can &amp;ldquo;revolutionize&amp;rdquo; how we experience sports?</description>
+    </item>
+    
+    <item>
+      <title>Serena Williams’ Only Obstacle to a Calendar Slam is Herself</title>
+      <link>/2015/08/31/serena-williams-only-obstacle/</link>
+      <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/08/31/serena-williams-only-obstacle/</guid>
+      <description>After a 21-minute opening match at the US Open that ended with her opponent&amp;rsquo;s retirement, Serena Williams is now 6 victories from her first Calendar Slam and 22nd career major title, tying her with Steffi Graf for the woman with the most Slam titles in the Open Era. Williams comes to Flushing Methods with a season match record of 48 wins to 2 losses—a record so close to perfection that you couldn’t blame her if she strutted onto Arthur Ashe and talked trash on a changeover or two (young Aussies, take note).</description>
+    </item>
+    
+  </channel>
+</rss>
