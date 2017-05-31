@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tennis News on Stats On the T</title>
-    <link>/categories/tennis-news/</link>
+    <link>https://skoval.github.io/categories/tennis-news/</link>
     <description>Recent content in Tennis News on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/tennis-news/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://skoval.github.io/categories/tennis-news/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Features</title>
-      <link>/post/features/</link>
+      <link>https://skoval.github.io/post/features/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/features/</guid>
+      <guid>https://skoval.github.io/post/features/</guid>
       <description>Below is a selection of news features on my research.
  Preethi Ramamoorthy (05 May 2017), The Hindu: Tennis enters the matrix
  Greg Garber (04 Feb 2017), ESPN: Australian Open introduced new advanced statistical metrics

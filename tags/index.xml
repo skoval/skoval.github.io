@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Stats On the T</title>
-    <link>/tags/</link>
+    <link>https://skoval.github.io/tags/</link>
     <description>Recent content in Tags on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://skoval.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data Science</title>
-      <link>/tags/data-science/</link>
+      <link>https://skoval.github.io/tags/data-science/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/data-science/</guid>
+      <guid>https://skoval.github.io/tags/data-science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>/tags/programming/</link>
+      <link>https://skoval.github.io/tags/programming/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/programming/</guid>
+      <guid>https://skoval.github.io/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>https://skoval.github.io/tags/r/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>https://skoval.github.io/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Research</title>
-      <link>/tags/research/</link>
+      <link>https://skoval.github.io/tags/research/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/research/</guid>
+      <guid>https://skoval.github.io/tags/research/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sports Analytics</title>
-      <link>/tags/sports-analytics/</link>
+      <link>https://skoval.github.io/tags/sports-analytics/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/sports-analytics/</guid>
+      <guid>https://skoval.github.io/tags/sports-analytics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Stories</title>
-      <link>/tags/stories/</link>
+      <link>https://skoval.github.io/tags/stories/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/stories/</guid>
+      <guid>https://skoval.github.io/tags/stories/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tennis News</title>
-      <link>/tags/tennis-news/</link>
+      <link>https://skoval.github.io/tags/tennis-news/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/tags/tennis-news/</guid>
+      <guid>https://skoval.github.io/tags/tennis-news/</guid>
       <description></description>
     </item>
     
