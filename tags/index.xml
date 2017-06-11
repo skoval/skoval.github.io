@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Atp</title>
+      <link>https://skoval.github.io/tags/atp/</link>
+      <pubDate>Sun, 11 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/tags/atp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Data Science</title>
@@ -32,7 +41,7 @@
     <item>
       <title>French Open</title>
       <link>https://skoval.github.io/tags/french-open/</link>
-      <pubDate>Sat, 10 Jun 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 11 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/tags/french-open/</guid>
       <description></description>
@@ -41,7 +50,7 @@
     <item>
       <title>Leaderboards</title>
       <link>https://skoval.github.io/tags/leaderboards/</link>
-      <pubDate>Sat, 10 Jun 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 11 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/tags/leaderboards/</guid>
       <description></description>

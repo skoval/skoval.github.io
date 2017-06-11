@@ -6,9 +6,19 @@
     <description>Recent content in Categories on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 11 Jun 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Atp</title>
+      <link>https://skoval.github.io/categories/atp/</link>
+      <pubDate>Sun, 11 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/atp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Data Science</title>
@@ -31,7 +41,7 @@
     <item>
       <title>French Open</title>
       <link>https://skoval.github.io/categories/french-open/</link>
-      <pubDate>Sat, 10 Jun 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 11 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/categories/french-open/</guid>
       <description></description>
@@ -40,7 +50,7 @@
     <item>
       <title>Leaderboards</title>
       <link>https://skoval.github.io/categories/leaderboards/</link>
-      <pubDate>Sat, 10 Jun 2017 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 11 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/categories/leaderboards/</guid>
       <description></description>
