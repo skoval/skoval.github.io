@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Jul 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Atp</title>
       <link>https://skoval.github.io/tags/atp/</link>
-      <pubDate>Sun, 11 Jun 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/tags/atp/</guid>
       <description></description>
@@ -71,6 +71,15 @@
       <pubDate>Sun, 11 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/tags/leaderboards/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Leaders</title>
+      <link>https://skoval.github.io/tags/leaders/</link>
+      <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/tags/leaders/</guid>
       <description></description>
     </item>
     
@@ -143,6 +152,15 @@
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/tags/tennis-news/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wimbledon</title>
+      <link>https://skoval.github.io/tags/wimbledon/</link>
+      <pubDate>Mon, 03 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/tags/wimbledon/</guid>
       <description></description>
     </item>
     
