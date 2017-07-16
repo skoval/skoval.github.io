@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Measuring Match Dominance</title>
+<meta name="description" content="A blog that puts the numbers to tennis">
+<meta name="generator" content="Hugo 0.21" />
+<meta property="og:title" content="Measuring Match Dominance" />
+<meta property="og:description" content="In a few hours, Roger Federer will face Marin Cilic on Wimbledon&rsquo;s Centre Court where he will play for his 19th Grand Slam and 9th Wimbledon title.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2017/07/16/match-dominance/" />
+
+
+
+<meta property="article:published_time" content="2017-07-16T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-07-16T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
+<link rel="stylesheet" href="https://skoval.github.io/css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="https://skoval.github.io/js/scripts.js"></script>
+<link rel="shortcut icon" href="https://skoval.github.io/favicon.ico">
+</head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+                    <div style="float:right;">
+                        <img src="https://skoval.github.io/img/logo.png" width="70px">
+                    </div>
+                   	<a class="logo__link" href="https://skoval.github.io/" title="Stats On the T" rel="home">
+						<h1 class="logo__title">Stats On the T</h1>
+						<h2 class="logo__tagline">Dedicated to data, statistics, and tennis</h2>
+                        
+					</a>
+				</div>
+			</div>
+			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<ul class="menu__list">
+		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/contact/">CONTACT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/features/">FEATURES</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/research/">RESEARCH</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
+	</ul>
+</nav>
+		</header>
+		<div class="wrapper clearfix">
+
+
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">Measuring Match Dominance</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2017-07-16T00:00:00">July 16, 2017</time>
+				<span class="post__meta-categories meta-categories">
+					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+					<a class="meta-categories__link" href="/categories/grand-slams" rel="category">Grand Slams</a>, <a class="meta-categories__link" href="/categories/dominance" rel="category">dominance</a></span>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+
+
+
+
+
+			<p>In a few hours, Roger Federer will face Marin Cilic on Wimbledon&rsquo;s Centre Court where he will play for his 19th Grand Slam and 9th Wimbledon title.</p>
+
+<p></p>
+
+<p>If Federer wins in straights, he will also have reached those records without dropping a set, following up Rafael Nadal&rsquo;s set-perfect win at the French Open.</p>
+
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:394px;float:right;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com.au/detail/814475260" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:66.666667% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/814475260?et=Alr1r6rPQC1rh7cGhHwHSA&tld=com.au&viewMoreLink=off&sig=51y3ELEwUfbcHS7JBiLbDBUgAJy_OoPu67jXYlxdmAI=&caption=true" width="594" height="396" scrolling="no" frameborder="0" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;" ></iframe></div><p style="margin:0;"></p></div>
+
+<p>The slam performances of Federer and Nadal this year have stirred up a lot of talk about <em>dominance</em>. But set wins are only one part of dominance. Federer, for example, has played five tiebreaks and had one opponent retire so far at Wimbledon. Nadal at the French Open also had one opponent retire but in his other matches he lost no more than 4 games in any single set. This would suggest that Nadal&rsquo;s performance has been the more dominant of the two.</p>
+
+<p>Comparisons like these show us that tennis needs a better way of measuring <em>match dominance</em>. What are some options?</p>
+
+<p>Aside from sets and games won, break points converted is a common stat that commentators will use to assess the superior match performance. This makes a lot of sense since break points are some of the <a href="http://www.tandfonline.com/doi/abs/10.1080/02701367.2001.10608942">most important points</a> in a match and often critical to the match win.</p>
+
+<p>A related measure <a href="https://fivethirtyeight.com/features/an-oddity-of-tennis-scoring-makes-its-annual-appearance-at-wimbledon/">introduced by Carl Bialik</a> is the <em>dominance ratio</em>. This ratio is equal to the percentage of return points won over the opponent&rsquo;s return points won. Unlike break point conversion, the percentage of return points won considers overall performance when receiving, which has a high positive correlation with break point conversion.</p>
+
+<p>I like both of these measures but when it comes to measuring dominance there are drawbacks with each. Break point conversion ignores performance in tiebreaks&mdash;another way sets are won in close contests&mdash; and would especially disadavantage big servers like John Isner and Ivo Karlovic. Also, when on the percentage scale, break point conversion conflates dominance with efficiency (a player can have the higher break point count but be very inefficient in getting there, consider Jelena Ostapenko&rsquo;s <a href="http://www.wimbledon.com/en_GB/scores/stats/2221ms.html">Wimbledon match</a> vs Francoise Abanda).</p>
+
+<p>While break point conversion possibly ignores some important points, the dominance ratio includes all return points and doesn&rsquo;t consider the variable importance of points on return.</p>
+
+<p>After some time thinking of how to combine the strengths of break point conversion and the dominance ratio, I&rsquo;ve landed on <em>break point plus</em> (BP+ for short). Break point plus measures the dominance of a player&rsquo;s performance by taking the total break points won and a weighted total of the minibreaks won in tiebreaks. This total is then subtracted by same total of the opponent. The weighted total of minibreaks accounts for the fact that minibreaks early in the tiebreak, before the players have gotten to a game-deciding stage, have approximately half the importance for winning the game as a regular game break point.</p>
+
+<p>In a <a href="https://www.degruyter.com/view/j/jqas.2016.12.issue-1/jqas-2015-0057/jqas-2015-0057.xml">previous research study</a>, I showed that relative break points won was the most strongly associated with match wins (actually, the association closely parallels the Pythagorean expectation in baseball). But BP+ does even better. Using a dataset of men&rsquo;s Grand Slam matches from 2011 to the present, the association between BP+ and match wins reduced the residual deviance in a logistic model fit by 85% compared to a model with break points alone.</p>
+
+<h2 id="big-4-slam-dominance">Big 4 Slam Dominance</h2>
+
+<p>One of the ways we can use BP+ is for measuring the overall dominance of performances at an event. The chart below looks at the Big 4 for all of the slams played in 2017 (excluding the as-yet-to-be-played final at Wimbledon).</p>
+
+<p>When we look at the cumulative BP+ by round, the first thing that jumps out is the staggering performance of Rafael Nadal at this year&rsquo;s French Open. After the final, Nadal had a BP+ of 36, that is an average of 6 more breaks or decisive minibreaks than his opponent&rsquo;s per match (considering the retirement of Carreno Busta).</p>
+
+<iframe width="700" height="500" frameborder="0" scrolling="no" src="//plot.ly/~on-the-t/1408.embed"></iframe>
+
+<p>Both Djokovic and Murray improved their performances at the French Open compared to the Australian Open, but each eventually faltered. At Wimbledon, Murray and Djokovic looked on track to improve on their French Open performances but both were stopped by injury.</p>
+
+<p>Roger Federer, the favorite for the Wimbledon title, seemed to make the right choice in skipping the clay court season. He has attained a cumulative BP+ of 18.5, corresponding to an average of 3.7 BP+ per match. This is slightly less than his level at the Australian Open where he was at +4 per match going into the final against Nadal.</p>
+
+<h2 id="big-4-slam-efficiency">Big 4 Slam efficiency</h2>
+
+<p>I mentioned before that looking at point conversion out of opportunities is a way to measure efficiency. Focusing on the most critical points of the match, we can see how efficient the Big 4 have been in 2017 in their matches at the Majors.</p>
+
+<p>From the chart below, you can see that players often are the most efficient in the first week where matches tend to have less pressure overall. This is somewhat less true at the French Open, the slowest surface among the slams.</p>
+
+<iframe width="700" height="500" frameborder="0" scrolling="no" src="//plot.ly/~on-the-t/1410.embed"></iframe>
+
+<p>Federer has notoriously been called out for a lack of efficiency (remember the 4 for 23 break points won at the 2015 US Open). But this year he seems to have turned things around. Federer was on par with Nadal&rsquo;s efficiency at the Australian Open, and even exceeded Nadal in 5 of 7 rounds. His efficiency is somewhat down at Wimbledon compared to the Australian Open, reaching a low of 32% in his last match against Tomas Berdych. He had a 44% efficiency rate going in to the Australian Open versus Nadal, which could give some added confidence to Marin Cilic.</p>
+
+<p>BP+ is a new way of measuring player dominance and the rate of BP+ conversion gets directly at player efficiency on the most critical points. I really like this stat and think it gives a simple yet comprehensive measure of the impressiveness of a win. Sadly, this stat can&rsquo;t be derived from conventional aggregated match stats. It requires point-by-point data which, although readily available for most tour matches in the past five years or so, is harder to come by for older matches.</p>
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.73135 3.3795002q0-.5597-.39604-.9557-.39604-.3961-.95577-.3961-.55974 0-.95578.3961-.39604.396-.39604.9557 0 .5598.39604.9558.39604.3961.95578.3961.55973 0 .95577-.3961.39604-.396.39604-.9558zm11.26865 6.0832q0 .5596998-.39076.9504998l-5.18548 5.196q-.41188.3908-.9610504.3908-.55974 0-.9505-.3908l-7.5511496-7.5616998q-.40132-.3907-.68119-1.0666-.27987-.6759-.27987-1.2357v-4.3934q0-.54920004.40132-.95050004.40132-.4013.9505-.4013h4.39339q.55974 0 1.23565.2799.67591.2798 1.07723.6812l7.55115 7.54060004q.39076.4118.39076.961z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link" href="/tags/grand-slams/" rel="tag">Grand Slams</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/dominance/" rel="tag">dominance</a></li>
+	</ul>
+</div>
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="https://skoval.github.io/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Tennis Data Scientist at the Game Insight Group at Tennis Australia and researcher at the Institute of Sport Exercise and Active Living at Victoria University.
+	</div>
+</div>
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="https://skoval.github.io/2017/07/09/wimbledon-r16-leaders/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Wimbledon R16 Leaders</p></a>
+	</div>
+</nav>
+
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'on-the-t-com';
+    var disqus_identifier = 'https:\/\/skoval.github.io\/2017\/07\/16\/match-dominance\/';
+    var disqus_title = 'Measuring Match Dominance';
+    var disqus_url = 'https:\/\/skoval.github.io\/2017\/07\/16\/match-dominance\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</div>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://skoval.github.io/" />
+	</form>
+</div>
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/2017/07/16/match-dominance/">Measuring Match Dominance</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/07/09/wimbledon-r16-leaders/">Wimbledon R16 Leaders</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/07/03/grass-leaders/">Men&#39;s Serve and Return Grass Leaders</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/07/03/womens-grass-leaders/">Women&#39;s Serve and Return Grass Leaders</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/06/27/serena-defense/">Why Serena Williams Isn&#39;t the 700th Player By Any Measure</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/06/18/wta-elo-epochs/">The 2017 WTA Season Looking A Lot Like Early 2003</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/06/11/french-open-atp-leaders/">French Open ATP Leaders</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/06/10/french-open-wta-leaders/">French Open WTA Leaders</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/06/03/womens-seeds-french-open/">Rethinking Women&#39;s French Open Seedings</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/05/27/mens-clay-trends/">Clay Court Performance Trends of French Open Title Men&#39;s Top 4</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/atp">Atp</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/data-science">Data-Science</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/dominance">Dominance</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/elo">Elo</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/epochs">Epochs</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/french-open">French-Open</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender-bias">Gender-Bias</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grand-slams">Grand-Slams</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaderboards">Leaderboards</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaders">Leaders</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/programming">Programming</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/r">R</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/research">Research</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeds">Seeds</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena-williams">Serena-Williams</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sports-analytics">Sports-Analytics</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/stories">Stories</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/tennis-news">Tennis-News</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wimbledon">Wimbledon</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wta">Wta</a></li>
+		</ul>
+	</div>
+</div>
+	
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/atp" title="atp">atp</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/data-science" title="data-science">data-science</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/dominance" title="dominance">dominance</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/elo" title="elo">elo</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/epochs" title="epochs">epochs</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/french-open" title="french-open">french-open</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender-bias" title="gender-bias">gender-bias</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grand-slams" title="grand-slams">grand-slams</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaderboards" title="leaderboards">leaderboards</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaders" title="leaders">leaders</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/programming" title="programming">programming</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/r" title="r">r</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/research" title="research">research</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeds" title="seeds">seeds</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena-williams" title="serena-williams">serena-williams</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sports-analytics" title="sports-analytics">sports-analytics</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/stories" title="stories">stories</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/tennis-news" title="tennis-news">tennis-news</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wimbledon" title="wimbledon">wimbledon</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wta" title="wta">wta</a>
+	</div>
+</div>
+</aside>
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">&copy; 2017 Stats On the T. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+
