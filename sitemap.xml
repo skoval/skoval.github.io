@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://skoval.github.io/2017/07/22/wimbledon-surprise/</loc>
+    <lastmod>2017-07-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2017/07/16/match-dominance/</loc>
     <lastmod>2017-07-16T00:00:00+00:00</lastmod>
   </url>
@@ -694,13 +699,13 @@
   
   <url>
     <loc>https://skoval.github.io/tags/grand-slams/</loc>
-    <lastmod>2017-07-16T00:00:00+00:00</lastmod>
+    <lastmod>2017-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/grand-slams/</loc>
-    <lastmod>2017-07-16T00:00:00+00:00</lastmod>
+    <lastmod>2017-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -718,19 +723,19 @@
   
   <url>
     <loc>https://skoval.github.io/tags/leaders/</loc>
-    <lastmod>2017-07-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/leaders/</loc>
-    <lastmod>2017-07-09T00:00:00+00:00</lastmod>
+    <lastmod>2017-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/post/</loc>
-    <lastmod>2017-07-16T00:00:00+00:00</lastmod>
+    <lastmod>2017-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -808,7 +813,7 @@
   
   <url>
     <loc>https://skoval.github.io/</loc>
-    <lastmod>2017-07-16T00:00:00+00:00</lastmod>
+    <lastmod>2017-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -821,6 +826,18 @@
   <url>
     <loc>https://skoval.github.io/categories/stories/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/tags/surprise/</loc>
+    <lastmod>2017-07-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/surprise/</loc>
+    <lastmod>2017-07-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
