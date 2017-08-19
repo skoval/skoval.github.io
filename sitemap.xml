@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://skoval.github.io/2017/08/19/next-gen-bp-plus/</loc>
+    <lastmod>2017-08-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2017/08/11/tournament-strength/</loc>
     <lastmod>2017-08-11T00:00:00+00:00</lastmod>
   </url>
@@ -756,8 +761,20 @@
   </url>
   
   <url>
+    <loc>https://skoval.github.io/tags/next-gen/</loc>
+    <lastmod>2017-08-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/next-gen/</loc>
+    <lastmod>2017-08-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/post/</loc>
-    <lastmod>2017-08-11T00:00:00+00:00</lastmod>
+    <lastmod>2017-08-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -859,7 +876,7 @@
   
   <url>
     <loc>https://skoval.github.io/</loc>
-    <lastmod>2017-08-11T00:00:00+00:00</lastmod>
+    <lastmod>2017-08-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -877,13 +894,13 @@
   
   <url>
     <loc>https://skoval.github.io/tags/strength/</loc>
-    <lastmod>2017-08-11T00:00:00+00:00</lastmod>
+    <lastmod>2017-08-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/strength/</loc>
-    <lastmod>2017-08-11T00:00:00+00:00</lastmod>
+    <lastmod>2017-08-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
