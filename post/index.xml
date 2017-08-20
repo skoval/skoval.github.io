@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Aug 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Most Surprising Runs in Men&#39;s Open Era</title>
+      <link>https://skoval.github.io/2017/08/20/most-surprising-runs/</link>
+      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2017/08/20/most-surprising-runs/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;In this guest post, &lt;a href=&#34;https://twitter.com/Xenophar&#34;&gt;Martin Ingram&lt;/a&gt; explores the stats behind surprising runs in tennis.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Match Dominance Among Next Gen</title>
@@ -1302,6 +1313,16 @@ Twitter: @StatsOnTheT</description>
       <description>&lt;p&gt;After a 21-minute opening match at the US Open that ended with her opponent&amp;rsquo;s retirement, Serena Williams is now 6 victories from her first Calendar Slam and 22nd career major title, tying her with Steffi Graf for the woman with the most Slam titles in the Open Era. Williams comes to Flushing Methods with a season match record of 48 wins to 2 losses—a record so close to perfection that you couldn’t blame her if she strutted onto Arthur Ashe and talked trash on a changeover or two (young Aussies, take note). But don’t expect Williams to rock swag until the Open trophy is sitting securely in her hands. As much as the wins keep coming, the queen of the court’s confidence has been in a perplexing slump.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://skoval.github.io/post/the-most-surprising-runs-ever/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/post/the-most-surprising-runs-ever/</guid>
+      <description>The most surprising runs of all time on the ATP Denis Shapovalov surprised the tennis world in Montreal by reaching the semi finals in stunning fashion, beating Del Potro and Nadal back-to-back. This made me wonder: was this one of the most surprising runs ever in tennis?
+To try to answer this question, I look at the likelihood of players&amp;rsquo; runs under Elo. The likelihood is simply the probabilities of multiple events multiplied together.</description>
     </item>
     
   </channel>

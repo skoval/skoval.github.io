@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Most Surprising Runs in Men&#39;s Open Era</title>
+<meta name="description" content="A blog that puts the numbers to tennis">
+<meta name="generator" content="Hugo 0.21" />
+<meta property="og:title" content="Most Surprising Runs in Men&#39;s Open Era" />
+<meta property="og:description" content="In this guest post, Martin Ingram explores the stats behind surprising runs in tennis.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2017/08/20/most-surprising-runs/" />
+
+
+
+<meta property="article:published_time" content="2017-08-20T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-08-20T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
+<link rel="stylesheet" href="https://skoval.github.io/css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="https://skoval.github.io/js/scripts.js"></script>
+<link rel="shortcut icon" href="https://skoval.github.io/favicon.ico">
+</head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+                    <div style="float:right;">
+                        <img src="https://skoval.github.io/img/logo.png" width="70px">
+                    </div>
+                   	<a class="logo__link" href="https://skoval.github.io/" title="Stats On the T" rel="home">
+						<h1 class="logo__title">Stats On the T</h1>
+						<h2 class="logo__tagline">Dedicated to data, statistics, and tennis</h2>
+                        
+					</a>
+				</div>
+			</div>
+			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<ul class="menu__list">
+		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/contact/">CONTACT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/features/">FEATURES</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/research/">RESEARCH</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
+	</ul>
+</nav>
+		</header>
+		<div class="wrapper clearfix">
+
+
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">Most Surprising Runs in Men&#39;s Open Era</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2017-08-20T00:00:00">August 20, 2017</time>
+				<span class="post__meta-categories meta-categories">
+					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+					<a class="meta-categories__link" href="/categories/surprising" rel="category">surprising</a>, <a class="meta-categories__link" href="/categories/next-gen" rel="category">next gen</a></span>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+
+
+
+
+
+			<p><strong>In this guest post, <a href="https://twitter.com/Xenophar">Martin Ingram</a> explores the stats behind surprising runs in tennis.</strong></p>
+
+<p></p>
+
+<div style="float:left;padding:2%;">
+<img src="/img/shapovalov_thumbnail.png" width=200 />
+</div>
+
+<p>Denis Shapovalov, one of the ATP Next Gen, surprised the tennis world in Montreal by reaching the semifinals in stunning fashion, beating Juan Martin Del Potro and Rafael Nadal back-to-back. This made me wonder: was this one of the most surprising runs ever in tennis?</p>
+
+<p>To try to answer this question, I look at the <em>likelihood</em> of players&rsquo; runs under Elo. The likelihood is simply the probabilities of multiple events multiplied together. For example, the likelihood of rolling three sixes in a row for a fair die is $\frac{1}{6} \times \frac{1}{6} \times \frac{1}{6} \approx 0.005$. The smaller the likelihood, the more surprising the string of events.</p>
+
+<p>To apply this to tennis, I multiply the win probabilities implied by player Elo ratings during a win streak. The likelihood reduces as runs get longer and when individual wins in a run are more surprising.</p>
+
+<h2 id="top-10-most-surprising-runs-on-the-atp">Top 10 most surprising runs on the ATP</h2>
+
+<p>Before ranking the most surprising runs, I apply the following criteria:</p>
+
+<ol>
+<li><p>At least one match must have been played in a Masters or Grand Slam tournament. I decided to add this criterion as it is unclear whether upsets in less important tournaments should count for as much as those in big events.</p></li>
+
+<li><p>Davis Cup and Olympic matches are excluded.</p></li>
+
+<li><p>Retirements and walk-overs are excluded.</p></li>
+</ol>
+
+<p>Without further ado, here are the top 10 most unlikely runs of all time:</p>
+
+<ol>
+<li><strong>Thomas Muster, 1995</strong>: Thomas Muster won 35 matches in a row in 1995, including the French Open as well as the Monte Carlo and Rome Masters. He beat quality players, making the likelihood of his run just 0.000002. This was Muster&rsquo;s peak and his only French Open title.</li>
+<li><strong>John Marks, 1979</strong>: John Marks reached the final of the Australian Open in 1979, beating Arthur Ashe, among others. This streak was only 4 matches long, but since Marks started with a terrible Elo of only 1337, his run made it all the way to number 2 with a likelihood of 0.000012.</li>
+<li><strong>Goran Ivanisevic, 2001</strong>: Goran&rsquo;s famous run to win his Wimbledon title comes in at number 3. He won 9 matches in a row, beating, among others, Safin, Rafter, Roddick, and Henman, before losing in the round of 16 in Cincinnati. Likelihood: 0.000038.</li>
+<li><strong>Thomas Enqvist, 1993</strong>: Enqvist won the Schenectady tournament in 1993, beating Lendl, before upsetting Agassi in the first round of the US Open and only losing to Sampras in the round of 16. He started out with an Elo of just 1643, making this the fourth most surprising run. Likelihood: 0.000053</li>
+<li><strong>Alex O&rsquo;Brien, 1996</strong>: O&rsquo;Brien won New Haven and reached the quarter finals of the Canadian Masters. He beat players including Kafelnikov and Philippoussis on the way, winning 9 matches in a row. Likelihood: 0.000053</li>
+<li><strong>Novak Djokovic, 2011</strong>: Novak&rsquo;s famous run comes in at number 6. He won 38 matches in a row, beating Federer three times and Nadal four times in a row. Even though Novak was already rated highly by Elo at the start of his run (2236), this amazing run had a likelihood of just 0.000055.</li>
+<li><strong>Vladimir Voltchkov, 2000</strong>: Vladimir Voltchkov reached the semifinals of Wimbledon in 2000, starting with an Elo of just 1499. According to his <a href="https://en.wikipedia.org/wiki/Vladimir_Voltchkov">Wikipedia page</a>, his run was inspired by watching the film Gladiator four times, leading the British press to call him &ldquo;The Vladiator&rdquo; and making him a personal favourite. Likelihood: 0.000065.</li>
+<li><strong>Jerzy Janowicz, 2012</strong>: Janowicz reached the finals of the Paris Masters in 2012. Starting at an Elo of just 1594, he beat Kohlschreiber, Cilic, Murray and Simon, losing only to Ferrer. Likelihood: 0.000107.</li>
+<li><strong>Marat Safin, 2000</strong>: Safin went on a 12-match winning streak in 2000, winning Barcelona and Mallorca before losing in the round of 32 at the Rome Masters. Likelihood: 0.000107.</li>
+<li><strong>Guillermo Vilas, 1977</strong>: Vilas had an incredible 73-match winning streak in 1977, winning 12 tournaments in a row. It ranks at only 10 overall, however, as he was expected to win many of the matches he played. Likelihood: 0.000120</li>
+</ol>
+
+<h2 id="putting-shapovalov-s-run-into-perspective">Putting Shapovalov&rsquo;s run into perspective</h2>
+
+<p>Shapovalov&rsquo;s run had a likelihood of 0.00046. Overall, this puts him at number 32 of the most surprising runs of all time. This is impressive in and of itself, but his run is even more astonishing given that he had only played 8 matches on the ATP tour up to that point.</p>
+
+<p>If we consider only runs by players with fewer than 30 career matches, Shapovalov makes the top 10, coming in at number 7. Only Voltchkov (Wimbledon 2000), Janowicz (Paris 2012), Popp (Wimbledon 2000), Andrews (French Open 1975), Vines (Paris 1982), and Kyrgios (Wimbledon 2014) had more surprising runs this early in their career. One final fun fact: had Shapovalov beaten Zverev, his run would have been number 6 all time. But even without that win, Shapovalov&rsquo;s rise is one of the steepest ever, making him a player to watch in the future.</p>
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.73135 3.3795002q0-.5597-.39604-.9557-.39604-.3961-.95577-.3961-.55974 0-.95578.3961-.39604.396-.39604.9557 0 .5598.39604.9558.39604.3961.95578.3961.55973 0 .95577-.3961.39604-.396.39604-.9558zm11.26865 6.0832q0 .5596998-.39076.9504998l-5.18548 5.196q-.41188.3908-.9610504.3908-.55974 0-.9505-.3908l-7.5511496-7.5616998q-.40132-.3907-.68119-1.0666-.27987-.6759-.27987-1.2357v-4.3934q0-.54920004.40132-.95050004.40132-.4013.9505-.4013h4.39339q.55974 0 1.23565.2799.67591.2798 1.07723.6812l7.55115 7.54060004q.39076.4118.39076.961z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link" href="/tags/surprising/" rel="tag">surprising</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/next-gen/" rel="tag">next gen</a></li>
+	</ul>
+</div>
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="https://skoval.github.io/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Tennis Data Scientist at the Game Insight Group at Tennis Australia and researcher at the Institute of Sport Exercise and Active Living at Victoria University.
+	</div>
+</div>
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="https://skoval.github.io/2017/08/19/next-gen-bp-plus/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Match Dominance Among Next Gen</p></a>
+	</div>
+</nav>
+
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'on-the-t-com';
+    var disqus_identifier = 'https:\/\/skoval.github.io\/2017\/08\/20\/most-surprising-runs\/';
+    var disqus_title = 'Most Surprising Runs in Men\x27s Open Era';
+    var disqus_url = 'https:\/\/skoval.github.io\/2017\/08\/20\/most-surprising-runs\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</div>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://skoval.github.io/" />
+	</form>
+</div>
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/2017/08/20/most-surprising-runs/">Most Surprising Runs in Men&#39;s Open Era</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/08/19/next-gen-bp-plus/">Match Dominance Among Next Gen</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/08/11/tournament-strength/">Sizing Up Tournament Strength and Depth</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/07/28/federer-2017/">Is 2017 Federer that Different than 2015 Federer?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/07/22/wimbledon-surprise/">Most Surprising at Wimbledon 2017</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/07/16/match-dominance/">Measuring Match Dominance</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/07/09/wimbledon-r16-leaders/">Wimbledon R16 Leaders</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/07/03/grass-leaders/">Men&#39;s Serve and Return Grass Leaders</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/07/03/womens-grass-leaders/">Women&#39;s Serve and Return Grass Leaders</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2017/06/27/serena-defense/">Why Serena Williams Isn&#39;t the 700th Player By Any Measure</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/atp">Atp</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/data-science">Data-Science</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/depth">Depth</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/dominance">Dominance</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/elo">Elo</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/epochs">Epochs</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/french-open">French-Open</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender-bias">Gender-Bias</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grand-slams">Grand-Slams</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaderboards">Leaderboards</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaders">Leaders</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/next-gen">Next-Gen</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/programming">Programming</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/r">R</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/research">Research</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/roger-federer">Roger-Federer</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/season">Season</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeds">Seeds</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena-williams">Serena-Williams</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sports-analytics">Sports-Analytics</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/stories">Stories</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/strength">Strength</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprise">Surprise</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprising">Surprising</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/tennis-news">Tennis-News</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wimbledon">Wimbledon</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wta">Wta</a></li>
+		</ul>
+	</div>
+</div>
+	
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/atp" title="atp">atp</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/data-science" title="data-science">data-science</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/depth" title="depth">depth</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/dominance" title="dominance">dominance</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/elo" title="elo">elo</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/epochs" title="epochs">epochs</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/french-open" title="french-open">french-open</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender-bias" title="gender-bias">gender-bias</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grand-slams" title="grand-slams">grand-slams</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaderboards" title="leaderboards">leaderboards</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaders" title="leaders">leaders</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/next-gen" title="next-gen">next-gen</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/programming" title="programming">programming</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/r" title="r">r</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/research" title="research">research</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/roger-federer" title="roger-federer">roger-federer</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/season" title="season">season</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeds" title="seeds">seeds</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena-williams" title="serena-williams">serena-williams</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sports-analytics" title="sports-analytics">sports-analytics</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/stories" title="stories">stories</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/strength" title="strength">strength</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprise" title="surprise">surprise</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprising" title="surprising">surprising</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/tennis-news" title="tennis-news">tennis-news</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wimbledon" title="wimbledon">wimbledon</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wta" title="wta">wta</a>
+	</div>
+</div>
+</aside>
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">&copy; 2017 Stats On the T. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+
