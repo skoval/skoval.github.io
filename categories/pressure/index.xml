@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pressure on Stats On the T</title>
+    <link>https://skoval.github.io/categories/pressure/</link>
+    <description>Recent content in Pressure on Stats On the T</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://skoval.github.io/categories/pressure/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Assessing Scoreboard Effects</title>
+      <link>https://skoval.github.io/2017/10/06/scoreboard-effects/</link>
+      <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2017/10/06/scoreboard-effects/</guid>
+      <description>&lt;p&gt;Do the numbers on the scoreboard affect how a player performs? In this post, we look at how to measure scoreboard effects and identify some top players who appear vulnerable and others who seem impervious to the scoreboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
