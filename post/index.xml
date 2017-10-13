@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Measuring Match Fatigue</title>
+      <link>https://skoval.github.io/2017/10/13/fatigue-effects/</link>
+      <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2017/10/13/fatigue-effects/</guid>
+      <description>&lt;p&gt;A talk at the recent New England Symposium on Statistics in Sport (NESSIS) made me wonder whether we can observe player fatigue in tennis matches? and how?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Assessing Scoreboard Effects</title>
