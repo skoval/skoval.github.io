@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://skoval.github.io/2017/10/27/shot-quality-maps/</loc>
+    <lastmod>2017-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2017/10/20/cumulative-fatigue-effects/</loc>
     <lastmod>2017-10-20T00:00:00+00:00</lastmod>
   </url>
@@ -859,7 +864,19 @@
   
   <url>
     <loc>https://skoval.github.io/post/</loc>
-    <lastmod>2017-10-20T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/tags/prediction/</loc>
+    <lastmod>2017-10-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/prediction/</loc>
+    <lastmod>2017-10-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -884,6 +901,18 @@
   <url>
     <loc>https://skoval.github.io/categories/programming/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/tags/quality/</loc>
+    <lastmod>2017-10-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/quality/</loc>
+    <lastmod>2017-10-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -997,7 +1026,7 @@
   
   <url>
     <loc>https://skoval.github.io/</loc>
-    <lastmod>2017-10-20T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
