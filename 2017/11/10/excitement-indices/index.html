@@ -3,17 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leaderboards</title>
+<title>The Many Sides of Excitement</title>
 <meta name="description" content="A blog that puts the numbers to tennis">
 <meta name="generator" content="Hugo 0.21" />
-<meta property="og:title" content="Leaderboards" />
-<meta property="og:description" content="A blog that puts the numbers to tennis" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://skoval.github.io/tags/leaderboards/" />
+<meta property="og:title" content="The Many Sides of Excitement" />
+<meta property="og:description" content="Having a metric for match excitement would be a useful tool for separating humdrum matches from thrillers. In this post, I have a look at two indices for measuring match excitement and discuss what&rsquo;s to like and dislike about each.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2017/11/10/excitement-indices/" />
 
 
 
-<meta property="og:updated_time" content="2017-06-11T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2017-11-10T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-11-10T00:00:00&#43;00:00"/>
+
 
 
 
@@ -25,7 +29,7 @@
 
 
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-<link rel="alternate" type="application/rss+xml" title="Stats On the T Feed" href="https://skoval.github.io/tags/leaderboards/index.xml">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
 <link rel="stylesheet" href="https://skoval.github.io/css/style.css" type="text/css" media="all" />
 <script type="text/javascript" src="https://skoval.github.io/js/scripts.js"></script>
@@ -59,64 +63,105 @@
 		<div class="wrapper clearfix">
 
 
-	<div class="main-content list content" role="main">
-		<header class="page-header">
-			<h1 class="page-header__title">Leaderboards</h1>
-		</header>
-		<div class="page-content">
-			
-		</div>
-				<article class="list__item post clearfix">
-	<figure class="list__thumbnail" style="float:left;">
-		<a href="https://skoval.github.io/2017/06/11/french-open-atp-leaders/">
-			<img src="https://skoval.github.io/img/wawrinka_thumbnail.png" alt="French Open ATP Leaders" />
-		</a>
-	</figure>
-	<div class="list__content clearfix">
-		<header class="list__header">
-			<h3 class="list__title post__title ">
-				<a href="https://skoval.github.io/2017/06/11/french-open-atp-leaders/" rel="bookmark">French Open ATP Leaders</a>
-			</h3>
-			<div class="list__meta meta">
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">The Many Sides of Excitement</h1>
+			<p class="post__meta meta">
 				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-				<time class="list__meta-date" datetime="2017-06-11T00:00:00">June 11, 2017</time>
-			</div>
+				<time class="post__meta-date" datetime="2017-11-10T00:00:00">November 10, 2017</time>
+				<span class="post__meta-categories meta-categories">
+					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+					<a class="meta-categories__link" href="/categories/excitement" rel="category">excitement</a>, <a class="meta-categories__link" href="/categories/importance" rel="category">importance</a></span>
+			</p>
 		</header>
-		<div class="list__excerpt">
-			<p>After one shocking title winner took the ladies&rsquo; crown on Saturday at the French Open, the tennis world is abuzz with speculation about whether Stan Wawrinka will be able to deny Rafael Nadal a tenth title when they meet in the men&rsquo;s final this afternoon?</p>
+		<div class="post__content clearfix">
+
+
+
+
+
+			<p>Having a metric for match excitement would be a useful tool for separating humdrum matches from thrillers. In this post, I have a look at two indices for measuring match excitement and discuss what&rsquo;s to like and dislike about each.</p>
 
 <p></p>
+
+<p>In <a href="http://on-the-t.com/2017/11/03/us-open-excitement/">last week&rsquo;s post</a>, I introduced a new statistic for measuring match excitement, called the cumulative probability change (CPC). This measure was inspired by the cWPA used in major league baseball. The CPC looks at how much change there is in a player&rsquo;s match win chances from one point to the next and takes the total sum of these changes to measure the overall excitement of the match.</p>
+
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:296px;float:left;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com.au/detail/846510350" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:150% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/846510350?et=qtkOyeQuRgdcuDWZ49Bhbw&tld=com.au&sig=nDw1DOYhuz0x6FBphnDWf726FBF03qrHzNEz8jO9vi4=&caption=true&ver=1" scrolling="no" frameborder="0" width="396" height="594" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+
+<p>As I mentioned last week, there is also the <a href="http://www.tennisabstract.com/blog/2011/09/19/quantifying-comebacks-and-excitement-with-win-probability/">Excitement Index (EI)</a>. In contrast to the CPC, this stat looks at the average importance of points, where the &ldquo;importance&rdquo; is defined as the expected change in a player&rsquo;s match win chances if they were to win the current point versus if they were to lose the current point.</p>
+
+<p><strong>So what is the difference between these two indices? And why might we prefer one over the other?</strong></p>
+
+<p>One way to get at this is to consider what it takes to make each index <i>big</i>. Because the CPC is a sum across points, it will be large for longer matches and, among long matches, it will be even bigger when there have been multiple reversals in who is favored to win, creating larger point to point jumps in win expectations.</p>
+
+<p>The EI, on the other hand, is an average so it could be large for short and long matches. What drives it up is when there is high potential for a reversal on many of the points in a match. The &ldquo;potential&rdquo; here is a really key point because, by focusing on importance, it only looks at the ability of any one point to create a big match swing but not whether it actually did.</p>
+
+<p>We can see these distinctions more clearly with a real example. Below is the chart of the men&rsquo;s 2017 US Open matches (excluding matches ending in retirements) with the CPC on the y-axis and the EI on the x-axis. You can see that there is a strong relationship between the two, actually when the CPC is raised to 0.4 (as I&rsquo;ve done in the below) the relationship is approximately linear.</p>
+
+<iframe width="700" height="600" frameborder="0" scrolling="no" src="//plot.ly/~on-the-t/1476.embed"></iframe>
+
+<p>Still, the correlation is not perfect so each index is telling us different things. And this means that if we were to use each to come up with rankings for exciting matches, we would get different answers.</p>
+
+<p>I&rsquo;ve highlighted several matches where the disagreement between the two indices is extreme. They are all cases where the CPC is moderate while the EI for the match is quite high. All of the highlighted 4 matches were in the top 20 most exciting matches at the US Open according to the EI. In fact, the EI ranks the Coric-Veseley match 3rd most exciting overall!</p>
+
+<p>From the scorelines of these matches, we can see that 3 of the 4 were all three set matches with multiple tiebreaks. Thus, the matches were close but the eventual winner was always in the advantageous position with respect to the set scoreline. Despite this, these matches have a high average importance because of the evenness of the match and the chance that it could have reversed course at any point even though it never did.</p>
+
+<p>None of the matches appear in the top 20 according to the CPC index. The reason being that they were not particularly long and there weren&rsquo;t any major reversals in the player that had the upperhand.</p>
+
+<p>The two indices of excitement we&rsquo;ve discussed will be in agreement much of the time. But when they do differ the difference can be considerable. Which prefer ultimately comes down to whether the anticipation of a reversal of fortune is more thrilling than it&rsquo;s realization.</p>
+
+<p>The data and code for this post can be found <a href="https://github.com/skoval/sports-blog/tree/master/R">here</a>.</p>
 		</div>
-	</div>
-</article>
-
-				<article class="list__item post clearfix">
-	<figure class="list__thumbnail" style="float:left;">
-		<a href="https://skoval.github.io/2017/06/10/french-open-wta-leaders/">
-			<img src="https://skoval.github.io/img/ostapenko_thumbnail.png" alt="French Open WTA Leaders" />
-		</a>
-	</figure>
-	<div class="list__content clearfix">
-		<header class="list__header">
-			<h3 class="list__title post__title ">
-				<a href="https://skoval.github.io/2017/06/10/french-open-wta-leaders/" rel="bookmark">French Open WTA Leaders</a>
-			</h3>
-			<div class="list__meta meta">
-				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-				<time class="list__meta-date" datetime="2017-06-10T00:00:00">June 10, 2017</time>
-			</div>
-		</header>
-		<div class="list__excerpt">
-			<p>We are just hours away from the women&rsquo;s final at the 2017 French Open. After 126 matches, 25 year-old Simona Halep and 20 year-old Jelena Ostapenko are the last women&rsquo;s players remaining. And, whatever the outcome on Saturday in Paris, the women&rsquo;s tour will see a new French Open champion and new Grand Slam title-holder crowned.</p>
-
-<p></p>
-		</div>
-	</div>
-</article>
-
-
 		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.73135 3.3795002q0-.5597-.39604-.9557-.39604-.3961-.95577-.3961-.55974 0-.95578.3961-.39604.396-.39604.9557 0 .5598.39604.9558.39604.3961.95578.3961.55973 0 .95577-.3961.39604-.396.39604-.9558zm11.26865 6.0832q0 .5596998-.39076.9504998l-5.18548 5.196q-.41188.3908-.9610504.3908-.55974 0-.9505-.3908l-7.5511496-7.5616998q-.40132-.3907-.68119-1.0666-.27987-.6759-.27987-1.2357v-4.3934q0-.54920004.40132-.95050004.40132-.4013.9505-.4013h4.39339q.55974 0 1.23565.2799.67591.2798 1.07723.6812l7.55115 7.54060004q.39076.4118.39076.961z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link" href="/tags/excitement/" rel="tag">excitement</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/importance/" rel="tag">importance</a></li>
+	</ul>
+</div>
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="https://skoval.github.io/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
 	</div>
+	<div class="authorbox__description">
+		Tennis Data Scientist at the Game Insight Group at Tennis Australia and researcher at the Institute of Sport Exercise and Active Living at Victoria University.
+	</div>
+</div>
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="https://skoval.github.io/2017/11/03/us-open-excitement/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">A Stat for Excitement and What It Reveals About the Best Men&#39;s Matches at the 2017 US Open</p></a>
+	</div>
+</nav>
+
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'on-the-t-com';
+    var disqus_identifier = 'https:\/\/skoval.github.io\/2017\/11\/10\/excitement-indices\/';
+    var disqus_title = 'The Many Sides of Excitement';
+    var disqus_url = 'https:\/\/skoval.github.io\/2017\/11\/10\/excitement-indices\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</div>
 
 <aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
 	
@@ -296,3 +341,15 @@ ga('send', 'pageview');
 
 </body>
 </html>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+
