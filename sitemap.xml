@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://skoval.github.io/2017/11/18/elo-serve-return/</loc>
+    <lastmod>2017-11-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2017/11/10/excitement-indices/</loc>
     <lastmod>2017-11-10T00:00:00+00:00</lastmod>
   </url>
@@ -754,13 +759,13 @@
   
   <url>
     <loc>https://skoval.github.io/tags/elo/</loc>
-    <lastmod>2017-09-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/elo/</loc>
-    <lastmod>2017-09-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -898,7 +903,7 @@
   
   <url>
     <loc>https://skoval.github.io/post/</loc>
-    <lastmod>2017-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -959,6 +964,18 @@
   <url>
     <loc>https://skoval.github.io/categories/r/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/tags/ratings/</loc>
+    <lastmod>2017-11-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/ratings/</loc>
+    <lastmod>2017-11-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1060,7 +1077,7 @@
   
   <url>
     <loc>https://skoval.github.io/</loc>
-    <lastmod>2017-11-10T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

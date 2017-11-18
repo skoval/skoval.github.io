@@ -6,10 +6,21 @@
     <description>Recent content in Elo on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/tags/elo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Serve and Return Elo Ratings</title>
+      <link>https://skoval.github.io/2017/11/18/elo-serve-return/</link>
+      <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2017/11/18/elo-serve-return/</guid>
+      <description>&lt;p&gt;The Elo rating system is one of the most popular tools for rating player and team performance. The standard version used in tennis rates players based on wins and losses. In this post, I show how we can take the Elo system beyond match wins and use it to rate players on the two most fundamental skills in the sport: serving and returning.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>The 2016 US Open Men Would Smash 2017</title>
