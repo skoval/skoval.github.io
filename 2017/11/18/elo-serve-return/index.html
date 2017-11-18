@@ -95,17 +95,17 @@
 
 <h2 id="tennis-elo-ratings">Tennis Elo Ratings</h2>
 
-<p>When you see tennis Elo ratings on places like this blog, the tennis abstract, or fivethirtyeight the rating you will see is based on match wins and losses. In other words, how much your rating is adjusted up or down depends only on 1) your opponent and 2) whether you won or lost.</p>
+<p>When you see tennis Elo ratings on places like this blog, the <a href="http://tennisabstract.com/reports/atp_elo_ratings.html">Tennis Abstract</a>, or <a href="https://fivethirtyeight.com/tag/elo-ratings/">FiveThirtyEight</a> the rating you will see is based on match wins and losses. In other words, how much your rating is adjusted up or down depends only on 1) your opponent and 2) whether you won or lost.</p>
 
 <p>Yet we know that the skills that go into those wins can look very different from one player to the next. Just consider the contrast between current 24th ranked Milos Raonic and 26th ranked Diego Schwartzman. Despite being of comparable rank, the skill sets of these two could be more different. Raonic&rsquo;s talents are strongest on his serve while Schwartzman shines most brightly on the return.</p>
 
 <p>Imbalance in serve and return skills isn&rsquo;t unusual in the sport. But without rating these skills separately, it is hard to really understand how well a player is performing on each of these crucial dimensions and how those skills might be changing over time.</p>
 
-<p>Which leads us to the obvious conclusion: the sport needs serve and return Elo ratings.</p>
+<p><strong>Which leads us to the obvious conclusion: the sport needs serve and return Elo ratings.</strong></p>
 
-<p>There are many ways one could go about develop Elo ratings for serve and return. In what follows, I am going to describe an approach that seems like a reasonable starting point to me.</p>
+<p>There are many ways one could go about developing Elo ratings for serve and return. In what follows, I am going to describe an approach that seems like a reasonable starting point to me.</p>
 
-<p>The basic ideas is to use each point played as information about the serve ability of the server and the return ability of the receiver. Let&rsquo;s suppose our player of interest, indexed by <code>$i$</code>, has just completed their <code>n</code>th point on serve. To update their serve Elo rating, <code>Serve_{i,n}</code>, the following update rule is used:</p>
+<p>The basic idea is to use each point played as information about the serve ability of the server and the return ability of the receiver. Let&rsquo;s suppose our player of interest, indexed by <code>$i$</code>, has just completed their <code>$n$</code>th point on serve. To update their serve Elo rating, <code>$Serve_{i,n}$</code>, the following update rule is used:</p>
 
 <p><code>$
 Serve_{i,n} = Serve_{i,n-1} + K * (S_{n} - \hat{S}_{n})
@@ -119,7 +119,7 @@ $</code></p>
 Return_{i,n} = Return_{i,n-1} + K * (\hat{S}_{n} - S_{n}) 
 $</code></p>
 
-<p>When choosing <code>$K$</code> it is typical to search over a range of values to find the level that does the best at predicting the outcome of interest, in this case point outcomes. I&rsquo;ve found that <code>$K = 2$</code> performs well.</p>
+<p>When choosing <code>$K$</code> it is typical to search over a range of values to find the level that does the best at predicting the outcome of interest, in this case point outcomes. I&rsquo;ve found that <code>$K = 2$</code> performs well. With this value of <code>$K$</code>, a player can gain (or lose) at most 2 points on the outcome of any single point.</p>
 
 <p>The last decision is what initial values to use for the ratings when a player&rsquo;s first point is observed. Although 1500 is typical, it wouldn&rsquo;t make sense to rate a player&rsquo;s serve and return equally, since we know that most players are better when serving. Instead, I start players with a serve rating of 1500 and return rating of 1400, which implies an average serve win expectation of 64%.</p>
 
@@ -129,7 +129,7 @@ $</code></p>
 
 <h2 id="serve-elo-ratings">Serve Elo Ratings</h2>
 
-<p>The chart below show the serve Elo ratings for each finalist during the 2017 season thru the US Open. The first point is the player&rsquo;s first tour-level point played in 2017 and the last point is their last point played at the last Grand Slam of the year. To highlight different periods of the season, I&rsquo;ve used separate colors for points played at Majors, Masters, and other tournaments. As a helpful reference, the horizontal line shows the average serve Elo ratings in 2017 among these 9 players.</p>
+<p>The chart below show the serve Elo ratings for each finalist during the 2017 season thru the US Open. The first point is the player&rsquo;s first tour-level point played in 2017 and the last point is their last played at the final Grand Slam of the year. To highlight different periods of the season, I&rsquo;ve used separate colors for points played at Majors, Masters, and other tournaments. As a helpful reference, the horizontal line shows the average serve Elo ratings in 2017 among these 9 players.</p>
 
 <iframe width="700" height="500" frameborder="0" scrolling="no" src="//plot.ly/~on-the-t/1478.embed"></iframe>
 
@@ -141,7 +141,7 @@ $</code></p>
 
 <h2 id="return-elo-ratings">Return Elo Ratings</h2>
 
-<p>When we look at the corresponding trajectories for return ability, we see some interesting things. Of the group, Roger Federer&rsquo;s ability has been one of the most stable throughout the group, while Carreno Busta was one of the more improved players on return by the end of the US Open.</p>
+<p>When we look at the corresponding trajectories for return ability, we see some interesting things. Of the group, Roger Federer&rsquo;s ability has been one of the most stable throughout the year, while Carreno Busta was one of the more improved players on return by the end of the US Open.</p>
 
 <iframe width="700" height="500" frameborder="0" scrolling="no" src="//plot.ly/~on-the-t/1480.embed"></iframe>
 
