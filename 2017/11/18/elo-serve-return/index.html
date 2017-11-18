@@ -7,7 +7,7 @@
 <meta name="description" content="A blog that puts the numbers to tennis">
 <meta name="generator" content="Hugo 0.21" />
 <meta property="og:title" content="Serve and Return Elo Ratings" />
-<meta property="og:description" content="The Elo rating system is one of the most popular tools for rating player and team performance. The standard version used in tennis rates players based on wins and losses. In this post, I show how we can take the Elo system beyond match wins and use it to rate players on the two most fundamental skills in the sport: serving and returning.
+<meta property="og:description" content="The Elo rating system is one of the most popular tools for rating player and team performance. In this post, I show how we can take the Elo system beyond match wins and use it to rate players on the two most fundamental skills in the sport: serving and returning.
 
 " />
 <meta property="og:type" content="article" />
@@ -81,17 +81,19 @@
 
 
 
-			<p>The Elo rating system is one of the most popular tools for rating player and team performance. The standard version used in tennis rates players based on wins and losses. In this post, I show how we can take the Elo system beyond match wins and use it to rate players on the two most fundamental skills in the sport: serving and returning.</p>
+			<p>The Elo rating system is one of the most popular tools for rating player and team performance. In this post, I show how we can take the Elo system beyond match wins and use it to rate players on the two most fundamental skills in the sport: serving and returning.</p>
 
 <p></p>
 
-<p>Ways of rating tennis players are numerous. Most of these ways come out in GOAT debates, where some will prefer Grand Slam titles, others win percentage, others consecutive weeks at number 1, and so on. The stat savvy tend to prefer Elo ratings, a system that, although still fairly new in tennis is one of the most popular rating systems in sport.</p>
+<p>Ways of rating tennis players are numerous. You can find most of these ways in <a href="https://www.nytimes.com/2017/11/11/sports/tennis/greatest-mens-tennis-player-indoors.html">GOAT debates</a>, where some will prefer Grand Slam titles, others win percentage, others consecutive weeks at number 1, and so on. The stat savvy tend to prefer Elo ratings, a system that, although still fairly new in tennis is one of the most <a href="https://en.wikipedia.org/wiki/Elo_rating_system">popular rating systems</a> in sport.</p>
 
 <div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:394px;float:right;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com/detail/872376754" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:66.66667% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/872376754?et=_6Xg-P0mSmJKoOPIZFDPGA&tld=com&sig=EyKOek-WyM_21uuBtoEUV-git7m-70HiG3x_bErx9Tk=&caption=true&ver=1" scrolling="no" frameborder="0" width="594" height="396" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
 
-<p>Elo ratings have a gotten a lot of attention on this blog for multiple ratings. When it comes to judging player ability, tennis Elo ratings are known to outperform official rankings. Also, Elo ratings and other paired comparison systems share the distinct strength of accounting for opponent difficulty when judging the impressiveness of results.</p>
+<p>Elo ratings have gotten <a href="http://on-the-t.com/2017/09/16/slam-strength-decline/">a lot of attention</a> on this blog for multiple reasons. When it comes to judging player ability, tennis Elo ratings are known to outperform official rankings. Also, Elo ratings and other paired comparison systems share the distinct strength of accounting for opponent difficulty when judging the impressiveness of results.</p>
 
 <p>I could go on about the virtues of Elo ratings but in this post I actually want to talk about one of it&rsquo;s shortcomings. Actually, it isn&rsquo;t so much a shortcoming of the system but more a shortcoming in how it has usually been implemented.</p>
+
+<h2 id="tennis-elo-ratings">Tennis Elo Ratings</h2>
 
 <p>When you see tennis Elo ratings on places like this blog, the tennis abstract, or fivethirtyeight the rating you will see is based on match wins and losses. In other words, how much your rating is adjusted up or down depends only on 1) your opponent and 2) whether you won or lost.</p>
 

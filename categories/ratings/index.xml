@@ -17,7 +17,7 @@
       <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2017/11/18/elo-serve-return/</guid>
-      <description>&lt;p&gt;The Elo rating system is one of the most popular tools for rating player and team performance. The standard version used in tennis rates players based on wins and losses. In this post, I show how we can take the Elo system beyond match wins and use it to rate players on the two most fundamental skills in the sport: serving and returning.&lt;/p&gt;
+      <description>&lt;p&gt;The Elo rating system is one of the most popular tools for rating player and team performance. In this post, I show how we can take the Elo system beyond match wins and use it to rate players on the two most fundamental skills in the sport: serving and returning.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
