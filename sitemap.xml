@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://skoval.github.io/2017/12/09/serve-return-wta-2017/</loc>
+    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2017/12/02/serve-return-2017/</loc>
     <lastmod>2017-12-02T00:00:00+00:00</lastmod>
   </url>
@@ -715,13 +720,13 @@
   
   <url>
     <loc>https://skoval.github.io/tags/best/</loc>
-    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/best/</loc>
-    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -925,7 +930,7 @@
   
   <url>
     <loc>https://skoval.github.io/post/</loc>
-    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1015,13 +1020,13 @@
   
   <url>
     <loc>https://skoval.github.io/tags/return/</loc>
-    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/return/</loc>
-    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1099,13 +1104,13 @@
   
   <url>
     <loc>https://skoval.github.io/tags/serve/</loc>
-    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/serve/</loc>
-    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1123,7 +1128,7 @@
   
   <url>
     <loc>https://skoval.github.io/</loc>
-    <lastmod>2017-12-02T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
