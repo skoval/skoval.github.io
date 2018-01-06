@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://skoval.github.io/2018/01/06/game-age/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2017/12/16/serve-return-surface-2017/</loc>
     <lastmod>2017-12-16T00:00:00+00:00</lastmod>
   </url>
@@ -754,6 +759,18 @@
   </url>
   
   <url>
+    <loc>https://skoval.github.io/categories/demand/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/tags/demand/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/categories/depth/</loc>
     <lastmod>2017-08-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -850,6 +867,18 @@
   </url>
   
   <url>
+    <loc>https://skoval.github.io/categories/game-age/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/tags/game-age/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/categories/gaps/</loc>
     <lastmod>2017-08-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -935,7 +964,7 @@
   
   <url>
     <loc>https://skoval.github.io/post/</loc>
-    <lastmod>2017-12-16T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1048,6 +1077,18 @@
   </url>
   
   <url>
+    <loc>https://skoval.github.io/categories/scheduling/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/tags/scheduling/</loc>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/categories/scoreboard/</loc>
     <lastmod>2017-10-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1133,7 +1174,7 @@
   
   <url>
     <loc>https://skoval.github.io/</loc>
-    <lastmod>2017-12-16T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
