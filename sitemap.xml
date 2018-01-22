@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://skoval.github.io/2018/01/22/quick-comebacks/</loc>
+    <lastmod>2018-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2018/01/12/ao-mens-draw/</loc>
     <lastmod>2018-01-12T00:00:00+00:00</lastmod>
   </url>
@@ -757,6 +762,18 @@
   </url>
   
   <url>
+    <loc>https://skoval.github.io/tags/comeback/</loc>
+    <lastmod>2018-01-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/comeback/</loc>
+    <lastmod>2018-01-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/tags/data-science/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -945,6 +962,18 @@
   <url>
     <loc>https://skoval.github.io/categories/importance/</loc>
     <lastmod>2017-11-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/tags/injury/</loc>
+    <lastmod>2018-01-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/injury/</loc>
+    <lastmod>2018-01-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
