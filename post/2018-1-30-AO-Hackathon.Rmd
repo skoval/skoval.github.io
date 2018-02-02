@@ -1,0 +1,96 @@
+---
+comments: true
+date: 2018-01-30T00:00:00Z
+title: AO to AI Hackathon Winners Announced
+categories: ['hackathon', 'data science',]
+tags:  ['hackathon', 'data science',]
+url: /2018/01/30/AO-Hackathon/
+thumbnail: "/img/sobel.png"
+---
+
+As Roger Federer was crowned with his 20th Grand Slam title this week at the 2018 Australian Open, the winners of the first AO to AI Hackathon competition were being decided. In this post, I take a look at the winning models and discuss what they mean for the future of point outcome calls in tennis.
+
+<!--more-->
+
+
+At the start of the year, as Alex De Minaur was just beginning a glorious pre-AO run that would captivate Australian tennis fans, the Game Insight Group at Tennis Australia launched a tennis competition of their own. This one wouldn't involve racquets or sweat on the court. No, it was a competition all about brain power and computing wizardry&mdash;a first-ever hackathon for tennis.
+
+
+<div style="float:right; padding:2%;">
+<img src="/img/sobel.png" width=300 />
+Source: Speed and point outcome analysis from Scott Sobel model report
+</div>
+
+
+The AO to AI Hackathon, hosted by crowdAnalytix, was the first data science competition for the sport of tennis. Starting on Jan 2, competitors from all over the world were given tracking data from over 10,000 points from matches at the Australian Open to try solve one specific question: build an algorithm to automate how winners, forced errors, and unforced errors are called.
+
+Not only did the competition give talented data scientists a chance to push the envelope of what machine-learning could do for the sport. It was also the first example of the public release of a large amount of tracking data, which provides positional information about the ball and players throughout a tennis match.
+
+After 3 weeks of competition, the winning models of the hackathon have been determined. But before we get into the top solutions, let's take a closer look at who competed.
+
+## Hackathon Snapshot
+
+A total of 750 joined the competition and combined submitted 2,731 solutions. There were 55 countries represented across the participants. With a total of 223 participants, India was the most represented country by far. In second most represented country was the United States with 78 and Australia was in third with a total of 51 competitors.
+
+<div style="text-align: center;">
+<img src="/img/hackathon_map.png" width=500 />
+</div>
+
+
+90% of competitors competed as individuals. The two most popular languages for submitted solutions were written in R or python, R having a slight edge in popularity. 
+
+
+## Hackathon Winners
+
+The final prize winners were selected based on their performance on an out-of-sample test set and the quality of a submitted report describing their methodological approach. The out-of-sample test set was not available to the competitors, which protects against overfitting and provides the most realistic assessment of how the methods would perform in the real-world.
+
+After assessing the top 5 submissions, the top prize was awarded to Scott Sobel. Sobel, an American data scientist, was able to achieve an overall accuracy of 95% (98% for winners, 89% for forced errors, and 95% for unforced errors). In other words, the automated approach Sobel has built would be expected to agree with court statisticians for 95 of every 100 point outcomes.
+
+Interestingly, several features of the winning solution were common to the top winners. Here were the major commonalities:
+
+- Combining men's and women's data for greater power
+- Extensive feature engineering
+- Boosting 
+
+Feature engineering was particularly extensive in the Sobel model, with more than 1,000 additional features derived from the supplied set of variables. The five features that added the most to the predictive accuracy are shown in the table below. Intriguingly, four of the five involve comparisons of the the final shot net clearance with information about the shot's landing location. In the model report, Sobel stated that the ratio of net clearance to shot depth 'is a strong indicator between winners and unforced errors in particular' and he found a threshold for this ratio that strongly differentiated between these two outcome types. 
+
+The only feature of the top for that did not involve net clearance was the interaction of the shot speed and previous shot's time-to-the-net, both temporally focused variables. Sobel's analysis found that shots with the highest combined speed and time-to-net (indicating more prep time for the final shot) were more likely to be winners, while shots on the lowest end of the distribution for this feature were most likely to be forced errors. 
+
+
+<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead><tr>
+<th style="text-align:center;"> Feature </th>
+<th style="text-align:center;"> Accuracy Gain </th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:center;"> Ratio of Net Clearance to Depth </td>
+<td style="text-align:center;"> 4.9% </td>
+</tr>
+<tr>
+<td style="text-align:center;"> Net Clearance times Depth </td>
+<td style="text-align:center;"> 4.5% </td>
+</tr>
+<tr>
+<td style="text-align:center;"> Speed times Previous Shot's Time-to-net </td>
+<td style="text-align:center;"> 3.2% </td>
+</tr>
+<tr>
+<td style="text-align:center;"> Ratio of Depth to Net Clearance </td>
+<td style="text-align:center;"> 3.1% </td>
+</tr>
+<tr>
+<td style="text-align:center;"> Ratio of Net Clearance to Sideline Distance </td>
+<td style="text-align:center;"> 3.0% </td>
+</tr>
+</tbody>
+</table>
+
+The model implementation was done in R and used the xgboost method, an approach used by 3 of the 5 top models. 
+
+## Future Use
+
+The AO to AI hackathon has resulted in a high-quality tool that could be the first major step toward automating point call in tennis. It also shows us the potential value of data in tennis and what amazing things can result when spots data is opened up to tennis aficionados with a gift for data analysis. 
+
+
+
