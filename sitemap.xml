@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://skoval.github.io/2018/02/19/ao-hackathon/</loc>
+    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2018/02/02/slam-seeding-changes/</loc>
     <lastmod>2018-02-02T00:00:00+00:00</lastmod>
   </url>
@@ -785,13 +790,13 @@
   
   <url>
     <loc>https://skoval.github.io/tags/data-science/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/data-science/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -964,6 +969,18 @@
   </url>
   
   <url>
+    <loc>https://skoval.github.io/tags/hackathon/</loc>
+    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/hackathon/</loc>
+    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/tags/importance/</loc>
     <lastmod>2017-11-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1049,7 +1066,7 @@
   
   <url>
     <loc>https://skoval.github.io/post/</loc>
-    <lastmod>2018-02-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1271,7 +1288,7 @@
   
   <url>
     <loc>https://skoval.github.io/</loc>
-    <lastmod>2018-02-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
