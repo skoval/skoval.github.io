@@ -6,10 +6,28 @@
     <description>Recent content in Research on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/categories/research/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Research Highlights from 2018 MIT Sloan Analytics Conference</title>
+      <link>https://skoval.github.io/2018/02/23/ssac-2018/</link>
+      <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2018/02/23/ssac-2018/</guid>
+      <description>&lt;style&gt;
+.table-striped&gt;tbody&gt;tr:nth-child(odd)&gt;td, 
+.table-striped&gt;tbody&gt;tr:nth-child(odd)&gt;th {
+background-color: #cee454; // Choose your own color here
+}
+&lt;/style&gt;
+
+&lt;p&gt;This week the MIT Sloan Analytics Conference will showcase some of the cutting-edge research happening in sports statistics. What do the themes from this year suggest about the state-of-the-art in quantitative work in sport?&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Research</title>
