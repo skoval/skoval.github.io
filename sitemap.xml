@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://skoval.github.io/2018/03/21/miami-2018/</loc>
+    <lastmod>2018-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2018/03/16/satrday-capetown/</loc>
     <lastmod>2018-03-18T00:00:00+00:00</lastmod>
   </url>
@@ -1068,6 +1073,18 @@
   </url>
   
   <url>
+    <loc>https://skoval.github.io/tags/masters/</loc>
+    <lastmod>2018-03-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/masters/</loc>
+    <lastmod>2018-03-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/tags/momentum/</loc>
     <lastmod>2018-01-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1093,7 +1110,7 @@
   
   <url>
     <loc>https://skoval.github.io/post/</loc>
-    <lastmod>2018-03-18T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1106,6 +1123,18 @@
   <url>
     <loc>https://skoval.github.io/categories/prediction/</loc>
     <lastmod>2017-10-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/tags/predictions/</loc>
+    <lastmod>2018-03-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/predictions/</loc>
+    <lastmod>2018-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1327,7 +1356,7 @@
   
   <url>
     <loc>https://skoval.github.io/</loc>
-    <lastmod>2018-03-18T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
