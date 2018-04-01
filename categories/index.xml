@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Backhand</title>
+      <link>https://skoval.github.io/categories/backhand/</link>
+      <pubDate>Sun, 01 Apr 2018 12:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/backhand/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Best</title>
       <link>https://skoval.github.io/categories/best/</link>
       <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
@@ -53,6 +62,15 @@
       <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/categories/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Del Potro</title>
+      <link>https://skoval.github.io/categories/del-potro/</link>
+      <pubDate>Sun, 01 Apr 2018 12:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/del-potro/</guid>
       <description></description>
     </item>
     
@@ -161,6 +179,15 @@
       <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/categories/gaps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gaussian Process</title>
+      <link>https://skoval.github.io/categories/gaussian-process/</link>
+      <pubDate>Sun, 01 Apr 2018 12:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/gaussian-process/</guid>
       <description></description>
     </item>
     
