@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://skoval.github.io/2018/04/25/nadal-clay-dominance/</loc>
+    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2018/04/14/nadal-2017-repeat/</loc>
     <lastmod>2018-04-14T00:00:00+00:00</lastmod>
   </url>
@@ -847,13 +852,13 @@
   
   <url>
     <loc>https://skoval.github.io/tags/clay/</loc>
-    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/clay/</loc>
-    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1182,6 +1187,18 @@
   </url>
   
   <url>
+    <loc>https://skoval.github.io/tags/nadal/</loc>
+    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/nadal/</loc>
+    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/tags/next-gen/</loc>
     <lastmod>2018-03-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1195,7 +1212,7 @@
   
   <url>
     <loc>https://skoval.github.io/post/</loc>
-    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1453,7 +1470,7 @@
   
   <url>
     <loc>https://skoval.github.io/</loc>
-    <lastmod>2018-04-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
