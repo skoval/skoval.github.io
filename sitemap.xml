@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://skoval.github.io/2018/05/18/zverev-evolution-clay/</loc>
+    <lastmod>2018-05-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2018/05/10/surprising-head-to-head-wta/</loc>
     <lastmod>2018-05-10T00:00:00+00:00</lastmod>
   </url>
@@ -867,13 +872,13 @@
   
   <url>
     <loc>https://skoval.github.io/tags/clay/</loc>
-    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/clay/</loc>
-    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1251,7 +1256,7 @@
   
   <url>
     <loc>https://skoval.github.io/post/</loc>
-    <lastmod>2018-05-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1509,7 +1514,7 @@
   
   <url>
     <loc>https://skoval.github.io/</loc>
-    <lastmod>2018-05-10T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1624,6 +1629,18 @@
   <url>
     <loc>https://skoval.github.io/categories/wta/</loc>
     <lastmod>2017-09-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/tags/zverev/</loc>
+    <lastmod>2018-05-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/zverev/</loc>
+    <lastmod>2018-05-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
