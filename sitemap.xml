@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>https://skoval.github.io/2018/06/22/wta-first-slam/</loc>
+    <lastmod>2018-06-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2018/06/05/freshness-factor/</loc>
     <lastmod>2018-06-05T00:00:00+00:00</lastmod>
   </url>
@@ -1074,6 +1079,18 @@
   </url>
   
   <url>
+    <loc>https://skoval.github.io/tags/first-slam/</loc>
+    <lastmod>2018-06-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/first-slam/</loc>
+    <lastmod>2018-06-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/tags/french-open/</loc>
     <lastmod>2018-06-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1693,13 +1710,13 @@
   
   <url>
     <loc>https://skoval.github.io/tags/wimbledon/</loc>
-    <lastmod>2017-07-09T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/wimbledon/</loc>
-    <lastmod>2017-07-09T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
