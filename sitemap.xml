@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://skoval.github.io/2018/06/29/federer-wimbledon/</loc>
+    <lastmod>2018-06-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2018/06/22/wta-first-slam/</loc>
     <lastmod>2018-06-22T00:00:00+00:00</lastmod>
   </url>
@@ -1079,6 +1084,18 @@
   </url>
   
   <url>
+    <loc>https://skoval.github.io/tags/federer/</loc>
+    <lastmod>2018-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/federer/</loc>
+    <lastmod>2018-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/tags/first-slam/</loc>
     <lastmod>2018-06-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1332,7 +1349,7 @@
   
   <url>
     <loc>https://skoval.github.io/post/</loc>
-    <lastmod>2018-06-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1602,7 +1619,7 @@
   
   <url>
     <loc>https://skoval.github.io/</loc>
-    <lastmod>2018-06-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1710,13 +1727,13 @@
   
   <url>
     <loc>https://skoval.github.io/tags/wimbledon/</loc>
-    <lastmod>2018-06-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/wimbledon/</loc>
-    <lastmod>2018-06-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
