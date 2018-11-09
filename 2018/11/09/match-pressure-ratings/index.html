@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Using Pressure Ratings to Rank Most Competitive Matches in 2018</title>
+<meta name="description" content="A blog that puts the numbers to tennis">
+<meta name="generator" content="Hugo 0.21" />
+<meta property="og:title" content="Using Pressure Ratings to Rank Most Competitive Matches in 2018" />
+<meta property="og:description" content="Last week&rsquo;s 252-point Paris Masters semifinal between Novak Djokovic and Roger Federer got many wondering whether it was the best match in their 47 match long rivalry. In this post, I introduce a pressure rating for sets and matches that can help to tell us to rate their relative competitiveness.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2018/11/09/match-pressure-ratings/" />
+
+
+
+<meta property="article:published_time" content="2018-11-09T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-11-09T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
+<link rel="stylesheet" href="https://skoval.github.io/css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="https://skoval.github.io/js/scripts.js"></script>
+<link rel="shortcut icon" href="https://skoval.github.io/favicon.ico">
+</head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+                    <div style="float:right;">
+                        <img src="https://skoval.github.io/img/logo.png" width="70px">
+                    </div>
+                   	<a class="logo__link" href="https://skoval.github.io/" title="Stats On the T" rel="home">
+						<h1 class="logo__title">Stats On the T</h1>
+						<h2 class="logo__tagline">Dedicated to data, statistics, and tennis</h2>
+                        
+					</a>
+				</div>
+			</div>
+			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<ul class="menu__list">
+		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/contact/">CONTACT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/features/">FEATURES</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/research/">RESEARCH</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
+	</ul>
+</nav>
+		</header>
+		<div class="wrapper clearfix">
+
+
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">Using Pressure Ratings to Rank Most Competitive Matches in 2018</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2018-11-09T00:00:00">November 09, 2018</time>
+				<span class="post__meta-categories meta-categories">
+					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+					<a class="meta-categories__link" href="/categories/pressure" rel="category">pressure</a>, <a class="meta-categories__link" href="/categories/ratings" rel="category">ratings</a></span>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+
+
+
+
+
+			<p>Last week&rsquo;s 252-point Paris Masters semifinal between Novak Djokovic and Roger Federer got many wondering whether it was the best match in their 47 match long rivalry. In this post, I introduce a pressure rating for sets and matches that can help to tell us to rate their relative competitiveness.</p>
+
+<p></p>
+
+<p>With the ATP Tour Finals just days away, it is approaching that time of year where we all start to reflect on the season. Soon we can expect to see lists of &lsquo;best ofs&rsquo; and takeaways for the year inundating our tennis feeds.</p>
+
+<p>Such wrap ups inevitably involve rating numerous aspects of the game. Biggest surprises, biggest comebacks, most improved, etc. In sport, assessments like these are usually based on opinion, which, like spats on twitter, can be fun at first but soon get frustrating because of all of the biases involved.</p>
+
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:394px;float:right;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com.au/detail/1056952130" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:77.27273% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/1056952130?et=mKkox50kQKRao2iVTmRHtA&tld=com.au&sig=otFtQMK-x3ij26K86rnhA47FPH5-S60o1R9GeuRqVSw=&caption=true&ver=1" scrolling="no" frameborder="0" width="594" height="459" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+
+<p>Statistical ratings offer a counter to opinion-based ratings. This counter isn&rsquo;t necessarily an improvement as any rating based on stats is only as useful as the quality of the data and the appropriateness of the assumptions that go into it. That being said, the main virtues of a statistical rating are its objectivity and fairness. An algorithm won&rsquo;t take takes and won&rsquo;t favour some data points (whether they be players, matches, etc.) over others.</p>
+
+<p>Anticipating that the latest round in the Djokovic-Federer rivalry will likely make some people&rsquo;s list of best matches of the year, I wondered how you might rate where this or any match in the season rated in terms of competitiveness? The most detailed data that we have on most matches played professionally are point outcomes. This suggests looking at the scoreline pressure throughout the match to measure how tight it was.</p>
+
+<p>Following this direction of though lead me to a <em>Pressure Rating</em>. The rating starts by assigning a pressure score to every point based on how much it could swing the outcome of the match. One way to think of this measure of pressure is to consider how much your bet on the match winner would change if the current point was lost by your pick. If it is the first point of the match, you wouldn&rsquo;t be likely to budge, but, if it was a point on serve in a first set tiebreak, you might think again.</p>
+
+<p>To judge how tough a match was, we could simply take the total pressure, but this would tend to favour really long matches where no player&rsquo;s serve is really threatened (think most matches played by John Isner). To help down-weigh the long but less exciting matches, I look at both the <em>mean</em> and total pressure to get an overall score. The actual pressure rating is on a 0 to 100 scale that can be read as a percentile of possible pressure scores.</p>
+
+<h2 id="match-pressure-ratings">Match Pressure Ratings</h2>
+
+<p>Let&rsquo;s consider what Pressure Ratings suggest about the most competitive matches of the season. Because pressure evolves differently for best-of-3 and best-of-5 matches I&rsquo;ll rate pressure relative to matches of the same format.</p>
+
+<p>Among men&rsquo;s Grand Slam matches, the top 5 according to their match Pressure Rating are shown in the table below. The top position goes to the Isner-Anderson slog in the Wimbledon semifinal, with a rating of 96.9, largely for the epic 5th set. The Isner-Anderson match was also the longest men&rsquo;s Grand Slam match in terms of points played this year, but the rankings in terms of total points and pressure differ for the rest of the list.</p>
+
+<p>The other Wimbledon semifinal played by Djokovic-Nadal also makes the top 5, which has to make a strong case for Wimbledon&rsquo;s 2018 semifinal being the most exciting of the year. Casual tennis fans would probably be unaware of the 3 other top battles in the group, though their Pressure Ratings make it clear that even lesser known players can produce some of the most fascinating scorelines in the sport.</p>
+
+<table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Match</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Event</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Round</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Score</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Pressure Rating</th>
+</tr>
+</thead>
+<tbody>
+<tr style='background-color: #99d4eb;'>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #99d4eb; text-align: center;'>Anderson K. - Isner J.</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #99d4eb; text-align: center;'>Wimbledon</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #99d4eb; text-align: center;'>SF</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #99d4eb; text-align: center;'>7-6, 6-7, 6-7, 6-4, 26-24</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #99d4eb; text-align: center;'>96.9</td>
+</tr>
+<tr style='background-color: #fcfcfc;'>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>Schwartzman D. - Lajovic D.</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>Australian Open</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>R128</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>2-6, 6-3, 5-7, 6-4, 11-9</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>96.2</td>
+</tr>
+<tr style='background-color: #99d4eb;'>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #99d4eb; text-align: center;'>Djokovic N. - Nadal R.</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #99d4eb; text-align: center;'>Wimbledon</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #99d4eb; text-align: center;'>SF</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #99d4eb; text-align: center;'>6-4, 3-6, 7-6, 3-6, 10-8</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #99d4eb; text-align: center;'>95.8</td>
+</tr>
+<tr style='background-color: #fcfcfc;'>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>Ruud C. - Halys Q.</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>Australian Open</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>R128</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>6-3, 3-6, 6-7, 7-5, 11-9</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>95.6</td>
+</tr>
+<tr style='background-color: #99d4eb;'>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #99d4eb; border-bottom: 2px solid grey; text-align: center;'>Karlovic I. - Sugita Y.</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #99d4eb; border-bottom: 2px solid grey; text-align: center;'>Australian Open</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #99d4eb; border-bottom: 2px solid grey; text-align: center;'>R64</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #99d4eb; border-bottom: 2px solid grey; text-align: center;'>7-6, 6-7, 7-5, 4-6, 12-10</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #99d4eb; border-bottom: 2px solid grey; text-align: center;'>94.9</td>
+</tr>
+</tbody>
+</table>
+
+<p>For men&rsquo;s best-of-3 matches in 2018, the matches that brought the most pressure were scattered throughout the season. For those who might have missed the first round of Indian Wells, the Copil-Polansky match would be worth going back to, as it gets the highest pressure ratings of the shorter match format and is the only in the top 5 that went to tiebreaks in every set.</p>
+
+<table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Match</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Event</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Round</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Score</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Pressure Rating</th>
+</tr>
+</thead>
+<tbody>
+<tr style='background-color: #85b5b3;'>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #85b5b3; text-align: center;'>Copil M. - Polansky P.</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #85b5b3; text-align: center;'>Indian Wells</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #85b5b3; text-align: center;'>R128</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #85b5b3; text-align: center;'>6-7, 7-6, 6-7</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #85b5b3; text-align: center;'>96.1</td>
+</tr>
+<tr style='background-color: #fcfcfc;'>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>Simon G. - Sousa P.</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>Estoril</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>R32</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>3-6, 6-4, 6-7</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>95.1</td>
+</tr>
+<tr style='background-color: #85b5b3;'>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #85b5b3; text-align: center;'>Ebden M. - Thiem D.</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #85b5b3; text-align: center;'>Shanghai</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #85b5b3; text-align: center;'>R32</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #85b5b3; text-align: center;'>6-4, 6-7, 7-6</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #85b5b3; text-align: center;'>95</td>
+</tr>
+<tr style='background-color: #fcfcfc;'>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>López F. - de Minaur A.</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>Paris</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>R64</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>6-7, 6-4, 7-6</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>95</td>
+</tr>
+<tr style='background-color: #85b5b3;'>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #85b5b3; border-bottom: 2px solid grey; text-align: center;'>Fucsovics M. - Wawrinka S.</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #85b5b3; border-bottom: 2px solid grey; text-align: center;'>Toronto</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #85b5b3; border-bottom: 2px solid grey; text-align: center;'>R32</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #85b5b3; border-bottom: 2px solid grey; text-align: center;'>6-1, 6-7, 6-7</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #85b5b3; border-bottom: 2px solid grey; text-align: center;'>95</td>
+</tr>
+</tbody>
+</table>
+
+<p>On the women&rsquo;s side, the match that takes the highest pressure rating in 2018 was the 48-game R32 match between Simona Halep and Lauren Davis at the Australian Open. This turns out to be the only Grand Slam match in the top 5 highest pressure, driven by its long advantage final set.</p>
+
+<table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Match</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Event</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Round</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Score</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Pressure Rating</th>
+</tr>
+</thead>
+<tbody>
+<tr style='background-color: #dacdd1;'>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #dacdd1; text-align: center;'>Halep S. - Davis L.</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #dacdd1; text-align: center;'>Australian Open</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #dacdd1; text-align: center;'>R32</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #dacdd1; text-align: center;'>4-6, 6-4, 15-13</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #dacdd1; text-align: center;'>96.9</td>
+</tr>
+<tr style='background-color: #fcfcfc;'>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>Rodina E. - Witthoeft C.</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>Gstaad</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>R32</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>6-7, 6-4, 7-6</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>96.6</td>
+</tr>
+<tr style='background-color: #dacdd1;'>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #dacdd1; text-align: center;'>Stollar F. - Vekic D.</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #dacdd1; text-align: center;'>Washington</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #dacdd1; text-align: center;'>R16</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #dacdd1; text-align: center;'>2-6, 6-3, 6-7</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #dacdd1; text-align: center;'>96.3</td>
+</tr>
+<tr style='background-color: #fcfcfc;'>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>Plíšková Kr. - Gavrilova D.</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>Tokyo</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>R32</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>6-7, 6-3, 6-7</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #fcfcfc; text-align: center;'>96.2</td>
+</tr>
+<tr style='background-color: #dacdd1;'>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #dacdd1; border-bottom: 2px solid grey; text-align: center;'>Pavlyuchenkova A. - Cibulková D.</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #dacdd1; border-bottom: 2px solid grey; text-align: center;'>Strasbourg</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #dacdd1; border-bottom: 2px solid grey; text-align: center;'>F</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #dacdd1; border-bottom: 2px solid grey; text-align: center;'>6-7, 7-6, 7-6</td>
+<td style='padding-left: 0%; padding-right:0%; padding-top: 2%;padding-bottom: 2%;width:40%; background-color: #dacdd1; border-bottom: 2px solid grey; text-align: center;'>95.6</td>
+</tr>
+</tbody>
+</table>
+
+<p>I think these examples show that Pressure Ratings can help to size up the competitiveness of matches in a way that considers both the length and point-to-point excitement of the match. The purpose of the ratings aren&rsquo;t to measure the actual quality of play, which would need more detailed data than point-level data provides. What it can tell us is, if we look purely at the scoreboard from point to point, how can we objectively rate the &lsquo;neck and neck&rsquo;-ness of matches against each other.</p>
+
+<p>Pressure Ratings don&rsquo;t have to be limited to matches either. The same idea can be easily extended to rate sets or even players. Lookout for examples of these extensions over the coming weeks.</p>
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.73135 3.3795002q0-.5597-.39604-.9557-.39604-.3961-.95577-.3961-.55974 0-.95578.3961-.39604.396-.39604.9557 0 .5598.39604.9558.39604.3961.95578.3961.55973 0 .95577-.3961.39604-.396.39604-.9558zm11.26865 6.0832q0 .5596998-.39076.9504998l-5.18548 5.196q-.41188.3908-.9610504.3908-.55974 0-.9505-.3908l-7.5511496-7.5616998q-.40132-.3907-.68119-1.0666-.27987-.6759-.27987-1.2357v-4.3934q0-.54920004.40132-.95050004.40132-.4013.9505-.4013h4.39339q.55974 0 1.23565.2799.67591.2798 1.07723.6812l7.55115 7.54060004q.39076.4118.39076.961z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link" href="/tags/pressure/" rel="tag">pressure</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/ratings/" rel="tag">ratings</a></li>
+	</ul>
+</div>
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="https://skoval.github.io/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Blog Founder, Senior Data Scientist at the Game Insight Group at Tennis Australia, and researcher at the Institute for Health and Sport at Victoria University.
+	</div>
+</div>
+<div class="authorbox clearfix">
+    <figure class="authorbox__avatar">
+        <img alt="Graeme Spence avatar" src="https://skoval.github.io/img/gs.jpeg" class="avatar" height="90" width="90">
+            </figure>
+    <div class="authorbox__header">
+        <span class="authorbox__name">About Graeme Spence</span>
+    </div>
+    <div class="authorbox__description">
+        Data Scientist in the Game Insight Group at Tennis Australia and researcher at the Institute for Health and Sport at Victoria University.
+    </div>
+    
+</div>
+
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="https://skoval.github.io/2018/11/02/djokovic-improving-2018/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Djokovic Regains No. 1 But His Climb in the Ratings Isn&#39;t Over</p></a>
+	</div>
+</nav>
+
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'on-the-t-com';
+    var disqus_identifier = 'https:\/\/skoval.github.io\/2018\/11\/09\/match-pressure-ratings\/';
+    var disqus_title = 'Using Pressure Ratings to Rank Most Competitive Matches in 2018';
+    var disqus_url = 'https:\/\/skoval.github.io\/2018\/11\/09\/match-pressure-ratings\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</div>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://skoval.github.io/" />
+	</form>
+</div>
+
+
+    
+<div class="widget-search widget">
+    <h4><a href="https://www.tennis24.com/">Live Tennis Scores</a></h4>
+</div>
+<div class="widget-search widget">
+    <h4><a href="https://www.flashscore.com/tennis/">Tennis Results</a></h4>
+</div>
+
+
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/2018/11/09/match-pressure-ratings/">Using Pressure Ratings to Rank Most Competitive Matches in 2018</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2018/11/02/djokovic-improving-2018/">Djokovic Regains No. 1 But His Climb in the Ratings Isn&#39;t Over</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2018/10/20/wta-finals-2018/">Getting to the 2018 WTA Finals--An Elo Story</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2018/10/14/elo-update/">Djokovic and Bertens, Two of the Most Improved Players in 2018</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2018/10/04/prize-money-opportunities/">Using Weekly Earnings Opportunity to Measure the Prize Money Gender Gap</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2018/09/19/laver-cup-preview/">Europe Readies to Defend Laver Cup Title</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2018/09/04/slam-disappointment/">Zverev&#39;s US Open Loss Puts Him Among Top 20 Most Disappointing Major Performances So Far</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2018/08/31/us-open-retirements/">2015 US Open Still The Most Brutal in Tennis History</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2018/08/26/plus-minus/">Plus-Minus Statistics for Tennis</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2018/08/18/teen-goat/">Who Is the Teen GOAT of Men&#39;s Tennis?</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/atp">Atp</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/backhand">Backhand</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/best">Best</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/breaking-through">Breaking-Through</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/clay">Clay</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/comeback">Comeback</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/cutch">Cutch</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/data-science">Data-Science</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/del-potro">Del-Potro</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/demand">Demand</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/depth">Depth</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/dominance">Dominance</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/draw">Draw</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/duration">Duration</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/elo">Elo</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/epochs">Epochs</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/excitement">Excitement</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/fatigue">Fatigue</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/federer">Federer</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/first-slam">First-Slam</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/french-open">French-Open</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/game-age">Game-Age</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gaps">Gaps</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gaussian-process">Gaussian-Process</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender">Gender</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender-bias">Gender-Bias</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/goat">Goat</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grand-slams">Grand-Slams</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grass">Grass</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/hackathon">Hackathon</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/head-to-head">Head-To-Head</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/head-to-heads">Head-To-Heads</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/importance">Importance</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/injury">Injury</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/laver-cup">Laver-Cup</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaderboards">Leaderboards</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaders">Leaders</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/luck">Luck</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/masters">Masters</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/momentum">Momentum</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/nadal">Nadal</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/next-gen">Next-Gen</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/novak">Novak</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/prediction">Prediction</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/predictions">Predictions</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/premiers">Premiers</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/pressure">Pressure</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/programming">Programming</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/quality">Quality</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/r">R</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/ratings">Ratings</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/research">Research</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/retirements">Retirements</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/return">Return</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/roger-federer">Roger-Federer</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/scheduling">Scheduling</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/scoreboard">Scoreboard</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/season">Season</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seasons">Seasons</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeding">Seeding</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeds">Seeds</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena">Serena</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena-williams">Serena-Williams</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serve">Serve</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sloan">Sloan</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sports-analytics">Sports-Analytics</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/stories">Stories</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/strength">Strength</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surface">Surface</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprise">Surprise</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprising">Surprising</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/suspended">Suspended</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/tennis-news">Tennis-News</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/us-open">Us-Open</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/weather">Weather</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wimbledon">Wimbledon</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wta">Wta</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/zverev">Zverev</a></li>
+		</ul>
+	</div>
+</div>
+	
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/atp" title="atp">atp</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/backhand" title="backhand">backhand</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/best" title="best">best</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/breaking-through" title="breaking-through">breaking-through</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/clay" title="clay">clay</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/comeback" title="comeback">comeback</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/cutch" title="cutch">cutch</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/data-science" title="data-science">data-science</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/del-potro" title="del-potro">del-potro</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/demand" title="demand">demand</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/depth" title="depth">depth</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/dominance" title="dominance">dominance</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/draw" title="draw">draw</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/duration" title="duration">duration</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/elo" title="elo">elo</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/epochs" title="epochs">epochs</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/excitement" title="excitement">excitement</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/fatigue" title="fatigue">fatigue</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/federer" title="federer">federer</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/first-slam" title="first-slam">first-slam</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/french-open" title="french-open">french-open</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/game-age" title="game-age">game-age</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gaps" title="gaps">gaps</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gaussian-process" title="gaussian-process">gaussian-process</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender" title="gender">gender</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender-bias" title="gender-bias">gender-bias</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/goat" title="goat">goat</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grand-slams" title="grand-slams">grand-slams</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grass" title="grass">grass</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/hackathon" title="hackathon">hackathon</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/head-to-head" title="head-to-head">head-to-head</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/head-to-heads" title="head-to-heads">head-to-heads</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/importance" title="importance">importance</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/injury" title="injury">injury</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/laver-cup" title="laver-cup">laver-cup</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaderboards" title="leaderboards">leaderboards</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaders" title="leaders">leaders</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/luck" title="luck">luck</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/masters" title="masters">masters</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/momentum" title="momentum">momentum</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/nadal" title="nadal">nadal</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/next-gen" title="next-gen">next-gen</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/novak" title="novak">novak</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/prediction" title="prediction">prediction</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/predictions" title="predictions">predictions</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/premiers" title="premiers">premiers</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/pressure" title="pressure">pressure</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/programming" title="programming">programming</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/quality" title="quality">quality</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/r" title="r">r</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/ratings" title="ratings">ratings</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/research" title="research">research</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/retirements" title="retirements">retirements</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/return" title="return">return</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/roger-federer" title="roger-federer">roger-federer</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/scheduling" title="scheduling">scheduling</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/scoreboard" title="scoreboard">scoreboard</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/season" title="season">season</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seasons" title="seasons">seasons</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeding" title="seeding">seeding</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeds" title="seeds">seeds</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena" title="serena">serena</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena-williams" title="serena-williams">serena-williams</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serve" title="serve">serve</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sloan" title="sloan">sloan</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sports-analytics" title="sports-analytics">sports-analytics</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/stories" title="stories">stories</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/strength" title="strength">strength</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surface" title="surface">surface</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprise" title="surprise">surprise</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprising" title="surprising">surprising</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/suspended" title="suspended">suspended</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/tennis-news" title="tennis-news">tennis-news</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/us-open" title="us-open">us-open</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/weather" title="weather">weather</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wimbledon" title="wimbledon">wimbledon</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wta" title="wta">wta</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/zverev" title="zverev">zverev</a>
+	</div>
+</div>
+</aside>
+
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">&copy; 2018 Stats On the T. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+

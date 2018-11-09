@@ -6,10 +6,21 @@
     <description>Recent content in Pressure on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/tags/pressure/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using Pressure Ratings to Rank Most Competitive Matches in 2018</title>
+      <link>https://skoval.github.io/2018/11/09/match-pressure-ratings/</link>
+      <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2018/11/09/match-pressure-ratings/</guid>
+      <description>&lt;p&gt;Last week&amp;rsquo;s 252-point Paris Masters semifinal between Novak Djokovic and Roger Federer got many wondering whether it was the best match in their 47 match long rivalry. In this post, I introduce a pressure rating for sets and matches that can help to tell us to rate their relative competitiveness.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Assessing Scoreboard Effects</title>
