@@ -6,10 +6,21 @@
     <description>Recent content in Pressure on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/tags/pressure/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to Best Quantify Service Pressure</title>
+      <link>https://skoval.github.io/2019/01/29/break-point-units/</link>
+      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2019/01/29/break-point-units/</guid>
+      <description>&lt;p&gt;Pressure is one of those concepts in tennis that we all know exists but we struggle to calculate. I&amp;rsquo;ve made multiple attempts at quantifying scoreboard pressure and have yet to come around to one that is both statistically useful and easy to interpret. But some recent experimenting has uncovered what I think could be as close to a &amp;lsquo;best&amp;rsquo; statistic for pressure as I am likely to find.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Who Has Experienced the Most and Least Set Pressure this Season?</title>
