@@ -95,7 +95,9 @@
 
 <p>The Barnett and Clarke model was introduced in 2005. It&rsquo;s basic idea is to suppose that we know how much better (or worse) a player performs on serve compared to the average player (think WAR in baseball). Call this performance compared to the average $\alpha$. Suppose we can do the same for a receiver&rsquo;s ability and call this $\beta$. Then at a given tournament, if the average server wins $\theta$ percentage of points, our estimate of the serve performance of player $i$ against receiver $j$ is</p>
 
-<p>$\theta<em>{ij} = \theta + \alpha</em>{i} - \beta_{j}$</p>
+<p>$$
+\theta<em>{ij} = \theta + \alpha</em>{i} - \beta_{j}
+$$</p>
 
 <p>This is an opponent-adjusted expectation of serve performance, where we adjust how much better a player does compared to the average player by how much better the receiver performs compared to the average.</p>
 
@@ -107,9 +109,13 @@
 
 <p>I&rsquo;ve been exploring a version of this approach to look at performances at the Futures level of the sport where match-fixing is of <a href="http://www.tennisintegrityunit.com/">particular concern</a>. I&rsquo;ve taken two years of Futures results that includes over 4,000 servers and receivers. For each match, the model for the points won on serve, $y<em>{ij}$, out of $n</em>{ij}$ service points is,</p>
 
-<p>$y<em>{ij} \sim Binom(\theta</em>{ij}, n_{ij})$</p>
+<p>$$
+y<em>{ij} \sim Binom(\theta</em>{ij}, n_{ij})
+$$</p>
 
-<p>$logit(\theta<em>{ij}) = \gamma +  \alpha</em>{i} - \beta_{j}$</p>
+<p>$$
+logit(\theta<em>{ij}) = \gamma +  \alpha</em>{i} - \beta_{j}
+$$</p>
 
 <p>where $\gamma$ is a surface-specific intercept term. So this is a logistic model for the probability of winning a point on serve. Each of the parameters are given normal distributions with flat priors for the hyper-parameters defining the mean and standard deviation. I implemented the model with JAGS and used a sum-to-zero constraint on the server and receiver effects to ensure their identifiability. It took about 5000 samples of adaptation for the parameter traces to stabilise, though I suspect this could vary a bit with a different dataset.</p>
 
