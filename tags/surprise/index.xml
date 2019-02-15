@@ -6,10 +6,21 @@
     <description>Recent content in Surprise on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/tags/surprise/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Identifying Surprising Performances with Prediction Intervals</title>
+      <link>https://skoval.github.io/2019/02/15/serve-prediction-interval/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2019/02/15/serve-prediction-interval/</guid>
+      <description>&lt;p&gt;Every player has days when everything seems to work and other days when nothing seems to go right. Saying when a player has truly over (or under) performed is tricky in tennis because there is always an opponent on the other side of the net that is also influencing the outcome of points. In this post, I look at a basic strategy to try to isolate the ability of the server and receiver, and discuss how this might be used to identify surprising performances on serve.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Most Surprising at Wimbledon 2017</title>
