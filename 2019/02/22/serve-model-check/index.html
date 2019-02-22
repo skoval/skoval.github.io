@@ -95,7 +95,7 @@
 
 <p>Assessing model fit is one of the areas where the advantages of Bayesian models really shine. I showed last week how we can construct and get predictive distributions from a Bayesian version of the Barnett and Clarke model. A similar approach can also be a tool for gauging the fit of the model.</p>
 
-<p>Let&rsquo;s take an example with one player. I have fit the hierarchical serve model for WTA data for 2015 and 2016. In this example, I am going to pull out the serve performances for 142 of Angelique Kerber&rsquo;s matches in that period that did not end in a retirement.</p>
+<p>Let&rsquo;s take an example with one player. I have fit the hierarchical serve model for WTA data for 2015 and 2016. In this example, I am going to pull out the serve performances for 142 of Angelique Kerber&rsquo;s matches in that period.</p>
 
 <p>Are the model estimates consistent with her performances in those matches?</p>
 
@@ -109,7 +109,7 @@
 
 <p>Take her curve against Petra Kvitova. There are 4 matches in the 2015-2016 model sample between Kerber and Kvitova. In those matches, Kerber&rsquo;s serve performance ranged from 53% to 65%, which are all well within the range of the posterior distribution.</p>
 
-<p>Contrast that with her match against Laura Robson. Kerber served a massive 84% in that match, which was much higher than the high-end of the tail of her posterior prediction. So possibly a model miss in this case.</p>
+<p>Contrast that with her match against Laura Robson. Kerber served a massive 84% in that match, which was much higher than the high-end of the tail of her posterior prediction. So possibly a model miss in this case<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>.</p>
 
 <p>Scanning these plots, there are a few examples like the Robson case (Saisai Zheng and Corenlia Lister, for example). And one thing we notice is that most of them are cases where Kerber had a single match against them. This could be a clue that the model might not be handling players with fewer matches in the sample well.</p>
 
@@ -122,12 +122,21 @@
 <p>Let&rsquo;s say I want to use the model to identify surprising match performances. The current estimates for Kerber suggest that about 1 of every 10 matches would be outside the 5% most extreme values of the distribution. This wouldn&rsquo;t be as reliable as I would want for this kind of application.</p>
 
 <div>
-<img src="/img/kerber_serve_2015_2016.png"
+<img src="/img/kerber_serve_2015_2016_2.png"
 </div>
 
 <p>The useful thing about the discrepancy chart is that it gives us a way to easily filter out those outlying cases to see if there is something systematic about the opponents or matches. One thing that stands out in the extreme cluster for Kerber, for example, is that four of those matches were grass events. This might suggest player-specific surface adjustments could reduce the discrepancy of the model for some servers.</p>
 
 <p>It is just a small example but I hope this illustration shows how we can create visual checks of model fit that can help guide further model tuning. The back and forth of model vision and model diagnosis is a natural cycle, but we also have to be careful to avoid overfitting. This is where testing against new data becomes so crucial. And these are two issues I will have more to say about in a future post!</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">You might have also noticed the strange shape of the posterior predictive distribution against Polona Hercog at the 2016 US Open. Kerber had only 18 point on serve in this match as Hercog retired early in the second set. This shows the importance of conditioning on the sample size of points served in the match and also suggests we should drop retirements entirely.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
 		</div>
 		
 <div class="post__tags tags clearfix">
