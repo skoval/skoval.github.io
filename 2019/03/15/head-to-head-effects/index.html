@@ -7,7 +7,7 @@
 <meta name="description" content="A blog that puts the numbers to tennis">
 <meta name="generator" content="Hugo 0.21" />
 <meta property="og:title" content="Head-to-Head Effects" />
-<meta property="og:description" content="Matchup effects are a common idea in tennis commentary. It is the thing at the heart of comments like &lsquo;her game matches up well against her opponent. One way to think of a matchup effect is as a surprising head-to-head, when results go against what the overall ability of both players would have us expect. Do such effects exist? And are they substantial enough that they matter when it comes to making better predictions about tennis results?
+<meta property="og:description" content="Matchup effects are a common idea in tennis commentary. It is the thing at the heart of comments like &lsquo;her game matches up well&rsquo; against her opponent. One way to think of a matchup effect is as a surprising head-to-head, when results go against what the overall ability of both players would have us expect. Do such effects exist? And are they substantial enough that they matter when it comes to making better predictions about tennis results?
 
 " />
 <meta property="og:type" content="article" />
@@ -81,7 +81,7 @@
 
 
 
-			<p>Matchup effects are a common idea in tennis commentary. It is the thing at the heart of comments like &lsquo;her game matches up well against her opponent. One way to think of a matchup effect is as a surprising head-to-head, when results go against what the overall ability of both players would have us expect. Do such effects exist? And are they substantial enough that they matter when it comes to making better predictions about tennis results?</p>
+			<p>Matchup effects are a common idea in tennis commentary. It is the thing at the heart of comments like &lsquo;her game matches up well&rsquo; against her opponent. One way to think of a matchup effect is as a surprising head-to-head, when results go against what the overall ability of both players would have us expect. Do such effects exist? And are they substantial enough that they matter when it comes to making better predictions about tennis results?</p>
 
 <p></p>
 
@@ -95,11 +95,9 @@
 
 <p>That description gets us on track to how we might identify the presence of head-to-head effects. Suppose we have our favourite approach for predicting the chance player $i$ wins a match against player $j$ that <em>doesn&rsquo;t</em> account for matchup effects (so this might exclude bookmaker odds, for example). Call this expectation $\hat{p}_{ij}$. A basic model to account for head-to-head is:</p>
 
-<p>$$
-logit[P(W_{ij} = 1)] = \beta_0 + \beta<em>1  \hat{p}</em>{ij} + \alpha_{ij}
-$$</p>
+<p>$$logit[P(W_{ij} = 1)] = \beta_0 + \beta<em>1  \hat{p}</em>{ij} + \alpha_{ij}$$</p>
 
-<p>The parameter $\alpha_{ij}$ is the key here. It is an unknown constant for the specific matchup that adjusts our expectations under transitive abilities.</p>
+<p>The parameter $\alpha<em>{ij}$ is the key here. It is an unknown constant for the specific matchup that adjusts our expectations when $\hat{p}</em>{ij}$ assumes abilities are transitive.</p>
 
 <h2 id="what-is-a-typical-head-to-head">What is a Typical Head-to-Head?</h2>
 
@@ -114,7 +112,6 @@ $$</p>
 <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
 <thead>
 <tr>
-<th style='border-bottom: 1px solid grey; border-top: 2px solid grey;'> </th>
 <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Head-to-Head Sample Size</th>
 <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Frequency (+ Challengers)</th>
 <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Frequency (- Challengers)</th>
@@ -162,7 +159,7 @@ $$</p>
 
 <p>For the $\hat{p}_{ij}$, I will use a surface-adjusted Elo rating<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>. This is a dynamic transitive model that also accounts for surface specialty. In using this as the prediction covariate, the aim is for the head-to-head to capture any intransitive effects no explained by the overall ability or surface preferences of the players.</p>
 
-<p>When a logistic mixed model was fit to these matchups, the standard deviation for the player-opponent random effect was $\sigma = 0.40$, suggesting evidence of matchup effects. When we look at the conditional means for the specific effect estimates $\hat{alpha}_{ij}$  1 in 6 would imply an adjustment in predictions of 15% or more.  Another indication of statistically meaningful head-to-head effects.</p>
+<p>When a logistic mixed model was fit to these matchups, the standard deviation for the player-opponent random effect was $\sigma = 0.40$, suggesting evidence of matchup effects. When we look at the conditional means for the specific effect estimates $\hat{\alpha}_{ij}$  1 in 6 would imply an adjustment in predictions of 15% or more.  Another indication of statistically meaningful head-to-head effects.</p>
 
 <p>The chart below is a forest plot of the 100 biggest head-to-head effects found in the men&rsquo;s sample. The effect is expressed in terms of the factor you would multiply the standard odds by for these players to account for the head-to-head effect. The player who benefits from the head-to-head effect is the one on the left in the x-axis labels. Larger dots indicate the effects with greater relative certainty.</p>
 
@@ -195,7 +192,6 @@ $$</p>
 <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
 <thead>
 <tr>
-<th style='border-bottom: 1px solid grey; border-top: 2px solid grey;'> </th>
 <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Match Type</th>
 <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Number of Matches</th>
 <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Standard Prediction Accuracy</th>
@@ -215,7 +211,7 @@ $$</p>
 <td style='text-align: center;'>54.9%</td>
 <td style='text-align: center;'>55.4%</td>
 <tr>
-<td style='text-align: left;'>Subgroup where H2H Changed Winner Pick</td>
+<td style='text-align: left;'>Subgroup where H2H Changed Predicted Winner</td>
 <td style='text-align: center;'>21</td>
 <td style='text-align: center;'>47.6%</td>
 <td style='text-align: center;'>52.4 %</td>
