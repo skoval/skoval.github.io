@@ -95,7 +95,7 @@
 
 <p>That description gets us on track to how we might identify the presence of head-to-head effects. Suppose we have our favourite approach for predicting the chance player $i$ wins a match against player $j$ that <em>doesn&rsquo;t</em> account for matchup effects (so this might exclude bookmaker odds, for example). Call this expectation $\hat{p}_{ij}$. A basic model to account for head-to-head is:</p>
 
-<p>$logit[P(W_{ij} = 1)] = \beta_0 + \beta<em>1  \hat{p}</em>{ij} + \alpha_{ij}$</p>
+<p><code>$$logit[P(W_{ij} = 1)] = \beta_0 + \beta_1  \hat{p}_{ij} + \alpha_{ij}$$</code></p>
 
 <p>The parameter $\alpha<em>{ij}$ is the key here. It is an unknown constant for the specific matchup that adjusts our expectations when $\hat{p}</em>{ij}$ assumes abilities are transitive.</p>
 
