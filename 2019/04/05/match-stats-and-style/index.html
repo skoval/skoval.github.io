@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Can Match Stats Tell Us About Playing Styles?</title>
+<meta name="description" content="A blog that puts the numbers to tennis">
+<meta name="generator" content="Hugo 0.21" />
+<meta property="og:title" content="What Can Match Stats Tell Us About Playing Styles?" />
+<meta property="og:description" content="Recently, I&rsquo;ve had a few posts on head-to-head effects. The biggest takeaway was one we probably all know going in: Head-to-head effects may exist, but good luck finding them. With so many small sample sizes for most head-to-heads, we need a way to group &lsquo;similar&rsquo; players. In this post, I look at whether categorising players by playing style might be possible using basic match stats.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2019/04/05/match-stats-and-style/" />
+
+
+
+<meta property="article:published_time" content="2019-04-05T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-04-05T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
+<link rel="stylesheet" href="https://skoval.github.io/css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="https://skoval.github.io/js/scripts.js"></script>
+<link rel="shortcut icon" href="https://skoval.github.io/favicon.ico">
+</head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+                    <div style="float:right;">
+                        <img src="https://skoval.github.io/img/logo.png" width="70px">
+                    </div>
+                   	<a class="logo__link" href="https://skoval.github.io/" title="Stats On the T" rel="home">
+						<h1 class="logo__title">Stats On the T</h1>
+						<h2 class="logo__tagline">Dedicated to data, statistics, and tennis</h2>
+                        
+					</a>
+				</div>
+			</div>
+			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<ul class="menu__list">
+		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/contact/">CONTACT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/features/">FEATURES</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/research/">RESEARCH</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
+	</ul>
+</nav>
+		</header>
+		<div class="wrapper clearfix">
+
+
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">What Can Match Stats Tell Us About Playing Styles?</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2019-04-05T00:00:00">April 05, 2019</time>
+				<span class="post__meta-categories meta-categories">
+					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+					<a class="meta-categories__link" href="/categories/matchups" rel="category">matchups</a>, <a class="meta-categories__link" href="/categories/style" rel="category">style</a></span>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+
+
+
+
+
+			<p>Recently, I&rsquo;ve had a few posts on head-to-head effects. The biggest takeaway was one we probably all know going in: Head-to-head effects may exist, but good luck finding them. With so many small sample sizes for most head-to-heads, we need a way to group &lsquo;similar&rsquo; players. In this post, I look at whether categorising players by playing style might be possible using basic match stats.</p>
+
+<p></p>
+
+<p>When Roger Federer faced John Isner in the finals of the Miami Open last week, many in the tennis world were surprised to find that the two had not played each other in a tour-level event since 2015. But infrequent meetings among top players is more the rule than the exception. It is one of the unfortunate realities of the structure of professional tennis (though, honestly, I am not sure I would want to see Isner play that much in finals).</p>
+
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:396px;float:right;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com.au/detail/1134318716" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:150% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/1134318716?et=wYxtMixnSG1viNDkWzwsaQ&tld=com.au&sig=nN686UQbwtOtikZS4nXNh8zJLez7I51QceURypkz_TU=&caption=true&ver=1" scrolling="no" frameborder="0" width="396" height="594" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+
+<p>Sparse head-to-heads are also one of the banes of existence for tennis modellers. We are often tantalized by the idea that &lsquo;matchup&rsquo; will give us that extra boost to our performance models only to struggle to find a way to reliably measure these elusive effects.</p>
+
+<p>In statistics, there is a common concept of &ldquo;borrowing strength&rdquo;. This is the idea that we can learn more about what a piece of data is when we look at it with similar data. It sort of like when you seeing family members side-by-side you realize that it&rsquo;s that nose or that chin that makes them so distinctive. Pooling similar data in statistics can have the same end&mdash;helping us see more clearly what are a thing&rsquo;s defining features. This is exactly the kind of solution matchup effects in tennis need.</p>
+
+<p>If pooling is really about putting similar players together, we need to have a way to gauge player similarity. What would it mean to say two players are similar? Well, it could be any number of things. But, if our purpose is to understand matchup effects, we really want to focus on players with a similar playing style.</p>
+
+<p>The difficulty is no one knows how to quantify style. Like so many of the most interesting parts about tennis performance, style is one of those things that we know exists but we just don&rsquo;t know how to measure it.</p>
+
+<p>Ideally, style would take into account a player&rsquo;s shot choice and results with each shot type. But even those basic elements aren&rsquo;t something we can easily get at with public data, at least not consistently for most top players.</p>
+
+<p>Basic match stats&mdash; first serve in, return points won, etc.&mdash;are the most detailed information we can get for the majority of matches and professional players. For the most part, these would seem pretty limited in what they could tell us about style. Most match stats are most directly related to a player&rsquo;s relative ability compared to their opponent on the day.</p>
+
+<p>But, for helping to categorize style, would it be too hasty to write off match stats entirely?</p>
+
+<p>I am not so sure. There are some measures in there after all, like aces and double faults, that are products of a player&rsquo;s serve technique and risk-taking that should in theory be under the control of the server. Match duration is also another match stat that should be closely tied to how much a player likes to rally.</p>
+
+<p>As an initial experiment, I took a look at what ace rates and minutes played per point might reveal about player similarity. Because we are interested in a player&rsquo;s tendencies apart from their opponent&rsquo;s&rsquo;, I&rsquo;ve used a mixed model to calculate an average rate for each player on each surface for matches played since 2017. I&rsquo;ve limited the sample to players who made appearances and two or more Grand Slams, so thought it should give a group that has seen a similar mix of opponents over that time period.</p>
+
+<p>Here is what we find for ATP players. The first thing to notice is that there isn&rsquo;t a strong correlation between the ace and minute effects. I went into the analysis thinking that players with an above average number of aces per points served might also play quite quickly. Although that is the general tendency, the relationship is fairly modest.</p>
+
+<div>
+<img src="/img/atp_style_effects.png" />
+</div>
+
+<p>I&rsquo;ve highlighted the 2% of effects that are the most extreme. On the high-end of the ace rates, this picks out the usual subjects: John Isner, Reilly Opelka, and Ivo Karlovic, for example. That confirms that the ace rate effect seems to be doing something sensible in getting at the overall power of serve and not simply overall winningness on serve, as, for example, we see Rafael Nadal below average in the ace rate category despite being one of the most effective at winning points on serve.</p>
+
+<p>Yoshihito Nishioka is on the opposite extreme in terms of aces. At 5 ft 7 in, Nishioka is much shorter than the average slam player, which could account for his position in this chart.</p>
+
+<p>In terms of minutes, it is notable to see Andy Murray, Rafael Nadal, and Novak Djokovic appear among players with some of the longest durations per point. This is consistent with their characterisation as grinders.  On the other hand, players who play unusually fast and aren&rsquo;t among the biggest servers include Dustin Brown and Florian Mayer. These could be examples of players with an aggressive style of play whose serve isn&rsquo;t a huge weapon.</p>
+
+<p>The extreme cases point out some players that are more like some than others. We can get at this in a more systematic way with clustering. As a simple start, let&rsquo;s consider what a k-means clustering on the hard-court effects would suggest. The pattern in the error within cluster suggests that six groups would be the least complex way of cutting up the data to get close to the minimum within-group variance possible.</p>
+
+<p>The figure below shows how those clusters would relate back to the ace rate and minutes played effects. It shows well-separated groups that would could easily give a meaningful label to, in terms of their particular combination of intimidating serve and pace of play.</p>
+
+<div>
+<img src="/img/atp_style_effects_clusters.png" />
+</div>
+
+<p>Two attributes isn&rsquo;t enough to get at all the nuances of style we would like to. This has been only a small experiment, but I think it reveals some promising possibilities. Can we classify all facets of style from basic match stats alone? Probably not. Can we classify some major categories of style? Maybe. At least, I am more convinced of that possibility now than I was before seeing these results. Which means there may yet be hope for a style-based approach to estimating matchup effects.</p>
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.73135 3.3795002q0-.5597-.39604-.9557-.39604-.3961-.95577-.3961-.55974 0-.95578.3961-.39604.396-.39604.9557 0 .5598.39604.9558.39604.3961.95578.3961.55973 0 .95577-.3961.39604-.396.39604-.9558zm11.26865 6.0832q0 .5596998-.39076.9504998l-5.18548 5.196q-.41188.3908-.9610504.3908-.55974 0-.9505-.3908l-7.5511496-7.5616998q-.40132-.3907-.68119-1.0666-.27987-.6759-.27987-1.2357v-4.3934q0-.54920004.40132-.95050004.40132-.4013.9505-.4013h4.39339q.55974 0 1.23565.2799.67591.2798 1.07723.6812l7.55115 7.54060004q.39076.4118.39076.961z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link" href="/tags/matchups/" rel="tag">matchups</a></li>
+		<li class="tags__item"><a class="tags__link" href="/tags/style/" rel="tag">style</a></li>
+	</ul>
+</div>
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="https://skoval.github.io/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Blog Founder, Senior Data Scientist at the Game Insight Group at Tennis Australia, and researcher at the Institute for Health and Sport at Victoria University.
+	</div>
+</div>
+<div class="authorbox clearfix">
+    <figure class="authorbox__avatar">
+        <img alt="Graeme Spence avatar" src="https://skoval.github.io/img/gs.jpeg" class="avatar" height="90" width="90">
+            </figure>
+    <div class="authorbox__header">
+        <span class="authorbox__name">About Graeme Spence</span>
+    </div>
+    <div class="authorbox__description">
+        Data Scientist in the Game Insight Group at Tennis Australia and researcher at the Institute for Health and Sport at Victoria University.
+    </div>
+    
+</div>
+
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="https://skoval.github.io/2019/03/29/top-pressure-performances/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Top Pressure Performances in March</p></a>
+	</div>
+</nav>
+
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'on-the-t-com';
+    var disqus_identifier = 'https:\/\/skoval.github.io\/2019\/04\/05\/match-stats-and-style\/';
+    var disqus_title = 'What Can Match Stats Tell Us About Playing Styles?';
+    var disqus_url = 'https:\/\/skoval.github.io\/2019\/04\/05\/match-stats-and-style\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</div>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://skoval.github.io/" />
+	</form>
+</div>
+
+
+    
+<div class="widget-search widget">
+    <h4><a href="https://www.tennis24.com/">Live Tennis Scores</a></h4>
+</div>
+<div class="widget-search widget">
+    <h4><a href="https://www.flashscore.com/tennis/">Tennis Results</a></h4>
+</div>
+
+
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/2019/04/05/match-stats-and-style/">What Can Match Stats Tell Us About Playing Styles?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/03/29/top-pressure-performances/">Top Pressure Performances in March</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/03/22/head-to-head-effects-wta/">WTA Head-to-Head Effects</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/03/15/head-to-head-effects/">Head-to-Head Effects</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/03/07/indian-wells-atp/">Men&#39;s Title Predictions for Indian Wells</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/03/06/indian-wells-wta/">Women&#39;s Title Predictions for Indian Wells</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/03/01/atp-bpe-feb/">Men&#39;s Top Pressure Performances in February</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/02/22/serve-model-check/">Assessing the Fit of a Serve Prediction Model</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/02/15/serve-prediction-interval/">Identifying Surprising Performances with Prediction Intervals</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/01/29/break-point-units/">How to Best Quantify Service Pressure</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/age">Age</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/atp">Atp</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/backhand">Backhand</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/best">Best</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/big-points">Big-Points</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/breaking-through">Breaking-Through</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/clay">Clay</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/clutch">Clutch</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/comeback">Comeback</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/cutch">Cutch</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/data-science">Data-Science</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/del-potro">Del-Potro</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/demand">Demand</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/depth">Depth</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/dominance">Dominance</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/draw">Draw</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/duration">Duration</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/durations">Durations</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/elo">Elo</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/epochs">Epochs</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/excitement">Excitement</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/fatigue">Fatigue</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/federer">Federer</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/first-slam">First-Slam</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/french-open">French-Open</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/game-age">Game-Age</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gaps">Gaps</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gaussian-process">Gaussian-Process</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender">Gender</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender-bias">Gender-Bias</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/goat">Goat</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grand-slams">Grand-Slams</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grass">Grass</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/hackathon">Hackathon</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/head-to-head">Head-To-Head</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/head-to-heads">Head-To-Heads</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/importance">Importance</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/indian-wells">Indian-Wells</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/injury">Injury</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/laver-cup">Laver-Cup</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaderboards">Leaderboards</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaders">Leaders</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/luck">Luck</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/masters">Masters</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/matchups">Matchups</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/momentum">Momentum</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/nadal">Nadal</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/next-gen">Next-Gen</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/novak">Novak</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/prediction">Prediction</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/predictions">Predictions</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/premiers">Premiers</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/pressure">Pressure</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/programming">Programming</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/quality">Quality</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/r">R</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/ratings">Ratings</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/research">Research</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/retirements">Retirements</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/return">Return</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/roger-federer">Roger-Federer</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/scheduling">Scheduling</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/scoreboard">Scoreboard</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/season">Season</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seasons">Seasons</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeding">Seeding</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeds">Seeds</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena">Serena</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena-williams">Serena-Williams</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serve">Serve</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sloan">Sloan</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sports-analytics">Sports-Analytics</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/stories">Stories</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/strength">Strength</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/style">Style</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surface">Surface</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprise">Surprise</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprising">Surprising</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/suspended">Suspended</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/tennis-news">Tennis-News</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/us-open">Us-Open</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/weather">Weather</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wimbledon">Wimbledon</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wta">Wta</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/zverev">Zverev</a></li>
+		</ul>
+	</div>
+</div>
+	
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/age" title="age">age</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/atp" title="atp">atp</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/backhand" title="backhand">backhand</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/best" title="best">best</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/big-points" title="big-points">big-points</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/breaking-through" title="breaking-through">breaking-through</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/clay" title="clay">clay</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/clutch" title="clutch">clutch</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/comeback" title="comeback">comeback</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/cutch" title="cutch">cutch</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/data-science" title="data-science">data-science</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/del-potro" title="del-potro">del-potro</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/demand" title="demand">demand</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/depth" title="depth">depth</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/dominance" title="dominance">dominance</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/draw" title="draw">draw</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/duration" title="duration">duration</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/durations" title="durations">durations</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/elo" title="elo">elo</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/epochs" title="epochs">epochs</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/excitement" title="excitement">excitement</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/fatigue" title="fatigue">fatigue</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/federer" title="federer">federer</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/first-slam" title="first-slam">first-slam</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/french-open" title="french-open">french-open</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/game-age" title="game-age">game-age</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gaps" title="gaps">gaps</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gaussian-process" title="gaussian-process">gaussian-process</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender" title="gender">gender</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender-bias" title="gender-bias">gender-bias</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/goat" title="goat">goat</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grand-slams" title="grand-slams">grand-slams</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grass" title="grass">grass</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/hackathon" title="hackathon">hackathon</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/head-to-head" title="head-to-head">head-to-head</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/head-to-heads" title="head-to-heads">head-to-heads</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/importance" title="importance">importance</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/indian-wells" title="indian-wells">indian-wells</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/injury" title="injury">injury</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/laver-cup" title="laver-cup">laver-cup</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaderboards" title="leaderboards">leaderboards</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaders" title="leaders">leaders</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/luck" title="luck">luck</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/masters" title="masters">masters</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/matchups" title="matchups">matchups</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/momentum" title="momentum">momentum</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/nadal" title="nadal">nadal</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/next-gen" title="next-gen">next-gen</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/novak" title="novak">novak</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/prediction" title="prediction">prediction</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/predictions" title="predictions">predictions</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/premiers" title="premiers">premiers</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/pressure" title="pressure">pressure</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/programming" title="programming">programming</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/quality" title="quality">quality</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/r" title="r">r</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/ratings" title="ratings">ratings</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/research" title="research">research</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/retirements" title="retirements">retirements</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/return" title="return">return</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/roger-federer" title="roger-federer">roger-federer</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/scheduling" title="scheduling">scheduling</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/scoreboard" title="scoreboard">scoreboard</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/season" title="season">season</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seasons" title="seasons">seasons</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeding" title="seeding">seeding</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeds" title="seeds">seeds</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena" title="serena">serena</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena-williams" title="serena-williams">serena-williams</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serve" title="serve">serve</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sloan" title="sloan">sloan</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sports-analytics" title="sports-analytics">sports-analytics</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/stories" title="stories">stories</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/strength" title="strength">strength</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/style" title="style">style</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surface" title="surface">surface</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprise" title="surprise">surprise</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprising" title="surprising">surprising</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/suspended" title="suspended">suspended</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/tennis-news" title="tennis-news">tennis-news</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/us-open" title="us-open">us-open</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/weather" title="weather">weather</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wimbledon" title="wimbledon">wimbledon</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wta" title="wta">wta</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/zverev" title="zverev">zverev</a>
+	</div>
+</div>
+</aside>
+
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">&copy; 2019 Stats On the T. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+

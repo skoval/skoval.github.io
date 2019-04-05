@@ -6,10 +6,21 @@
     <description>Recent content on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What Can Match Stats Tell Us About Playing Styles?</title>
+      <link>https://skoval.github.io/2019/04/05/match-stats-and-style/</link>
+      <pubDate>Fri, 05 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2019/04/05/match-stats-and-style/</guid>
+      <description>&lt;p&gt;Recently, I&amp;rsquo;ve had a few posts on head-to-head effects. The biggest takeaway was one we probably all know going in: Head-to-head effects may exist, but good luck finding them. With so many small sample sizes for most head-to-heads, we need a way to group &amp;lsquo;similar&amp;rsquo; players. In this post, I look at whether categorising players by playing style might be possible using basic match stats.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Top Pressure Performances in March</title>
