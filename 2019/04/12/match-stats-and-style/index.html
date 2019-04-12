@@ -7,7 +7,7 @@
 <meta name="description" content="A blog that puts the numbers to tennis">
 <meta name="generator" content="Hugo 0.21" />
 <meta property="og:title" content="More Exploration on Using Match Stats to Classify Playing Styles" />
-<meta property="og:description" content="Last week, I looked at whether basic match stats, like aces and minutes played per point, could help describe a player&rsquo;s playing style. In this post, I expand on the set of style features, identify clusters of players they define, and look at the explanatory power of these groups.
+<meta property="og:description" content="Last week, I looked at whether basic match stats, like aces and minutes played per point, could help describe a player&rsquo;s playing style. In this post, I expand on the set of style features and delve into the clusters of playing styles they reveal.
 
 " />
 <meta property="og:type" content="article" />
@@ -81,11 +81,11 @@
 
 
 
-			<p>Last week, I looked at whether basic match stats, like aces and minutes played per point, could help describe a player&rsquo;s playing style. In this post, I expand on the set of style features, identify clusters of players they define, and look at the explanatory power of these groups.</p>
+			<p>Last week, I looked at whether basic match stats, like aces and minutes played per point, could help describe a player&rsquo;s playing style. In this post, I expand on the set of style features and delve into the clusters of playing styles they reveal.</p>
 
 <p></p>
 
-<p>In my [previous post](<a href="http://on-the-t.com/2019/04/05/match-stats-and-style/">http://on-the-t.com/2019/04/05/match-stats-and-style/</a>, I did a small experiment with two player effects to see their potential to define different types of playing styles. The effects were a player&rsquo;s ace rate and minutes played per point compared to the average player, estimated from a hierarchical model with player random effects. The results were promising, with the clusters separating well-known big servers from strong defenders, for example.</p>
+<p>In my <a href="http://on-the-t.com/2019/04/05/match-stats-and-style/">previous post</a>, I did a small experiment with two player effects to see their potential to define different types of playing styles. The effects were a player&rsquo;s ace rate and minutes played per point compared to the average player, estimated from a hierarchical model with player random effects. The results were promising, with the clusters separating well-known big servers from strong defenders, for example.</p>
 
 <pre><code>                  &lt;div class=&quot;getty embed image&quot; style=&quot;background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:594px;&quot;&gt;&lt;div style=&quot;padding:0;margin:0;text-align:left;float:left;padding:2%;&quot;&gt;&lt;a href=&quot;http://www.gettyimages.com.au/detail/1139198759&quot; target=&quot;_blank&quot; style=&quot;color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;&quot;&gt;Embed from Getty Images&lt;/a&gt;&lt;/div&gt;&lt;div style=&quot;overflow:hidden;position:relative;height:0;padding:68.51852% 0 0 0;width:100%;&quot;&gt;&lt;iframe src=&quot;//embed.gettyimages.com/embed/1139198759?et=4RVP8soIT6dwWYB1D-5CFQ&amp;tld=com.au&amp;sig=2QC3jV3jyodzY7rCcP7ryz-AD80G3vOiVZISQyax1VM=&amp;caption=true&amp;ver=1&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; width=&quot;594&quot; height=&quot;407&quot; style=&quot;display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;
 </code></pre>
