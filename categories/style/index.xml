@@ -6,10 +6,21 @@
     <description>Recent content in Style on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/categories/style/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>More Exploration on Using Match Stats to Classify Playing Styles</title>
+      <link>https://skoval.github.io/2019/04/12/match-stats-and-style/</link>
+      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2019/04/12/match-stats-and-style/</guid>
+      <description>&lt;p&gt;Last week, I looked at whether basic match stats, like aces and minutes played per point, could help describe a player&amp;rsquo;s playing style. In this post, I expand on the set of style features, identify clusters of players they define, and look at the explanatory power of these groups.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>What Can Match Stats Tell Us About Playing Styles?</title>
