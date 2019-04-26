@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://skoval.github.io/2019/04/26/ups-downs-clay/</loc>
+    <lastmod>2019-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2019/04/19/testing-match-stats-and-style/</loc>
     <lastmod>2019-04-19T00:00:00+00:00</lastmod>
   </url>
@@ -1091,13 +1096,13 @@
   
   <url>
     <loc>https://skoval.github.io/tags/clay/</loc>
-    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/clay/</loc>
-    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1607,7 +1612,7 @@
   
   <url>
     <loc>https://skoval.github.io/post/</loc>
-    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1692,6 +1697,18 @@
   <url>
     <loc>https://skoval.github.io/categories/r/</loc>
     <lastmod>2018-03-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/tags/rating/</loc>
+    <lastmod>2019-04-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/rating/</loc>
+    <lastmod>2019-04-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1889,7 +1906,7 @@
   
   <url>
     <loc>https://skoval.github.io/</loc>
-    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
