@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://skoval.github.io/2019/07/12/wta-unicorns/</loc>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2019/04/26/ups-downs-clay/</loc>
     <lastmod>2019-04-26T00:00:00+00:00</lastmod>
   </url>
@@ -1203,6 +1208,18 @@
   </url>
   
   <url>
+    <loc>https://skoval.github.io/tags/doubles/</loc>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/doubles/</loc>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/tags/draw/</loc>
     <lastmod>2018-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1612,7 +1629,7 @@
   
   <url>
     <loc>https://skoval.github.io/post/</loc>
-    <lastmod>2019-04-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1702,13 +1719,13 @@
   
   <url>
     <loc>https://skoval.github.io/tags/rating/</loc>
-    <lastmod>2019-04-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/rating/</loc>
-    <lastmod>2019-04-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1906,7 +1923,7 @@
   
   <url>
     <loc>https://skoval.github.io/</loc>
-    <lastmod>2019-04-26T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
