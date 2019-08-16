@@ -112,15 +112,17 @@ reduce the dominance of the serve.</p>
 
 <p>To understand this point, Figure 1 shows the average number of aces per match by year and Figure 2 the fraction of matches requiring one or more tiebreaks for the years from 1990 to 2018 (source www.atptour.com and OnCourt). The trends in these plots (measured by  nonparametric regression curves in red) suggest that as the strength of serve has risen, so too has the number of service games.</p>
 
-<div>
+<div style="text-align:center;">
 <img src="/img/lisi_aces_match.png" width=500 />
 <figcaption>Figure 1. Average ATP ace rate by year</figcaption>
 </div>
 
-<div>
+<div style="text-align:center;">
 <img src="/img/lisi_aces_match.png" width=500  />
 <figcaption>Figure 2. Average ATP matches going to tiebreak by year</figcaption>
 </div>
+
+<p><br></p>
 
 <p>What impact these changes could have is a bit tricky, since no match is currently played with only one of these changes. But we can make some headway using simulation. The purpose of these simulations is to demonstrate how the probability distribution of match durations would shift under each rule change.</p>
 
@@ -152,10 +154,12 @@ We discarded cases with missing durations, Olympics and Next Gen ATP
 Finals, as well as walk-out and retired matches. After that, our sample
 consists of 3744 best of five matches and 16246 best of three matches.</p>
 
-<div >
+<div style="text-align:center;">
 <img src="/img/lisi_dens_durate.png" width=500 />
 <figcaption>Figure 3. Kernel density estimation of match lengths.</figcaption>
 </div>
+
+<p><br></p>
 
 <p>Figure 3 shows kernel density estimations of match length distribution together with average durations. The humps present
 in the right tail of both distributions are the effect of the different
