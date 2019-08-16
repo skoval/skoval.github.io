@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Possible Effects of Abolishing First Service or Advantage Points</title>
+<meta name="description" content="A blog that puts the numbers to tennis">
+<meta name="generator" content="Hugo 0.21" />
+<meta property="og:title" content="Possible Effects of Abolishing First Service or Advantage Points" />
+<meta property="og:description" content="The format changes at Majors are the most prominent of a number of rule changes that are being considered to reduce the length of tennis matches in order to make the tennis &lsquo;product&rsquo; more attractive. In this guest post, Francesco Lisi and Matteo Grigoletto of the Department of Statistical
+Sciences at the University of Padua investigate how removing the first serve or advantage points could impact match lengths.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2019/08/16/abolishing-first-serve/" />
+
+
+
+<meta property="article:published_time" content="2019-08-16T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-08-16T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
+<link rel="stylesheet" href="https://skoval.github.io/css/style.css" type="text/css" media="all" />
+<script type="text/javascript" src="https://skoval.github.io/js/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+<link rel="shortcut icon" href="https://skoval.github.io/favicon.ico">
+</head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+                    <div style="float:right;">
+                        <img src="https://skoval.github.io/img/logo.png" width="70px">
+                    </div>
+                   	<a class="logo__link" href="https://skoval.github.io/" title="Stats On the T" rel="home">
+						<h1 class="logo__title">Stats On the T</h1>
+						<h2 class="logo__tagline">Dedicated to data, statistics, and tennis</h2>
+                        
+					</a>
+				</div>
+			</div>
+			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<ul class="menu__list">
+		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/contact/">CONTACT</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/features/">FEATURES</a></li>
+		<li class="menu__item "><a class="menu__link" href="/ratings/main/">RATINGS</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/research/">RESEARCH</a></li>
+		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
+	</ul>
+</nav>
+
+		</header>
+		<div class="wrapper clearfix">
+
+
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">Possible Effects of Abolishing First Service or Advantage Points</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+				<time class="post__meta-date" datetime="2019-08-16T00:00:00">August 16, 2019</time>
+				<span class="post__meta-categories meta-categories">
+					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+					<a class="meta-categories__link" href="/categories/durations" rel="category">durations</a></span>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+
+
+
+
+
+			<p>The format changes at Majors are the most prominent of a number of rule changes that are being considered to reduce the length of tennis matches in order to make the tennis &lsquo;product&rsquo; more attractive. In this guest post, Francesco Lisi and Matteo Grigoletto of the Department of Statistical
+Sciences at the University of Padua investigate how removing the first serve or advantage points could impact match lengths.</p>
+
+<p></p>
+
+<p>After the 2019 men&rsquo;s Wimbledon final became the first singles match to be affected by the new tiebreak at 12-12 in the 5th format, many are wondering whether the change was a good thing. Whatever your opinion about that specific change, the fact that every Grand Slam in 2019 is using a different format for men&rsquo;s singles is an indication of how much tennis&rsquo; governing boards are concerned about match lengths.</p>
+
+<p>The format changes at Majors are the most prominent of a number of rule changes that are being considered to reduce the length of tennis matches in order to make the tennis &lsquo;product&rsquo; more attractive.</p>
+
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:394px;float:right;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com.au/detail/1156200733" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:67.171715% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/1156200733?et=-ASGXdxgQaZwSg_swURneA&tld=com.au&sig=HPH5rVxzXDKUOy8futlN41Cex6QB2OSW_vEzcitrjzY=&caption=true&ver=1" scrolling="no" frameborder="0" width="594" height="399" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+
+<p>These changes range from harmless ones, such as limiting the medical time outs per match or the time for warming up, to more impacting ones, such as modifying the structure of sets and of tie-breaks.</p>
+
+<p>&lsquo;We are currently in the process of gathering feedback from various stakeholders, including players, media, broadcasters, sponsors, and fans&rsquo; said Simon Higson, ATP VP of Corporate Communications and PR. &lsquo;No conclusions will be drawn until we have completed this process and gone through the necessary review process.&rsquo;</p>
+
+<p>To test some of these new rules, the ATP opted for an entirely new competition, the Next Gen ATP Finals, where matches are played best of 5 sets, with first to four games sets, tie-break at 3-All, no-advantage score, no let, shot-clock after 25 seconds. This format, called Fast4, strongly reduces the length of matches, but has been criticized in that it completely changes the traditional set structure and is often perceived by players and audience as &lsquo;another sport&rsquo;.</p>
+
+<p>A fundamental question for all of these changes is whether the length of matches can be reduced while preserving the major features of the sport&rsquo;s scoring system?</p>
+
+<p>I believe there are basically three possibilities: abolishing advantages, or abolishing the
+second service, or both. The rationale being that these alternatives would strongly
+reduce the dominance of the serve.</p>
+
+<p>To understand this point, Figure 1 shows the average number of aces per match by year and Figure 2 the fraction of matches requiring one or more tiebreaks for the years from 1990 to 2018 (source www.atptour.com and OnCourt). The trends in these plots (measured by  nonparametric regression curves in red) suggest that as the strength of serve has risen, so too has the number of service games.</p>
+
+<div>
+<img src="/img/lisi_aces_match.pdf" />
+<caption>Figure 1. Average ATP ace rate by year</caption>
+</div>
+
+<div>
+<img src="/img/lisi_aces_match.pdf" />
+<caption>Figure 2. Average ATP matches going to tiebreak by year</caption>
+</div>
+
+<p>What impact these changes could have is a bit tricky, since no match is currently played with only one of these changes. But we can make some headway using simulation. The purpose of these simulations is to demonstrate how the probability distribution of match durations would shift under each rule change.</p>
+
+<p>Both Kovalchik and Ingram (2018)<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup> and Lisi and Grigoletto<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup> proposed two
+simulators for tennis match durations. In the latter we simulated
+20,000 best of 5 matches played with the following formats:</p>
+
+<p>1) the current standard
+2) the standard played with no advantages on 40-40
+3) the standard format played with only one serve
+4) the standard format with no advantages and one serve</p>
+
+<p>To simulate a match with only one serve we have to consider which are
+the consequences of abolishing the two-service rule on the server&rsquo;s performance. We can follow the viewpoint of Klaassen and Magnus (2014)<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup>: a
+player with only one service is equivalent to a player with two services
+who has fault the first one. So, with only one service, a player should use his current second service, and not something between the first and second one.
+  Thus, when the first serve is eliminated, the simulation uses only data on second serve performance to set the parameters that determine the likely outcomes on serve.</p>
+
+<p>Building and setting the simulator requires the following pieces of
+information: kind of tournament (Grand Slam, ATP1000, ATP500, ATP250),
+surface, round, final score, duration, number of aces, number of double
+faults, number of first and second serves, number of first and second
+serves in, number of winning first and second serves, total points won,
+as well as the distributions of the ball&rsquo;s speed and of the number
+rallies for each point.  For the distribution of the shot number per point we used data from the Match Charting Project (www.tennisabstract.com); for the ball&rsquo;s speed we referred to <a href="http://on-the-t.com/2016/11/26/aoleaderboard-forehand-speed/">this post</a> and <a href="http://on-the-t.com/2016/10/22/aoleaderboard-backhand-speed/">this post</a>; all other data come from OnCourt.</p>
+
+<p>Data refer to matches played in the period from January 2011 to December 2018.
+We discarded cases with missing durations, Olympics and Next Gen ATP
+Finals, as well as walk-out and retired matches. After that, our sample
+consists of 3744 best of five matches and 16246 best of three matches.</p>
+
+<div>
+<img src="/img/lisi_aces_match.pdf" />
+<caption>Figure 3. Kernel density estimation of match lengths.</caption>
+</div>
+
+<p>Figure 3 shows kernel density estimations of match length distribution together with average durations. The humps present
+in the right tail of both distributions are the effect of the different
+number of sets with which the match can end.  The table below  lists the values of some specific quantiles, from the median (Q50) to
+the 99.9% quantile (Q999). Median lengths are 92 minutes (mean 98) for
+best of 3 matches and 142 minutes (mean 150) for best of 5 matches.</p>
+
+<p>Match        Q50   Q75   Q90   Q95   Q999</p>
+
+<hr />
+
+<p>Best of 3    92    119   142   154   200
+  Best of 5    142   179   214   233   319</p>
+
+<p>Results, in terms of median durations and probabilities of a match
+lasting more that $k$ hours, are given in the following table. They are based
+on 20,000 matches played best of 5. Model&rsquo;s parameters were estimated
+using only data from Grand Slam’s championships.</p>
+
+<h2 id="scenario-median-p-3-p-3-5-p-4-p-4-5">Scenario | Median | $P(&gt;3)$ | $P(&gt;3.5)$ | $P(&gt;4)$ | $P(&gt;4.5)$ |</h2>
+
+<p>Standard | 144 | 25.1 | 10.6 | 3.6 | 1.2 |
+No Ad | 132 | 15.1 | 4.8 | 1.2 | 0.3 |
+One service | 114 | 9.9 | 3.1 | 0.8 | 0.2 |
+No Ad | One service | 106 | 4.1 | 0.8 | 0.2 | 0.03 |</p>
+
+<p>Results show that both the &lsquo;No Ad&rsquo; and &lsquo;One service&rsquo; options are
+effective in reducing the probability of matches lasting more than three
+hours, with a stronger effect produced by the &lsquo;One service&rsquo; format. More
+specifically, the probability of a best of five match lasting more than
+three hours is around 25\% with the current format, but it reduces to
+around 15\% by abolishing advantages on 40-40 and to around 10\% by
+abolishing the first serve.</p>
+
+<p>The effect is even more drastic if both
+modifications are introduced, with only a 4.1\% probability of
+exceeding three hours. Apart from the duration itself, it is known that
+shorter formats also imply an increase in the number of upsets and,
+thus, in the uncertainty about the final result of the match.</p>
+
+<p>Let us consider, now, the match played in the 2019 men&rsquo;s Wimbledon final, lasted 297 minutes. What would the expected duration have been under each of the 4 scenarios, according to the simulator? 20000 matches have been simulated using only the rallies distribution for grass and probabilities estimated on the previous matches between Federer and Djokovic. Expected durations and probabilities of the match lasting more than $k$ hours are given in the following table</p>
+
+<h2 id="scenario-average-p-3-p-3-5-p-4-p-4-5">Scenario | Average | $P(&gt;3)$ | $P(&gt;3.5)$ | $P(&gt;4)$ | $P(&gt;4.5)$ |</h2>
+
+<p>Current |           167 | 36.5 | 15.9 | 5.5 | 1.7  |
+No Ad |             150 | 21.2 | 6.5 | 1.6 | 0.35 |
+One service |       147 | 19.0 | 6.1 | 1.6 | 0.39 |
+No Ad | One service | 131 | 7.9 | 1.7 | 0.33 | 0.05 |</p>
+
+<p>Both &lsquo;No Ad&rsquo; and &lsquo;One service&rsquo; scenarios do not dramatically change the average duration but markedly reduce the probability of a long match. For example, the probability of a match lasting more than 4.5 hours, under current rules, is 1.7\%. This is a quite low probability but not completely negligible. The &lsquo;No Ad&rsquo; format reduces it by almost 5 times and the &lsquo;One service&rsquo; format by more than 4 times.</p>
+
+<p>Thus, from a statistical viewpoint these two modifications are not very different, and the choice between them could be based on the players’ preferences. The joint application of &lsquo;No Ad&rsquo; &amp; &lsquo;One service&rsquo; rules, instead, seems too impacting and, probably, not necessary.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Kovalchik, S. A., &amp; Ingram, M. (2018). Estimating the duration of professional tennis matches for varying formats. Journal of Quantitative Analysis in Sports, 14(1), 13-23.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2">Lisi, F. and Grigoletto, M. (2019). Modeling and simulating durations of professional tennis matches by resampling match features. (Under Review)
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+<li id="fn:3">Klaassen, F., &amp; Magnus, J. R. (2014). Analyzing Wimbledon: The power of statistics. Oxford University Press, USA.
+ <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+</ol>
+</div>
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.73135 3.3795002q0-.5597-.39604-.9557-.39604-.3961-.95577-.3961-.55974 0-.95578.3961-.39604.396-.39604.9557 0 .5598.39604.9558.39604.3961.95578.3961.55973 0 .95577-.3961.39604-.396.39604-.9558zm11.26865 6.0832q0 .5596998-.39076.9504998l-5.18548 5.196q-.41188.3908-.9610504.3908-.55974 0-.9505-.3908l-7.5511496-7.5616998q-.40132-.3907-.68119-1.0666-.27987-.6759-.27987-1.2357v-4.3934q0-.54920004.40132-.95050004.40132-.4013.9505-.4013h4.39339q.55974 0 1.23565.2799.67591.2798 1.07723.6812l7.55115 7.54060004q.39076.4118.39076.961z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link" href="/tags/durations/" rel="tag">durations</a></li>
+	</ul>
+</div>
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="https://skoval.github.io/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Blog Founder, Senior Data Scientist at the Game Insight Group at Tennis Australia, and researcher at the Institute for Health and Sport at Victoria University.
+	</div>
+</div>
+<div class="authorbox clearfix">
+    
+</div>
+
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="https://skoval.github.io/2019/08/09/must-see-matches/" rel="prev"><span class="post-nav__caption">Â«Previous</span><p class="post-nav__post-title">A Stat for Must-See Matches</p></a>
+	</div>
+</nav>
+
+	
+<div class="comments">
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'on-the-t-com';
+    var disqus_identifier = 'https:\/\/skoval.github.io\/2019\/08\/16\/abolishing-first-serve\/';
+    var disqus_title = 'Possible Effects of Abolishing First Service or Advantage Points';
+    var disqus_url = 'https:\/\/skoval.github.io\/2019\/08\/16\/abolishing-first-serve\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+</div>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://skoval.github.io/" />
+	</form>
+</div>
+
+
+    
+<div class="widget-search widget">
+    <h4><a href="https://www.tennis24.com/">Live Tennis Scores</a></h4>
+</div>
+<div class="widget-search widget">
+    <h4><a href="https://www.flashscore.com/tennis/">Tennis Results</a></h4>
+</div>
+
+
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/2019/08/16/abolishing-first-serve/">Possible Effects of Abolishing First Service or Advantage Points</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/08/09/must-see-matches/">A Stat for Must-See Matches</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/07/19/updating-player-ratings/">Player Ratings Tables Go Live!</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/07/12/wta-unicorns/">Unicorns of the WTA</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/04/26/ups-downs-clay/">Early Ups and Downs on Clay</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/04/19/testing-match-stats-and-style/">Putting a Basic Playing Style Classifier to the Test</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/04/12/match-stats-and-style/">More Exploration on Using Match Stats to Classify Playing Styles</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/04/05/match-stats-and-style/">What Can Match Stats Tell Us About Playing Styles?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/03/29/top-pressure-performances/">Top Pressure Performances in March</a></li>
+			<li class="widget__item"><a class="widget__link" href="/2019/03/22/head-to-head-effects-wta/">WTA Head-to-Head Effects</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/age">Age</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/atp">Atp</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/backhand">Backhand</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/best">Best</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/big-points">Big-Points</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/breaking-through">Breaking-Through</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/clay">Clay</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/clutch">Clutch</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/comeback">Comeback</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/compeitiveness">Compeitiveness</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/cutch">Cutch</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/data-science">Data-Science</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/del-potro">Del-Potro</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/demand">Demand</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/depth">Depth</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/dominance">Dominance</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/doubles">Doubles</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/draw">Draw</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/duration">Duration</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/durations">Durations</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/elo">Elo</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/epochs">Epochs</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/excitement">Excitement</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/fatigue">Fatigue</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/federer">Federer</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/first-slam">First-Slam</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/french-open">French-Open</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/game-age">Game-Age</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gaps">Gaps</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gaussian-process">Gaussian-Process</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender">Gender</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender-bias">Gender-Bias</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/goat">Goat</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grand-slams">Grand-Slams</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grass">Grass</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/hackathon">Hackathon</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/head-to-head">Head-To-Head</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/head-to-heads">Head-To-Heads</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/importance">Importance</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/indian-wells">Indian-Wells</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/injury">Injury</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/laver-cup">Laver-Cup</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaderboards">Leaderboards</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaders">Leaders</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/luck">Luck</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/masters">Masters</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/matchups">Matchups</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/momentum">Momentum</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/nadal">Nadal</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/next-gen">Next-Gen</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/novak">Novak</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/prediction">Prediction</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/predictions">Predictions</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/premiers">Premiers</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/pressure">Pressure</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/programming">Programming</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/quality">Quality</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/r">R</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/rating">Rating</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/ratings">Ratings</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/research">Research</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/retirements">Retirements</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/return">Return</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/roger-federer">Roger-Federer</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/scheduling">Scheduling</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/scoreboard">Scoreboard</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/season">Season</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seasons">Seasons</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeding">Seeding</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeds">Seeds</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena">Serena</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena-williams">Serena-Williams</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serve">Serve</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/singles">Singles</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sloan">Sloan</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sports-analytics">Sports-Analytics</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/stories">Stories</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/strength">Strength</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/style">Style</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surface">Surface</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprise">Surprise</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprising">Surprising</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/suspended">Suspended</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/tennis-news">Tennis-News</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/us-open">Us-Open</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/weather">Weather</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wimbledon">Wimbledon</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wta">Wta</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/zverev">Zverev</a></li>
+		</ul>
+	</div>
+</div>
+	
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/age" title="age">age</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/atp" title="atp">atp</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/backhand" title="backhand">backhand</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/best" title="best">best</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/big-points" title="big-points">big-points</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/breaking-through" title="breaking-through">breaking-through</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/clay" title="clay">clay</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/clutch" title="clutch">clutch</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/comeback" title="comeback">comeback</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/compeitiveness" title="compeitiveness">compeitiveness</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/cutch" title="cutch">cutch</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/data-science" title="data-science">data-science</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/del-potro" title="del-potro">del-potro</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/demand" title="demand">demand</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/depth" title="depth">depth</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/dominance" title="dominance">dominance</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/doubles" title="doubles">doubles</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/draw" title="draw">draw</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/duration" title="duration">duration</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/durations" title="durations">durations</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/elo" title="elo">elo</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/epochs" title="epochs">epochs</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/excitement" title="excitement">excitement</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/fatigue" title="fatigue">fatigue</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/federer" title="federer">federer</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/first-slam" title="first-slam">first-slam</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/french-open" title="french-open">french-open</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/game-age" title="game-age">game-age</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gaps" title="gaps">gaps</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gaussian-process" title="gaussian-process">gaussian-process</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender" title="gender">gender</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender-bias" title="gender-bias">gender-bias</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/goat" title="goat">goat</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grand-slams" title="grand-slams">grand-slams</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grass" title="grass">grass</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/hackathon" title="hackathon">hackathon</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/head-to-head" title="head-to-head">head-to-head</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/head-to-heads" title="head-to-heads">head-to-heads</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/importance" title="importance">importance</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/indian-wells" title="indian-wells">indian-wells</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/injury" title="injury">injury</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/laver-cup" title="laver-cup">laver-cup</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaderboards" title="leaderboards">leaderboards</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaders" title="leaders">leaders</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/luck" title="luck">luck</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/masters" title="masters">masters</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/matchups" title="matchups">matchups</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/momentum" title="momentum">momentum</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/nadal" title="nadal">nadal</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/next-gen" title="next-gen">next-gen</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/novak" title="novak">novak</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/prediction" title="prediction">prediction</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/predictions" title="predictions">predictions</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/premiers" title="premiers">premiers</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/pressure" title="pressure">pressure</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/programming" title="programming">programming</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/quality" title="quality">quality</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/r" title="r">r</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/rating" title="rating">rating</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/ratings" title="ratings">ratings</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/research" title="research">research</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/retirements" title="retirements">retirements</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/return" title="return">return</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/roger-federer" title="roger-federer">roger-federer</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/scheduling" title="scheduling">scheduling</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/scoreboard" title="scoreboard">scoreboard</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/season" title="season">season</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seasons" title="seasons">seasons</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeding" title="seeding">seeding</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeds" title="seeds">seeds</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena" title="serena">serena</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena-williams" title="serena-williams">serena-williams</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serve" title="serve">serve</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/singles" title="singles">singles</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sloan" title="sloan">sloan</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sports-analytics" title="sports-analytics">sports-analytics</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/stories" title="stories">stories</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/strength" title="strength">strength</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/style" title="style">style</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surface" title="surface">surface</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprise" title="surprise">surprise</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprising" title="surprising">surprising</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/suspended" title="suspended">suspended</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/tennis-news" title="tennis-news">tennis-news</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/us-open" title="us-open">us-open</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/weather" title="weather">weather</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wimbledon" title="wimbledon">wimbledon</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wta" title="wta">wta</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/zverev" title="zverev">zverev</a>
+	</div>
+</div>
+</aside>
+
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">&copy; 2019 Stats On the T. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-100138539-1', 'auto');
+ga('send', 'pageview');
+</script>
+
