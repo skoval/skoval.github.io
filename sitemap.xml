@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://skoval.github.io/2019/08/30/us-open-blockbusters/</loc>
+    <lastmod>2019-08-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2019/08/23/us-open-momentum/</loc>
     <lastmod>2019-08-23T00:00:00+00:00</lastmod>
   </url>
@@ -1637,6 +1642,18 @@
   </url>
   
   <url>
+    <loc>https://skoval.github.io/tags/must-see/</loc>
+    <lastmod>2019-08-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/must-see/</loc>
+    <lastmod>2019-08-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/tags/nadal/</loc>
     <lastmod>2018-04-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -1674,7 +1691,7 @@
   
   <url>
     <loc>https://skoval.github.io/post/</loc>
-    <lastmod>2019-08-23T00:00:00+00:00</lastmod>
+    <lastmod>2019-08-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1986,7 +2003,7 @@
   
   <url>
     <loc>https://skoval.github.io/</loc>
-    <lastmod>2019-08-23T00:00:00+00:00</lastmod>
+    <lastmod>2019-08-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
