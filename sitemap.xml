@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://skoval.github.io/2019/09/13/us-open-pressure/</loc>
+    <lastmod>2019-09-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://skoval.github.io/2019/09/06/us-open-ages/</loc>
     <lastmod>2019-09-06T00:00:00+00:00</lastmod>
   </url>
@@ -1696,7 +1701,7 @@
   
   <url>
     <loc>https://skoval.github.io/post/</loc>
-    <lastmod>2019-09-06T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1738,13 +1743,13 @@
   
   <url>
     <loc>https://skoval.github.io/tags/pressure/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/pressure/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -2008,7 +2013,7 @@
   
   <url>
     <loc>https://skoval.github.io/</loc>
-    <lastmod>2019-09-06T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
