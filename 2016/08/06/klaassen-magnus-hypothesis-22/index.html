@@ -31,9 +31,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
 <link rel="stylesheet" href="https://skoval.github.io/css/style.css" type="text/css" media="all" />
 <script type="text/javascript" src="https://skoval.github.io/js/scripts.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
 <link rel="shortcut icon" href="https://skoval.github.io/favicon.ico">
 </head>
 <body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
@@ -61,7 +58,6 @@
 		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
 	</ul>
 </nav>
-
 		</header>
 		<div class="wrapper clearfix">
 
@@ -106,163 +102,176 @@
 
 <p>The data set I started with is shown below. All the counts are service games that come from many thousands of matches over the past 5 years for both the men&rsquo;s and women&rsquo;s tours. The first two columns of the ATP and WTA tables are the break point distributions before service games that the server lost, while the final two columns is the distribution for the return game prior to a service hold. We can see that that break point chances are more common for players who tend to hold service, indicating the effect of player quality. Also, we see that there is more than a 10% chance that 2 or more breaks occur.</p>
 
-<table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;'>
+<table>
 <thead>
 <tr>
-<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Break Point Chances</th>
-<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>ATP Misses</th>
-<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>%</th>
-<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>ATP Breaks</th>
-<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>%</th>
-<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>WTA Misses</th>
-<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>%</th>
-<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>WTA Breaks</th>
-<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>%</th>
+<th align="center">Break Point Chances</th>
+<th align="center">ATP Misses</th>
+<th align="center">Percentage</th>
+<th align="center">ATP Breaks</th>
+<th align="center">Percentage</th>
+<th align="center">WTA Misses</th>
+<th align="center">Percentage</th>
+<th align="center">WTA Breaks</th>
+<th align="center">Percentage</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style='text-align: center;'>0</td>
-<td style='text-align: center;'>15407</td>
-<td style='text-align: center;'>72</td>
-<td style='text-align: center;'>56973</td>
-<td style='text-align: center;'>69</td>
-<td style='text-align: center;'>7207</td>
-<td style='text-align: center;'>57</td>
-<td style='text-align: center;'>12240</td>
-<td style='text-align: center;'>53</td>
+<td align="center">0</td>
+<td align="center">15,407</td>
+<td align="center">72%</td>
+<td align="center">56,973</td>
+<td align="center">69%</td>
+<td align="center">7,207</td>
+<td align="center">57%</td>
+<td align="center">12,240</td>
+<td align="center">53%</td>
 </tr>
-<tr style='background-color: #f7f7f7;'>
-<td style='background-color: #f7f7f7; text-align: center;'>1</td>
-<td style='background-color: #f7f7f7; text-align: center;'>3396</td>
-<td style='background-color: #f7f7f7; text-align: center;'>16</td>
-<td style='background-color: #f7f7f7; text-align: center;'>14233</td>
-<td style='background-color: #f7f7f7; text-align: center;'>17</td>
-<td style='background-color: #f7f7f7; text-align: center;'>2995</td>
-<td style='background-color: #f7f7f7; text-align: center;'>24</td>
-<td style='background-color: #f7f7f7; text-align: center;'>6308</td>
-<td style='background-color: #f7f7f7; text-align: center;'>27</td>
-</tr>
+
 <tr>
-<td style='text-align: center;'>2</td>
-<td style='text-align: center;'>1719</td>
-<td style='text-align: center;'>8</td>
-<td style='text-align: center;'>7134</td>
-<td style='text-align: center;'>9</td>
-<td style='text-align: center;'>1557</td>
-<td style='text-align: center;'>12</td>
-<td style='text-align: center;'>2993</td>
-<td style='text-align: center;'>13</td>
+<td align="center">1</td>
+<td align="center">3,396</td>
+<td align="center">16%</td>
+<td align="center">14,233</td>
+<td align="center">17%</td>
+<td align="center">2,995</td>
+<td align="center">24%</td>
+<td align="center">6,308</td>
+<td align="center">27%</td>
 </tr>
-<tr style='background-color: #f7f7f7;'>
-<td style='background-color: #f7f7f7; text-align: center;'>3</td>
-<td style='background-color: #f7f7f7; text-align: center;'>707</td>
-<td style='background-color: #f7f7f7; text-align: center;'>3</td>
-<td style='background-color: #f7f7f7; text-align: center;'>2923</td>
-<td style='background-color: #f7f7f7; text-align: center;'>4</td>
-<td style='background-color: #f7f7f7; text-align: center;'>568</td>
-<td style='background-color: #f7f7f7; text-align: center;'>5</td>
-<td style='background-color: #f7f7f7; text-align: center;'>1158</td>
-<td style='background-color: #f7f7f7; text-align: center;'>5</td>
-</tr>
+
 <tr>
-<td style='text-align: center;'>4</td>
-<td style='text-align: center;'>204</td>
-<td style='text-align: center;'>1</td>
-<td style='text-align: center;'>910</td>
-<td style='text-align: center;'>1</td>
-<td style='text-align: center;'>198</td>
-<td style='text-align: center;'>2</td>
-<td style='text-align: center;'>340</td>
-<td style='text-align: center;'>1</td>
+<td align="center">2</td>
+<td align="center">1,719</td>
+<td align="center">8%</td>
+<td align="center">7,134</td>
+<td align="center">9%</td>
+<td align="center">1,557</td>
+<td align="center">12%</td>
+<td align="center">2,993</td>
+<td align="center">13%</td>
 </tr>
-<tr style='background-color: #f7f7f7;'>
-<td style='background-color: #f7f7f7; text-align: center;'>5</td>
-<td style='background-color: #f7f7f7; text-align: center;'>56</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>274</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>65</td>
-<td style='background-color: #f7f7f7; text-align: center;'>1</td>
-<td style='background-color: #f7f7f7; text-align: center;'>120</td>
-<td style='background-color: #f7f7f7; text-align: center;'>1</td>
-</tr>
+
 <tr>
-<td style='text-align: center;'>6</td>
-<td style='text-align: center;'>19</td>
-<td style='text-align: center;'>0</td>
-<td style='text-align: center;'>81</td>
-<td style='text-align: center;'>0</td>
-<td style='text-align: center;'>19</td>
-<td style='text-align: center;'>0</td>
-<td style='text-align: center;'>31</td>
-<td style='text-align: center;'>0</td>
+<td align="center">3</td>
+<td align="center">707</td>
+<td align="center">3%</td>
+<td align="center">2,923</td>
+<td align="center">4%</td>
+<td align="center">568</td>
+<td align="center">5%</td>
+<td align="center">1,158</td>
+<td align="center">5%</td>
 </tr>
-<tr style='background-color: #f7f7f7;'>
-<td style='background-color: #f7f7f7; text-align: center;'>7</td>
-<td style='background-color: #f7f7f7; text-align: center;'>6</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>31</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>3</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>11</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-</tr>
+
 <tr>
-<td style='text-align: center;'>8</td>
-<td style='text-align: center;'>2</td>
-<td style='text-align: center;'>0</td>
-<td style='text-align: center;'>12</td>
-<td style='text-align: center;'>0</td>
-<td style='text-align: center;'>1</td>
-<td style='text-align: center;'>0</td>
-<td style='text-align: center;'>2</td>
-<td style='text-align: center;'>0</td>
+<td align="center">4</td>
+<td align="center">204</td>
+<td align="center">1%</td>
+<td align="center">910</td>
+<td align="center">1%</td>
+<td align="center">198</td>
+<td align="center">2%</td>
+<td align="center">340</td>
+<td align="center">1%</td>
 </tr>
-<tr style='background-color: #f7f7f7;'>
-<td style='background-color: #f7f7f7; text-align: center;'>9</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>5</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>2</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-</tr>
+
 <tr>
-<td style='text-align: center;'>10</td>
-<td style='text-align: center;'>0</td>
-<td style='text-align: center;'>0</td>
-<td style='text-align: center;'>0</td>
-<td style='text-align: center;'>0</td>
-<td style='text-align: center;'>0</td>
-<td style='text-align: center;'>0</td>
-<td style='text-align: center;'>0</td>
-<td style='text-align: center;'>0</td>
+<td align="center">5</td>
+<td align="center">56</td>
+<td align="center">0%</td>
+<td align="center">274</td>
+<td align="center">0%</td>
+<td align="center">65</td>
+<td align="center">1%</td>
+<td align="center">120</td>
+<td align="center">1%</td>
 </tr>
-<tr style='background-color: #f7f7f7;'>
-<td style='background-color: #f7f7f7; text-align: center;'>11</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-<td style='background-color: #f7f7f7; text-align: center;'>1</td>
-<td style='background-color: #f7f7f7; text-align: center;'>0</td>
-</tr>
+
 <tr>
-<td style='border-bottom: 2px solid grey; text-align: center;'>12</td>
-<td style='border-bottom: 2px solid grey; text-align: center;'>0</td>
-<td style='border-bottom: 2px solid grey; text-align: center;'>0</td>
-<td style='border-bottom: 2px solid grey; text-align: center;'>2</td>
-<td style='border-bottom: 2px solid grey; text-align: center;'>0</td>
-<td style='border-bottom: 2px solid grey; text-align: center;'>0</td>
-<td style='border-bottom: 2px solid grey; text-align: center;'>0</td>
-<td style='border-bottom: 2px solid grey; text-align: center;'>0</td>
-<td style='border-bottom: 2px solid grey; text-align: center;'>0</td>
+<td align="center">6</td>
+<td align="center">19</td>
+<td align="center">0%</td>
+<td align="center">81</td>
+<td align="center">0%</td>
+<td align="center">19</td>
+<td align="center">0%</td>
+<td align="center">31</td>
+<td align="center">0%</td>
+</tr>
+
+<tr>
+<td align="center">7</td>
+<td align="center">6</td>
+<td align="center">0%</td>
+<td align="center">31</td>
+<td align="center">0%</td>
+<td align="center">3</td>
+<td align="center">0%</td>
+<td align="center">11</td>
+<td align="center">0%</td>
+</tr>
+
+<tr>
+<td align="center">8</td>
+<td align="center">2</td>
+<td align="center">0%</td>
+<td align="center">12</td>
+<td align="center">0%</td>
+<td align="center">1</td>
+<td align="center">0%</td>
+<td align="center">2</td>
+<td align="center">0%</td>
+</tr>
+
+<tr>
+<td align="center">9</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">5</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">2</td>
+<td align="center">0%</td>
+</tr>
+
+<tr>
+<td align="center">10</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+</tr>
+
+<tr>
+<td align="center">11</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">1</td>
+<td align="center">0%</td>
+</tr>
+
+<tr>
+<td align="center">12</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">2</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+<td align="center">0</td>
+<td align="center">0%</td>
 </tr>
 </tbody>
 </table>
@@ -312,13 +321,9 @@
 		<span class="authorbox__name">About Stephanie Kovalchik</span>
 	</div>
 	<div class="authorbox__description">
-		Blog Founder, Senior Data Scientist at Zelus Analytics
+		Tennis Data Scientist at the Game Insight Group at Tennis Australia and researcher at the Institute of Sport Exercise and Active Living at Victoria University.
 	</div>
 </div>
-<div class="authorbox clearfix">
-    
-</div>
-
 	
 <nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 	<div class="post-nav__item post-nav__item--prev col-1-2">
@@ -362,22 +367,12 @@
 		<input type="hidden" name="sitesearch" value="https://skoval.github.io/" />
 	</form>
 </div>
-
-
-    
-<div class="widget-search widget">
-    <h4><a href="https://www.tennis24.com/">Live Tennis Scores</a></h4>
-</div>
-<div class="widget-search widget">
-    <h4><a href="https://www.flashscore.com/tennis/">Tennis Results</a></h4>
-</div>
-
-
 	
 <div class="widget-recent widget">
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/2020/01/24/slam-walkover-advantage/">Is an Early Walkover an Advantage in a Slam?</a></li>
 			<li class="widget__item"><a class="widget__link" href="/2020/01/17/mens-ao-title/">Men&#39;s Title Chances for the 2020 Australian Open</a></li>
 			<li class="widget__item"><a class="widget__link" href="/2020/01/17/womens-ao-title/">Women&#39;s Title Chances for the 2020 Australian Open</a></li>
 			<li class="widget__item"><a class="widget__link" href="/2019/11/15/pressure-win-stats/">Who Were the Top Pressure Performers at the 2019 Grand Slams?</a></li>
@@ -387,7 +382,6 @@
 			<li class="widget__item"><a class="widget__link" href="/2019/09/13/us-open-pressure/">How Medvedev and Berrettini Dealt with Pressure at the US Open</a></li>
 			<li class="widget__item"><a class="widget__link" href="/2019/09/06/us-open-ages/">Ages at the US Open are Getting Bimodal, Again</a></li>
 			<li class="widget__item"><a class="widget__link" href="/2019/08/30/us-open-blockbusters/">Which Blockbuster Matches Might Be Ahead At The US Open?</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/08/23/us-open-momentum/">Who Has the Momentum Going into the US Open?</a></li>
 		</ul>
 	</div>
 </div>
@@ -475,6 +469,7 @@
 			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena-williams">Serena-Williams</a></li>
 			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serve">Serve</a></li>
 			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/singles">Singles</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/slam">Slam</a></li>
 			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sloan">Sloan</a></li>
 			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sports-analytics">Sports-Analytics</a></li>
 			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/stories">Stories</a></li>
@@ -486,6 +481,7 @@
 			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/suspended">Suspended</a></li>
 			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/tennis-news">Tennis-News</a></li>
 			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/us-open">Us-Open</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/walkover">Walkover</a></li>
 			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/weather">Weather</a></li>
 			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wimbledon">Wimbledon</a></li>
 			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wta">Wta</a></li>
@@ -576,6 +572,7 @@
 		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena-williams" title="serena-williams">serena-williams</a>
 		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serve" title="serve">serve</a>
 		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/singles" title="singles">singles</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/slam" title="slam">slam</a>
 		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sloan" title="sloan">sloan</a>
 		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sports-analytics" title="sports-analytics">sports-analytics</a>
 		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/stories" title="stories">stories</a>
@@ -587,6 +584,7 @@
 		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/suspended" title="suspended">suspended</a>
 		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/tennis-news" title="tennis-news">tennis-news</a>
 		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/us-open" title="us-open">us-open</a>
+		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/walkover" title="walkover">walkover</a>
 		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/weather" title="weather">weather</a>
 		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wimbledon" title="wimbledon">wimbledon</a>
 		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wta" title="wta">wta</a>
@@ -594,7 +592,6 @@
 	</div>
 </div>
 </aside>
-
 	</div>
 		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 			<div class="container container-inner">
