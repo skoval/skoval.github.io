@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Science on Stats On the T</title>
+    <title>data science on Stats On the T</title>
     <link>https://skoval.github.io/tags/data-science/</link>
-    <description>Recent content in Data Science on Stats On the T</description>
+    <description>Recent content in data science on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Mar 2018 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2018/03/16/satrday-capetown/</guid>
-      <description>&lt;p&gt;While Roger Federer earned his 17th straight win of 2018, tennis data science was taking a center stage at Cape Town&amp;rsquo;s satRday conference.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;While Roger Federer earned his 17th straight win of 2018, tennis data science was taking a center stage at Cape Town&amp;rsquo;s satRday conference.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,9 +26,7 @@
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2018/02/19/ao-hackathon/</guid>
-      <description>&lt;p&gt;As Roger Federer was crowned with his 20th Grand Slam title at the 2018 Australian Open, the winners of the first AO to AI Hackathon competition were being decided. In this post, I take a look at the winning models and discuss what they mean for the future of calling point outcomes in tennis.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;As Roger Federer was crowned with his 20th Grand Slam title at the 2018 Australian Open, the winners of the first AO to AI Hackathon competition were being decided. In this post, I take a look at the winning models and discuss what they mean for the future of calling point outcomes in tennis.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -40,9 +36,9 @@
       
       <guid>https://skoval.github.io/post/research/</guid>
       <description>Selected research. Full list can be found on Google Scholar.
- Farrow, D., Reid, M., Buszard, T., &amp;amp; Kovalchik, S. (2017). Charting the development of sport expertise: challenges and opportunities. International Review of Sport and Exercise Psychology, 1-20.
- Albert, J., &amp;amp; Kovalchik, S. (2017). The Do’s and Don’ts of Sports Metrics: The Tennis ATP Leaderboard. CHANCE, 30(1), 26-34.
- Kovalchik, S. A., Bane, M. K., &amp;amp; Reid, M. (2016). Getting to the top: an analysis of 25 years of career rankings trajectories for professional women’s tennis.</description>
+  Kovalchik, S. A., &amp;amp; Ingram, M. (2018). Estimating the duration of professional tennis matches for varying formats. Journal of Quantitative Analysis in Sports, 14(1), 13-23.
+  Kovalchik, S., &amp;amp; Reid, M. (2018). A shot taxonomy in the era of tracking data in professional tennis. Journal of sports sciences, 36(18), 2096-2104.
+  Albert, J., &amp;amp; Kovalchik, S. (2017).</description>
     </item>
     
   </channel>

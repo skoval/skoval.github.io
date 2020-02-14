@@ -1,477 +1,205 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html class="no-js" lang="en-us">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Officials Are Human Too</title>
-<meta name="description" content="A blog that puts the numbers to tennis">
-<meta name="generator" content="Hugo 0.21" />
-<meta property="og:title" content="Officials Are Human Too" />
-<meta property="og:description" content="Every match win involves some luck. Whether it&rsquo;s the coin toss or the bounce off a clipped net, some events in a tennis match are outside of a player&rsquo;s control. And the sport accepts that. But we shouldn&rsquo;t accept it when it comes to line calls, especially when there is technology that can prevent line call errors.
-
-" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Officials Are Human Too - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Officials Are Human Too" />
+<meta property="og:description" content="Every match win involves some luck. Whether it&rsquo;s the coin toss or the bounce off a clipped net, some events in a tennis match are outside of a player&rsquo;s control. And the sport accepts that. But we shouldn&rsquo;t accept it when it comes to line calls, especially when there is technology that can prevent line call errors." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://skoval.github.io/2017/05/07/official-bias/" />
+<meta property="article:published_time" content="2017-05-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-05-07T00:00:00+00:00" />
 
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
-
-<meta property="article:published_time" content="2017-05-07T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-05-07T00:00:00&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-
-<link rel="dns-prefetch" href="//fonts.googleapis.com" />
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
-<link rel="stylesheet" href="https://skoval.github.io/css/style.css" type="text/css" media="all" />
-<script type="text/javascript" src="https://skoval.github.io/js/scripts.js"></script>
-<link rel="shortcut icon" href="https://skoval.github.io/favicon.ico">
 </head>
-<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
-	<div class="container container-outer">
-		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-			<div class="container container-inner clearfix">
-				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
-                    <div style="float:right;">
-                        <img src="https://skoval.github.io/img/logo.png" width="70px">
-                    </div>
-                   	<a class="logo__link" href="https://skoval.github.io/" title="Stats On the T" rel="home">
-						<h1 class="logo__title">Stats On the T</h1>
-						<h2 class="logo__tagline">Dedicated to data, statistics, and tennis</h2>
-                        
-					</a>
-				</div>
-			</div>
-			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-	<ul class="menu__list">
-		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/contact/">CONTACT</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/features/">FEATURES</a></li>
-		<li class="menu__item "><a class="menu__link" href="/ratings/main/">RATINGS</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/research/">RESEARCH</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
-	</ul>
-</nav>
-		</header>
-		<div class="wrapper clearfix">
-
-
-<div class="main-content content" role="main" itemprop="mainContentOfPage">
-	<article class="post">
-		<header class="post__header clearfix">
-			<h1 class="post__title">Officials Are Human Too</h1>
-			<p class="post__meta meta">
-				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-				<time class="post__meta-date" datetime="2017-05-07T00:00:00">May 07, 2017</time>
-			</p>
-		</header>
-		<div class="post__content clearfix">
-
-			<p>Every match win involves some luck. Whether it&rsquo;s the coin toss or the bounce off a clipped net, some events in a tennis match are outside of a player&rsquo;s control. And the sport accepts that. But we shouldn&rsquo;t accept it when it comes to line calls, especially when there is technology that can prevent line call errors.</p>
-
-<p></p>
-
-<p>It is hard to find a better recent example of the frustration of a bad call than the overrule in the semifinal of the <a href="http://www.tennis.com/pro-game/2017/04/goffin-bad-call-was-umpires-not-nadals/65622/">Monte Carlo Masters</a> two weeks ago. The call happened in David Goffin and Rafael Nadal&rsquo;s match and the result lost Goffin the 4-2 position in the first set that he had earned.</p>
-
-<div style="position:relative;height:0;padding-bottom:50.25%;"><iframe src="https://www.youtube.com/embed/fVKCyeW2DCA?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
-
-<p>Clay courts don&rsquo;t have player challenge systems because the visible marks the ball makes with the dirt are thought to be good enough. But the flaws of that system were exposed when the official of the semifinal overruled an &ldquo;out&rdquo; call on a long backhand hit by Rafael Nadal. The official checked his decision by coming down from his chair to look at the mark, but he looked at the wrong place and called the ball &lsquo;in&rsquo;. Video replay made it clear that the ball was well out, though nothing could be done at that point.</p>
-
-<p>Goffin, who has yet to win a Masters title, seemed to feel that fate was against him after that mistake. He couldn&rsquo;t get his head back in the match from that point on.</p>
-
-<p>The existence of video review and other decision aids in sport are a recognition that even the most well-trained and determined officials can make mistakes. Making calls in elite sport puts a lot of pressure on human attention and perception, and no one is infallible.</p>
-
-<p><em>So how can we reduce preventable errors on calls?</em></p>
-
-<p>The introduction of the challenge system, which began it&rsquo;s rollout in 2006, was a big step toward improving line calls. Working with colleagues at Tennis Australia and with Jeff Sackmann of the <a href="http://tennisabstract.com">Tennis Abstract</a>, we recently completed a study of over 1,000 challenges in professional matches. We found that players win more than 1 out of every 3 challenges. That suggests an error rate as high as 30% on the small subset of close calls that occur in a match.</p>
-
-<iframe width="900" height="700" frameborder="0" scrolling="no" src="https://plot.ly/~on-the-t/1176.embed"></iframe>
-
-<p>However, we found that challenges were also underutilized. Challenges are made only 3 of every 100 points for men and even less for women. Men and women play an average of 60 points per set at the Grand Slams, so you could expect most sets will have 1 to 2 challenges at most. Players could afford to use more of their challenges especially in later stages of matches where points are more important.</p>
-
-<iframe width="900" height="700" frameborder="0" scrolling="no" src="https://plot.ly/~on-the-t/1178.embed"></iframe>
-
-<p>The current challenge system is a step forward, but the system should be made available at all tour-level events, even on clay.</p>
-
-<p>The current system, although less error prone than human judgment alone, is still fallible. The ball locations you see on the challenge replay are a projection based on a multi-camera system provided by Hawk-eye Technologies (now owned  by Sony). That projection is an estimate, it is not the &ldquo;truth&rdquo;. Of course, the company has worked determinedly to get the margin of error of their system down. Reports suggest that the tracking system has an average margin of error of 3 mm. The regulation diameter of a tennis ball, according to the ITF is 67 mm, so that error is equivalent to 4\% the width of a tennis ball.</p>
-
-<p><img src="/assets/line-judge-error.png" width = "400" style ="float:left;padding:2%;" /></p>
-
-<p>That uncertainty would seem sufficiently small but remember it is an average so the error for any particular bounce could be something larger or smaller, which the system sadly never reports during a broadcast.</p>
-
-<p><em>We might ask why introduce a system, whose mere presence annoys some of the sports <a href="https://www.theguardian.com/sport/2007/jul/11/tennis.wimbledon">biggest stars</a>, if it doesn&rsquo;t even provide 100% accuracy?</em></p>
-
-<p>If we want to avoid unlucky line calls, we might still accept a system that was a massive improvement over human judgment, even if still imperfect. Research into that question suggests the current challenge system does meet that standard. In a 2008 study in the <em>The Proceedings of the Royal Society, Series B</em>, George Mather investigated the <a href="http://rspb.royalsocietypublishing.org/content/275/1643/1645.short">perceptual uncertainty</a> of tennis line judges and found that it was 40 mm. Excellent for human performance but still magnitudes larger than tracking system performance.</p>
-
-<p><img src="/assets/hawkeye-error.png" width = "400" style ="float:right;padding:2%;" /></p>
-
-<p>So, even with the inherent flaws with estimation, the challenge system is a useful aid to have in the game. However, there is a less recognized problem that the introduction of the system has created: official bias.</p>
-
-<p>The specific bias I am referring to is a side effect of challenged &lsquo;out&rsquo; calls that are successfully overturned by the challenge system. When a call is found to have been rightfully &lsquo;in&rsquo;, the chair umpire has to decide whether the point is awarded to the player who made the shot or is replayed. The decision to award the point is equivalent to the chair concluding that the shot couldn&rsquo;t be returned. These situations make up roughly 10% of all challenges.</p>
-
-<p>As part of our study of challenges, we compared the official decisions on overturned &lsquo;out&rsquo; calls to independent codes of a group of coaches from the National Academies of Tennis Australia. We found that the agreement between the expert judgment of a playable shot and the chair umpire&rsquo;s judgment was around 75%. We also found that more of the disagreement was due to conservative awarding of points, that is, the chair said shots could be played more often than experts.</p>
-
-<p>This highlights an example of <em>impact bias</em>. This bias arises when officials are averse to decisions that would have (or at least have the perception of having) a greater influence on the outcome of the game, like calling a strike when a batter already has two strikes against him. For tennis chairs, awarding a point is likely to seem the greater impact decision than replaying the point, even though they are making an influential decision in each case.</p>
-
-<iframe width="900" height="700" frameborder="0" scrolling="no" src="https://plot.ly/~on-the-t/1180.embed"></iframe>
-
-<p>Sadly, this impact bias is much harder to detect than a bad call but more likely to occur than the kind of mistake we saw in the Monte Carlo semifinal. But there are ways the system could be remedied. I would propose an independent review, like what is used in the MLB, that would be done for every overturned &lsquo;out&rsquo; call. Because this review would be anonymous and the decision-makers distant from the actual match, impact bias would be less likely. It is just a matter of making sure the review would be speedy enough to be acceptable to fans and players.</p>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
 		</div>
 		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
 
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Officials Are Human Too</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2017-05-07T00:00:00">May 07, 2017</time>
+</div>
+</div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>Every match win involves some luck. Whether it&rsquo;s the coin toss or the bounce off a clipped net, some events in a tennis match are outside of a player&rsquo;s control. And the sport accepts that. But we shouldn&rsquo;t accept it when it comes to line calls, especially when there is technology that can prevent line call errors.</p>
+<p>It is hard to find a better recent example of the frustration of a bad call than the overrule in the semifinal of the <a href="http://www.tennis.com/pro-game/2017/04/goffin-bad-call-was-umpires-not-nadals/65622/">Monte Carlo Masters</a> two weeks ago. The call happened in David Goffin and Rafael Nadal&rsquo;s match and the result lost Goffin the 4-2 position in the first set that he had earned.</p>
+<div style="position:relative;height:0;padding-bottom:50.25%;"><iframe src="https://www.youtube.com/embed/fVKCyeW2DCA?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+<p>Clay courts don&rsquo;t have player challenge systems because the visible marks the ball makes with the dirt are thought to be good enough. But the flaws of that system were exposed when the official of the semifinal overruled an &ldquo;out&rdquo; call on a long backhand hit by Rafael Nadal. The official checked his decision by coming down from his chair to look at the mark, but he looked at the wrong place and called the ball &lsquo;in&rsquo;. Video replay made it clear that the ball was well out, though nothing could be done at that point.</p>
+<p>Goffin, who has yet to win a Masters title, seemed to feel that fate was against him after that mistake. He couldn&rsquo;t get his head back in the match from that point on.</p>
+<p>The existence of video review and other decision aids in sport are a recognition that even the most well-trained and determined officials can make mistakes. Making calls in elite sport puts a lot of pressure on human attention and perception, and no one is infallible.</p>
+<p><em>So how can we reduce preventable errors on calls?</em></p>
+<p>The introduction of the challenge system, which began it&rsquo;s rollout in 2006, was a big step toward improving line calls. Working with colleagues at Tennis Australia and with Jeff Sackmann of the <a href="http://tennisabstract.com">Tennis Abstract</a>, we recently completed a study of over 1,000 challenges in professional matches. We found that players win more than 1 out of every 3 challenges. That suggests an error rate as high as 30% on the small subset of close calls that occur in a match.</p>
+<iframe width="900" height="700" frameborder="0" scrolling="no" src="https://plot.ly/~on-the-t/1176.embed"></iframe>
+<p>However, we found that challenges were also underutilized. Challenges are made only 3 of every 100 points for men and even less for women. Men and women play an average of 60 points per set at the Grand Slams, so you could expect most sets will have 1 to 2 challenges at most. Players could afford to use more of their challenges especially in later stages of matches where points are more important.</p>
+<iframe width="900" height="700" frameborder="0" scrolling="no" src="https://plot.ly/~on-the-t/1178.embed"></iframe>
+<p>The current challenge system is a step forward, but the system should be made available at all tour-level events, even on clay.</p>
+<p>The current system, although less error prone than human judgment alone, is still fallible. The ball locations you see on the challenge replay are a projection based on a multi-camera system provided by Hawk-eye Technologies (now owned  by Sony). That projection is an estimate, it is not the &ldquo;truth&rdquo;. Of course, the company has worked determinedly to get the margin of error of their system down. Reports suggest that the tracking system has an average margin of error of 3 mm. The regulation diameter of a tennis ball, according to the ITF is 67 mm, so that error is equivalent to 4% the width of a tennis ball.</p>
+<p><img src="/assets/line-judge-error.png" width = "400" style ="float:left;padding:2%;" /></p>
+<p>That uncertainty would seem sufficiently small but remember it is an average so the error for any particular bounce could be something larger or smaller, which the system sadly never reports during a broadcast.</p>
+<p><em>We might ask why introduce a system, whose mere presence annoys some of the sports <a href="https://www.theguardian.com/sport/2007/jul/11/tennis.wimbledon">biggest stars</a>, if it doesn&rsquo;t even provide 100% accuracy?</em></p>
+<p>If we want to avoid unlucky line calls, we might still accept a system that was a massive improvement over human judgment, even if still imperfect. Research into that question suggests the current challenge system does meet that standard. In a 2008 study in the <em>The Proceedings of the Royal Society, Series B</em>, George Mather investigated the <a href="http://rspb.royalsocietypublishing.org/content/275/1643/1645.short">perceptual uncertainty</a> of tennis line judges and found that it was 40 mm. Excellent for human performance but still magnitudes larger than tracking system performance.</p>
+<p><img src="/assets/hawkeye-error.png" width = "400" style ="float:right;padding:2%;" /></p>
+<p>So, even with the inherent flaws with estimation, the challenge system is a useful aid to have in the game. However, there is a less recognized problem that the introduction of the system has created: official bias.</p>
+<p>The specific bias I am referring to is a side effect of challenged &lsquo;out&rsquo; calls that are successfully overturned by the challenge system. When a call is found to have been rightfully &lsquo;in&rsquo;, the chair umpire has to decide whether the point is awarded to the player who made the shot or is replayed. The decision to award the point is equivalent to the chair concluding that the shot couldn&rsquo;t be returned. These situations make up roughly 10% of all challenges.</p>
+<p>As part of our study of challenges, we compared the official decisions on overturned &lsquo;out&rsquo; calls to independent codes of a group of coaches from the National Academies of Tennis Australia. We found that the agreement between the expert judgment of a playable shot and the chair umpire&rsquo;s judgment was around 75%. We also found that more of the disagreement was due to conservative awarding of points, that is, the chair said shots could be played more often than experts.</p>
+<p>This highlights an example of <em>impact bias</em>. This bias arises when officials are averse to decisions that would have (or at least have the perception of having) a greater influence on the outcome of the game, like calling a strike when a batter already has two strikes against him. For tennis chairs, awarding a point is likely to seem the greater impact decision than replaying the point, even though they are making an influential decision in each case.</p>
+<iframe width="900" height="700" frameborder="0" scrolling="no" src="https://plot.ly/~on-the-t/1180.embed"></iframe>
+<p>Sadly, this impact bias is much harder to detect than a bad call but more likely to occur than the kind of mistake we saw in the Monte Carlo semifinal. But there are ways the system could be remedied. I would propose an independent review, like what is used in the MLB, that would be done for every overturned &lsquo;out&rsquo; call. Because this review would be anonymous and the decision-makers distant from the actual match, impact bias would be less likely. It is just a matter of making sure the review would be speedy enough to be acceptable to fans and players.</p>
+		</div>
 	</article>
-	
+</main>
+
 <div class="authorbox clearfix">
 	<figure class="authorbox__avatar">
-		<img alt="Stephanie Kovalchik avatar" src="https://skoval.github.io/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
 	</figure>
 	<div class="authorbox__header">
 		<span class="authorbox__name">About Stephanie Kovalchik</span>
 	</div>
 	<div class="authorbox__description">
-		Tennis Data Scientist at the Game Insight Group at Tennis Australia and researcher at the Institute of Sport Exercise and Active Living at Victoria University.
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
 	</div>
 </div>
-	
-<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-	<div class="post-nav__item post-nav__item--prev col-1-2">
-		<a class="post-nav__link" href="https://skoval.github.io/2017/04/29/murray-serve-volley/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Are Net Points Murray&#39;s Kryptonite?</p></a>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2017/04/29/murray-serve-volley/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Are Net Points Murray&#39;s Kryptonite?</p></a>
 	</div>
-	<div class="post-nav__item post-nav__item--next col-1-2">
-		<a class="post-nav__link" href="https://skoval.github.io/2017/05/15/clayray-2017/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">Should We Be Surprised by Murray&#39;s 2017 Clay Performance So Far?</p></a>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/2017/05/15/clayray-2017/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Should We Be Surprised by Murray&#39;s 2017 Clay Performance So Far?</p></a>
 	</div>
 </nav>
 
-	
-<div class="comments">
+<section class="comments">
 	<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'on-the-t-com';
-    var disqus_identifier = 'https:\/\/skoval.github.io\/2017\/05\/07\/official-bias\/';
-    var disqus_title = 'Officials Are Human Too';
-    var disqus_url = 'https:\/\/skoval.github.io\/2017\/05\/07\/official-bias\/';
-
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
     (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
 
-</div>
 
-<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
-	
-<div class="widget-search widget">
-	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
-		<label>
-			<span class="screen-reader-text">Search for:</span>
-			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
-		</label>
-		<input class="widget-search__submit" type="submit" value="Search">
-		<input type="hidden" name="sitesearch" value="https://skoval.github.io/" />
-	</form>
-</div>
-	
-<div class="widget-recent widget">
-	<h4 class="widget__title">Recent Posts</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/2020/01/24/slam-walkover-advantage/">Is an Early Walkover an Advantage in a Slam?</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2020/01/17/mens-ao-title/">Men&#39;s Title Chances for the 2020 Australian Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2020/01/17/womens-ao-title/">Women&#39;s Title Chances for the 2020 Australian Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/11/15/pressure-win-stats/">Who Were the Top Pressure Performers at the 2019 Grand Slams?</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/11/08/pressure-stats/">Who Felt the Pressure the Most at the 2019 Grand Slams?</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/10/24/next4-big4/">Are the First Years of the &#39;Next4&#39; Anything Like the Big4?</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/09/24/laver-cup-decider/">A Short Explainer on Getting to a Laver Cup Decider</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/09/13/us-open-pressure/">How Medvedev and Berrettini Dealt with Pressure at the US Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/09/06/us-open-ages/">Ages at the US Open are Getting Bimodal, Again</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/08/30/us-open-blockbusters/">Which Blockbuster Matches Might Be Ahead At The US Open?</a></li>
-		</ul>
-	</div>
-</div>
-
-	
-<div class="widget-categories widget">
-	<h4 class="widget__title">Categories</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/age">Age</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/ao">Ao</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/atp">Atp</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/backhand">Backhand</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/best">Best</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/big-points">Big-Points</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/breaking-through">Breaking-Through</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/clay">Clay</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/clutch">Clutch</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/comeback">Comeback</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/compeitiveness">Compeitiveness</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/cutch">Cutch</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/data-science">Data-Science</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/del-potro">Del-Potro</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/demand">Demand</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/depth">Depth</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/dominance">Dominance</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/doubles">Doubles</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/draw">Draw</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/duration">Duration</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/durations">Durations</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/elo">Elo</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/epochs">Epochs</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/event-predictions">Event-Predictions</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/excitement">Excitement</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/fatigue">Fatigue</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/federer">Federer</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/first-slam">First-Slam</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/french-open">French-Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/game-age">Game-Age</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gaps">Gaps</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gaussian-process">Gaussian-Process</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender">Gender</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender-bias">Gender-Bias</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/goat">Goat</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grand-slams">Grand-Slams</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grass">Grass</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/hackathon">Hackathon</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/head-to-head">Head-To-Head</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/head-to-heads">Head-To-Heads</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/importance">Importance</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/indian-wells">Indian-Wells</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/injury">Injury</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/laver-cup">Laver-Cup</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaderboards">Leaderboards</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaders">Leaders</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/luck">Luck</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/masters">Masters</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/matchups">Matchups</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/momentum">Momentum</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/must-see">Must-See</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/nadal">Nadal</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/next-gen">Next-Gen</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/novak">Novak</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/prediction">Prediction</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/predictions">Predictions</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/premiers">Premiers</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/pressure">Pressure</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/programming">Programming</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/quality">Quality</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/r">R</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/rating">Rating</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/ratings">Ratings</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/ratings-trends">Ratings-Trends</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/research">Research</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/retirements">Retirements</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/return">Return</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/roger-federer">Roger-Federer</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/scheduling">Scheduling</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/scoreboard">Scoreboard</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/season">Season</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seasons">Seasons</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeding">Seeding</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeds">Seeds</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena">Serena</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena-williams">Serena-Williams</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serve">Serve</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/singles">Singles</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/slam">Slam</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sloan">Sloan</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sports-analytics">Sports-Analytics</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/stories">Stories</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/strength">Strength</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/style">Style</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surface">Surface</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprise">Surprise</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprising">Surprising</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/suspended">Suspended</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/tennis-news">Tennis-News</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/us-open">Us-Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/walkover">Walkover</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/weather">Weather</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wimbledon">Wimbledon</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wta">Wta</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/zverev">Zverev</a></li>
-		</ul>
-	</div>
-</div>
-	
-	
-<div class="widget-taglist widget">
-	<h4 class="widget__title">Tags</h4>
-	<div class="widget__content">
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/age" title="age">age</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/ao" title="ao">ao</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/atp" title="atp">atp</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/backhand" title="backhand">backhand</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/best" title="best">best</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/big-points" title="big-points">big-points</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/breaking-through" title="breaking-through">breaking-through</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/clay" title="clay">clay</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/clutch" title="clutch">clutch</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/comeback" title="comeback">comeback</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/compeitiveness" title="compeitiveness">compeitiveness</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/cutch" title="cutch">cutch</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/data-science" title="data-science">data-science</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/del-potro" title="del-potro">del-potro</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/demand" title="demand">demand</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/depth" title="depth">depth</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/dominance" title="dominance">dominance</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/doubles" title="doubles">doubles</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/draw" title="draw">draw</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/duration" title="duration">duration</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/durations" title="durations">durations</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/elo" title="elo">elo</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/epochs" title="epochs">epochs</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/event-predictions" title="event-predictions">event-predictions</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/excitement" title="excitement">excitement</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/fatigue" title="fatigue">fatigue</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/federer" title="federer">federer</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/first-slam" title="first-slam">first-slam</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/french-open" title="french-open">french-open</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/game-age" title="game-age">game-age</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gaps" title="gaps">gaps</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gaussian-process" title="gaussian-process">gaussian-process</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender" title="gender">gender</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender-bias" title="gender-bias">gender-bias</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/goat" title="goat">goat</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grand-slams" title="grand-slams">grand-slams</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grass" title="grass">grass</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/hackathon" title="hackathon">hackathon</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/head-to-head" title="head-to-head">head-to-head</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/head-to-heads" title="head-to-heads">head-to-heads</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/importance" title="importance">importance</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/indian-wells" title="indian-wells">indian-wells</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/injury" title="injury">injury</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/laver-cup" title="laver-cup">laver-cup</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaderboards" title="leaderboards">leaderboards</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaders" title="leaders">leaders</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/luck" title="luck">luck</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/masters" title="masters">masters</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/matchups" title="matchups">matchups</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/momentum" title="momentum">momentum</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/must-see" title="must-see">must-see</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/nadal" title="nadal">nadal</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/next-gen" title="next-gen">next-gen</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/novak" title="novak">novak</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/prediction" title="prediction">prediction</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/predictions" title="predictions">predictions</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/premiers" title="premiers">premiers</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/pressure" title="pressure">pressure</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/programming" title="programming">programming</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/quality" title="quality">quality</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/r" title="r">r</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/rating" title="rating">rating</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/ratings" title="ratings">ratings</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/ratings-trends" title="ratings-trends">ratings-trends</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/research" title="research">research</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/retirements" title="retirements">retirements</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/return" title="return">return</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/roger-federer" title="roger-federer">roger-federer</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/scheduling" title="scheduling">scheduling</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/scoreboard" title="scoreboard">scoreboard</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/season" title="season">season</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seasons" title="seasons">seasons</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeding" title="seeding">seeding</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeds" title="seeds">seeds</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena" title="serena">serena</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena-williams" title="serena-williams">serena-williams</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serve" title="serve">serve</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/singles" title="singles">singles</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/slam" title="slam">slam</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sloan" title="sloan">sloan</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sports-analytics" title="sports-analytics">sports-analytics</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/stories" title="stories">stories</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/strength" title="strength">strength</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/style" title="style">style</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surface" title="surface">surface</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprise" title="surprise">surprise</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprising" title="surprising">surprising</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/suspended" title="suspended">suspended</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/tennis-news" title="tennis-news">tennis-news</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/us-open" title="us-open">us-open</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/walkover" title="walkover">walkover</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/weather" title="weather">weather</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wimbledon" title="wimbledon">wimbledon</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wta" title="wta">wta</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/zverev" title="zverev">zverev</a>
-	</div>
-</div>
-</aside>
-	</div>
-		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
-			<div class="container container-inner">
-				<p class="footer__copyright">&copy; 2020 Stats On the T. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
 			</div>
-		</footer>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
 	</div>
-
-<script>
-	var navigation = responsiveNav(".menu", {
-		navClass: "menu--collapse",
-	});
-</script>
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-  });
-  MathJax.Hub.Queue(function() {
-    
-    
-    
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-
-  MathJax.Hub.Config({
-  
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-  });
-</script>
-
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-100138539-1', 'auto');
-ga('send', 'pageview');
-</script>
-
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
 </body>
 </html>
-
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-100138539-1', 'auto');
-ga('send', 'pageview');
-</script>
-

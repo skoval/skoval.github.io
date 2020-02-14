@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Stats On the T</title>
@@ -6,13 +6,49 @@
     <description>Recent content in Categories on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Age</title>
+      <title>Grand Slams</title>
+      <link>https://skoval.github.io/categories/grand-slams/</link>
+      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/grand-slams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pressure</title>
+      <link>https://skoval.github.io/categories/pressure/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/pressure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ratings trends</title>
+      <link>https://skoval.github.io/categories/ratings-trends/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/ratings-trends/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>laver cup</title>
+      <link>https://skoval.github.io/categories/laver-cup/</link>
+      <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/laver-cup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>age</title>
       <link>https://skoval.github.io/categories/age/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       
@@ -21,88 +57,25 @@
     </item>
     
     <item>
-      <title>Ao</title>
-      <link>https://skoval.github.io/categories/ao/</link>
-      <pubDate>Fri, 17 Jan 2020 00:00:00 +0000</pubDate>
+      <title>must-see</title>
+      <link>https://skoval.github.io/categories/must-see/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/categories/ao/</guid>
+      <guid>https://skoval.github.io/categories/must-see/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Atp</title>
-      <link>https://skoval.github.io/categories/atp/</link>
-      <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
+      <title>durations</title>
+      <link>https://skoval.github.io/categories/durations/</link>
+      <pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/categories/atp/</guid>
+      <guid>https://skoval.github.io/categories/durations/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Backhand</title>
-      <link>https://skoval.github.io/categories/backhand/</link>
-      <pubDate>Sun, 01 Apr 2018 12:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/backhand/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Best</title>
-      <link>https://skoval.github.io/categories/best/</link>
-      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/best/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Big Points</title>
-      <link>https://skoval.github.io/categories/big-points/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/big-points/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Breaking Through</title>
-      <link>https://skoval.github.io/categories/breaking-through/</link>
-      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/breaking-through/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Clay</title>
-      <link>https://skoval.github.io/categories/clay/</link>
-      <pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/clay/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Clutch</title>
-      <link>https://skoval.github.io/categories/clutch/</link>
-      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/clutch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Comeback</title>
-      <link>https://skoval.github.io/categories/comeback/</link>
-      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/comeback/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Compeitiveness</title>
+      <title>compeitiveness</title>
       <link>https://skoval.github.io/categories/compeitiveness/</link>
       <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
       
@@ -111,61 +84,16 @@
     </item>
     
     <item>
-      <title>Cutch</title>
-      <link>https://skoval.github.io/categories/cutch/</link>
-      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      <title>ratings</title>
+      <link>https://skoval.github.io/categories/ratings/</link>
+      <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/categories/cutch/</guid>
+      <guid>https://skoval.github.io/categories/ratings/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Data Science</title>
-      <link>https://skoval.github.io/categories/data-science/</link>
-      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/data-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Del Potro</title>
-      <link>https://skoval.github.io/categories/del-potro/</link>
-      <pubDate>Sun, 01 Apr 2018 12:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/del-potro/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Demand</title>
-      <link>https://skoval.github.io/categories/demand/</link>
-      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/demand/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Depth</title>
-      <link>https://skoval.github.io/categories/depth/</link>
-      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/depth/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dominance</title>
-      <link>https://skoval.github.io/categories/dominance/</link>
-      <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/dominance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Doubles</title>
+      <title>doubles</title>
       <link>https://skoval.github.io/categories/doubles/</link>
       <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
       
@@ -174,29 +102,137 @@
     </item>
     
     <item>
-      <title>Draw</title>
-      <link>https://skoval.github.io/categories/draw/</link>
-      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
+      <title>rating</title>
+      <link>https://skoval.github.io/categories/rating/</link>
+      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/categories/draw/</guid>
+      <guid>https://skoval.github.io/categories/rating/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Duration</title>
-      <link>https://skoval.github.io/categories/duration/</link>
-      <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
+      <title>singles</title>
+      <link>https://skoval.github.io/categories/singles/</link>
+      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/categories/duration/</guid>
+      <guid>https://skoval.github.io/categories/singles/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Durations</title>
-      <link>https://skoval.github.io/categories/durations/</link>
-      <pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate>
+      <title>clay</title>
+      <link>https://skoval.github.io/categories/clay/</link>
+      <pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/categories/durations/</guid>
+      <guid>https://skoval.github.io/categories/clay/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>matchups</title>
+      <link>https://skoval.github.io/categories/matchups/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/matchups/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>style</title>
+      <link>https://skoval.github.io/categories/style/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/style/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>head-to-head</title>
+      <link>https://skoval.github.io/categories/head-to-head/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/head-to-head/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ATP</title>
+      <link>https://skoval.github.io/categories/atp/</link>
+      <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/atp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>indian wells</title>
+      <link>https://skoval.github.io/categories/indian-wells/</link>
+      <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/indian-wells/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>predictions</title>
+      <link>https://skoval.github.io/categories/predictions/</link>
+      <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/predictions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WTA</title>
+      <link>https://skoval.github.io/categories/wta/</link>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/wta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>big points</title>
+      <link>https://skoval.github.io/categories/big-points/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/big-points/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prediction</title>
+      <link>https://skoval.github.io/categories/prediction/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/prediction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>serve</title>
+      <link>https://skoval.github.io/categories/serve/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/serve/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>surprise</title>
+      <link>https://skoval.github.io/categories/surprise/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/surprise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>clutch</title>
+      <link>https://skoval.github.io/categories/clutch/</link>
+      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/clutch/</guid>
       <description></description>
     </item>
     
@@ -210,97 +246,7 @@
     </item>
     
     <item>
-      <title>Epochs</title>
-      <link>https://skoval.github.io/categories/epochs/</link>
-      <pubDate>Sun, 18 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/epochs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Event Predictions</title>
-      <link>https://skoval.github.io/categories/event-predictions/</link>
-      <pubDate>Fri, 17 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/event-predictions/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Excitement</title>
-      <link>https://skoval.github.io/categories/excitement/</link>
-      <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/excitement/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fatigue</title>
-      <link>https://skoval.github.io/categories/fatigue/</link>
-      <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/fatigue/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Federer</title>
-      <link>https://skoval.github.io/categories/federer/</link>
-      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/federer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>First Slam</title>
-      <link>https://skoval.github.io/categories/first-slam/</link>
-      <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/first-slam/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>French Open</title>
-      <link>https://skoval.github.io/categories/french-open/</link>
-      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/french-open/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Game Age</title>
-      <link>https://skoval.github.io/categories/game-age/</link>
-      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/game-age/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gaps</title>
-      <link>https://skoval.github.io/categories/gaps/</link>
-      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/gaps/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gaussian Process</title>
-      <link>https://skoval.github.io/categories/gaussian-process/</link>
-      <pubDate>Sun, 01 Apr 2018 12:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/gaussian-process/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gender</title>
+      <title>gender</title>
       <link>https://skoval.github.io/categories/gender/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
@@ -309,295 +255,16 @@
     </item>
     
     <item>
-      <title>Gender Bias</title>
-      <link>https://skoval.github.io/categories/gender-bias/</link>
-      <pubDate>Tue, 27 Jun 2017 00:00:00 +0000</pubDate>
+      <title>first slam</title>
+      <link>https://skoval.github.io/categories/first-slam/</link>
+      <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/categories/gender-bias/</guid>
+      <guid>https://skoval.github.io/categories/first-slam/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Goat</title>
-      <link>https://skoval.github.io/categories/goat/</link>
-      <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/goat/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Grand Slams</title>
-      <link>https://skoval.github.io/categories/grand-slams/</link>
-      <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/grand-slams/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Grass</title>
-      <link>https://skoval.github.io/categories/grass/</link>
-      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/grass/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hackathon</title>
-      <link>https://skoval.github.io/categories/hackathon/</link>
-      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/hackathon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Head To Head</title>
-      <link>https://skoval.github.io/categories/head-to-head/</link>
-      <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/head-to-head/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Head To Heads</title>
-      <link>https://skoval.github.io/categories/head-to-heads/</link>
-      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/head-to-heads/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Importance</title>
-      <link>https://skoval.github.io/categories/importance/</link>
-      <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/importance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Indian Wells</title>
-      <link>https://skoval.github.io/categories/indian-wells/</link>
-      <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/indian-wells/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Injury</title>
-      <link>https://skoval.github.io/categories/injury/</link>
-      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/injury/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Laver Cup</title>
-      <link>https://skoval.github.io/categories/laver-cup/</link>
-      <pubDate>Tue, 24 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/laver-cup/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Leaderboards</title>
-      <link>https://skoval.github.io/categories/leaderboards/</link>
-      <pubDate>Sun, 11 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/leaderboards/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Leaders</title>
-      <link>https://skoval.github.io/categories/leaders/</link>
-      <pubDate>Sat, 22 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/leaders/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Luck</title>
-      <link>https://skoval.github.io/categories/luck/</link>
-      <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/luck/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Masters</title>
-      <link>https://skoval.github.io/categories/masters/</link>
-      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/masters/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Matchups</title>
-      <link>https://skoval.github.io/categories/matchups/</link>
-      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/matchups/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Momentum</title>
-      <link>https://skoval.github.io/categories/momentum/</link>
-      <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/momentum/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Must See</title>
-      <link>https://skoval.github.io/categories/must-see/</link>
-      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/must-see/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nadal</title>
-      <link>https://skoval.github.io/categories/nadal/</link>
-      <pubDate>Wed, 25 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/nadal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Next Gen</title>
-      <link>https://skoval.github.io/categories/next-gen/</link>
-      <pubDate>Sat, 31 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/next-gen/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Novak</title>
-      <link>https://skoval.github.io/categories/novak/</link>
-      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/novak/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Prediction</title>
-      <link>https://skoval.github.io/categories/prediction/</link>
-      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/prediction/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Predictions</title>
-      <link>https://skoval.github.io/categories/predictions/</link>
-      <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/predictions/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Premiers</title>
-      <link>https://skoval.github.io/categories/premiers/</link>
-      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/premiers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pressure</title>
-      <link>https://skoval.github.io/categories/pressure/</link>
-      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/pressure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programming</title>
-      <link>https://skoval.github.io/categories/programming/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Quality</title>
-      <link>https://skoval.github.io/categories/quality/</link>
-      <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/quality/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>https://skoval.github.io/categories/r/</link>
-      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rating</title>
-      <link>https://skoval.github.io/categories/rating/</link>
-      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/rating/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ratings</title>
-      <link>https://skoval.github.io/categories/ratings/</link>
-      <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/ratings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ratings Trends</title>
-      <link>https://skoval.github.io/categories/ratings-trends/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/ratings-trends/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Research</title>
-      <link>https://skoval.github.io/categories/research/</link>
-      <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/research/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Retirements</title>
+      <title>retirements</title>
       <link>https://skoval.github.io/categories/retirements/</link>
       <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
       
@@ -606,236 +273,29 @@
     </item>
     
     <item>
-      <title>Return</title>
-      <link>https://skoval.github.io/categories/return/</link>
-      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/return/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Roger Federer</title>
-      <link>https://skoval.github.io/categories/roger-federer/</link>
-      <pubDate>Fri, 28 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/roger-federer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scheduling</title>
-      <link>https://skoval.github.io/categories/scheduling/</link>
-      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/scheduling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scoreboard</title>
-      <link>https://skoval.github.io/categories/scoreboard/</link>
-      <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/scoreboard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Season</title>
-      <link>https://skoval.github.io/categories/season/</link>
-      <pubDate>Fri, 28 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/season/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Seasons</title>
-      <link>https://skoval.github.io/categories/seasons/</link>
-      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/seasons/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Seeding</title>
-      <link>https://skoval.github.io/categories/seeding/</link>
-      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/seeding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Seeds</title>
-      <link>https://skoval.github.io/categories/seeds/</link>
-      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/seeds/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Serena</title>
-      <link>https://skoval.github.io/categories/serena/</link>
-      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/serena/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Serena Williams</title>
-      <link>https://skoval.github.io/categories/serena-williams/</link>
-      <pubDate>Tue, 27 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/serena-williams/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Serve</title>
-      <link>https://skoval.github.io/categories/serve/</link>
-      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/serve/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Singles</title>
-      <link>https://skoval.github.io/categories/singles/</link>
-      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/singles/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Slam</title>
-      <link>https://skoval.github.io/categories/slam/</link>
-      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/slam/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sloan</title>
-      <link>https://skoval.github.io/categories/sloan/</link>
-      <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/sloan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sports Analytics</title>
-      <link>https://skoval.github.io/categories/sports-analytics/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/sports-analytics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Stories</title>
-      <link>https://skoval.github.io/categories/stories/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/stories/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Strength</title>
-      <link>https://skoval.github.io/categories/strength/</link>
-      <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/strength/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Style</title>
-      <link>https://skoval.github.io/categories/style/</link>
-      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/style/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Surface</title>
-      <link>https://skoval.github.io/categories/surface/</link>
-      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/surface/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Surprise</title>
-      <link>https://skoval.github.io/categories/surprise/</link>
-      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/surprise/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Surprising</title>
-      <link>https://skoval.github.io/categories/surprising/</link>
-      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/surprising/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Suspended</title>
-      <link>https://skoval.github.io/categories/suspended/</link>
-      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/suspended/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tennis News</title>
-      <link>https://skoval.github.io/categories/tennis-news/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/tennis-news/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Us Open</title>
-      <link>https://skoval.github.io/categories/us-open/</link>
-      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/us-open/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Walkover</title>
-      <link>https://skoval.github.io/categories/walkover/</link>
-      <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/walkover/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Weather</title>
+      <title>weather</title>
       <link>https://skoval.github.io/categories/weather/</link>
       <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/categories/weather/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>goat</title>
+      <link>https://skoval.github.io/categories/goat/</link>
+      <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/goat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>grass</title>
+      <link>https://skoval.github.io/categories/grass/</link>
+      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/grass/</guid>
       <description></description>
     </item>
     
@@ -849,20 +309,524 @@
     </item>
     
     <item>
-      <title>Wta</title>
-      <link>https://skoval.github.io/categories/wta/</link>
-      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Federer</title>
+      <link>https://skoval.github.io/categories/federer/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/categories/wta/</guid>
+      <guid>https://skoval.github.io/categories/federer/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Zverev</title>
+      <title>French Open</title>
+      <link>https://skoval.github.io/categories/french-open/</link>
+      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/french-open/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>suspended</title>
+      <link>https://skoval.github.io/categories/suspended/</link>
+      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/suspended/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>duration</title>
+      <link>https://skoval.github.io/categories/duration/</link>
+      <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/duration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>head-to-heads</title>
+      <link>https://skoval.github.io/categories/head-to-heads/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/head-to-heads/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>serena</title>
+      <link>https://skoval.github.io/categories/serena/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/serena/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zverev</title>
       <link>https://skoval.github.io/categories/zverev/</link>
       <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/categories/zverev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>comeback</title>
+      <link>https://skoval.github.io/categories/comeback/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/comeback/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>novak</title>
+      <link>https://skoval.github.io/categories/novak/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/novak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nadal</title>
+      <link>https://skoval.github.io/categories/nadal/</link>
+      <pubDate>Wed, 25 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/nadal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cutch</title>
+      <link>https://skoval.github.io/categories/cutch/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/cutch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>masters</title>
+      <link>https://skoval.github.io/categories/masters/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/masters/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>backhand</title>
+      <link>https://skoval.github.io/categories/backhand/</link>
+      <pubDate>Sun, 01 Apr 2018 12:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/backhand/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Del Potro</title>
+      <link>https://skoval.github.io/categories/del-potro/</link>
+      <pubDate>Sun, 01 Apr 2018 12:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/del-potro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gaussian process</title>
+      <link>https://skoval.github.io/categories/gaussian-process/</link>
+      <pubDate>Sun, 01 Apr 2018 12:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/gaussian-process/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>depth</title>
+      <link>https://skoval.github.io/categories/depth/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/depth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>premiers</title>
+      <link>https://skoval.github.io/categories/premiers/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/premiers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>next gen</title>
+      <link>https://skoval.github.io/categories/next-gen/</link>
+      <pubDate>Sat, 31 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/next-gen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data science</title>
+      <link>https://skoval.github.io/categories/data-science/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://skoval.github.io/categories/r/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>breaking through</title>
+      <link>https://skoval.github.io/categories/breaking-through/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/breaking-through/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>research</title>
+      <link>https://skoval.github.io/categories/research/</link>
+      <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sloan</title>
+      <link>https://skoval.github.io/categories/sloan/</link>
+      <pubDate>Wed, 28 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/sloan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hackathon</title>
+      <link>https://skoval.github.io/categories/hackathon/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/hackathon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>draw</title>
+      <link>https://skoval.github.io/categories/draw/</link>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/draw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>seeding</title>
+      <link>https://skoval.github.io/categories/seeding/</link>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/seeding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>momentum</title>
+      <link>https://skoval.github.io/categories/momentum/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/momentum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>injury</title>
+      <link>https://skoval.github.io/categories/injury/</link>
+      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/injury/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>luck</title>
+      <link>https://skoval.github.io/categories/luck/</link>
+      <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/luck/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>demand</title>
+      <link>https://skoval.github.io/categories/demand/</link>
+      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/demand/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game age</title>
+      <link>https://skoval.github.io/categories/game-age/</link>
+      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/game-age/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scheduling</title>
+      <link>https://skoval.github.io/categories/scheduling/</link>
+      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/scheduling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>best</title>
+      <link>https://skoval.github.io/categories/best/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/best/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>return</title>
+      <link>https://skoval.github.io/categories/return/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/return/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>surface</title>
+      <link>https://skoval.github.io/categories/surface/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/surface/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>seasons</title>
+      <link>https://skoval.github.io/categories/seasons/</link>
+      <pubDate>Thu, 23 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/seasons/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>excitement</title>
+      <link>https://skoval.github.io/categories/excitement/</link>
+      <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/excitement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>importance</title>
+      <link>https://skoval.github.io/categories/importance/</link>
+      <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/importance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quality</title>
+      <link>https://skoval.github.io/categories/quality/</link>
+      <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/quality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fatigue</title>
+      <link>https://skoval.github.io/categories/fatigue/</link>
+      <pubDate>Fri, 20 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/fatigue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scoreboard</title>
+      <link>https://skoval.github.io/categories/scoreboard/</link>
+      <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/scoreboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>strength</title>
+      <link>https://skoval.github.io/categories/strength/</link>
+      <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/strength/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>US Open</title>
+      <link>https://skoval.github.io/categories/us-open/</link>
+      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/us-open/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gaps</title>
+      <link>https://skoval.github.io/categories/gaps/</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/gaps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>surprising</title>
+      <link>https://skoval.github.io/categories/surprising/</link>
+      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/surprising/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Roger Federer</title>
+      <link>https://skoval.github.io/categories/roger-federer/</link>
+      <pubDate>Fri, 28 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/roger-federer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>season</title>
+      <link>https://skoval.github.io/categories/season/</link>
+      <pubDate>Fri, 28 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/season/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>leaders</title>
+      <link>https://skoval.github.io/categories/leaders/</link>
+      <pubDate>Sat, 22 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/leaders/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dominance</title>
+      <link>https://skoval.github.io/categories/dominance/</link>
+      <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/dominance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gender bias</title>
+      <link>https://skoval.github.io/categories/gender-bias/</link>
+      <pubDate>Tue, 27 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/gender-bias/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serena Williams</title>
+      <link>https://skoval.github.io/categories/serena-williams/</link>
+      <pubDate>Tue, 27 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/serena-williams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>epochs</title>
+      <link>https://skoval.github.io/categories/epochs/</link>
+      <pubDate>Sun, 18 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/epochs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>leaderboards</title>
+      <link>https://skoval.github.io/categories/leaderboards/</link>
+      <pubDate>Sun, 11 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/leaderboards/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>seeds</title>
+      <link>https://skoval.github.io/categories/seeds/</link>
+      <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/seeds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://skoval.github.io/categories/programming/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sports analytics</title>
+      <link>https://skoval.github.io/categories/sports-analytics/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/sports-analytics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stories</title>
+      <link>https://skoval.github.io/categories/stories/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/stories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tennis news</title>
+      <link>https://skoval.github.io/categories/tennis-news/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/tennis-news/</guid>
       <description></description>
     </item>
     

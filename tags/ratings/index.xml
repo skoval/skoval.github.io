@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ratings on Stats On the T</title>
+    <title>ratings on Stats On the T</title>
     <link>https://skoval.github.io/tags/ratings/</link>
-    <description>Recent content in Ratings on Stats On the T</description>
+    <description>Recent content in ratings on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Aug 2019 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2019/08/09/must-see-matches/</guid>
-      <description>&lt;p&gt;A constant conundrum for tennis fans is deciding which match to watch at any particular time. In this post, I look at how we can quanitfy the &amp;lsquo;must-seeness&amp;rsquo; of a match based on it&amp;rsquo;s overall quality and competitiveness using player ratings.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A constant conundrum for tennis fans is deciding which match to watch at any particular time. In this post, I look at how we can quanitfy the &amp;lsquo;must-seeness&amp;rsquo; of a match based on it&amp;rsquo;s overall quality and competitiveness using player ratings.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,9 +26,7 @@
       <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2018/11/17/experienced-pressure/</guid>
-      <description>&lt;p&gt;After introducing &lt;em&gt;Pressure Ratings&lt;/em&gt; for matches, this post looks at how a similar approach can be used to develop a &lt;em&gt;Set Competitiveness&lt;/em&gt; rating for players. The &lt;em&gt;Set Competitiveness&lt;/em&gt; measures the pressure of a player&amp;rsquo;s sets in a way that allows direct ranking against the pressure typically faced by other players.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;After introducing &lt;em&gt;Pressure Ratings&lt;/em&gt; for matches, this post looks at how a similar approach can be used to develop a &lt;em&gt;Set Competitiveness&lt;/em&gt; rating for players. The &lt;em&gt;Set Competitiveness&lt;/em&gt; measures the pressure of a player&amp;rsquo;s sets in a way that allows direct ranking against the pressure typically faced by other players.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,9 +35,7 @@
       <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2018/11/09/match-pressure-ratings/</guid>
-      <description>&lt;p&gt;Last week&amp;rsquo;s 252-point Paris Masters semifinal between Novak Djokovic and Roger Federer got many wondering whether it was the best match in their 47 match long rivalry. In this post, I introduce a pressure rating for sets and matches that can help to tell us to rate their relative competitiveness.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Last week&amp;rsquo;s 252-point Paris Masters semifinal between Novak Djokovic and Roger Federer got many wondering whether it was the best match in their 47 match long rivalry. In this post, I introduce a pressure rating for sets and matches that can help to tell us to rate their relative competitiveness.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -50,9 +44,7 @@
       <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2018/11/02/djokovic-improving-2018/</guid>
-      <description>&lt;p&gt;On Monday, Novak Djokovic will regain the World No. 1 ranking, climbing from outside the top 20 at the start of the year. Djokovic&amp;rsquo;s comeback has been the major story this week. In this post, I look at his rise in terms of his match-by-match Elo rating and put it in context of his best season performances in 2011 and 2015.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;On Monday, Novak Djokovic will regain the World No. 1 ranking, climbing from outside the top 20 at the start of the year. Djokovic&amp;rsquo;s comeback has been the major story this week. In this post, I look at his rise in terms of his match-by-match Elo rating and put it in context of his best season performances in 2011 and 2015.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -61,9 +53,7 @@
       <pubDate>Sat, 20 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2018/10/20/wta-finals-2018/</guid>
-      <description>&lt;p&gt;The 2018 WTA Finals is upon us. With Simona Halep bowing out of the event, Caroline Wozniacki enters with the highest GIG Elo Rating. But what do the ratings trajectories of the 8 competitors reveal about who could have the most momentum and confidence heading into Singapore?&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;The 2018 WTA Finals is upon us. With Simona Halep bowing out of the event, Caroline Wozniacki enters with the highest GIG Elo Rating. But what do the ratings trajectories of the 8 competitors reveal about who could have the most momentum and confidence heading into Singapore?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -72,9 +62,7 @@
       <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2018/10/14/elo-update/</guid>
-      <description>&lt;p&gt;Novak Djokovic could continue a masterful run toward the end of the season when he goes for his second 2018 Masters 1000 title against Borna Coric in Shanghai. Even before the final, Djokovic sits at the top of men&amp;rsquo;s current all-surface Elo ratings. In this post we look at the how the current top 8 on the men&amp;rsquo;s and women&amp;rsquo;s tours have won there place among the ratings leaders.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Novak Djokovic could continue a masterful run toward the end of the season when he goes for his second 2018 Masters 1000 title against Borna Coric in Shanghai. Even before the final, Djokovic sits at the top of men&amp;rsquo;s current all-surface Elo ratings. In this post we look at the how the current top 8 on the men&amp;rsquo;s and women&amp;rsquo;s tours have won there place among the ratings leaders.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -83,9 +71,7 @@
       <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2017/11/18/elo-serve-return/</guid>
-      <description>&lt;p&gt;The Elo rating system is one of the most popular tools for rating player and team performance. In this post, I show how we can take the Elo system beyond match wins and use it to rate players on the two most fundamental skills in the sport: serving and returning.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;The Elo rating system is one of the most popular tools for rating player and team performance. In this post, I show how we can take the Elo system beyond match wins and use it to rate players on the two most fundamental skills in the sport: serving and returning.&lt;/p&gt;</description>
     </item>
     
   </channel>

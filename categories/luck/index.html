@@ -1,137 +1,186 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html class="no-js" lang="en-us">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luck</title>
-<meta name="description" content="A blog that puts the numbers to tennis">
-<meta name="generator" content="Hugo 0.21" />
-<meta property="og:title" content="Luck" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>luck - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="luck" />
 <meta property="og:description" content="A blog that puts the numbers to tennis" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://skoval.github.io/categories/luck/" />
+<meta property="og:updated_time" content="2018-01-13T00:00:00+00:00" />
 
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="alternate" type="application/rss+xml" href="/categories/luck/index.xml" title="Stats On the T">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
-
-<meta property="og:updated_time" content="2018-01-13T00:00:00&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-<link rel="dns-prefetch" href="//fonts.googleapis.com" />
-<link rel="alternate" type="application/rss+xml" title="Stats On the T Feed" href="https://skoval.github.io/categories/luck/index.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
-<link rel="stylesheet" href="https://skoval.github.io/css/style.css" type="text/css" media="all" />
-<script type="text/javascript" src="https://skoval.github.io/js/scripts.js"></script>
-<link rel="shortcut icon" href="https://skoval.github.io/favicon.ico">
 </head>
-<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
-	<div class="container container-outer">
-		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-			<div class="container container-inner clearfix">
-				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
-                    <div style="float:right;">
-                        <img src="https://skoval.github.io/img/logo.png" width="70px">
-                    </div>
-                   	<a class="logo__link" href="https://skoval.github.io/" title="Stats On the T" rel="home">
-						<h1 class="logo__title">Stats On the T</h1>
-						<h2 class="logo__tagline">Dedicated to data, statistics, and tennis</h2>
-                        
-					</a>
-				</div>
-			</div>
-			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
 	<ul class="menu__list">
-		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/contact/">CONTACT</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/features/">FEATURES</a></li>
-		<li class="menu__item "><a class="menu__link" href="/ratings/main/">RATINGS</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/research/">RESEARCH</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
 	</ul>
 </nav>
-		</header>
-		<div class="wrapper clearfix">
 
-
-	<div class="main-content list content" role="main">
-		<header class="page-header">
-			<h1 class="page-header__title">Luck</h1>
-		</header>
-		<div class="page-content">
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
 			
-		</div>
-				<article class="list__item post clearfix">
-	<figure class="list__thumbnail" style="float:left;">
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">luck</h1>
+	</header><article class="list__item post">
+	<figure class="list__thumbnail">
 		<a href="https://skoval.github.io/2018/01/13/ao-womens-draw/">
-			<img src="https://skoval.github.io/img/svitolina_brisbane.png" alt="Forecasting the Women&#39;s 2018 Australian Open" />
+			<img src="/img/svitolina_brisbane.png" alt="Forecasting the Women&#39;s 2018 Australian Open" />
 		</a>
 	</figure>
-	<div class="list__content clearfix">
-		<header class="list__header">
-			<h3 class="list__title post__title ">
-				<a href="https://skoval.github.io/2018/01/13/ao-womens-draw/" rel="bookmark">Forecasting the Women&#39;s 2018 Australian Open</a>
-			</h3>
-			<div class="list__meta meta">
-				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-				<time class="list__meta-date" datetime="2018-01-13T00:00:00">January 13, 2018</time>
-			</div>
-		</header>
-		<div class="list__excerpt">
-			<p>A strong pre-AO run and a bit of luck put Elina Svitolina at the top of a tight race for the Australian Open women&rsquo;s title. Who are the other women with the best chances for the first Major win of 2018?</p>
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/2018/01/13/ao-womens-draw/" rel="bookmark">
+			Forecasting the Women&#39;s 2018 Australian Open
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2018-01-13T00:00:00">January 13, 2018</time>
+</div>
 
-<p></p>
-		</div>
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/draw/" rel="category">draw</a>, <a class="meta__link" href="/categories/luck/" rel="category">luck</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>A strong pre-AO run and a bit of luck put Elina Svitolina at the top of a tight race for the Australian Open women&rsquo;s title. Who are the other women with the best chances for the first Major win of 2018?</p>
 	</div>
-</article>
-
-				<article class="list__item post clearfix">
-	<figure class="list__thumbnail" style="float:left;">
+</article><article class="list__item post">
+	<figure class="list__thumbnail">
 		<a href="https://skoval.github.io/2018/01/12/ao-mens-draw/">
-			<img src="https://skoval.github.io/img/federer_ao.png" alt="Forecasting the Men&#39;s 2018 Australian Open" />
+			<img src="/img/federer_ao.png" alt="Forecasting the Men&#39;s 2018 Australian Open" />
 		</a>
 	</figure>
-	<div class="list__content clearfix">
-		<header class="list__header">
-			<h3 class="list__title post__title ">
-				<a href="https://skoval.github.io/2018/01/12/ao-mens-draw/" rel="bookmark">Forecasting the Men&#39;s 2018 Australian Open</a>
-			</h3>
-			<div class="list__meta meta">
-				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-				<time class="list__meta-date" datetime="2018-01-12T00:00:00">January 12, 2018</time>
-			</div>
-		</header>
-		<div class="list__excerpt">
-			<p>Roger Federer drew the toughest quarter of the 2018 Men&rsquo;s Australian Open draw but is still the favourite to defend his title. Who else is a contender for the men&rsquo;s title?</p>
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/2018/01/12/ao-mens-draw/" rel="bookmark">
+			Forecasting the Men&#39;s 2018 Australian Open
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2018-01-12T00:00:00">January 12, 2018</time>
+</div>
 
-<p></p>
-		</div>
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/draw/" rel="category">draw</a>, <a class="meta__link" href="/categories/luck/" rel="category">luck</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<p>Roger Federer drew the toughest quarter of the 2018 Men&rsquo;s Australian Open draw but is still the favourite to defend his title. Who else is a contender for the men&rsquo;s title?</p>
 	</div>
 </article>
+</main>
 
 
-		
-	</div>
-
-<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
-	
-<div class="widget-search widget">
-	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+			</div>
+			
+<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
 		<label>
-			<span class="screen-reader-text">Search for:</span>
-			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
 		</label>
 		<input class="widget-search__submit" type="submit" value="Search">
 		<input type="hidden" name="sitesearch" value="https://skoval.github.io/" />
 	</form>
+</div><div class="widget-search widget" style="margin:1%;">
+    <h4><a href="https://www.tennis24.com/">Live Tennis Scores</a></h4>
 </div>
-	
+<div class="widget-search widget" style="margin:1%;">
+    <h4><a href="https://www.flashscore.com/tennis/">Tennis Results</a></h4>
+</div>
+
+
 <div class="widget-recent widget">
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
@@ -149,265 +198,18 @@
 		</ul>
 	</div>
 </div>
-
-	
-<div class="widget-categories widget">
-	<h4 class="widget__title">Categories</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/age">Age</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/ao">Ao</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/atp">Atp</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/backhand">Backhand</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/best">Best</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/big-points">Big-Points</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/breaking-through">Breaking-Through</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/clay">Clay</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/clutch">Clutch</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/comeback">Comeback</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/compeitiveness">Compeitiveness</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/cutch">Cutch</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/data-science">Data-Science</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/del-potro">Del-Potro</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/demand">Demand</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/depth">Depth</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/dominance">Dominance</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/doubles">Doubles</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/draw">Draw</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/duration">Duration</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/durations">Durations</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/elo">Elo</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/epochs">Epochs</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/event-predictions">Event-Predictions</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/excitement">Excitement</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/fatigue">Fatigue</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/federer">Federer</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/first-slam">First-Slam</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/french-open">French-Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/game-age">Game-Age</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gaps">Gaps</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gaussian-process">Gaussian-Process</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender">Gender</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender-bias">Gender-Bias</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/goat">Goat</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grand-slams">Grand-Slams</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grass">Grass</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/hackathon">Hackathon</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/head-to-head">Head-To-Head</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/head-to-heads">Head-To-Heads</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/importance">Importance</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/indian-wells">Indian-Wells</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/injury">Injury</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/laver-cup">Laver-Cup</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaderboards">Leaderboards</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaders">Leaders</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/luck">Luck</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/masters">Masters</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/matchups">Matchups</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/momentum">Momentum</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/must-see">Must-See</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/nadal">Nadal</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/next-gen">Next-Gen</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/novak">Novak</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/prediction">Prediction</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/predictions">Predictions</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/premiers">Premiers</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/pressure">Pressure</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/programming">Programming</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/quality">Quality</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/r">R</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/rating">Rating</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/ratings">Ratings</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/ratings-trends">Ratings-Trends</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/research">Research</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/retirements">Retirements</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/return">Return</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/roger-federer">Roger-Federer</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/scheduling">Scheduling</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/scoreboard">Scoreboard</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/season">Season</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seasons">Seasons</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeding">Seeding</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeds">Seeds</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena">Serena</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena-williams">Serena-Williams</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serve">Serve</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/singles">Singles</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/slam">Slam</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sloan">Sloan</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sports-analytics">Sports-Analytics</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/stories">Stories</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/strength">Strength</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/style">Style</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surface">Surface</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprise">Surprise</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprising">Surprising</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/suspended">Suspended</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/tennis-news">Tennis-News</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/us-open">Us-Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/walkover">Walkover</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/weather">Weather</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wimbledon">Wimbledon</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wta">Wta</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/zverev">Zverev</a></li>
-		</ul>
-	</div>
-</div>
-	
-	
-<div class="widget-taglist widget">
-	<h4 class="widget__title">Tags</h4>
-	<div class="widget__content">
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/age" title="age">age</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/ao" title="ao">ao</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/atp" title="atp">atp</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/backhand" title="backhand">backhand</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/best" title="best">best</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/big-points" title="big-points">big-points</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/breaking-through" title="breaking-through">breaking-through</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/clay" title="clay">clay</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/clutch" title="clutch">clutch</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/comeback" title="comeback">comeback</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/compeitiveness" title="compeitiveness">compeitiveness</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/cutch" title="cutch">cutch</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/data-science" title="data-science">data-science</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/del-potro" title="del-potro">del-potro</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/demand" title="demand">demand</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/depth" title="depth">depth</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/dominance" title="dominance">dominance</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/doubles" title="doubles">doubles</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/draw" title="draw">draw</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/duration" title="duration">duration</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/durations" title="durations">durations</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/elo" title="elo">elo</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/epochs" title="epochs">epochs</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/event-predictions" title="event-predictions">event-predictions</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/excitement" title="excitement">excitement</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/fatigue" title="fatigue">fatigue</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/federer" title="federer">federer</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/first-slam" title="first-slam">first-slam</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/french-open" title="french-open">french-open</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/game-age" title="game-age">game-age</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gaps" title="gaps">gaps</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gaussian-process" title="gaussian-process">gaussian-process</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender" title="gender">gender</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender-bias" title="gender-bias">gender-bias</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/goat" title="goat">goat</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grand-slams" title="grand-slams">grand-slams</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grass" title="grass">grass</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/hackathon" title="hackathon">hackathon</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/head-to-head" title="head-to-head">head-to-head</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/head-to-heads" title="head-to-heads">head-to-heads</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/importance" title="importance">importance</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/indian-wells" title="indian-wells">indian-wells</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/injury" title="injury">injury</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/laver-cup" title="laver-cup">laver-cup</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaderboards" title="leaderboards">leaderboards</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaders" title="leaders">leaders</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/luck" title="luck">luck</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/masters" title="masters">masters</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/matchups" title="matchups">matchups</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/momentum" title="momentum">momentum</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/must-see" title="must-see">must-see</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/nadal" title="nadal">nadal</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/next-gen" title="next-gen">next-gen</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/novak" title="novak">novak</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/prediction" title="prediction">prediction</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/predictions" title="predictions">predictions</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/premiers" title="premiers">premiers</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/pressure" title="pressure">pressure</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/programming" title="programming">programming</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/quality" title="quality">quality</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/r" title="r">r</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/rating" title="rating">rating</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/ratings" title="ratings">ratings</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/ratings-trends" title="ratings-trends">ratings-trends</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/research" title="research">research</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/retirements" title="retirements">retirements</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/return" title="return">return</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/roger-federer" title="roger-federer">roger-federer</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/scheduling" title="scheduling">scheduling</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/scoreboard" title="scoreboard">scoreboard</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/season" title="season">season</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seasons" title="seasons">seasons</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeding" title="seeding">seeding</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeds" title="seeds">seeds</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena" title="serena">serena</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena-williams" title="serena-williams">serena-williams</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serve" title="serve">serve</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/singles" title="singles">singles</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/slam" title="slam">slam</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sloan" title="sloan">sloan</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sports-analytics" title="sports-analytics">sports-analytics</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/stories" title="stories">stories</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/strength" title="strength">strength</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/style" title="style">style</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surface" title="surface">surface</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprise" title="surprise">surprise</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprising" title="surprising">surprising</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/suspended" title="suspended">suspended</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/tennis-news" title="tennis-news">tennis-news</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/us-open" title="us-open">us-open</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/walkover" title="walkover">walkover</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/weather" title="weather">weather</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wimbledon" title="wimbledon">wimbledon</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wta" title="wta">wta</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/zverev" title="zverev">zverev</a>
-	</div>
-</div>
 </aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
 	</div>
-		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
-			<div class="container container-inner">
-				<p class="footer__copyright">&copy; 2020 Stats On the T. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
-			</div>
-		</footer>
+</footer>
 	</div>
-
-<script>
-	var navigation = responsiveNav(".menu", {
-		navClass: "menu--collapse",
-	});
-</script>
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-  });
-  MathJax.Hub.Queue(function() {
-    
-    
-    
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-
-  MathJax.Hub.Config({
-  
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-  });
-</script>
-
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-100138539-1', 'auto');
-ga('send', 'pageview');
-</script>
-
+<script async defer src="/js/menu.js"></script>
 </body>
 </html>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Stories on Stats On the T</title>
+    <title>stories on Stats On the T</title>
     <link>https://skoval.github.io/tags/stories/</link>
-    <description>Recent content in Stories on Stats On the T</description>
+    <description>Recent content in stories on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
@@ -18,10 +18,10 @@
       
       <guid>https://skoval.github.io/post/features/</guid>
       <description>Below is a selection of news features on my research.
- Preethi Ramamoorthy (05 May 2017), The Hindu: Tennis enters the matrix
- Greg Garber (04 Feb 2017), ESPN: Australian Open introduced new advanced statistical metrics
- Christopher Clarey (13 Jan 2017), New York Times: At the Australian Open, Tennis Joins Its Sports Brethren on a New Surface: Data Analytics
- Stephanie Kovalchik (12 Jan 2017), The Conversation: Shorter or longer tennis matches: what’s the right balance?</description>
+  Stephanie Kovalchik (25 Jun 2019), The Conversation: How Ash Barty became the world&amp;rsquo;s best female tennis player
+  Dean Evans (01 Nov 2018). Intel UK In Tennis, Big Data is Making a Grand Slam .
+  Tennishead (23 Oct 2018). Hardest, fastest. New player analysis
+  Preethi Ramamoorthy (05 May 2017), The Hindu: Tennis enters the matrix</description>
     </item>
     
   </channel>

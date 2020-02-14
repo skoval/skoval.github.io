@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Clutch on Stats On the T</title>
+    <title>clutch on Stats On the T</title>
     <link>https://skoval.github.io/categories/clutch/</link>
-    <description>Recent content in Clutch on Stats On the T</description>
+    <description>Recent content in clutch on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Jan 2019 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2019/01/29/break-point-units/</guid>
-      <description>&lt;p&gt;Pressure is one of those concepts in tennis that we all know exists but we struggle to calculate. I&amp;rsquo;ve made multiple attempts at quantifying scoreboard pressure and have yet to come around to one that is both statistically useful and easy to interpret. But some recent experimenting has uncovered what I think could be as close to a &amp;lsquo;best&amp;rsquo; statistic for pressure as I am likely to find.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Pressure is one of those concepts in tennis that we all know exists but we struggle to calculate. I&amp;rsquo;ve made multiple attempts at quantifying scoreboard pressure and have yet to come around to one that is both statistically useful and easy to interpret. But some recent experimenting has uncovered what I think could be as close to a &amp;lsquo;best&amp;rsquo; statistic for pressure as I am likely to find.&lt;/p&gt;</description>
     </item>
     
   </channel>

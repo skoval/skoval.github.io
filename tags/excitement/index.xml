@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Excitement on Stats On the T</title>
+    <title>excitement on Stats On the T</title>
     <link>https://skoval.github.io/tags/excitement/</link>
-    <description>Recent content in Excitement on Stats On the T</description>
+    <description>Recent content in excitement on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Nov 2017 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2017/11/10/excitement-indices/</guid>
-      <description>&lt;p&gt;Having a metric for match excitement would be a useful tool for separating humdrum matches from thrillers. In this post, I have a look at two indices for measuring match excitement and discuss what&amp;rsquo;s to like and dislike about each.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Having a metric for match excitement would be a useful tool for separating humdrum matches from thrillers. In this post, I have a look at two indices for measuring match excitement and discuss what&amp;rsquo;s to like and dislike about each.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,9 +26,7 @@
       <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2017/11/03/us-open-excitement/</guid>
-      <description>&lt;p&gt;The 2017 MLB World Series gave baseball fans a thrill-ride for the post-season. It also gives us an idea of how to size up the excitement of a sporting event. In this post, we look at an &amp;lsquo;excitement&amp;rsquo; statistic for tennis and use it to rank the excitement of men&amp;rsquo;s matches at the 2017 US Open.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;The 2017 MLB World Series gave baseball fans a thrill-ride for the post-season. It also gives us an idea of how to size up the excitement of a sporting event. In this post, we look at an &amp;lsquo;excitement&amp;rsquo; statistic for tennis and use it to rank the excitement of men&amp;rsquo;s matches at the 2017 US Open.&lt;/p&gt;</description>
     </item>
     
   </channel>

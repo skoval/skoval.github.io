@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Research on Stats On the T</title>
+    <title>research on Stats On the T</title>
     <link>https://skoval.github.io/categories/research/</link>
-    <description>Recent content in Research on Stats On the T</description>
+    <description>Recent content in research on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Feb 2018 00:00:00 +0000</lastBuildDate>
@@ -23,10 +23,7 @@
 background-color: #cee454; // Choose your own color here
 }
 &lt;/style&gt;
-
-&lt;p&gt;This week the MIT Sloan Analytics Conference will showcase some of the cutting-edge research happening in sports statistics. What do the themes from this year suggest about the state-of-the-art in quantitative work in sport?&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;This week the MIT Sloan Analytics Conference will showcase some of the cutting-edge research happening in sports statistics. What do the themes from this year suggest about the state-of-the-art in quantitative work in sport?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -36,9 +33,9 @@ background-color: #cee454; // Choose your own color here
       
       <guid>https://skoval.github.io/post/research/</guid>
       <description>Selected research. Full list can be found on Google Scholar.
- Farrow, D., Reid, M., Buszard, T., &amp;amp; Kovalchik, S. (2017). Charting the development of sport expertise: challenges and opportunities. International Review of Sport and Exercise Psychology, 1-20.
- Albert, J., &amp;amp; Kovalchik, S. (2017). The Do’s and Don’ts of Sports Metrics: The Tennis ATP Leaderboard. CHANCE, 30(1), 26-34.
- Kovalchik, S. A., Bane, M. K., &amp;amp; Reid, M. (2016). Getting to the top: an analysis of 25 years of career rankings trajectories for professional women’s tennis.</description>
+  Kovalchik, S. A., &amp;amp; Ingram, M. (2018). Estimating the duration of professional tennis matches for varying formats. Journal of Quantitative Analysis in Sports, 14(1), 13-23.
+  Kovalchik, S., &amp;amp; Reid, M. (2018). A shot taxonomy in the era of tracking data in professional tennis. Journal of sports sciences, 36(18), 2096-2104.
+  Albert, J., &amp;amp; Kovalchik, S. (2017).</description>
     </item>
     
   </channel>

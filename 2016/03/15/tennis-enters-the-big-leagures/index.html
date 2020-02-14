@@ -1,118 +1,141 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html class="no-js" lang="en-us">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tennis Enters the Big Leagues of Sports Analytics</title>
-<meta name="description" content="A blog that puts the numbers to tennis">
-<meta name="generator" content="Hugo 0.21" />
-<meta property="og:title" content="Tennis Enters the Big Leagues of Sports Analytics" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Tennis Enters the Big Leagues of Sports Analytics - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Tennis Enters the Big Leagues of Sports Analytics" />
 <meta property="og:description" content="Last week many of the sports world&rsquo;s most innovative number crunchers converged in Boston at the MIT Sloan Analytics Conference. The 10th anniversary of the two-day nerd fest attracted 3,900 attendees and some of the heaviest hitters in sports stats, including Bill James, Nate Silver, and Mike Zarren.
 One of the traditional features of Sloan is the research competition. In true sporting fashion, this is a multi-stage, single-elimination tournament that pits the top research innovations in sports analytics against each other." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://skoval.github.io/2016/03/15/tennis-enters-the-big-leagures/" />
+<meta property="article:published_time" content="2016-03-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-03-15T00:00:00+00:00" />
 
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
-
-<meta property="article:published_time" content="2016-03-15T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2016-03-15T00:00:00&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-
-<link rel="dns-prefetch" href="//fonts.googleapis.com" />
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
-<link rel="stylesheet" href="https://skoval.github.io/css/style.css" type="text/css" media="all" />
-<script type="text/javascript" src="https://skoval.github.io/js/scripts.js"></script>
-<link rel="shortcut icon" href="https://skoval.github.io/favicon.ico">
 </head>
-<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
-	<div class="container container-outer">
-		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-			<div class="container container-inner clearfix">
-				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
-                    <div style="float:right;">
-                        <img src="https://skoval.github.io/img/logo.png" width="70px">
-                    </div>
-                   	<a class="logo__link" href="https://skoval.github.io/" title="Stats On the T" rel="home">
-						<h1 class="logo__title">Stats On the T</h1>
-						<h2 class="logo__tagline">Dedicated to data, statistics, and tennis</h2>
-                        
-					</a>
-				</div>
-			</div>
-			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
 	<ul class="menu__list">
-		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/contact/">CONTACT</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/features/">FEATURES</a></li>
-		<li class="menu__item "><a class="menu__link" href="/ratings/main/">RATINGS</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/research/">RESEARCH</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
 	</ul>
 </nav>
-		</header>
-		<div class="wrapper clearfix">
 
-
-<div class="main-content content" role="main" itemprop="mainContentOfPage">
-	<article class="post">
-		<header class="post__header clearfix">
-			<h1 class="post__title">Tennis Enters the Big Leagues of Sports Analytics</h1>
-			<p class="post__meta meta">
-				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-				<time class="post__meta-date" datetime="2016-03-15T00:00:00">March 15, 2016</time>
-			</p>
-		</header>
-		<div class="post__content clearfix">
-
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
 			
-
-<p>Last week many of the sports world&rsquo;s most innovative number crunchers converged in Boston at the <a href="http://www.sloansportsconference.com/">MIT Sloan Analytics Conference</a>. The 10th anniversary of the two-day nerd fest attracted 3,900 attendees and some of the heaviest hitters in sports stats, including Bill James, Nate Silver, and Mike Zarren.</p>
-
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Tennis Enters the Big Leagues of Sports Analytics</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2016-03-15T00:00:00">March 15, 2016</time>
+</div>
+</div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>Last week many of the sports world&rsquo;s most innovative number crunchers converged in Boston at the <a href="http://www.sloansportsconference.com/">MIT Sloan Analytics Conference</a>. The 10th anniversary of the two-day nerd fest attracted 3,900 attendees and some of the heaviest hitters in sports stats, including Bill James, Nate Silver, and Mike Zarren.</p>
 <p>One of the traditional features of Sloan is the research competition. In true sporting fashion, this is a multi-stage, single-elimination tournament that pits the top research innovations in sports analytics against each other. The handful of submitted papers that advance to the final round, go head-to-head in a TED-style showdown on the last day of the conference. The author presenting the best innovation, as judged by a panel of experts, is revealed in the closing ceremony of the program.</p>
-
 <p style="font-size:smaller;color:grey;">
 <img src="/assets/lucey.jpg" width="500" style="margin-left:10%;">
 <em>Caption:</em> Patrick Lucey accepts alpha award at 2016 Sloan from co-founders Daryl Morey and Jessica Gelman
 </p>
-
 <p>As you might imagine, the Sloan research competition has historically been dominated by advances in baseball and basketball analytics. And only the most risk-seeking gamblers in attendance would have bet on any change from that tradition this year. Yet, in an upset on par with Roberta Vinci&rsquo;s defeat of Serena Williams at the 2015 US Open, a paper on tennis, entitled <a href="http://www.sloansportsconference.com/?p=17573">&ldquo;The Thin Edge of the Wedge&rdquo;</a>, took the 2016 top research prize.</p>
-
 <p>To say that tennis was the underdog in this competition is an understatement. Only 4 years earlier <a href="http://www.sbnation.com/2012/3/4/2843710/sloan-sports-analytics-conference-day-2">ESPN said</a> that tennis was in the analytical dark ages. In the same year that pessimistic take appeared, <a href="http://www.sloansportsconference.com/?p=4562">Sloan put together a panel</a> of Paul Annacone, Craig O&rsquo;Shannessy, and Todd Martin to discuss how tennis could get its own <em>Moneyball</em>. As noted by Neil Paine of <em>FiveThiryEight</em>, even with these efforts, <a href="http://fivethirtyeight.com/features/the-big-ideas-from-this-years-sloan-conference/">not one tennis paper</a> had ever advanced to the final stages of the first 9 years of the Sloan competition. So, the fact that the &ldquo;The Thin Edge of the Wedge&rdquo; was not only a contender this year but actually came out on top is a as much a victory for tennis as it is for the paper&rsquo;s authors.</p>
-
 <blockquote>
 <p>So what is the &ldquo;The Thin Edge of the Wedge&rdquo;? And how did it help tennis finally hit one out of the park, statistically speaking?</p>
 </blockquote>
-
-<p><br></p>
-
+<br>
 <h2 id="first-the-team">First, the Team</h2>
-
 <p>Since the <a href="https://en.wikipedia.org/wiki/Hawk-Eye#Tennis">HawkEye challenge system</a> was introduced in 2006, tennis has been sitting on an untapped gold mine of potential insights into the current game. Yet, the general <a href="http://gamesetmap.com/?p=74">lack of access to these data</a> has made realizing this potential difficult. Although slow, we are starting to see some progress in this area as governing bodies are brokering deals with HawkEye to use at least some of the tracking data for research purposes. It&rsquo;s not the open model the MLB or NBA has taken with respect to data, but it is a start.</p>
-
 <p>Tennis Australia has been one of the most proactive governing bodies in this regard. In fact, it was Tennis Australia&rsquo;s <a href="https://theconversation.com/beyond-the-line-call-how-hawk-eye-can-improve-performance-35962">acquisition of trajectory data</a> and partnership with Patrick Lucey&rsquo;s analytics team at Disney Research (Lucey has since moved on to <a href="http://www.stats.com/">STATS LLC</a>) that were the first steps in the story behind &ldquo;The Thin Edge&rdquo;.</p>
-
 <p>However, the work would have never been possible if Lucey&rsquo;s team hadn&rsquo;t made the smart choice some years ago of recruiting PhD student <a href="http://xinyu-wei.com">Xinyu (Felix) Wei</a> to intern with their group. While completing his doctoral studies at Queensland University of Technology, Wei has worked with Disney Research (in collaboration with Tennis Australia and the Australia Institute of Sport) on problems in computer vision that have included <a href="https://scholar.google.com.au/citations?user=zawDLOYAAAAJ&amp;hl=en&amp;oi=sra">several applications in tennis</a>. Though largely unrecognized until Sloan 2016, history might ultimately say that these were some of the earliest works in a revolution in the way we think about and consume tennis.</p>
-
 <h2 id="what-is-the-thin-edge">What is &ldquo;The Thin Edge&rdquo;?</h2>
-
 <p>In simplest terms, &ldquo;The Thin Edge of the Wedge&rdquo; presents a model to predict how likely it is that a shot in a tennis match will be end the point. The title is a play on the idiom that connotes a small event that ushers in a game-changing development (the phrase <a href="http://www.dictionary.com/browse/thin-edge-of-the-wedge">is supposed</a> to have originated from a small device used to split wood in logging). Wei and colleagues use the idiom to refer to the tipping point in a rally, where the outcome of the exchange shifts heavily in one player&rsquo;s favor. By quantifying the probability that a shot will end the point, their model is the first that can actually identify these tipping points and, in doing so, identify the most influential shots in a rally.</p>
-
 <h2 id="predicting-shot-outcomes-in-tennis">Predicting Shot Outcomes in Tennis</h2>
-
 <p>The basic challenge that Wei and team faced in developing &ldquo;The Thin Edge&rdquo; model was 1) the selection of predictors and 2) the choice of model form that would be flexible enough to handle the complex ways these predictors might influence the outcome of a shot.</p>
-
 <p>We all probably have some idea of the factors that would distinguish winning shots from all other shots: depth, speed, spin, opponent position, etc. The full set of predictors that Wei and his co-authors considered are listed in the table below. You can see that they fall into four types, listed from factors that are most to least directly linked to the current shot.</p>
-
 <table>
 <thead>
 <tr>
@@ -120,481 +143,174 @@ One of the traditional features of Sloan is the research competition. In true sp
 <th align="left">Predictor</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="center">Current Shot Descriptor</td>
 <td align="left">Location of start of shot</td>
 </tr>
-
 <tr>
 <td align="center">Current Shot Descriptor</td>
 <td align="left">Location where shot impacts the court</td>
 </tr>
-
 <tr>
 <td align="center">Current Shot Descriptor</td>
 <td align="left">Average speed of shot</td>
 </tr>
-
 <tr>
 <td align="center">Current Shot Descriptor</td>
 <td align="left">Court position of both players at the start of the shot</td>
 </tr>
-
 <tr>
 <td align="center">Comparison of Previous and Current Shot</td>
 <td align="left">Ratio of average shot speeds</td>
 </tr>
-
 <tr>
 <td align="center">Comparison of Previous and Current Shot</td>
 <td align="left">Ratio of player distance from baseline (depth)</td>
 </tr>
-
 <tr>
 <td align="center">Comparison of Previous and Current Shot</td>
 <td align="left">Ratio of lateral distance covered</td>
 </tr>
-
 <tr>
 <td align="center">Style</td>
 <td align="left">Frequency of single shot types from shot dictionary</td>
 </tr>
-
 <tr>
 <td align="center">Style</td>
 <td align="left">Frequency of shot combinations from 2-3 shot combination dictionary</td>
 </tr>
-
 <tr>
 <td align="center">Context</td>
 <td align="left">Number of shots in the rally</td>
 </tr>
-
 <tr>
 <td align="center">Context</td>
 <td align="left">Set score</td>
 </tr>
-
 <tr>
 <td align="center">Context</td>
 <td align="left">Point score</td>
 </tr>
 </tbody>
 </table>
-
 <p>The <em>current shot descriptors</em> include some of the most typical characteristics of the current shot. Together, these factors tell you exactly where the shot started, landed, how fast it was going, and where each player was positioned at the start. You might think with all of this information you should already be able to make a very good guess as to whether the shot ended the point (e.g. fast on the line away from the opponent versus slow and in the service box near to the opponent). In fact, these factors alone had a prediction accuracy for recent Australian Open matches of 60%, which is okay but far from spot on.</p>
-
 <p>It turns out that there is more to what makes a shot decisive than these basic descriptors can tell us. One way that Wei and authors found that they could make better predictions was if they considered more of the history of the rally. Specifically, they looked at how the speed, depth of the player&rsquo;s from the baseline, and the distance covered between the current shot and the one the opponent hit just before might influence the winningness of the current shot. Wei and colleagues refer to these factors as &ldquo;dominance features&rdquo;. The reasoning here is that how effective a shot will depend not just on its characteristics but how these characteristics compare to what the opponent has just been able to do. A Federer backhand fired down the line might have a very different outcome if it is in response to a counter-punching crosscourt shot versus an attacking approach shot.</p>
-
 <p>Contrasting these basic features of the current and previous shot did improve predictions, though not hugely (gain of 2 percentage points).</p>
-
 <p>So far, all of the features in the model ignore the specific effectiveness of the player, which means that the chance a 100 mph shot to the corner of the deuce court ended the point would essentially be the frequency that shots like that ended the point for any of the top 10 players (at the time the research was done), even if the forecasted shot was actually hit by Nadal, for example. But even among the best players, we might expect quite a range in how effective their shots are, even if they look fairly similar when watered-down to a few key descriptors.</p>
-
 <p>Accounting for player effects is the trickiest problem Wei and team tackled in building their prediction model. What makes it tricky is that, although they group used about 9,300 to train the model, this is still not enough to get robust, player-specific estimates for every shot they might observe in a match. Instead of relying on potentially shaky or inestimable player estimates, Wei and his co-authors developed descriptions of player style.</p>
-
 <p><em>Style</em> is one of those things we all talk about but would struggle to put numbers to. Most consider David Foster Wallace&rsquo;s essay <a href="http://www.nytimes.com/2006/08/20/sports/playmagazine/20federer.html?pagewanted=all&amp;_r=0">&ldquo;Roger Federer as Religious Experience&rdquo;</a> as one of the most accurate descriptions of Federer&rsquo;s style. Yet how would you go about condensing that into something that could be fed into a mathematical model?</p>
-
 <p>Wei and team propose one way of quantifying playing style that I think ends up being one of the richest and most interesting parts of the paper. The approach starts with the development of a shot &ldquo;dictionary&rdquo;. (As an aside, I really like the choice of &ldquo;dictionary&rdquo; here because there is something romantic about thinking of shots in tennis as a vocabulary and the way a rally unfolds as a kind of conversation between players. But getting back to some cold, hard numbers&hellip;) The actual dictionary is a collection of shot trajectories that have been grouped using K-means clustering to find a basic lexicon of shots. The final dictionary in the paper includes 50 single, two-shot and three-shot trajectories.</p>
-
 <p>Once the dictionary is in hand, Wei and co-authors describe a player&rsquo;s style as the percentage that player uses each shot of the dictionary. As far as I understand it from their methods, this means that each player has a 50-element vector of percentages that goes into the model and acts as a kind of playing signature for that player. All players contribute to how a shot influences the baseline effectiveness, but Wei and team still get something like a player-specific estimate because each player will have a distinct set of weights defining his signature.</p>
-
 <p>Below, the authors show one example of how the progression in an exchange of shots differs with the inclusion of player style. On the left panel, the predictions treat all shots like they came from any random player in the top 10. In this case, the win probability is about 50-50 throughout. The panel on the right includes the style of Nadal and Djokovic in an effort to make the rally more specific to this particular pairing. The result is to give Nadal an edge in the first two shots and the strong favorite by the final fourth shot.</p>
-
 <p style="font-size:smaller;color:grey;">
 <img src="/assets/thinedge_figure4.png" style="margin-left:1%;">
 <em>Caption:</em> Figure 4 of Wei et al. "The Thin Edge of the Wedge"
 </p>
-
 <p>Overall, these kind of style adjustments had the biggest improvement in prediction accuracy of all of those considered in the paper, raising the performance by 5 percentage points.</p>
-
 <p>The final set of predictors tested account for the context in which shots occur. These included rally count, point score and set score. This added another 2 percentage points to the prediction performance of the model, ending with an overall accuracy of close to 70%.</p>
-
 <p>The actual framework used to estimate the shot outcome from a set of predictors (the second of the two major parts of the model development outlined above) was a Random Decision Forest. This is a tree-based approach, which is best suited for non-linear classification problems.</p>
-
 <h2 id="why-did-the-thin-edge-win">Why Did &ldquo;The Thin Edge&rdquo; Win?</h2>
-
 <p>Much like the decision-making of a papal conclave, we will probably never really know why the Sloan panel of experts chose one paper to win the research competition over the others. But we do know from past award results, that methods with tracking data have been popular. &ldquo;The Thin Edge&rdquo; has to represent one of the most advanced uses of HawkEye data and the first shot-level prediction model in tennis. The panelists must have seen the novelty in this and appreciated the promise that it holds as a tool for opponent strategizing and broadcasting analysis.</p>
-
-<hr />
-
+<hr>
 <h2 id="where-do-we-go-from-here">Where Do We Go From Here?</h2>
-
 <p>As enthusiastic I think we should all be about the advance &ldquo;The Thin Edge&rdquo; has made for tennis analytics, it is also important to recognize some aspects of the methods that were unclear and many additional questions concerning shot prediction that remain to be explored. Below are a few needs for clarification and questions for further research that occurred to me when reading this research.</p>
-
 <ol>
-<li><p><strong>How exactly is style included in the model?</strong> From the description in the paper, I was 90% confident that the 50-element feature vector of shots was how style was accounted for in the model. The other 10% thought that it might be a similarity measure between the player and opponent in the given match.</p></li>
-
-<li><p><strong>Does the model include player and opponent style adjustment?</strong> This was another aspect of the style adjustment that wasn&rsquo;t clear.</p></li>
-
-<li><p><strong>What does the shot dictionary look like?</strong> As I read about the 50-item dictionary, I really wanted to have a shot-by-shot description of its contents. The lexicon of the top game in some ways seems as interesting as the model that builds on it. Although the authors provide figures of a subset of these, I don&rsquo;t believe all 50 are included. Also, there was no way I could find to link the shot number in player style signatures to the figures that were shown.</p></li>
-
-<li><p><strong>Does the Random Decision Tree out perform other machine learning approaches? parametric approaches?</strong> It is unclear if Wei and team considered other modeling approaches before settling on the Random Decision Tree. In particular, if a parametric model like logistic regression gave reasonably similar prediction performance it would have the additional advantage of allowing an interpretation of the regression coefficients to see which among the features were the most important and how.</p></li>
-
-<li><p><strong>Does history beyond the previous shot matter?</strong> With prediction modeling, one always wonders if there are better features out there that have been omitted. In the case of the model in &ldquo;The Thin Edge&rdquo;, the omitted information that I wonder about (in addition to the physical features of the shot like spin) is the history of the rally, previous points, event previous games and matches. Could it really be the case that a player&rsquo;s effectiveness and shot choice is dedicated only (as the model assumes) by the previous shot?</p></li>
-
-<li><p><strong>How to allow player-specific shots?</strong> If I understood the use of player style, it would seem to adjust the baseline for every shot with a constant shift up or down in point win probability. If so, I wonder if player-specific effects in the predictors could be more directly incorporated with the use of a shrinkage estimator so that, when enough information is available something different from the average effect could be used to tailor the shot effectiveness to the particular player who made the shot.</p></li>
-
-<li><p><strong>Would the dictionary grow with more players?</strong> The dictionary of shots in &ldquo;The Thin Edge&rdquo; is based on the player of the top 10 players only. If we expand the dictionary construction to a larger segment of the tour, do we think the lexicon will basically stay the same? or will there be some shot types or shot combinations that might be in the lexicon of lower-ranked players that aren&rsquo;t shown here?</p></li>
-
-<li><p><strong>Can this approach generalize to the rest of the tour? to the WTA?</strong> The development and testing of Wei and team&rsquo;s shot prediction model is based on the top 10 male players only. It is unclear how much data from another player would be considered sufficient for their inclusion. Also, if extended to lower-ranked players or to the WTA, will the predictions be as accurate?</p></li>
-
-<li><p><strong>What about prediction uncertainty?</strong> Any estimate comes with uncertainty. The authors of &ldquo;The Thin Edge&rdquo; don&rsquo;t suggest how this could be measured or reported.</p></li>
-
-<li><p><strong>Could a similar model based on data from the Match Charting Project be built? and how would its performance compare?</strong> The Match Charting Project (MCP) is a volunteer effort to code shot-by-shot information of professional tennis matches. Although less granular that the ball tracking and player position data, the MCP is the richest description of shots that is available to the public. For the very reason that MCP data is free and open to everyone, it would be worthwhile to see what or how to get this data source to a point where it could be used to build a shot prediction model that could compete with the model in &ldquo;The Thin Edge&rdquo;.</p></li>
+<li>
+<p><strong>How exactly is style included in the model?</strong> From the description in the paper, I was 90% confident that the 50-element feature vector of shots was how style was accounted for in the model. The other 10% thought that it might be a similarity measure between the player and opponent in the given match.</p>
+</li>
+<li>
+<p><strong>Does the model include player and opponent style adjustment?</strong> This was another aspect of the style adjustment that wasn&rsquo;t clear.</p>
+</li>
+<li>
+<p><strong>What does the shot dictionary look like?</strong> As I read about the 50-item dictionary, I really wanted to have a shot-by-shot description of its contents. The lexicon of the top game in some ways seems as interesting as the model that builds on it. Although the authors provide figures of a subset of these, I don&rsquo;t believe all 50 are included. Also, there was no way I could find to link the shot number in player style signatures to the figures that were shown.</p>
+</li>
+<li>
+<p><strong>Does the Random Decision Tree out perform other machine learning approaches? parametric approaches?</strong> It is unclear if Wei and team considered other modeling approaches before settling on the Random Decision Tree. In particular, if a parametric model like logistic regression gave reasonably similar prediction performance it would have the additional advantage of allowing an interpretation of the regression coefficients to see which among the features were the most important and how.</p>
+</li>
+<li>
+<p><strong>Does history beyond the previous shot matter?</strong> With prediction modeling, one always wonders if there are better features out there that have been omitted. In the case of the model in &ldquo;The Thin Edge&rdquo;, the omitted information that I wonder about (in addition to the physical features of the shot like spin) is the history of the rally, previous points, event previous games and matches. Could it really be the case that a player&rsquo;s effectiveness and shot choice is dedicated only (as the model assumes) by the previous shot?</p>
+</li>
+<li>
+<p><strong>How to allow player-specific shots?</strong> If I understood the use of player style, it would seem to adjust the baseline for every shot with a constant shift up or down in point win probability. If so, I wonder if player-specific effects in the predictors could be more directly incorporated with the use of a shrinkage estimator so that, when enough information is available something different from the average effect could be used to tailor the shot effectiveness to the particular player who made the shot.</p>
+</li>
+<li>
+<p><strong>Would the dictionary grow with more players?</strong> The dictionary of shots in &ldquo;The Thin Edge&rdquo; is based on the player of the top 10 players only. If we expand the dictionary construction to a larger segment of the tour, do we think the lexicon will basically stay the same? or will there be some shot types or shot combinations that might be in the lexicon of lower-ranked players that aren&rsquo;t shown here?</p>
+</li>
+<li>
+<p><strong>Can this approach generalize to the rest of the tour? to the WTA?</strong> The development and testing of Wei and team&rsquo;s shot prediction model is based on the top 10 male players only. It is unclear how much data from another player would be considered sufficient for their inclusion. Also, if extended to lower-ranked players or to the WTA, will the predictions be as accurate?</p>
+</li>
+<li>
+<p><strong>What about prediction uncertainty?</strong> Any estimate comes with uncertainty. The authors of &ldquo;The Thin Edge&rdquo; don&rsquo;t suggest how this could be measured or reported.</p>
+</li>
+<li>
+<p><strong>Could a similar model based on data from the Match Charting Project be built? and how would its performance compare?</strong> The Match Charting Project (MCP) is a volunteer effort to code shot-by-shot information of professional tennis matches. Although less granular that the ball tracking and player position data, the MCP is the richest description of shots that is available to the public. For the very reason that MCP data is free and open to everyone, it would be worthwhile to see what or how to get this data source to a point where it could be used to build a shot prediction model that could compete with the model in &ldquo;The Thin Edge&rdquo;.</p>
+</li>
 </ol>
-
 <p>So much remains to be explored that I hope one of the outcomes of the surprising win of &ldquo;The Thin Edge&rdquo; at Sloan is to catalyze more tennis researchers to get involved in this and related areas of research. Let&rsquo;s not look back at this win as a fluke but rather a breakout moment before a sea change in the way statistical thinking is used in tennis.</p>
 
 		</div>
-		
-
 	</article>
-	
+</main>
+
 <div class="authorbox clearfix">
 	<figure class="authorbox__avatar">
-		<img alt="Stephanie Kovalchik avatar" src="https://skoval.github.io/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
 	</figure>
 	<div class="authorbox__header">
 		<span class="authorbox__name">About Stephanie Kovalchik</span>
 	</div>
 	<div class="authorbox__description">
-		Tennis Data Scientist at the Game Insight Group at Tennis Australia and researcher at the Institute of Sport Exercise and Active Living at Victoria University.
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
 	</div>
 </div>
-	
-<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-	<div class="post-nav__item post-nav__item--prev col-1-2">
-		<a class="post-nav__link" href="https://skoval.github.io/2016/03/05/klaassen-magnus-hypothesis-3/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Klaassen &amp; Magnus&#39;s 22 Myths of Tennis - Myth 3</p></a>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2016/03/05/klaassen-magnus-hypothesis-3/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Klaassen &amp; Magnus&#39;s 22 Myths of Tennis - Myth 3</p></a>
 	</div>
-	<div class="post-nav__item post-nav__item--next col-1-2">
-		<a class="post-nav__link" href="https://skoval.github.io/2016/03/20/klaassen-magnus-hypothesis-4/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">Klaassen &amp; Magnus&#39;s 22 Myths of Tennis - Myth 4</p></a>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/2016/03/20/klaassen-magnus-hypothesis-4/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Klaassen &amp; Magnus&#39;s 22 Myths of Tennis - Myth 4</p></a>
 	</div>
 </nav>
 
-	
-<div class="comments">
+<section class="comments">
 	<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'on-the-t-com';
-    var disqus_identifier = 'https:\/\/skoval.github.io\/2016\/03\/15\/tennis-enters-the-big-leagures\/';
-    var disqus_title = 'Tennis Enters the Big Leagues of Sports Analytics';
-    var disqus_url = 'https:\/\/skoval.github.io\/2016\/03\/15\/tennis-enters-the-big-leagures\/';
-
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
     (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
 
-</div>
 
-<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
-	
-<div class="widget-search widget">
-	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
-		<label>
-			<span class="screen-reader-text">Search for:</span>
-			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
-		</label>
-		<input class="widget-search__submit" type="submit" value="Search">
-		<input type="hidden" name="sitesearch" value="https://skoval.github.io/" />
-	</form>
-</div>
-	
-<div class="widget-recent widget">
-	<h4 class="widget__title">Recent Posts</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/2020/01/24/slam-walkover-advantage/">Is an Early Walkover an Advantage in a Slam?</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2020/01/17/mens-ao-title/">Men&#39;s Title Chances for the 2020 Australian Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2020/01/17/womens-ao-title/">Women&#39;s Title Chances for the 2020 Australian Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/11/15/pressure-win-stats/">Who Were the Top Pressure Performers at the 2019 Grand Slams?</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/11/08/pressure-stats/">Who Felt the Pressure the Most at the 2019 Grand Slams?</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/10/24/next4-big4/">Are the First Years of the &#39;Next4&#39; Anything Like the Big4?</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/09/24/laver-cup-decider/">A Short Explainer on Getting to a Laver Cup Decider</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/09/13/us-open-pressure/">How Medvedev and Berrettini Dealt with Pressure at the US Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/09/06/us-open-ages/">Ages at the US Open are Getting Bimodal, Again</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/08/30/us-open-blockbusters/">Which Blockbuster Matches Might Be Ahead At The US Open?</a></li>
-		</ul>
-	</div>
-</div>
-
-	
-<div class="widget-categories widget">
-	<h4 class="widget__title">Categories</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/age">Age</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/ao">Ao</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/atp">Atp</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/backhand">Backhand</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/best">Best</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/big-points">Big-Points</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/breaking-through">Breaking-Through</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/clay">Clay</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/clutch">Clutch</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/comeback">Comeback</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/compeitiveness">Compeitiveness</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/cutch">Cutch</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/data-science">Data-Science</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/del-potro">Del-Potro</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/demand">Demand</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/depth">Depth</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/dominance">Dominance</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/doubles">Doubles</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/draw">Draw</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/duration">Duration</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/durations">Durations</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/elo">Elo</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/epochs">Epochs</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/event-predictions">Event-Predictions</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/excitement">Excitement</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/fatigue">Fatigue</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/federer">Federer</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/first-slam">First-Slam</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/french-open">French-Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/game-age">Game-Age</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gaps">Gaps</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gaussian-process">Gaussian-Process</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender">Gender</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender-bias">Gender-Bias</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/goat">Goat</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grand-slams">Grand-Slams</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grass">Grass</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/hackathon">Hackathon</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/head-to-head">Head-To-Head</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/head-to-heads">Head-To-Heads</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/importance">Importance</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/indian-wells">Indian-Wells</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/injury">Injury</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/laver-cup">Laver-Cup</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaderboards">Leaderboards</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaders">Leaders</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/luck">Luck</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/masters">Masters</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/matchups">Matchups</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/momentum">Momentum</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/must-see">Must-See</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/nadal">Nadal</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/next-gen">Next-Gen</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/novak">Novak</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/prediction">Prediction</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/predictions">Predictions</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/premiers">Premiers</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/pressure">Pressure</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/programming">Programming</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/quality">Quality</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/r">R</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/rating">Rating</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/ratings">Ratings</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/ratings-trends">Ratings-Trends</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/research">Research</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/retirements">Retirements</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/return">Return</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/roger-federer">Roger-Federer</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/scheduling">Scheduling</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/scoreboard">Scoreboard</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/season">Season</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seasons">Seasons</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeding">Seeding</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeds">Seeds</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena">Serena</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena-williams">Serena-Williams</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serve">Serve</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/singles">Singles</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/slam">Slam</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sloan">Sloan</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sports-analytics">Sports-Analytics</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/stories">Stories</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/strength">Strength</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/style">Style</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surface">Surface</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprise">Surprise</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprising">Surprising</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/suspended">Suspended</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/tennis-news">Tennis-News</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/us-open">Us-Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/walkover">Walkover</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/weather">Weather</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wimbledon">Wimbledon</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wta">Wta</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/zverev">Zverev</a></li>
-		</ul>
-	</div>
-</div>
-	
-	
-<div class="widget-taglist widget">
-	<h4 class="widget__title">Tags</h4>
-	<div class="widget__content">
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/age" title="age">age</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/ao" title="ao">ao</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/atp" title="atp">atp</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/backhand" title="backhand">backhand</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/best" title="best">best</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/big-points" title="big-points">big-points</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/breaking-through" title="breaking-through">breaking-through</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/clay" title="clay">clay</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/clutch" title="clutch">clutch</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/comeback" title="comeback">comeback</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/compeitiveness" title="compeitiveness">compeitiveness</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/cutch" title="cutch">cutch</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/data-science" title="data-science">data-science</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/del-potro" title="del-potro">del-potro</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/demand" title="demand">demand</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/depth" title="depth">depth</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/dominance" title="dominance">dominance</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/doubles" title="doubles">doubles</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/draw" title="draw">draw</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/duration" title="duration">duration</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/durations" title="durations">durations</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/elo" title="elo">elo</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/epochs" title="epochs">epochs</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/event-predictions" title="event-predictions">event-predictions</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/excitement" title="excitement">excitement</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/fatigue" title="fatigue">fatigue</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/federer" title="federer">federer</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/first-slam" title="first-slam">first-slam</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/french-open" title="french-open">french-open</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/game-age" title="game-age">game-age</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gaps" title="gaps">gaps</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gaussian-process" title="gaussian-process">gaussian-process</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender" title="gender">gender</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender-bias" title="gender-bias">gender-bias</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/goat" title="goat">goat</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grand-slams" title="grand-slams">grand-slams</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grass" title="grass">grass</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/hackathon" title="hackathon">hackathon</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/head-to-head" title="head-to-head">head-to-head</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/head-to-heads" title="head-to-heads">head-to-heads</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/importance" title="importance">importance</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/indian-wells" title="indian-wells">indian-wells</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/injury" title="injury">injury</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/laver-cup" title="laver-cup">laver-cup</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaderboards" title="leaderboards">leaderboards</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaders" title="leaders">leaders</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/luck" title="luck">luck</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/masters" title="masters">masters</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/matchups" title="matchups">matchups</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/momentum" title="momentum">momentum</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/must-see" title="must-see">must-see</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/nadal" title="nadal">nadal</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/next-gen" title="next-gen">next-gen</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/novak" title="novak">novak</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/prediction" title="prediction">prediction</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/predictions" title="predictions">predictions</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/premiers" title="premiers">premiers</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/pressure" title="pressure">pressure</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/programming" title="programming">programming</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/quality" title="quality">quality</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/r" title="r">r</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/rating" title="rating">rating</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/ratings" title="ratings">ratings</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/ratings-trends" title="ratings-trends">ratings-trends</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/research" title="research">research</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/retirements" title="retirements">retirements</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/return" title="return">return</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/roger-federer" title="roger-federer">roger-federer</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/scheduling" title="scheduling">scheduling</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/scoreboard" title="scoreboard">scoreboard</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/season" title="season">season</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seasons" title="seasons">seasons</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeding" title="seeding">seeding</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeds" title="seeds">seeds</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena" title="serena">serena</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena-williams" title="serena-williams">serena-williams</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serve" title="serve">serve</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/singles" title="singles">singles</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/slam" title="slam">slam</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sloan" title="sloan">sloan</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sports-analytics" title="sports-analytics">sports-analytics</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/stories" title="stories">stories</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/strength" title="strength">strength</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/style" title="style">style</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surface" title="surface">surface</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprise" title="surprise">surprise</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprising" title="surprising">surprising</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/suspended" title="suspended">suspended</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/tennis-news" title="tennis-news">tennis-news</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/us-open" title="us-open">us-open</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/walkover" title="walkover">walkover</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/weather" title="weather">weather</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wimbledon" title="wimbledon">wimbledon</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wta" title="wta">wta</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/zverev" title="zverev">zverev</a>
-	</div>
-</div>
-</aside>
-	</div>
-		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
-			<div class="container container-inner">
-				<p class="footer__copyright">&copy; 2020 Stats On the T. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
 			</div>
-		</footer>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
 	</div>
-
-<script>
-	var navigation = responsiveNav(".menu", {
-		navClass: "menu--collapse",
-	});
-</script>
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-  });
-  MathJax.Hub.Queue(function() {
-    
-    
-    
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-
-  MathJax.Hub.Config({
-  
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-  });
-</script>
-
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-100138539-1', 'auto');
-ga('send', 'pageview');
-</script>
-
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
 </body>
 </html>
-
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-100138539-1', 'auto');
-ga('send', 'pageview');
-</script>
-

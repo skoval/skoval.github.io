@@ -1,483 +1,212 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html class="no-js" lang="en-us">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Klaassen &amp; Magnus&#39;s 22 Myths of Tennis - Myth 20</title>
-<meta name="description" content="A blog that puts the numbers to tennis">
-<meta name="generator" content="Hugo 0.21" />
-<meta property="og:title" content="Klaassen &amp; Magnus&#39;s 22 Myths of Tennis - Myth 20" />
-<meta property="og:description" content="As we near the end of our look back at the 22 tennis myths of Klaassen and Magnus, we find less novelty in the ideas. Rather than spend too much time covering old ground, I&rsquo;ll try to keep things interesting by looking at each topic in a new way.
-
-" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Klaassen &amp; Magnus&#39;s 22 Myths of Tennis - Myth 20 - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Klaassen &amp; Magnus&#39;s 22 Myths of Tennis - Myth 20" />
+<meta property="og:description" content="As we near the end of our look back at the 22 tennis myths of Klaassen and Magnus, we find less novelty in the ideas. Rather than spend too much time covering old ground, I&rsquo;ll try to keep things interesting by looking at each topic in a new way." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://skoval.github.io/2016/07/23/klaassen-magnus-hypothesis-20/" />
+<meta property="article:published_time" content="2016-07-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-07-23T00:00:00+00:00" />
 
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
-
-<meta property="article:published_time" content="2016-07-23T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2016-07-23T00:00:00&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-
-<link rel="dns-prefetch" href="//fonts.googleapis.com" />
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700" type="text/css" media="all" />
-<link rel="stylesheet" href="https://skoval.github.io/css/style.css" type="text/css" media="all" />
-<script type="text/javascript" src="https://skoval.github.io/js/scripts.js"></script>
-<link rel="shortcut icon" href="https://skoval.github.io/favicon.ico">
 </head>
-<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
-	<div class="container container-outer">
-		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-			<div class="container container-inner clearfix">
-				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
-                    <div style="float:right;">
-                        <img src="https://skoval.github.io/img/logo.png" width="70px">
-                    </div>
-                   	<a class="logo__link" href="https://skoval.github.io/" title="Stats On the T" rel="home">
-						<h1 class="logo__title">Stats On the T</h1>
-						<h2 class="logo__tagline">Dedicated to data, statistics, and tennis</h2>
-                        
-					</a>
-				</div>
-			</div>
-			<nav class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
 	<ul class="menu__list">
-		<li class="menu__item "><a class="menu__link" href="/about/">ABOUT</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/contact/">CONTACT</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/features/">FEATURES</a></li>
-		<li class="menu__item "><a class="menu__link" href="/ratings/main/">RATINGS</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/research/">RESEARCH</a></li>
-		<li class="menu__item "><a class="menu__link" href="/post/software/">SOFTWARE</a></li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
 	</ul>
 </nav>
-		</header>
-		<div class="wrapper clearfix">
 
-
-<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
 	<article class="post">
-		<header class="post__header clearfix">
+		<header class="post__header">
 			<h1 class="post__title">Klaassen &amp; Magnus&#39;s 22 Myths of Tennis - Myth 20</h1>
-			<p class="post__meta meta">
-				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
-				<time class="post__meta-date" datetime="2016-07-23T00:00:00">July 23, 2016</time>
-			</p>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2016-07-23T00:00:00">July 23, 2016</time>
+</div>
+</div>
 		</header>
-		<div class="post__content clearfix">
-
+	<div class="content post__content clearfix">
 			<p>As we near the end of our look back at the 22 tennis myths of Klaassen and Magnus, we find less novelty in the ideas. Rather than spend too much time covering old ground, I&rsquo;ll try to keep things interesting by looking at each topic in a new way.</p>
-
-<p></p>
-
 <div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:394px;float:right;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com/detail/539859106" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:66.666667% 0 0 0;width:80%;"><iframe src="//embed.gettyimages.com/embed/539859106?et=PS__D9hbS9drCwXggRe-eg&viewMoreLink=off&sig=GhZrPDIBfGFb2oZMFUwA__60mdAc6bMeTkGV1waDULI=&caption=true" width="494" height="296" scrolling="no" frameborder="0" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div><p style="margin:0;"></p></div>
-
 <p>This week&rsquo;s topic returns to the question of the advantage of serving first in a match, which was first covered in <a href="http://127.0.0.1:4000/2016/02/24/Klaassen-Magnus-Hypothesis2/">our discussion of myth 2</a> of <a href="https://global.oup.com/academic/product/analyzing-wimbledon-9780199355952?cc=us&amp;lang=en&amp;#">Analyzing Wimbledon</a>. Rather than considering the first game, myth 2 examined whether it is an advantage of serving first in <em>any</em> set. One of the key points K&amp;M made on that topic was how the examination of the effect of serving first is plagued by bias for any set <em>other</em> than the first, as serving first in subsequent set is highly correlated with having lost the previous set.</p>
-
 <p>But what about the first set where the chance to serve first is determined only by luck? Do servers get a boost in their chances of winning the game by serving first?</p>
-
 <h2 id="myth-20-the-winner-of-the-toss-should-elect-to-serve">Myth 20: &ldquo;The winner of the toss should elect to serve&rdquo;</h2>
-
 <p>Thanks to the coin toss, serving first in a game is as close to a true randomized experiment as you get in tennis. Still, even chance can give curious results and it could still happen that the quality of players who serve first differ from those who serve second, especially with a small sample of matches. To account for this, K&amp;M use the difference in player rankings to see if the player serving in the first game performs better than a player who serves second but is still of the same relative quality compared to his or her opponent.</p>
-
 <p>Based on matches over several years at Wimbledon, K&amp;M find that the percentage of points won on serve tends to be 3 percentage points higher in the first game compared to the other service game, for male and female players; a finding that would support the idea that serving first in the first set has an advantage.</p>
-
 <p>Back when we reviewed myth 2, I showed that if such a first game effect exists, it it likely explained by new balls. Though, new balls in the first game aren&rsquo;t truly new since they are the same set used in the warm up. This is why the first change of balls happens in the eighth game and all subsequent changes are after every 9 games. The ball age in the first game is really like an age of 2 (2 games played), which would be expected to give a minimal advantage.</p>
-
 <p>In fact, a deep dive into the effect of new balls in a <a href="http://127.0.0.1:4000/2016/07/08/Klaassen-Magnus-Hypothesis-18/">previous post on K&amp;M myth&rsquo;s 18</a> found that the effect diminishes with the point age (not just game age of the ball) and the disadvantage with age is player-dependent.</p>
-
 <h2 id="revisiting-the-advantage-of-serving-first">Revisiting the Advantage of Serving First</h2>
-
 <p>Given that many of the effects we see in tennis vary by player, I thought it would be interesting to see if this is also true for first game effects. To do this, I took point-level data for 2014-2015 ATP and WTA matches and compared its server&rsquo;s serve performance in the first game against all the other service games in the same match. My logic in doing this is that the service games in a match should give a good estimate of their ability on serve on that day considering the opponent he or she was facing.</p>
-
 <p>Still, comparisons against the average (minus game 1) and the first game points won on serve is tricky because the first game is a small sample of points. The average points played in the first service game is just 6 and 7 for male and female servers. So how can we say whether $X$ points won on serve out of $n$ points was unusually high or not?</p>
-
 <p>For this, I will use an exact binomial probability. Let $p$ be the probability that the server wins a point on serve. Then we will estimate the chance of winning $X$ or more points in the first game using the following:</p>
-
 <p>$$
-P(Points\;Won \geq X) = \sum_{j}^{n} \begin{pmatrix} n \ j \end{pmatrix} p^j (1-p)^{(n - j)}
+P(Points;Won \geq X) = \sum_{j}^{n} \begin{pmatrix} n \ j \end{pmatrix} p^j (1-p)^{(n - j)}
 $$</p>
-
 <p>I used the above formula to calculate the surprise of each first game performance for servers serving first and servers serving second. In each case, $p$ was the average points the player won on serve in all other service games of the same match.</p>
-
 <p>The first figure shows the results for ATP servers. The y-axis is the player&rsquo;s $p$ for the match with first servers in the left panel and second servers in the right panel (You can hover over a point to see exactly which player was serving for each data point). Along the x-axis, I show the binomial probability of the points won in the first game being as many or greater as the points the player actually won. If electing to serve has an advantage, we would expect more low-probability first games.</p>
-
 <p>Using a 5% probability as surprising, which is shown by the dark red horizontal line, there were 0 over-performing first servers and 0.4% over-performing second servers in their first service game. Using a 20% probability as surprising (shown in the lighter red line), we found 9% of over-performing first servers and 13% of second servers in the first game. Interestingly, Leonardo Mayer had 3 match performances in this small subset of over-performers.</p>
-
 <div>
     <a href="https://plot.ly/~on-the-t/861/" target="_blank" title="Served First, Served Second, , , , " style="display: block; text-align: center;"><img src="https://plot.ly/~on-the-t/861.png" alt="Served First, Served Second, , , , " style="max-width: 100%;width: 680px;"  width="680" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
     <script data-plotly="on-the-t:861"  src="https://plot.ly/embed.js" async></script>
 </div>
-
 <p>Above expected performance in the first game was more common among WTA players, though the frequency was still rare. There were 2% of first servers and 3% of second servers who had surprisingly strong (5% probability or less) outcomes in their first service game considering their performance in the remainder of the match. There were 11% and 14% of first and second servers who had a surprisingly good performance, using a 20% probability criterion. Several players had multiple matches in which they had better than expected performances in the first game, including Andrea Petkovic, Heather Watson, and Madison Keys.</p>
-
 <div>
     <a href="https://plot.ly/~on-the-t/864/" target="_blank" title="Served First, Served Second, , , , " style="display: block; text-align: center;"><img src="https://plot.ly/~on-the-t/864.png" alt="Served First, Served Second, , , , " style="max-width: 100%;width: 680px;"  width="680" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
     <script data-plotly="on-the-t:864"  src="https://plot.ly/embed.js" async></script>
 </div>
-
 <h2 id="summary">Summary</h2>
-
 <p>Even with the help of the randomization that comes with the coin toss, first game effects are still challenging to assess because of ball age and small sample size. Using the within-match binomial test is one way to identify how often first game performances are inconsistent with how a player performs in the remainder of the match, which is possibly the best way to account for their ability on a given day and the ability of their opponent. Using this approach, we find that about 15% of first game performances are consistent with match performance and there is no evidence that these better-than-expected performances are more likely for servers who serve first versus serving second.</p>
-
 <p>The results do highlight the possibility that some players have an &ldquo;early start effect&rdquo;, which would suggest a subset of players who should take advantage of serving right away when they win the toss.</p>
 		</div>
-		
-
 	</article>
-	
+</main>
+
 <div class="authorbox clearfix">
 	<figure class="authorbox__avatar">
-		<img alt="Stephanie Kovalchik avatar" src="https://skoval.github.io/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
 	</figure>
 	<div class="authorbox__header">
 		<span class="authorbox__name">About Stephanie Kovalchik</span>
 	</div>
 	<div class="authorbox__description">
-		Tennis Data Scientist at the Game Insight Group at Tennis Australia and researcher at the Institute of Sport Exercise and Active Living at Victoria University.
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
 	</div>
 </div>
-	
-<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-	<div class="post-nav__item post-nav__item--prev col-1-2">
-		<a class="post-nav__link" href="https://skoval.github.io/2016/07/16/klaassen-magnus-hypothesis-19/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Klaassen &amp; Magnus&#39;s 22 Myths of Tennis - Myth 19</p></a>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2016/07/16/klaassen-magnus-hypothesis-19/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Klaassen &amp; Magnus&#39;s 22 Myths of Tennis - Myth 19</p></a>
 	</div>
-	<div class="post-nav__item post-nav__item--next col-1-2">
-		<a class="post-nav__link" href="https://skoval.github.io/2016/07/30/klaassen-magnus-hypothesis-21/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">Klaassen &amp; Magnus&#39;s 22 Myths of Tennis - Myth 21</p></a>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/2016/07/30/klaassen-magnus-hypothesis-21/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Klaassen &amp; Magnus&#39;s 22 Myths of Tennis - Myth 21</p></a>
 	</div>
 </nav>
 
-	
-<div class="comments">
+<section class="comments">
 	<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'on-the-t-com';
-    var disqus_identifier = 'https:\/\/skoval.github.io\/2016\/07\/23\/klaassen-magnus-hypothesis-20\/';
-    var disqus_title = 'Klaassen \x26 Magnus\x27s 22 Myths of Tennis - Myth 20';
-    var disqus_url = 'https:\/\/skoval.github.io\/2016\/07\/23\/klaassen-magnus-hypothesis-20\/';
-
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
     (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
 
-</div>
 
-<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
-	
-<div class="widget-search widget">
-	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
-		<label>
-			<span class="screen-reader-text">Search for:</span>
-			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q">
-		</label>
-		<input class="widget-search__submit" type="submit" value="Search">
-		<input type="hidden" name="sitesearch" value="https://skoval.github.io/" />
-	</form>
-</div>
-	
-<div class="widget-recent widget">
-	<h4 class="widget__title">Recent Posts</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/2020/01/24/slam-walkover-advantage/">Is an Early Walkover an Advantage in a Slam?</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2020/01/17/mens-ao-title/">Men&#39;s Title Chances for the 2020 Australian Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2020/01/17/womens-ao-title/">Women&#39;s Title Chances for the 2020 Australian Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/11/15/pressure-win-stats/">Who Were the Top Pressure Performers at the 2019 Grand Slams?</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/11/08/pressure-stats/">Who Felt the Pressure the Most at the 2019 Grand Slams?</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/10/24/next4-big4/">Are the First Years of the &#39;Next4&#39; Anything Like the Big4?</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/09/24/laver-cup-decider/">A Short Explainer on Getting to a Laver Cup Decider</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/09/13/us-open-pressure/">How Medvedev and Berrettini Dealt with Pressure at the US Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/09/06/us-open-ages/">Ages at the US Open are Getting Bimodal, Again</a></li>
-			<li class="widget__item"><a class="widget__link" href="/2019/08/30/us-open-blockbusters/">Which Blockbuster Matches Might Be Ahead At The US Open?</a></li>
-		</ul>
-	</div>
-</div>
-
-	
-<div class="widget-categories widget">
-	<h4 class="widget__title">Categories</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/age">Age</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/ao">Ao</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/atp">Atp</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/backhand">Backhand</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/best">Best</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/big-points">Big-Points</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/breaking-through">Breaking-Through</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/clay">Clay</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/clutch">Clutch</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/comeback">Comeback</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/compeitiveness">Compeitiveness</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/cutch">Cutch</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/data-science">Data-Science</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/del-potro">Del-Potro</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/demand">Demand</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/depth">Depth</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/dominance">Dominance</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/doubles">Doubles</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/draw">Draw</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/duration">Duration</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/durations">Durations</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/elo">Elo</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/epochs">Epochs</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/event-predictions">Event-Predictions</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/excitement">Excitement</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/fatigue">Fatigue</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/federer">Federer</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/first-slam">First-Slam</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/french-open">French-Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/game-age">Game-Age</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gaps">Gaps</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gaussian-process">Gaussian-Process</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender">Gender</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/gender-bias">Gender-Bias</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/goat">Goat</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grand-slams">Grand-Slams</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/grass">Grass</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/hackathon">Hackathon</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/head-to-head">Head-To-Head</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/head-to-heads">Head-To-Heads</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/importance">Importance</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/indian-wells">Indian-Wells</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/injury">Injury</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/laver-cup">Laver-Cup</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaderboards">Leaderboards</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/leaders">Leaders</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/luck">Luck</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/masters">Masters</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/matchups">Matchups</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/momentum">Momentum</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/must-see">Must-See</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/nadal">Nadal</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/next-gen">Next-Gen</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/novak">Novak</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/prediction">Prediction</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/predictions">Predictions</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/premiers">Premiers</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/pressure">Pressure</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/programming">Programming</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/quality">Quality</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/r">R</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/rating">Rating</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/ratings">Ratings</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/ratings-trends">Ratings-Trends</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/research">Research</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/retirements">Retirements</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/return">Return</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/roger-federer">Roger-Federer</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/scheduling">Scheduling</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/scoreboard">Scoreboard</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/season">Season</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seasons">Seasons</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeding">Seeding</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/seeds">Seeds</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena">Serena</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serena-williams">Serena-Williams</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/serve">Serve</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/singles">Singles</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/slam">Slam</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sloan">Sloan</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/sports-analytics">Sports-Analytics</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/stories">Stories</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/strength">Strength</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/style">Style</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surface">Surface</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprise">Surprise</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/surprising">Surprising</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/suspended">Suspended</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/tennis-news">Tennis-News</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/us-open">Us-Open</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/walkover">Walkover</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/weather">Weather</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wimbledon">Wimbledon</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/wta">Wta</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://skoval.github.io/categories/zverev">Zverev</a></li>
-		</ul>
-	</div>
-</div>
-	
-	
-<div class="widget-taglist widget">
-	<h4 class="widget__title">Tags</h4>
-	<div class="widget__content">
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/age" title="age">age</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/ao" title="ao">ao</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/atp" title="atp">atp</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/backhand" title="backhand">backhand</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/best" title="best">best</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/big-points" title="big-points">big-points</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/breaking-through" title="breaking-through">breaking-through</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/clay" title="clay">clay</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/clutch" title="clutch">clutch</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/comeback" title="comeback">comeback</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/compeitiveness" title="compeitiveness">compeitiveness</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/cutch" title="cutch">cutch</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/data-science" title="data-science">data-science</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/del-potro" title="del-potro">del-potro</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/demand" title="demand">demand</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/depth" title="depth">depth</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/dominance" title="dominance">dominance</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/doubles" title="doubles">doubles</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/draw" title="draw">draw</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/duration" title="duration">duration</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/durations" title="durations">durations</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/elo" title="elo">elo</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/epochs" title="epochs">epochs</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/event-predictions" title="event-predictions">event-predictions</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/excitement" title="excitement">excitement</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/fatigue" title="fatigue">fatigue</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/federer" title="federer">federer</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/first-slam" title="first-slam">first-slam</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/french-open" title="french-open">french-open</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/game-age" title="game-age">game-age</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gaps" title="gaps">gaps</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gaussian-process" title="gaussian-process">gaussian-process</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender" title="gender">gender</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/gender-bias" title="gender-bias">gender-bias</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/goat" title="goat">goat</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grand-slams" title="grand-slams">grand-slams</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/grass" title="grass">grass</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/hackathon" title="hackathon">hackathon</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/head-to-head" title="head-to-head">head-to-head</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/head-to-heads" title="head-to-heads">head-to-heads</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/importance" title="importance">importance</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/indian-wells" title="indian-wells">indian-wells</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/injury" title="injury">injury</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/laver-cup" title="laver-cup">laver-cup</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaderboards" title="leaderboards">leaderboards</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/leaders" title="leaders">leaders</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/luck" title="luck">luck</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/masters" title="masters">masters</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/matchups" title="matchups">matchups</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/momentum" title="momentum">momentum</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/must-see" title="must-see">must-see</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/nadal" title="nadal">nadal</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/next-gen" title="next-gen">next-gen</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/novak" title="novak">novak</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/prediction" title="prediction">prediction</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/predictions" title="predictions">predictions</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/premiers" title="premiers">premiers</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/pressure" title="pressure">pressure</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/programming" title="programming">programming</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/quality" title="quality">quality</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/r" title="r">r</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/rating" title="rating">rating</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/ratings" title="ratings">ratings</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/ratings-trends" title="ratings-trends">ratings-trends</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/research" title="research">research</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/retirements" title="retirements">retirements</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/return" title="return">return</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/roger-federer" title="roger-federer">roger-federer</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/scheduling" title="scheduling">scheduling</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/scoreboard" title="scoreboard">scoreboard</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/season" title="season">season</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seasons" title="seasons">seasons</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeding" title="seeding">seeding</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/seeds" title="seeds">seeds</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena" title="serena">serena</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serena-williams" title="serena-williams">serena-williams</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/serve" title="serve">serve</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/singles" title="singles">singles</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/slam" title="slam">slam</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sloan" title="sloan">sloan</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/sports-analytics" title="sports-analytics">sports-analytics</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/stories" title="stories">stories</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/strength" title="strength">strength</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/style" title="style">style</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surface" title="surface">surface</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprise" title="surprise">surprise</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/surprising" title="surprising">surprising</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/suspended" title="suspended">suspended</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/tennis-news" title="tennis-news">tennis-news</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/us-open" title="us-open">us-open</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/walkover" title="walkover">walkover</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/weather" title="weather">weather</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wimbledon" title="wimbledon">wimbledon</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/wta" title="wta">wta</a>
-		<a class="widget__link widget__link--taglist" href="https://skoval.github.io/tags/zverev" title="zverev">zverev</a>
-	</div>
-</div>
-</aside>
-	</div>
-		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
-			<div class="container container-inner">
-				<p class="footer__copyright">&copy; 2020 Stats On the T. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad theme</a>.</span></p>
 			</div>
-		</footer>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
 	</div>
-
-<script>
-	var navigation = responsiveNav(".menu", {
-		navClass: "menu--collapse",
-	});
-</script>
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-  });
-  MathJax.Hub.Queue(function() {
-    
-    
-    
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-
-  MathJax.Hub.Config({
-  
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-  });
-</script>
-
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-100138539-1', 'auto');
-ga('send', 'pageview');
-</script>
-
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
 </body>
 </html>
-
-
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-100138539-1', 'auto');
-ga('send', 'pageview');
-</script>
-

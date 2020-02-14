@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Prediction on Stats On the T</title>
+    <title>prediction on Stats On the T</title>
     <link>https://skoval.github.io/tags/prediction/</link>
-    <description>Recent content in Prediction on Stats On the T</description>
+    <description>Recent content in prediction on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 22 Feb 2019 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2019/02/22/serve-model-check/</guid>
-      <description>&lt;p&gt;A model that could predict a player&amp;rsquo;s performance on serve would have a number of interesting uses like forecasting the outcome of matches or identifying surprising performances. But for any of these uses the model would need to be accurate and reliable. How should we evaluate a model&amp;rsquo;s performance? And how do we know when a model is good enough?&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;A model that could predict a player&amp;rsquo;s performance on serve would have a number of interesting uses like forecasting the outcome of matches or identifying surprising performances. But for any of these uses the model would need to be accurate and reliable. How should we evaluate a model&amp;rsquo;s performance? And how do we know when a model is good enough?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,9 +26,7 @@
       <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2019/02/15/serve-prediction-interval/</guid>
-      <description>&lt;p&gt;Every player has days when everything seems to work and other days when nothing seems to go right. Saying when a player has truly over (or under) performed is tricky in tennis because there is always an opponent on the other side of the net that is also influencing the outcome of points. In this post, I look at a basic strategy to try to isolate the ability of the server and receiver, and discuss how this might be used to identify surprising performances on serve.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Every player has days when everything seems to work and other days when nothing seems to go right. Saying when a player has truly over (or under) performed is tricky in tennis because there is always an opponent on the other side of the net that is also influencing the outcome of points. In this post, I look at a basic strategy to try to isolate the ability of the server and receiver, and discuss how this might be used to identify surprising performances on serve.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,9 +35,7 @@
       <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2017/10/27/shot-quality-maps/</guid>
-      <description>&lt;p&gt;Imagine you could measure the quality of every shot during a tennis match. What would it reveal about a player&amp;rsquo;s performance and where on the court they perform best?&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Imagine you could measure the quality of every shot during a tennis match. What would it reveal about a player&amp;rsquo;s performance and where on the court they perform best?&lt;/p&gt;</description>
     </item>
     
   </channel>

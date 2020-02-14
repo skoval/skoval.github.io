@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hackathon on Stats On the T</title>
+    <title>hackathon on Stats On the T</title>
     <link>https://skoval.github.io/tags/hackathon/</link>
-    <description>Recent content in Hackathon on Stats On the T</description>
+    <description>Recent content in hackathon on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/2018/02/19/ao-hackathon/</guid>
-      <description>&lt;p&gt;As Roger Federer was crowned with his 20th Grand Slam title at the 2018 Australian Open, the winners of the first AO to AI Hackathon competition were being decided. In this post, I take a look at the winning models and discuss what they mean for the future of calling point outcomes in tennis.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;As Roger Federer was crowned with his 20th Grand Slam title at the 2018 Australian Open, the winners of the first AO to AI Hackathon competition were being decided. In this post, I take a look at the winning models and discuss what they mean for the future of calling point outcomes in tennis.&lt;/p&gt;</description>
     </item>
     
   </channel>
