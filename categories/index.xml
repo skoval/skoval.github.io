@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>load</title>
+      <link>https://skoval.github.io/categories/load/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/load/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Grand Slams</title>
@@ -318,7 +327,7 @@
     </item>
     
     <item>
-      <title>French Open</title>
+      <title>french open</title>
       <link>https://skoval.github.io/categories/french-open/</link>
       <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
       

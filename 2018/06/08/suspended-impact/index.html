@@ -8,6 +8,34 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
 	<meta name="description" content="">
 	<meta property="og:title" content="Does Interrupting a Match Impact the Outcome?" />
 <meta property="og:description" content="The intermittent rain and late nights at the 2018 French Open have resulted in multiple interrupted matches, including the bottom half of the men&rsquo;s quarterfinals. We often have the impression that reversals and big swings are more likely with an interrupted match. Does the data back up this impression of the impact of suspended play?" />
@@ -117,7 +145,7 @@ if (!doNotTrack) {
 
 <div class="meta__item-categories meta__item">
 	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/french-open/" rel="category">French Open</a>, <a class="meta__link" href="/categories/suspended/" rel="category">suspended</a>
+	<span class="meta__text"><a class="meta__link" href="/categories/french-open/" rel="category">french open</a>, <a class="meta__link" href="/categories/suspended/" rel="category">suspended</a>
 	</span>
 </div></div>
 		</header>

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Does greater competion load going into the second week of a Grand Slam hurt a player&#39;s win chances? - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Does greater competion load going into the second week of a Grand Slam hurt a player&#39;s win chances?" />
+<meta property="og:description" content="By the time of the Australian Open quarterfinals, Dominic Thiem had already played 10 hours and 23 minutes putting him in the top 20% of match time played to get to the quarters among men competing in Grand Slams in the past decade. And he only got further in the tail of total competition load as the event progressed. In this post, I look at whether the intensity of Thiem&rsquo;s journey likely made his prospects for the title even more difficult." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2020/02/15/competition-load/" />
+<meta property="article:published_time" content="2020-02-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-15T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Does greater competion load going into the second week of a Grand Slam hurt a player&#39;s win chances?</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-02-15T00:00:00">February 15, 2020</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/load/" rel="category">load</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>By the time of the Australian Open quarterfinals, Dominic Thiem had already played 10 hours and 23 minutes putting him in the top 20% of match time played to get to the quarters among men competing in Grand Slams in the past decade. And he only got further in the tail of total competition load as the event progressed. In this post, I look at whether the intensity of Thiem&rsquo;s journey likely made his prospects for the title even more difficult.</p>
+<p>Few players are going to go deep into a Grand Slam without some wear and tear. But for some players than journey is much more arduous than for others.</p>
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:394px;float:left;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com.au/detail/1198176874" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:66.66667% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/1198176874?et=IX2UEDXmQqh5zO-DbRkbuA&tld=com.au&sig=T5j_sifijh9nZmPjFtXBdgE8jjsG214QZ86QbQsWw94=&caption=true&ver=1" scrolling="no" frameborder="0" width="594" height="396" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+<p>This was the situation Dominic Thiem found himself in for the last three rounds of the 2020 Australian Open. Going into his unlucky quarterfinal matchup against Rafael Nadal, Thiem had accumulated 10.4 hours of match play, this put him +1.3 hours above the average over slam quarterfinalists of the past decade (see Figure 1).</p>
+<div style="width:50%;float:right;">
+<img src="/img/theim_slam_week1_load.png" style="max-width: 100%;" />
+<figcaption>Figure 1. Distribution of hours played going into the last rounds of a Grand Slam for male players from 2011-2020. Read lines show Dominic Thiem's competition hours for the 2020 Australian Open.</figcaption>
+</div>
+<p>After a four-set battle over Rafael Nadal that included three tiebreaks, Thiem was as 14.6 hours played and +3.4 hours over the average. Another four-set win, this time over Alexander Zverev, brought the total to 18.2 hours and +4.5 hours above the average of slam finalists. This put Thiem in the unenviable position of being in the top 3% of competition load when he faced 7-time Australian Open winner Novak Djokovic, who, by the way, had only taken 12.5 hours on court to get to the 2020 final.</p>
+<p>Did this make any difference for the outcome of the final?</p>
+<p>We can get some idea about that by looking at other examples of players who had intense journeys to get to the second week of a Grand Slam. In the table at the end of this post I have put together a selection of some examples, including Thiem&rsquo;s. Thiem&rsquo;s 2020 Australian Open put his competition load next to ones like Kevin Anderson&rsquo;s 2018 Wimbledon and Rafael Nadal&rsquo;s 2017 Australian Open runs. Notably, no player in this group won a title.</p>
+<p>But these are only a few examples. And even if many examples showed a similar trend we are ignoring a big confound. Is high competition load contributing to losses? Or is high competition load merely a byproduct of being an underdog?</p>
+<p>What we want to know is whether high competition load has an influence on match outcomes <em>after</em> accounting for the difference in ability of the two players who meet in a given round of a slam. In the terminology of a regression, if <code>$w_{ij}$</code> is the probability that player <code>$i$</code> beats player <code>$j$</code> and $load_i$ is player <code>$i$</code>'s cumualtive load, we can look at the effect of load with the following,</p>
+<p><code>$$ logit(w_{ij}) = \beta_0 + \beta_1 logit(p_{ij}) + \beta_2 (load_i - \bar{load}) $$</code></p>
+<p>where $p_{ij}$ is a pre-match prediction that is based on the ability of the two players and any other factor other than the event competition load.</p>
+<div style="width:40%;float:left;padding:2%;">
+<img src="/img/theim_slam_week1_load2.png" style="max-width: 100%;" />
+<figcaption>Figure 2. Expected reduction in Thiem's win chances due to his competition load (and 90% CI) at the 2020 Australian Open.</figcaption>
+</div>
+<p>This describes a simple logistic regression model, where the main difficulty is choosing $p_{ij}$. This could be taken from pre-match bookmaker odds for example. I&rsquo;m going to base it off of my own player ratings.</p>
+<p>Using the past 10 years of rounds from the quarterfinals and later, I&rsquo;ve fit the load model and looked at the expected change in Thiem&rsquo;s win chances at each of the final three rounds of the 2020 Australian Open. The historical pattern suggests that Thiem&rsquo;s chances might have already been hurt going into the quarterfinal (an average of 12% drop) and really took a nose dive after his long battle against Rafael Nadal. From that point on he was expected to have 30-35% less of a chance than his player rating would predict.</p>
+<p>It might be tempting to shrug our shoulders at such findings, thinking that players have little control over the time of a match. But this would be underselling the ownership players have over how aggressively they will play and how this can influence the time on court. For slam players who are thinking more than one match at a time, turning up the aggression in matches when it reaches an average length may be an important strategy for getting a slam title.</p>
+<table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Player</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Event</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Round</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Opponent</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Won</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Score</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Match Hours</th>
+<th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Cumulative Hours</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Roberto Bautista Agut</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Australian Open  2019</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R128</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Andy Murray</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-4 6-4 6-7(5) 6-7(4) 6-2</td>
+<td style='padding:2%;margin:2%; text-align: center;'>4.2</td>
+<td style='padding:2%;margin:2%; text-align: center;'>4.2</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Roberto Bautista Agut</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Australian Open  2019</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R64</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>John Millman</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-3 6-1 3-6 6-7(6) 6-4</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3.8</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>8.0</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Roberto Bautista Agut</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Australian Open  2019</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R32</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Karen Khachanov</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-4 7-5 6-4</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2.1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>10.1</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Roberto Bautista Agut</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Australian Open  2019</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R16</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Marin Cilic</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-7(6) 6-3 6-2 4-6 6-4</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>4.0</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>14.1</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Roberto Bautista Agut</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Australian Open  2019</td>
+<td style='padding:2%;margin:2%; text-align: center;'>QF</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Stefanos Tsitsipas</td>
+<td style='padding:2%;margin:2%; text-align: center;'>0</td>
+<td style='padding:2%;margin:2%; text-align: center;'>5-7 6-4 4-6 6(2)-7</td>
+<td style='padding:2%;margin:2%; text-align: center;'>3.2</td>
+<td style='padding:2%;margin:2%; text-align: center;'>17.3</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Kei Nishikori</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>French Open  2019</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R128</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Quentin Halys</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-2 6-3 6-4</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>2.0</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>2.0</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Kei Nishikori</td>
+<td style='padding:2%;margin:2%; text-align: center;'>French Open  2019</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R64</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Jo-Wilfried Tsonga</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>4-6 6-4 6-4 6-4</td>
+<td style='padding:2%;margin:2%; text-align: center;'>3.0</td>
+<td style='padding:2%;margin:2%; text-align: center;'>5.0</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Kei Nishikori</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>French Open  2019</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R32</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Laslo Djere</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-4 6-7(6) 6-3 4-6 8-6</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>4.4</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>9.4</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Kei Nishikori</td>
+<td style='padding:2%;margin:2%; text-align: center;'>French Open  2019</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R16</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Benoit Paire</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-2 6-7(8) 6-2 6-7(8) 7-5</td>
+<td style='padding:2%;margin:2%; text-align: center;'>3.9</td>
+<td style='padding:2%;margin:2%; text-align: center;'>13.4</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Kei Nishikori</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>French Open  2019</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>QF</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Rafael Nadal</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>0</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1-6 1-6 3-6</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1.8</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>15.2</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Marin Cilic</td>
+<td style='padding:2%;margin:2%; text-align: center;'>U.S. Open  2012</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R128</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Marinko Matosevic</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>5-7 2-6 6-4 6-2 6-4</td>
+<td style='padding:2%;margin:2%; text-align: center;'>4.0</td>
+<td style='padding:2%;margin:2%; text-align: center;'>4.0</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Marin Cilic</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>U.S. Open  2012</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R64</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Daniel Brands</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-3 6-2 5-7 4-6 7-5</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3.7</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>7.6</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Marin Cilic</td>
+<td style='padding:2%;margin:2%; text-align: center;'>U.S. Open  2012</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R32</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Kei Nishikori</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-3 6-4 6-7(3) 6-3</td>
+<td style='padding:2%;margin:2%; text-align: center;'>3.5</td>
+<td style='padding:2%;margin:2%; text-align: center;'>11.2</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Marin Cilic</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>U.S. Open  2012</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R16</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Martin Klizan</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>7-5 6-4 6-0</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>2.0</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>13.2</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Marin Cilic</td>
+<td style='padding:2%;margin:2%; text-align: center;'>U.S. Open  2012</td>
+<td style='padding:2%;margin:2%; text-align: center;'>QF</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Andy Murray</td>
+<td style='padding:2%;margin:2%; text-align: center;'>0</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-3 6(4)-7 2-6 0-6</td>
+<td style='padding:2%;margin:2%; text-align: center;'>3.0</td>
+<td style='padding:2%;margin:2%; text-align: center;'>16.2</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Stefanos Tsitsipas</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Australian Open  2019</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R128</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Matteo Berrettini</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-7(3) 6-4 6-3 7-6(4)</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3.0</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3.0</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Stefanos Tsitsipas</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Australian Open  2019</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R64</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Viktor Troicki</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-3 2-6 6-2 7-5</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2.7</td>
+<td style='padding:2%;margin:2%; text-align: center;'>5.6</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Stefanos Tsitsipas</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Australian Open  2019</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R32</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Nikoloz Basilashvili</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-3 3-6 7-6(7) 6-4</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>2.9</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>8.5</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Stefanos Tsitsipas</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Australian Open  2019</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R16</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Roger Federer</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-7(11) 7-6(3) 7-5 7-6(5)</td>
+<td style='padding:2%;margin:2%; text-align: center;'>3.8</td>
+<td style='padding:2%;margin:2%; text-align: center;'>12.3</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Stefanos Tsitsipas</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Australian Open  2019</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>QF</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Roberto Bautista Agut</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>7-5 4-6 6-4 7-6(2)</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3.2</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>15.5</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Stefanos Tsitsipas</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Australian Open  2019</td>
+<td style='padding:2%;margin:2%; text-align: center;'>SF</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Rafael Nadal</td>
+<td style='padding:2%;margin:2%; text-align: center;'>0</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2-6 4-6 0-6</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1.8</td>
+<td style='padding:2%;margin:2%; text-align: center;'>17.3</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Matteo Berrettini</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>U.S. Open  2019</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R128</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Richard Gasquet</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-4 6-3 2-6 6-2</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>2.7</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>2.7</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Matteo Berrettini</td>
+<td style='padding:2%;margin:2%; text-align: center;'>U.S. Open  2019</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R64</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Jordan Thompson</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>7-5 7-6(5) 4-6 6-1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>3.0</td>
+<td style='padding:2%;margin:2%; text-align: center;'>5.7</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Matteo Berrettini</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>U.S. Open  2019</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R32</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Alexei Popyrin</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-4 6-4 6-7(3) 7-6(2)</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3.6</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>9.2</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Matteo Berrettini</td>
+<td style='padding:2%;margin:2%; text-align: center;'>U.S. Open  2019</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R16</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Andrey Rublev</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-1 6-4 7-6(6)</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2.2</td>
+<td style='padding:2%;margin:2%; text-align: center;'>11.4</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Matteo Berrettini</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>U.S. Open  2019</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>QF</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Gael Monfils</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3-6 6-3 6-2 3-6 7-6(5)</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>4.0</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>15.4</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Matteo Berrettini</td>
+<td style='padding:2%;margin:2%; text-align: center;'>U.S. Open  2019</td>
+<td style='padding:2%;margin:2%; text-align: center;'>SF</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Rafael Nadal</td>
+<td style='padding:2%;margin:2%; text-align: center;'>0</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6(6)-7 4-6 1-6</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2.6</td>
+<td style='padding:2%;margin:2%; text-align: center;'>18.0</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Andy Murray</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>French Open  2016</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R128</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Radek Stepanek</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3-6 3-6 6-0 6-3 7-5</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3.7</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3.7</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Andy Murray</td>
+<td style='padding:2%;margin:2%; text-align: center;'>French Open  2016</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R64</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Mathias Bourgue</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-2 2-6 4-6 6-2 6-3</td>
+<td style='padding:2%;margin:2%; text-align: center;'>3.6</td>
+<td style='padding:2%;margin:2%; text-align: center;'>7.2</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Andy Murray</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>French Open  2016</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R32</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Ivo Karlovic</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-1 6-4 7-6(3)</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1.9</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>9.2</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Andy Murray</td>
+<td style='padding:2%;margin:2%; text-align: center;'>French Open  2016</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R16</td>
+<td style='padding:2%;margin:2%; text-align: center;'>John Isner</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>7-6(9) 6-4 6-3</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2.7</td>
+<td style='padding:2%;margin:2%; text-align: center;'>11.8</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Andy Murray</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>French Open  2016</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>QF</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Richard Gasquet</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>5-7 7-6(3) 6-0 6-2</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3.4</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>15.2</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Andy Murray</td>
+<td style='padding:2%;margin:2%; text-align: center;'>French Open  2016</td>
+<td style='padding:2%;margin:2%; text-align: center;'>SF</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Stan Wawrinka</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-4 6-2 4-6 6-2</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2.6</td>
+<td style='padding:2%;margin:2%; text-align: center;'>17.8</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Andy Murray</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>French Open  2016</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Final</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Novak Djokovic</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>0</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-3 1-6 206 4-6</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3.0</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>20.9</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Kevin Anderson</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Wimbledon  2018</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R128</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Norbert Gombos</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-3 6-4 6-4</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1.9</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1.9</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Kevin Anderson</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Wimbledon  2018</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R64</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Andreas Seppi</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-3 6-7(5) 6-3 6-4</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>2.6</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>4.6</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Kevin Anderson</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Wimbledon  2018</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R32</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Philipp Kohlschreiber</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-3 7-5 7-5</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2.1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6.7</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Kevin Anderson</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Wimbledon  2018</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R16</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Gael Monfils</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>7-6(4) 7-6(2) 5-7 7-6(4)</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3.5</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>10.2</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Kevin Anderson</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Wimbledon  2018</td>
+<td style='padding:2%;margin:2%; text-align: center;'>QF</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Roger Federer</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2-6 6-7(5) 7-5 6-4 13-11</td>
+<td style='padding:2%;margin:2%; text-align: center;'>4.2</td>
+<td style='padding:2%;margin:2%; text-align: center;'>14.4</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Kevin Anderson</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Wimbledon  2018</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>SF</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>John Isner</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>7-6(6) 6-7(5) 6-7(9) 6-4 26-24</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6.6</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>21.0</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Kevin Anderson</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Wimbledon  2018</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Final</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Novak Djokovic</td>
+<td style='padding:2%;margin:2%; text-align: center;'>0</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2-6 2-6 6(3)-7</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2.3</td>
+<td style='padding:2%;margin:2%; text-align: center;'>23.3</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Rafael Nadal</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Australian Open  2017</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R128</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Florian Mayer</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-3 6-4 6-4</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>2.1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>2.1</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Rafael Nadal</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Australian Open  2017</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R64</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Marcos Baghdatis</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-3 6-1 6-3</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2.2</td>
+<td style='padding:2%;margin:2%; text-align: center;'>4.3</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Rafael Nadal</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Australian Open  2017</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R32</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Alexander Zverev</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>4-6 6-3 6-7(5) 6-3 6-2</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>4.1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>8.3</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Rafael Nadal</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Australian Open  2017</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R16</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Gael Monfils</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-3 6-3 4-6 6-4</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2.9</td>
+<td style='padding:2%;margin:2%; text-align: center;'>11.3</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Rafael Nadal</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Australian Open  2017</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>QF</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Milos Raonic</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-4 7-6(7) 6-4</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>2.7</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>14.0</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Rafael Nadal</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Australian Open  2017</td>
+<td style='padding:2%;margin:2%; text-align: center;'>SF</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Grigor Dimitrov</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-3 5-7 7-6(5) 6-7(4) 6-4</td>
+<td style='padding:2%;margin:2%; text-align: center;'>4.9</td>
+<td style='padding:2%;margin:2%; text-align: center;'>18.9</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Rafael Nadal</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Australian Open  2017</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Final</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Roger Federer</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>0</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>4-6 6-3 1-6 6-3 3-6</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3.6</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>22.6</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Dominic Thiem</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Australian Open  2020</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R128</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Adrian Mannarino</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-3 7-5 6-2</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2.4</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2.4</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Dominic Thiem</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Australian Open  2020</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R64</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Alex Bolt</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-2 5-7 6-7(5) 6-1 6-2</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3.4</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>5.7</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Dominic Thiem</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Australian Open  2020</td>
+<td style='padding:2%;margin:2%; text-align: center;'>R32</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Taylor Harry Fritz</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>6-2 6-4 6-7(5) 6-4</td>
+<td style='padding:2%;margin:2%; text-align: center;'>2.8</td>
+<td style='padding:2%;margin:2%; text-align: center;'>8.6</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Dominic Thiem</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Australian Open  2020</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>R16</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Gael Monfils</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>6-2 6-4 6-4</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1.8</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>10.4</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; text-align: center;'>Dominic Thiem</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Australian Open  2020</td>
+<td style='padding:2%;margin:2%; text-align: center;'>QF</td>
+<td style='padding:2%;margin:2%; text-align: center;'>Rafael Nadal</td>
+<td style='padding:2%;margin:2%; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; text-align: center;'>7-6(3) 7-6(4) 4-6 7-6(6)</td>
+<td style='padding:2%;margin:2%; text-align: center;'>4.2</td>
+<td style='padding:2%;margin:2%; text-align: center;'>14.6</td>
+</tr>
+<tr style='background-color: #f5f6f5;'>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Dominic Thiem</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Australian Open  2020</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>SF</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>Alexander Zverev</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>1</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3-6 6-4 7-6(3) 7-6(4)</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>3.7</td>
+<td style='padding:2%;margin:2%; background-color: #f5f6f5; text-align: center;'>18.2</td>
+</tr>
+<tr>
+<td style='padding:2%;margin:2%; border-bottom: 2px solid grey; text-align: center;'>Dominic Thiem</td>
+<td style='padding:2%;margin:2%; border-bottom: 2px solid grey; text-align: center;'>Australian Open  2020</td>
+<td style='padding:2%;margin:2%; border-bottom: 2px solid grey; text-align: center;'>Final</td>
+<td style='padding:2%;margin:2%; border-bottom: 2px solid grey; text-align: center;'>Novak Djokovic</td>
+<td style='padding:2%;margin:2%; border-bottom: 2px solid grey; text-align: center;'>0</td>
+<td style='padding:2%;margin:2%; border-bottom: 2px solid grey; text-align: center;'>4-6 6-4 6-2 3-6 4-6</td>
+<td style='padding:2%;margin:2%; border-bottom: 2px solid grey; text-align: center;'>4.0</td>
+<td style='padding:2%;margin:2%; border-bottom: 2px solid grey; text-align: center;'>22.2</td>
+</tr>
+</tbody>
+</table>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/load/" rel="tag">load</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2020/01/24/slam-walkover-advantage/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Is an Early Walkover an Advantage in a Slam?</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
