@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Which Set Scores Are Most Likely for all Combinations of Servers? - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Which Set Scores Are Most Likely for all Combinations of Servers?" />
+<meta property="og:description" content="In her debut match after nearly 8 years out of professional play, Kim Clijsters impressed many by taking Garbine Muguruza to a second set tiebreak. Neither player was winning more than 60% of points on serve, which made me wonder how likely a tiebreak was in this case. In this post, I use a simple Monte Carlo model to examine the most likely set scores for a variety of server matchups." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2020/02/21/probable-set-scores/" />
+<meta property="article:published_time" content="2020-02-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-02-22T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Which Set Scores Are Most Likely for all Combinations of Servers?</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-02-22T00:00:00">February 22, 2020</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/set-scores/" rel="category">set scores</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>In her debut match after nearly 8 years out of professional play, Kim Clijsters impressed many by taking Garbine Muguruza to a second set tiebreak. Neither player was winning more than 60% of points on serve, which made me wonder how likely a tiebreak was in this case. In this post, I use a simple Monte Carlo model to examine the most likely set scores for a variety of server matchups.</p>
+<p>When Clijsters made another return to tennis at this week&rsquo;s Dubai Championships, many marveled at the scoreline of a match against a player who was just coming off of a finals run at the Australian Open. Though commentators often treat tiebreaks as examples of two players who have essentially performed equally in a set, there are many situations that can result in a tiebreak and not all are ones when both players have performed equally well.</p>
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:394px;float:right;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com/detail/1201516350" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:64.30976% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/1201516350?et=dMbLRv5NRUB5BGdz0qrb8Q&tld=com&sig=fRj-bcVGXTJomRz2SsYj6oudhpQBYyuczjCe5ojHjDU=&caption=true&ver=1" scrolling="no" frameborder="0" width="594" height="382" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+<p>In her second set tiebreak over Muguruza, for example, Clijsters and Muguruza exchanged two breaks of service each and Clijsters won just 52% of points on serve while Muguruza won 59%. Looking at those stats, I couldn&rsquo;t help but wonder whether Clijsters got a bit lucky in having such a close set?</p>
+<p>Using a simulation of a tennis set, I looked at the chance of every set score line for a variety of player matchups. In each case, I assume that a player&rsquo;s win percentage when they serve is constant throughout the set. This is a simplification (the &ldquo;iid&rdquo; assumption in tennis), but it a useful baseline and, it also turns out to be reasonably close to how most players perform in any one set.</p>
+<p>The chart below is a heat map of the results. The set winner&rsquo;s serve strength is along the y-axis and the loser of the set along the x-axis. Each panel corresponds to a different final set score for the losing player or a probable tiebreak, if that is reached. Summing up all cell&rsquo;s in the same spot of the grid across the 7 panels gives a total of 100.</p>
+<div>
+<img src="/img/set_winner_heatmap.png" style="max-width: 100%;" />
+<figcaption>Figure 1. Probable games won by loser of a set for each combination of serve win percentage for the set winner (on the y-axis) and set loser (on the x-axis) over the range of 55 to 95%.</figcaption>
+</div>
+<br>
+<p>So, if we look up a 55% along the x-axis and 60% along the y-axis, we see that a tiebreak had just an 11% chance in the case of the Clijsters and Muguruza second set in Dubai. A more likely score with those serve numbers, in fact, would have been for Muguruza to take the set 6-4 or 6-3.</p>
+<p>Why is this?</p>
+<p>Well, we can see by scanning the chart from left to right, that tiebreaks become more likely when players are serving more similarly, a small &ldquo;malus&rdquo; in the terminology of <a href="https://pdfs.semanticscholar.org/2f0d/8f197886d326356d937af7fa31c15467dd8b.pdf">Klaassen and Magnus</a>. The malus, in the chart below is 0 along the diagonals and grows the further you go off the diagonal.</p>
+<p>But the closeness in serve isn&rsquo;t the only story. The most important factor, in fact, is the overall strength of serve between both players, which can be summarized by the combined serve win percentage of the players. This is known as the &lsquo;bonus&rsquo; by K&amp;M. For the Clijsters and Muguruza set, for example, the bonus was just 111, which is rather low for elite tennis. The bonus in the chart above, is highest as you move upward (for the winning player) and to the right (for the losing player).</p>
+<p>When we fix any row in the chart, we see that the chance of a tiebreak, or getting to the last panel to the right of the chart, in this case, increases the stronger the losing player&rsquo;s serve performance was. It would be very surprising for a player who is winning 95% of points on serve to lose but, if it did happen, it is almost certain to happen in a tiebreak.</p>
+<p>We can also condition on the score rather than the server performance of the two players. What this means is that we  look at how likely the combination of serve win percentages are given that the set ended 6-3, for example. In the case of a tiebreak, we see a greater concentration of the probability in the high bonus top right corner. The probabilities look quite uniform in this range, which emphasis that players do not have to be performing equally to produce a tiebreak.</p>
+<div>
+<img src="/img/set_winner_heatmap2.png" style="max-width: 100%;" />
+<figcaption>Figure 2. Probable serve win percentages given the final game score for a set. The panels from left to right showing the games won by the losing player.</figcaption>
+</div>
+<br>
+<p>One of the things that makes tennis such an appealing sport to analyze is how much we can learn about the likely results of matches by just knowing how two players perform on serve against each other. In a single chart we&rsquo;ve captured nearly all the possible outcomes of sets we will see in professional tennis! Obviously, we can also incorporate non-iid effects if we knew that players systematically choked on break points, for instance, but I hope this is a useful reference for tennis fans who want to go beyond box scores.</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/set-scores/" rel="tag">set scores</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2020/02/15/competition-load/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Does greater competition load going into the second week of a Grand Slam hurt a player&#39;s win chances?</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

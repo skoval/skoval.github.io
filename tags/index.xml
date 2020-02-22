@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>set scores</title>
+      <link>https://skoval.github.io/tags/set-scores/</link>
+      <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/tags/set-scores/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>load</title>
@@ -21,7 +30,7 @@
     </item>
     
     <item>
-      <title>grand slams</title>
+      <title>Grand Slams</title>
       <link>https://skoval.github.io/tags/grand-slams/</link>
       <pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate>
       
@@ -246,7 +255,7 @@
     </item>
     
     <item>
-      <title>elo</title>
+      <title>Elo</title>
       <link>https://skoval.github.io/tags/elo/</link>
       <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
       
