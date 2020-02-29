@@ -2,7 +2,7 @@
 function drawgraph(data) {
 
 // set the dimensions and margins of the graph
-var margin = {top: 50, right: 30, bottom: 30, left: 50},
+var margin = {top: 50, right: 30, bottom: 10, left: 50},
     width = 480 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
