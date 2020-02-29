@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Build of Top 100 ATP Players 2000 vs 2020</title>
+      <link>https://skoval.github.io/2020/02/29/atp-height-weight/</link>
+      <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2020/02/29/atp-height-weight/</guid>
+      <description>&lt;p&gt;In a recent article on Liverpool&amp;rsquo;s dominance of the English Premier League, John Burn-Murdoch created a visualization of the height and weight of EPL, NBA and NFL players. This got me interested in how current ATP players compare to the build of those other professional athletes and whether the build of top players has changed since the beginning of this century.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Which Set Scores Are Most Likely for all Combinations of Servers?</title>
