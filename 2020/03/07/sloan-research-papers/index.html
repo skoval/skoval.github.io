@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>March Methods Madness at the 2020 MIT Sloan Sports Analytics Conference - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="March Methods Madness at the 2020 MIT Sloan Sports Analytics Conference" />
+<meta property="og:description" content="Since introducing the Research Paper Competition in 2010, the MIT Sloan Sports Analytics Conference has become one of the biggest stages for statistical research in sport. In this post, I review the methods used by the finalists and reflect on what this could suggest about current trends in statistical analysis in the sports industry." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2020/03/07/sloan-research-papers/" />
+<meta property="article:published_time" content="2020-03-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-07T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">March Methods Madness at the 2020 MIT Sloan Sports Analytics Conference</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-03-07T00:00:00">March 07, 2020</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/analytics/" rel="category">analytics</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>Since introducing the Research Paper Competition in 2010, the MIT Sloan Sports Analytics Conference has become one of the biggest stages for statistical research in sport. In this post, I review the methods used by the finalists and reflect on what this could suggest about current trends in statistical analysis in the sports industry.</p>
+<p>Since 2010, at that time of year when many sports fans are preparing their brackets for March Madness, a handful of sports nerds have prepared talks to present as part of the Research Paper Competition at the MIT Sloan Sports Analytics Conference (SSAC). This week was no exception, though a number of events have made the 2020 edition of MIT SSAC strange.</p>
+<p>The continued spread of COVID-19 didn&rsquo;t result in the cancellation of the conference but it did prevent some speakers, and an unknown number of attendees, from appearing. For those who did attend, there was a general sense of anxiety and even greater awkwardness among already awkward technically-minded attendees unsure how to greet each other, which had to have hampered some conversation.</p>
+<div>
+	<img src="/img/morey_cartoon.jpeg" style="float:right;width:390px;padding:3%;" />
+</div>
+<p>Another factor that, for those of us who are looking for more technical rigor at the event, was perhaps an even greater disappointment with SSAC this year was the absence of Luke Bornn among the finalists. Last year, Bornn announced it would be his last as a participant in the research competition. And reading over this year&rsquo;s finalists made the ramifications of that decision clear.</p>
+<p>But SSAC research has always been a mixed bag: with many highlights among some lowlights. So what were methodological highlights from this year and what could have some use for tennis performance analysis?</p>
+<p>One of the papers with the strongest theoretical grounds this year came from two students from Stanford, Evan Munro and Martino Banchio. They were interested in improving a draft allocation policy to discourage tanking, a phenomenon that has been most common in the NBA where draft allocation is a function of end-of-season team rankings. Munro and Banchio derived a mathematical model for team objectives about allocating effort during a season that considers the eventual impact on possible draft picks. There are a lot of simplifying assumptions involved but I commend the attempt to formalize the process. It also made me think how this kind of model of incentives could have certainly avoided embarrassing choices with tennis tournament designs, like the handling of forfeited rubbers in the revamped Davis Cup.</p>
+<p>Interested in how players move in matches? Neil Johnson of ESPN <a href="http://www.sloansportsconference.com/wp-content/uploads/2020/02/Johnson_extracting_player_tracking_data.pdf">argued</a> that off-the-shelf computer vision tools in python can be stitched together to get player tracking from single-camera broadcasts. There was no real model building as part of this project but more of a pipeline model for how to assemble available tools to get new data about player movement from video. Clearly, such a tool would have relevance to all sports. But anyone who has ever tried to install and run a model in tensorflow knows that there is a massive gap between open-source code and getting the results we want.</p>
+<p>Despite all of the hype over deep learning, much of the architectures have been based on image data and this has limited their use with positional data. Researchers have most often gotten around that by converting positional data into a picture. But what if we could feed positional data directly into neural nets? This is exactly what Michael Horton of SportsLogiq set out to do in <a href="http://www.sloansportsconference.com/wp-content/uploads/2020/02/horton_feature_representation.pdf">Learning Feature Representations	from Football Tracking</a>. I am a bit skeptical about the feasibility of automatic feature representation for multiple sports, some domain knowledge would seem necessary especially with the difficulty of training and understanding what these kinds of models are doing. But I love the ambition of the idea and it is the approach I am most excited to try to implement myself.</p>
+<p>There were three baseball-specific papers among the finalists and each were addressing questions that were very specific to this sport. One was an impressive work by a team of undergraduate students University of Rochester&rsquo;s data science program. In their paper, <a href="http://www.sloansportsconference.com/wp-content/uploads/2020/02/Zhan_Measuring-the-impact-of-robotic-umpires.pdf">Measuring the Impact of Robotic Umpires</a>, the authors consider a future world where baseball umpires are replaced by robots. Although this would be a dystopia for current officials, it would be a world where more calls would be right (about 10% of pitches in baseball are miscalls). The students use pitch-level data with information on misclassifications and combine this with league-averages on the expected run value of each pitch outcome to assign an expected change to the value of turning historical missed calls into correct calls. There is a direct parallel to automatic line-calling in tennis and it also make me think about how cool it would be if we could associate individual events in a tennis point to a point value.</p>
+<p>The <a href="http://www.sloansportsconference.com/wp-content/uploads/2020/02/Finigan-Mills-Stone-Pulling-Starters-SLOAN.pdf">Pulling Starters</a> paper by Daniel Stone, Brian Mills, and Duncan Finigan used a regression approach to assess the call to leave a starting pitcher in the game or not. I love papers that put a direct focus on decision making. But these papers often remind me of how hard evaluating decisions is. The reason for that comes down to decision assessment really being about causes and effect. And causal analysis is difficult. In this case, the authors were dealing with a decision that takes a whole variety of forms, as the time when a pull happens can theoretically be any time point in a game. This makes the treatment and comparison very hard to pin down and I don&rsquo;t think a regression analysis really addresses this fundamental aspect of the problem directly.</p>
+<p>The last baseball paper was a proposal was on a strategy for arbitration. This had no actual analysis, which I would have thought would disqualify the paper. But so it goes at 2020 SSAC.</p>
+<p>Clustering applications have been a mainstay for classifying playing style and position types at Sloan. This year had a another example of this by Samuel Kalman and Jonathan Bosch in their <a href="http://www.sloansportsconference.com/2020-conference/2020-research-paper-finalists-posters/">NBA Lineup on Clustered Player Tendencies</a>. The authors were motivated by the increasing notion of &ldquo;position-less&rdquo; players in the NBA. This seems a really strong case for analytically-derived types given that historical qualitative position labels may be losing their meaning. It was also another example of how box score data can still be relevant in the era of tracking data in sport.</p>
+<p>Team chemistry continues to be an elusive concept in analytics. But maybe we are getting closer to ways to quantify chemistry thanks to <a href="http://www.sloansportsconference.com/2020-conference/2020-research-paper-finalists-posters/">the work presented</a> by Lotte Bransen and Jan Van Haaren of SciSports. Their idea was to extend well-known ratings models, like Bradely-Terry, into the components of two players. The ratings are parameters that attempt to explain value of individual actions in a soccer match, what they call VAEP ratings. They regard the total value of an action as a function that is the sum of these rating pairs. Focusing only on player pairs and the assumption of additivity may be simplificiations worth relaxing, but it seemed a useful initial framework.</p>
+<p>The papers wouldn&rsquo;t be complete without another example of a deep learning model. This came from a group from Stats Perform who wanted to predict shot types in cricket. In, <a href="http://www.sloansportsconference.com/wp-content/uploads/2020/02/SSAC2020-Paper-1548748-Cricket-Shot-Prediction.pdf">You Cannot Do That Ben Stokes</a>, the authors trained a deep LSTM on Opta ball-by-ball data that includes labels of shot type, shot launch angle, and the orientation of the fielders, and other match features. They emphasize the &ldquo;personalization&rdquo; of the model which is achieved by including average tendencies of the batter and bowler as features in the model.</p>
+<p>All-in-all there were not any mind-blowing takeaways, especially for tennis analysis. It was clear that SSAC research continues to put emphasis on more machine learning approaches (with varying levels of depth) and what we can think of as &ldquo;staking&rdquo; these approaches. So the little slice of SSAC that is focused on technical research is increasingly looking like an ML event. If that is the trend, I would really like SSAC to adopt some other practices of ML conferences like the encouragement of including code with their submissions. This would not only help us differentiate what really works from what is just hype, but it would also help the sports analytics community to better understand and further improve on these methods.</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/analytics/" rel="tag">analytics</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2020/02/29/atp-height-weight/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Build of Top 100 ATP Players 2000 vs 2020</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

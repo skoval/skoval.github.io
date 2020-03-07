@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>analytics on Stats On the T</title>
+    <link>https://skoval.github.io/tags/analytics/</link>
+    <description>Recent content in analytics on Stats On the T</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://skoval.github.io/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>March Methods Madness at the 2020 MIT Sloan Sports Analytics Conference</title>
+      <link>https://skoval.github.io/2020/03/07/sloan-research-papers/</link>
+      <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2020/03/07/sloan-research-papers/</guid>
+      <description>&lt;p&gt;Since introducing the Research Paper Competition in 2010, the MIT Sloan Sports Analytics Conference has become one of the biggest stages for statistical research in sport. In this post, I review the methods used by the finalists and reflect on what this could suggest about current trends in statistical analysis in the sports industry.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
