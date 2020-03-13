@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rankings on Stats On the T</title>
+    <link>https://skoval.github.io/categories/rankings/</link>
+    <description>Recent content in rankings on Stats On the T</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://skoval.github.io/categories/rankings/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Winners and Losers of a Rankings Hiatus</title>
+      <link>https://skoval.github.io/2020/03/13/rankings-winners-losers/</link>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2020/03/13/rankings-winners-losers/</guid>
+      <description>&lt;p&gt;The announcement of a 6-week suspension of the ATP Tour was just the latest in a series of disruptions of the tennis calendar owing to the COVID-19 pandemic. With no official decisions on whether players will retain their current ranking, I consider what the possible impact would be if the tours were to decide to carry current rankings forward for a prolonged period.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

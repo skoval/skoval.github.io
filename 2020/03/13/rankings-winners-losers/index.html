@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Winners and Losers of a Rankings Hiatus - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Winners and Losers of a Rankings Hiatus" />
+<meta property="og:description" content="The announcement of a 6-week suspension of the ATP Tour was just the latest in a series of disruptions of the tennis calendar owing to the COVID-19 pandemic. With no official decisions on whether players will retain their current ranking, I consider what the possible impact would be if the tours were to decide to carry current rankings forward for a prolonged period." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2020/03/13/rankings-winners-losers/" />
+<meta property="article:published_time" content="2020-03-13T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-13T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Winners and Losers of a Rankings Hiatus</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-03-13T00:00:00">March 13, 2020</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/rankings/" rel="category">rankings</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>The announcement of a 6-week suspension of the ATP Tour was just the latest in a series of disruptions of the tennis calendar owing to the COVID-19 pandemic. With no official decisions on whether players will retain their current ranking, I consider what the possible impact would be if the tours were to decide to carry current rankings forward for a prolonged period.</p>
+<p>As COVID-19 cases in North America and Europe continue to rise and nations take increasingly drastic measures to curb the spread of the global health crisis, it was inevitable that the tennis calendar would come to a standstill. With the suspension of the ATP Tour ending just days before the scheduled start of Roland Garros, it seems highly probable that the French Open could be the next casualty of the pandemic.</p>
+<p>Both Indian Wells and the ATP Tour have called these actions &ldquo;suspensions&rdquo; rather than outright cancellations. It makes sense from a business point of view that they would keep their cards open to have the event, and all of the revenue potential that goes with at, at another time of the year. But as more time passes and more events get added to the suspension list, the feasibility of deferment is looking increasingly remote.</p>
+<p>If the tours are acting rationally, they will already be planning for how to handle a year with a dramatically shortened calendar. And one of the issues that will have to be part of that planning is player rankings.</p>
+<p>It is all speculation at this point but it would seem reasonable to assume that the tours will ultimately not penalize players for canceled events (if that is what they eventually become). The position of least impact in that case would be to allow players to retain their pre-Indian Wells rankings.</p>
+<p>But would that solution be fair?</p>
+<p>One way to assess the fairness of a deferment of rankings is to look at how much ranking positions change over an extended period of time. The figure below shows the 1-year change in ranking for players who ever reached a Top 250 ranking or better in the past twenty years. The segments show the interquartile range of change against the age of the player. The charts are grouped by the career peak rating of the players.</p>
+<p>Let&rsquo;s just take the pattern for Top 10 players. We see as teen, the 1-year gain in ranking for these players is usually 100s of points. By the early to mid-twenties they settle into their peak level, bringing the year-to-year change down to nearly zero. By the thirties, a decline starts to set in and large drops in ranking position over a 12 month period become increasingly likely.</p>
+<div>
+	<img src="/img/atp_ranking_change_2020.png" />
+	<figcaption>Change in ranking position over 1 year for ATP players from 2000 to 2020 (interquartile range)</figcaption>	
+</div>
+<p>All of these patterns are ones that you would have likely anticipated. And that pattern for the Top 10 is similar in the general direction of gains by age for players with less career success. Gains being greatest in the earliest years on tour, steadying in the twenties, and then falling off in the thirties. But, for the lower ranked players, massive gains are never as big in the early years while the chance of a moderate jump upward or down becomes much more likely in their prime.</p>
+<p>It&rsquo;s the same story for the WTA, in spite of slight differences in the ranking point system for the men and women.</p>
+<div>
+	<img src="/img/wta_ranking_change_2020.png" />
+	<figcaption>Change in ranking position over 1 year for WTA players from 2000 to 2020 (interquartile range)</figcaption>
+</div>
+<p>What are the implications of all this?</p>
+<p>Well, it gives us some sense of which players would likely benefit the most or be hurt the most by missed opportunities to change their ranking position. At age 32, World No. 1 Novak Djokovic is in the range of the curve where holding to a top ranking position for long periods would mean going against the odds. Top 10 players at this time period typically drop 10 ranking positions in a single year.</p>
+<p>The situation would be even more precarious for 38 year-old Roger Federer. Not many players are still competing at a high-level at that age but even those who have stayed healthy enough to do so can still expect to lose 15 ranking spots with each year. In fact, since turning 30, Federer has lost at much as 14 ranking positions in a 52-week period. If Federer bounces back from his knee surgery this year, he may be doubly lucky for a COVID-19 deferment of the rankings system.</p>
+<div>
+	<img src="/img/atp_ranking_change_cases_2020.png" />
+	<figcaption>52-week change in rankings for four top men's players with some expected to benefit and others to miss out if rankings opportunities are lost in the coming months</figcaption>
+</div>
+<p>Players like Dominic Thiem who are are in the middle of their prime would be the least affected by carrying ranking positions forward, whenever play resumes some months from now.</p>
+<p>Up-and-comers like Felix Auger-Aliassime, currently ranked 20 in the world at just 19 years of age, stand the most to lose by a break in rankings. Players destined for the Top 10 have usually gained anywhere from 25 to 150 ranking positions in a single year at this stage in their career. You can already get a sense of that from how many large positive gains FAA has already had in the chart above, with 1-year gains as high as 125 to 150 points in the past two years.</p>
+<p>Contrasting the trajectories of this group of players compels us to consider whether a projected ranking position would not be a fairer way to return to the tour if months of play are lost? If play resumes six months from now, for example, would we really expect all players to be playing to the level of their current ranking? We wouldn&rsquo;t and we would probably know who would be more up or more down based on their age and recent form.</p>
+<p>But certainly players and fans wouldn&rsquo;t accept any change to rankings that wasn&rsquo;t based on actual results. What is less certain is how long we will all wait before we see real results again.</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/rankings/" rel="tag">rankings</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2020/03/07/sloan-research-papers/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">March Methods Madness at the 2020 MIT Sloan Sports Analytics Conference</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
