@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Are Top ATP Players Non-IID?</title>
+      <link>https://skoval.github.io/2020/03/20/non-iid-top50/</link>
+      <pubDate>Fri, 20 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2020/03/20/non-iid-top50/</guid>
+      <description>&lt;p&gt;With sport at a standstill, there is ample time for sports nerds to get really wonky. In this post, I look at a question that should go to the heart of any tennis analyst: are players non-iid? I look at how we can measure non-iid effects, why we should care, and who has been the most non-iid among the Top 50 ATP players.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Winners and Losers of a Rankings Hiatus</title>
