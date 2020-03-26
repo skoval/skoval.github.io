@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>What Do I Watch Now? - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="What Do I Watch Now?" />
+<meta property="og:description" content="With the tours and most nations now on lockdown, many of us are feeling bereft of matches to watch. If you have been looking for great classic matches to watch and wondered where to start, I&rsquo;ve got you covered! Using an &lsquo;interest&rsquo; score that attempts to combine match length, competitiveness and quality, I&rsquo;ve ranked the 30 most interesting men&rsquo;s matches from 1990 to the present." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2020/03/26/atp-best-matches/" />
+<meta property="article:published_time" content="2020-03-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-03-26T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">What Do I Watch Now?</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-03-26T00:00:00">March 26, 2020</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/best-matches/" rel="category">best matches</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>With the tours and most nations now on lockdown, many of us are feeling bereft of matches to watch. If you have been looking for great classic matches to watch and wondered where to start, I&rsquo;ve got you covered! Using an &lsquo;interest&rsquo; score that attempts to combine match length, competitiveness and quality, I&rsquo;ve ranked the 30 most interesting men&rsquo;s matches from 1990 to the present.</p>
+<p>Desperate for sports viewing, I found myself combing the Web for lists of the best matches in tennis history. This brought me to rewatching the 1984 French Open final between John McEnroe and Ivan Lendl, the match that got Lendl over his slam hump and denied McEnroe his best chance of a title win at Roland Garros.</p>
+<p>Another period I was drawn to for the quality of the matches and for its place in tennis history was the 2002 US Open. We didn&rsquo;t know at the time that this would not only be Pete Sampras&rsquo;s last major title but also would be his last professional event. There were multiple great matches in the final rounds of that event that are made even more compelling when we have the advantage of hindsight as we watch.</p>
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:394px;float:right;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com.au/detail/652041218" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:68.35017% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/652041218?et=TkBZmjIDT3ltcm2vN5DCiw&tld=com.au&sig=jcX3G0-2xSEGsU0nTzpsHmYCP9b8QZal1HQ2NmUf33g=&caption=true&ver=1" scrolling="no" frameborder="0" width="594" height="406" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+<p>There are a number of curated &ldquo;greatest match&rdquo; lists out there. These are great but I suspect they are biased by the particular preferences and viewing history of the author. It got me wondering how a statistically curated list would compare. Obviously, no one statistic can capture all the nuances and context that make some matches so special. On the other hand, it could turn up some gems that, for whatever reason, didn&rsquo;t get the attention they deserved at the time.</p>
+<p>So how would we quantify a &ldquo;classic&rdquo; match?</p>
+<p>We could use something like the <a href="https://www.tennisabstract.com/blog/2011/09/19/quantifying-comebacks-and-excitement-with-win-probability/">excitement index</a> that Jeff Sackmann developed that looks at the volatility of in-game win probability. We could also consider something like the <a href="https://skoval.github.io/2019/08/09/must-see-matches/">&ldquo;must watch&rdquo; stat</a>, which was a way to prioritize viewing of upcoming matches based on player ratings and what they would suggest about the suggested quality and competitiveness of a match.</p>
+<p>But for this historical list I was interested in an approach that could be easily applied to all matches in tennis history, even those before the Open Era potentially. That would pretty much limit us to the tournament tier, round, and game score. Would that be enough information to separate the best matches from the ho-hum?</p>
+<p>To answer that we have to consider what makes a &ldquo;classic&rdquo;? We all have our personal preferences but for most of us the memorable matches tend to be the ones that had a lot of ups and downs, the &ldquo;volatility&rdquo; idea captured in Sackmann&rsquo;s excitement index. Although we don&rsquo;t have in-match win probabilities for most matches, <em>total games</em> is a reasonable proxy for matches where both players were in the lead at some stage.</p>
+<p>Long matches aren&rsquo;t necessarily competitive throughout. So we can also look at the <em>game margin</em>, the difference in games won by each player, to get to the competitiveness of the match.</p>
+<p>Finally, there is the issue of quality. I would usually go with player ratings for this but there are a couple reasons you might prefer not to. Trying to apply ratings to the pre-Open Era would be really fraught. Maybe that is fair because you could argue that the quality of play before 1968 was just a bar below what came with the professionalization of the sport. Still, out of historical interest, we would prefer a statistic that could be applied as far back in time as matches were captured on film.</p>
+<p>Another factor is that most ratings don&rsquo;t adapt well to players who are on a rapid upward ascent or for players who had a short-lived streak of out-of-this-world play. In other words, players can sometimes be undervalued by ratings because they needed a longer period of consistent results to change their take on a player. A crude alternative that could potentially avoid these shortcomings is to simply focus on the round reached at majors, the logic being the a player who manages to get to the late stages of a Grand Slam is likely playing at a high-quality, whatever happened before or after that event.</p>
+<p>We can put these three factors—total games, game margin, and round—into a combine stat by standardizing and taking the combined total (using the reverse scale for margin so that more positive numbers are more competitive). The distribution of each component for men&rsquo;s Grand Slam matches from 1990 to 2020 is shown below. The lines in green are where the matches in the Top 30 list fall in the distribution. The right skew in the total games and round makes these the two predominant factors in the combined &ldquo;interesting&rdquo; stat, but all of the top matches are above the median for game margin as well. And if you are wondering why there are 10 rounds and not all separated by 1 integer, this is because qualifying is included and rounds are weighted to be more emphasis on rounds in the second week compared to the first.</p>
+<div>
+<img src="/img/interesting_scaled_stats-1.png" style="max-width:90%;text-align: center;" />
+<figcaption>Distribution of centered and scaled components of the match 'interest' stat for men's Grand Slam matches (qualifying and main draw) from 1990-2020.<figcaption>
+</div>
+<p>Finally we come to the list! Below is the ranked list of the Top 30 men&rsquo;s Grand Slam matches of the past three decades, ordered from highest to lowest. There were some favorites among them but others that I hope are less expected, like Washington-Martin 1996 Wimbledon match or the Lapentti-Kucera 1999 Australian Open quarterfinal.</p>
+<p>For your benefit (and mine), I have also tried to find a good quality full-length match video. In a few cases, I could only track down extended highlights. In one case, the 2006 Australian Open Kiefer-Grosjean quarterfinal, I couldn&rsquo;t find anything. But if you come across this one or a better version of any of those listed, send them to me and I can update the list.</p>
+<p>I am not guaranteeing that we are all going to be riveted by these but I am hoping they introduce you to some new matches and maybe even new players. And if we acquire some new appreciation for great players of the past and present in all of this, that would be at least one silver lining.</p>
+<table class="table table-striped" style="max-width:100%;margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:center;">
+Date
+</th>
+<th style="text-align:center;">
+Event
+</th>
+<th style="text-align:center;">
+Round
+</th>
+<th style="text-align:center;">
+Player
+</th>
+<th style="text-align:center;">
+Opponent
+</th>
+<th style="text-align:center;">
+Result
+</th>
+<th style="text-align:center;">
+Total Games Played
+</th>
+<th style="text-align:center;">
+Game Margin
+</th>
+<th style="text-align:center;">
+Video Link
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+2003-01-13
+</td>
+<td style="text-align:center;">
+Australian Open - Melbourne
+</td>
+<td style="text-align:center;">
+QF
+</td>
+<td style="text-align:center;">
+Andy Roddick
+</td>
+<td style="text-align:center;">
+Younes El Aynaoui
+</td>
+<td style="text-align:center;">
+4-6 7-6(5) 4-6 6-4 21-19
+</td>
+<td style="text-align:center;">
+83
+</td>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=fBJ8F2tqjk8">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+1992-06-22
+</td>
+<td style="text-align:center;">
+Wimbledon
+</td>
+<td style="text-align:center;">
+F
+</td>
+<td style="text-align:center;">
+Andre Agassi
+</td>
+<td style="text-align:center;">
+Goran Ivanisevic
+</td>
+<td style="text-align:center;">
+6-7(8) 6-4 6-4 1-6 6-4
+</td>
+<td style="text-align:center;">
+50
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=_mWp5M5vqPU">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2012-08-27
+</td>
+<td style="text-align:center;">
+U.S. Open - New York
+</td>
+<td style="text-align:center;">
+F
+</td>
+<td style="text-align:center;">
+Andy Murray
+</td>
+<td style="text-align:center;">
+Novak Djokovic
+</td>
+<td style="text-align:center;">
+7-6(10) 7-5 2-6 3-6 6-2
+</td>
+<td style="text-align:center;">
+50
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=mgVJazH8khA">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2009-08-31
+</td>
+<td style="text-align:center;">
+U.S. Open - New York
+</td>
+<td style="text-align:center;">
+F
+</td>
+<td style="text-align:center;">
+Juan Martin Del Potro
+</td>
+<td style="text-align:center;">
+Roger Federer
+</td>
+<td style="text-align:center;">
+3-6 7-6(5) 4-6 7-6(4) 6-2
+</td>
+<td style="text-align:center;">
+53
+</td>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=AlJFsGQpsas">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2005-01-17
+</td>
+<td style="text-align:center;">
+Australian Open - Melbourne
+</td>
+<td style="text-align:center;">
+SF
+</td>
+<td style="text-align:center;">
+Marat Safin
+</td>
+<td style="text-align:center;">
+Roger Federer
+</td>
+<td style="text-align:center;">
+5-7 6-4 5-7 7-6(6) 9-7
+</td>
+<td style="text-align:center;">
+63
+</td>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=pjLhC6esdXk">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2009-01-19
+</td>
+<td style="text-align:center;">
+Australian Open - Melbourne
+</td>
+<td style="text-align:center;">
+F
+</td>
+<td style="text-align:center;">
+Rafael Nadal
+</td>
+<td style="text-align:center;">
+Roger Federer
+</td>
+<td style="text-align:center;">
+7-5 3-6 7-6(3) 3-6 6-2
+</td>
+<td style="text-align:center;">
+51
+</td>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=zdMHAtAgtDM">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+1996-08-26
+</td>
+<td style="text-align:center;">
+U.S. Open
+</td>
+<td style="text-align:center;">
+QF
+</td>
+<td style="text-align:center;">
+Pete Sampras
+</td>
+<td style="text-align:center;">
+Alex Corretja
+</td>
+<td style="text-align:center;">
+7-6(5) 5-7 5-7 6-4 7-6(7)
+</td>
+<td style="text-align:center;">
+60
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=b0nbUQjcXY4">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+1991-01-14
+</td>
+<td style="text-align:center;">
+Australian Open
+</td>
+<td style="text-align:center;">
+SF
+</td>
+<td style="text-align:center;">
+Ivan Lendl
+</td>
+<td style="text-align:center;">
+Stefan Edberg
+</td>
+<td style="text-align:center;">
+6-4 5-7 3-6 7-6(3) 6-4
+</td>
+<td style="text-align:center;">
+54
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=rgXArJDW0j8">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2020-01-20
+</td>
+<td style="text-align:center;">
+Australian Open - Melbourne
+</td>
+<td style="text-align:center;">
+F
+</td>
+<td style="text-align:center;">
+Novak Djokovic
+</td>
+<td style="text-align:center;">
+Dominic Thiem
+</td>
+<td style="text-align:center;">
+6-4 4-6 2-6 6-3 6-4
+</td>
+<td style="text-align:center;">
+47
+</td>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=EQucR_Z3wtw">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+1992-08-31
+</td>
+<td style="text-align:center;">
+U.S. Open
+</td>
+<td style="text-align:center;">
+SF
+</td>
+<td style="text-align:center;">
+Stefan Edberg
+</td>
+<td style="text-align:center;">
+Michael Chang
+</td>
+<td style="text-align:center;">
+6-7(3) 7-5 7-6(3) 5-7 6-4
+</td>
+<td style="text-align:center;">
+60
+</td>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=JjVe23-MsYQ&list=PL7kcOEE6oLNDf_OMH9AdwDRfmXMgFX7w1">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2019-08-26
+</td>
+<td style="text-align:center;">
+U.S. Open - New York
+</td>
+<td style="text-align:center;">
+F
+</td>
+<td style="text-align:center;">
+Rafael Nadal
+</td>
+<td style="text-align:center;">
+Daniil Medvedev
+</td>
+<td style="text-align:center;">
+7-5 6-3 5-7 4-6 6-4
+</td>
+<td style="text-align:center;">
+53
+</td>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=ROaqNQ-12Js">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2001-01-15
+</td>
+<td style="text-align:center;">
+Australian Open - Melbourne
+</td>
+<td style="text-align:center;">
+SF
+</td>
+<td style="text-align:center;">
+Arnaud Clement
+</td>
+<td style="text-align:center;">
+Sebastien Grosjean
+</td>
+<td style="text-align:center;">
+5-7 2-6 7-6(4) 7-5 6-2
+</td>
+<td style="text-align:center;">
+53
+</td>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=IDRqbYN2bQA">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2009-01-19
+</td>
+<td style="text-align:center;">
+Australian Open - Melbourne
+</td>
+<td style="text-align:center;">
+SF
+</td>
+<td style="text-align:center;">
+Rafael Nadal
+</td>
+<td style="text-align:center;">
+Fernando Verdasco
+</td>
+<td style="text-align:center;">
+6-7(4) 6-4 7-6(2) 6-7(1) 6-4
+</td>
+<td style="text-align:center;">
+59
+</td>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=EPrGIMUzans">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+1996-06-24
+</td>
+<td style="text-align:center;">
+Wimbledon
+</td>
+<td style="text-align:center;">
+SF
+</td>
+<td style="text-align:center;">
+MaliVai Washington
+</td>
+<td style="text-align:center;">
+Todd Martin
+</td>
+<td style="text-align:center;">
+5-7 6-4 6-7(6) 6-3 10-8
+</td>
+<td style="text-align:center;">
+62
+</td>
+<td style="text-align:center;">
+4
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=_Xf_RDicQo8">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+1999-01-18
+</td>
+<td style="text-align:center;">
+Australian Open - Melbourne
+</td>
+<td style="text-align:center;">
+QF
+</td>
+<td style="text-align:center;">
+Nicolas Lapentti
+</td>
+<td style="text-align:center;">
+Karol Kucera
+</td>
+<td style="text-align:center;">
+7-6(4) 6-7(6) 6-2 0-6 8-6
+</td>
+<td style="text-align:center;">
+54
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=Eixo3wHTEAI">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2013-01-14
+</td>
+<td style="text-align:center;">
+Australian Open - Melbourne
+</td>
+<td style="text-align:center;">
+QF
+</td>
+<td style="text-align:center;">
+Roger Federer
+</td>
+<td style="text-align:center;">
+Jo-Wilfried Tsonga
+</td>
+<td style="text-align:center;">
+7-6(4) 4-6 7-6(4) 3-6 6-3
+</td>
+<td style="text-align:center;">
+54
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=dgllLSbcu_A">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2013-01-14
+</td>
+<td style="text-align:center;">
+Australian Open - Melbourne
+</td>
+<td style="text-align:center;">
+R16
+</td>
+<td style="text-align:center;">
+Novak Djokovic
+</td>
+<td style="text-align:center;">
+Stan Wawrinka
+</td>
+<td style="text-align:center;">
+1-6 7-5 6-4 6-7(5) 12-10
+</td>
+<td style="text-align:center;">
+64
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=sA6FG-TlfkE">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2012-01-16
+</td>
+<td style="text-align:center;">
+Australian Open - Melbourne
+</td>
+<td style="text-align:center;">
+F
+</td>
+<td style="text-align:center;">
+Novak Djokovic
+</td>
+<td style="text-align:center;">
+Rafael Nadal
+</td>
+<td style="text-align:center;">
+5-7 6-4 6-2 6-7(5) 7-5
+</td>
+<td style="text-align:center;">
+55
+</td>
+<td style="text-align:center;">
+5
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=xNbXf4-BSSA">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2014-08-25
+</td>
+<td style="text-align:center;">
+U.S. Open - New York
+</td>
+<td style="text-align:center;">
+QF
+</td>
+<td style="text-align:center;">
+Kei Nishikori
+</td>
+<td style="text-align:center;">
+Stan Wawrinka
+</td>
+<td style="text-align:center;">
+3-6 7-5 7-6(7) 6-7(5) 6-4
+</td>
+<td style="text-align:center;">
+57
+</td>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=NUtviBHVqp0">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+1994-01-17
+</td>
+<td style="text-align:center;">
+Australian Open
+</td>
+<td style="text-align:center;">
+SF
+</td>
+<td style="text-align:center;">
+Todd Martin
+</td>
+<td style="text-align:center;">
+Stefan Edberg
+</td>
+<td style="text-align:center;">
+3-6 7-6(7) 7-6(7) 7-6(4)
+</td>
+<td style="text-align:center;">
+48
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=JcLgcJ3erqY">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+1993-05-24
+</td>
+<td style="text-align:center;">
+French Open
+</td>
+<td style="text-align:center;">
+F
+</td>
+<td style="text-align:center;">
+Sergio Bruguera
+</td>
+<td style="text-align:center;">
+Jim Courier
+</td>
+<td style="text-align:center;">
+6-4 2-6 6-2 3-6 6-3
+</td>
+<td style="text-align:center;">
+44
+</td>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=VB3SBMQJCpo">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+1993-06-21
+</td>
+<td style="text-align:center;">
+Wimbledon
+</td>
+<td style="text-align:center;">
+F
+</td>
+<td style="text-align:center;">
+Pete Sampras
+</td>
+<td style="text-align:center;">
+Jim Courier
+</td>
+<td style="text-align:center;">
+7-6(3) 7-6(6) 3-6 6-3
+</td>
+<td style="text-align:center;">
+44
+</td>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=j7F4g4mVrXc">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+1991-05-27
+</td>
+<td style="text-align:center;">
+French Open
+</td>
+<td style="text-align:center;">
+F
+</td>
+<td style="text-align:center;">
+Jim Courier
+</td>
+<td style="text-align:center;">
+Andre Agassi
+</td>
+<td style="text-align:center;">
+3-6 6-4 2-6 6-1 6-4
+</td>
+<td style="text-align:center;">
+44
+</td>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=8PN8JVrQvm4">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2004-01-19
+</td>
+<td style="text-align:center;">
+Australian Open - Melbourne
+</td>
+<td style="text-align:center;">
+SF
+</td>
+<td style="text-align:center;">
+Marat Safin
+</td>
+<td style="text-align:center;">
+Andre Agassi
+</td>
+<td style="text-align:center;">
+7-6(6) 7-6(6) 5-7 1-6 6-3
+</td>
+<td style="text-align:center;">
+54
+</td>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=BdX4Tn-2Evo">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2017-01-16
+</td>
+<td style="text-align:center;">
+Australian Open - Melbourne
+</td>
+<td style="text-align:center;">
+SF
+</td>
+<td style="text-align:center;">
+Rafael Nadal
+</td>
+<td style="text-align:center;">
+Grigor Dimitrov
+</td>
+<td style="text-align:center;">
+6-3 5-7 7-6(5) 6-7(4) 6-4
+</td>
+<td style="text-align:center;">
+57
+</td>
+<td style="text-align:center;">
+3
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=aHGzWk2cOg8">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2006-01-16
+</td>
+<td style="text-align:center;">
+Australian Open - Melbourne
+</td>
+<td style="text-align:center;">
+QF
+</td>
+<td style="text-align:center;">
+Nicolas Kiefer
+</td>
+<td style="text-align:center;">
+Sebastien Grosjean
+</td>
+<td style="text-align:center;">
+6-3 0-6 6-4 6-7(1) 8-6
+</td>
+<td style="text-align:center;">
+52
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+?
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+1992-01-13
+</td>
+<td style="text-align:center;">
+Australian Open
+</td>
+<td style="text-align:center;">
+QF
+</td>
+<td style="text-align:center;">
+Richard Krajicek
+</td>
+<td style="text-align:center;">
+Michael Stich
+</td>
+<td style="text-align:center;">
+5-7 7-6(2) 6-7(1) 6-4 6-4
+</td>
+<td style="text-align:center;">
+58
+</td>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=ibj4Da24sXc">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+1991-06-24
+</td>
+<td style="text-align:center;">
+Wimbledon
+</td>
+<td style="text-align:center;">
+SF
+</td>
+<td style="text-align:center;">
+Michael Stich
+</td>
+<td style="text-align:center;">
+Stefan Edberg
+</td>
+<td style="text-align:center;">
+4-6 7-6(5) 7-6(5) 7-6(2)
+</td>
+<td style="text-align:center;">
+49
+</td>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=4njJ6YhbBUI">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2013-08-26
+</td>
+<td style="text-align:center;">
+U.S. Open - New York
+</td>
+<td style="text-align:center;">
+SF
+</td>
+<td style="text-align:center;">
+Novak Djokovic
+</td>
+<td style="text-align:center;">
+Stan Wawrinka
+</td>
+<td style="text-align:center;">
+2-6 7-6(4) 3-6 6-3 6-4
+</td>
+<td style="text-align:center;">
+49
+</td>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=c4xfn9431iQ">Link</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+2002-01-14
+</td>
+<td style="text-align:center;">
+Australian Open - Melbourne
+</td>
+<td style="text-align:center;">
+F
+</td>
+<td style="text-align:center;">
+Thomas Johansson
+</td>
+<td style="text-align:center;">
+Marat Safin
+</td>
+<td style="text-align:center;">
+3-6 6-4 6-4 7-6(4)
+</td>
+<td style="text-align:center;">
+42
+</td>
+<td style="text-align:center;">
+2
+</td>
+<td style="text-align:center;">
+<a href="https://www.youtube.com/watch?v=l6QNmi01SR0">Link</a>
+</td>
+</tr>
+</tbody>
+</table>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/best-matches/" rel="tag">best matches</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2020/03/20/non-iid-top50/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Are Top ATP Players Non-IID?</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
