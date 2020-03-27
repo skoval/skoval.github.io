@@ -6,10 +6,19 @@
     <description>Recent content in best matches on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/tags/best-matches/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What Do I Watch Now (Part 2)?</title>
+      <link>https://skoval.github.io/2020/03/27/wta-best-matches/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2020/03/27/wta-best-matches/</guid>
+      <description>&lt;p&gt;Yesterday, I described one strategy for using round, game margin, and total games to automatically rank interesting matches. After using this approach to rank the Top 30 men&amp;rsquo;s matches, in this post I do the same for the women for all Grand Slam matches from 1997 to the present.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>What Do I Watch Now?</title>
