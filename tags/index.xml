@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hiatus</title>
+      <link>https://skoval.github.io/tags/hiatus/</link>
+      <pubDate>Sat, 28 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/tags/hiatus/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>best matches</title>
@@ -381,7 +390,7 @@
     </item>
     
     <item>
-      <title>french open</title>
+      <title>French Open</title>
       <link>https://skoval.github.io/tags/french-open/</link>
       <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
       
