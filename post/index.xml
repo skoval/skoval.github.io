@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Some of the Most Surprising Runs in Recent Grand Slam History</title>
+      <link>https://skoval.github.io/2020/04/18/slam-surprise-runs/</link>
+      <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2020/04/18/slam-surprise-runs/</guid>
+      <description>&lt;p&gt;With so much time these days to walk down tennis memory lane, I thought it would be fun to rank the wildest runs at the Grand Slams. In this post, I show how we can use the total gain in player ratings over an event to identify surprising individual results at the majors from the 1990s to the present.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>What the World Wars Might Tell Us About Returning to Top Slam Form After a Long Hiatus From Play</title>
