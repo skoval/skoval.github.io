@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Charting the Longest Slam Matches of All Time - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Charting the Longest Slam Matches of All Time" />
+<meta property="og:description" content="The suspension of the tennis season has given tennis fans time for a number of side projects. In this post, I share the story of my side endeavour to make a central database of the results of all Grand Slams singles matches ever played. Thanks to Wikipedia and weeks of data wrangling, I can now share the first analysis on this blog that includes the entire history at the Majors: an analysis of the longest matches of all time." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2020/05/24/longest-all-time/" />
+<meta property="article:published_time" content="2020-05-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-24T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Charting the Longest Slam Matches of All Time</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-05-24T00:00:00">May 24, 2020</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/wikidraws/" rel="category">wikidraws</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>The suspension of the tennis season has given tennis fans time for a number of side projects. In this post, I share the story of my side endeavour to make a central database of the results of all Grand Slams singles matches ever played. Thanks to Wikipedia and weeks of data wrangling, I can now share the first analysis on this blog that includes the entire history at the Majors: an analysis of the longest matches of all time.</p>
+<script src="https://d3js.org/d3.v4.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- Tooltip style -->
+<style>
+.btn {
+  background-color: #3bbb75;
+  border-color: #46c58c;
+  outline: 0;
+}
+
+.active, .btn:hover, .btn:focus {
+  background-color: #46c58c;
+  border-color: #46c58c;
+  outline: 0;
+}
+
+.tooltip {
+  background-color: #f0eff2;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.axis { font: 16px sans-serif; }
+</style>
+<script src="/js/longest.js"></script>
+<p>Many weeks ago I naively embarked on the project of scraping all Grand Slam draws from the pages of Wikipedia. Thanks to Wikipedia&rsquo;s <a href="https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Tennis/Grand_Slam_Project">Grand Slam Project</a>, there is a page with singles match results for every men&rsquo;s and women&rsquo;s major, from the first match played at the 1877 Wimbledon Championship thru to the finals of the 2020 Australian Open.</p>
+<p>Changes in tournament structure over time and peculiarities in how editors tabulated those results across the event pages made scraping a more onerous task than I had hoped. It wasn&rsquo;t a pretty process and I thought about throwing in the towel a number of times. But, if the editors of Wikipedia could put in the time to put this data together, I could soldier on for the sake of tennis history.</p>
+<p>The results of those efforts is the repo <a href="https://github.com/skoval/wikidraws">wikidraws</a>. There you can find both the scraping programs and the current sets of datasets organized by event. In addition to the event data, the datasets include the games won by each player as well as tiebreak points, where tiebreaks were played.</p>
+<p>I took some pains to validate the match data. There were multiple instances where my checks revealed mistakes on the Wiki pages that, after verifying from the primary source, I corrected manually. I feel quite confident in the information that is there, but I suspect there may still be some errors or incomplete information. So all suggested corrections are welcome.</p>
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:394px;float:right;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com.au/detail/50991714" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:79.12458% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/50991714?et=ulE-Od-lSHZryBfE-d8rhg&tld=com.au&sig=J64u579cBve1_PvJwlRVfwASReL-8USHRREgoVarkvI=&caption=true&ver=1" scrolling="no" frameborder="0" width="594" height="470" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+<p>Now, you might ask why anyone needs the <code>wikidraws</code> database when we already have the information on Wikipedia. The main reason is that without having all of that information in one place, where it can be simultaneously queried, the kinds of questions we can ask are pretty limited.</p>
+<p>Most of us know, for example, that the Van Alen tiebreaker was introduced at the Grand Slams in the 1970s. But how many of us knew that for several of the years when the tiebreak was first played at Wimbledon that it wasn&rsquo;t triggered until 8-all in the set? Or how many of us knew that a match at the 1969 Wimbledon Championships between Pancho Gonzales and Charlie Pasarell, which lasted 112 games, was the <a href="https://en.wikipedia.org/wiki/Tennis_scoring_system#History_of_the_tiebreak">main impetus</a> for adopting the tiebreak?</p>
+<p>Having the <code>wikidraws</code> dataset isn&rsquo;t the only way we could make these discoveries, but it can make it easier to find out about these and other curiosities of tennis history.</p>
+<p>So, in keeping with the theme of match lengths, I have put together a chart of the 1% of the longest men&rsquo;s and women&rsquo;s matches, in terms of games played, for each of the majors. As a reference, the boxplot in grey shows the five-number summary stats for the games played in all completed matches. The points show the outliers at each event. Pass your cursor over any match to see the details of the year and players involved.</p>
+<div style="padding-top:2%;margin-left:20%;float:center;">
+<div class="btn-group" style="margin-left:5%;margin-bottom:-2%;padding:0;">
+  <button id="buttons" type="button" class="btn btn-primary" value="Australian Open" checked>Australian Open</button>
+  <button id="buttons" type="button" class="btn btn-primary" value="French Open">French Open</button>
+  <button id="buttons" type="button" class="btn btn-primary" value="Wimbledon">Wimbledon</button>
+  <button id="buttons" type="button" class="btn btn-primary" value="US Open">US Open</button>
+</div>	
+<div id="my_dataviz" style="padding:1%;"></div>
+</div>
+<p>There is a clear right skew to the distribution at all of events. But it is interesting to see how clumped together most of the 1% of the most extreme match lengths still are. Few matches have come close to the Gonzales-Pasarell or Isner-Mahut epics at Wimbledon, and scanning across those that come closest we see that many of them were pre-Open Era.</p>
+<p>A chart like this also allows some interesting gender comparisons. The most extreme women&rsquo;s matches, in terms of match lengths, have still been no more than one-third the length of the record-breaking Isner-Mahut marathon. Yet, past years that included best of 5 matches for women show that many women have played lengths equal to the top 25% of men&rsquo;s matches at the Grand Slams.</p>
+<p>This chart puts a spotlight on the rare group of games lasting 100 games or more. By my count, there have been just four. Three at Wimbledon. Can you find each? At which event was the fourth played?</p>
+<p>I&rsquo;ll leave these questions for the interested reader to explore and hope even more discoveries are to come.</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/wikidraws/" rel="tag">wikidraws</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2020/04/18/slam-surprise-runs/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Some of the Most Surprising Runs in Recent Grand Slam History</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
