@@ -6,10 +6,19 @@
     <description>Recent content in strategy on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/categories/strategy/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to Game the UTS Cards</title>
+      <link>https://skoval.github.io/2020/06/21/uts-cards/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2020/06/21/uts-cards/</guid>
+      <description>&lt;p&gt;The Ultimate Tennis Showdown (UTS) is a new tennis league created by Patrick Mouratoglou that is aiming to attract younger fans to tennis. When the league debuted this month, it was clear that it was taking a lot of inspiration from e-sports, introducing more gaming features like UTS cards. These cards give players the chance to change the value of some points, adding extra chances for strategic advantage. So far, the players haven&amp;rsquo;t always seemed to know how to use the cards to their best advantage. In this post, I show how to estimate the expected value of each UTS card and rank them from most to least valuable.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>When Two First Serves are Better Than One - Part 1</title>
