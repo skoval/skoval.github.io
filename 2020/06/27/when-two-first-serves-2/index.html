@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>When Two First Serves are Better Than One - Part 2 - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="When Two First Serves are Better Than One - Part 2" />
+<meta property="og:description" content="Guest blogger, Peter Tea, returns for another chapter of the conundrum that is Alexander Zverev&rsquo;s serve. In this second part of the When Two First Serves are Better Than One series, Tea investigates the trends behind Zverev&rsquo;s serve and attempts to identify the specific factors that have made him a surprising candidate for a two-first-serve strategy." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2020/06/27/when-two-first-serves-2/" />
+<meta property="article:published_time" content="2020-06-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-27T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">When Two First Serves are Better Than One - Part 2</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-06-27T00:00:00">June 27, 2020</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/strategy/" rel="category">strategy</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>Guest blogger, <b><a href="https://twitter.com/ptea_test?s=20">Peter Tea</a></b>, returns for another chapter of the conundrum that is Alexander Zverev&rsquo;s serve. In this second part of the <em>When Two First Serves are Better Than One</em> series, Tea investigates the trends behind Zverev&rsquo;s serve and attempts to identify the specific factors that have made him a surprising candidate for a two-first-serve strategy.</p>
+<p>You would be hard pressed to find a top 10 player in recent memory with a more vexing 2nd serve than Zverev. In 2019, Zverev&rsquo;s season was mired by double faults, a season in which 1 in every 5 of his 2nd serves ended in a double fault on average. And around that mean were some epic meltdowns. Most notable was Zverev&rsquo;s Cincinnati Open match loss against 59th ranked Kecmanovic where he hit a <a href="https://www.atptour.com/en/news/zverev-kecmanovic-cincinnati-2019-wednesday">career high 20 double faults</a>, a stat leaderboard that no player wants to be at the top of.</p>
+<p>The story gets even more interesting when we look back at Zverev&rsquo;s 2nd serve performance and it was once quite good. Between 2015 and 2018, Zverev percentage of 2nd serve points hovered around an average of 90% and he was winning 60% or more of points on good 2nd serves for most of those years (Fig. 1). But 2019 saw a dramatic decline in his 2nd serve accuracy, which caused a nosedive in his overall effectiveness.</p>
+<div style="text-align: center;">
+<img src="/img/zverev_second_serve_trends.png" alt="two_first_serves" width="575" height="425"/>
+<figcaption>Fig. 1: Zverev’s career 2nd serve trends.</figcaption>
+</div>
+<br>
+<p>While trends in Zverev&rsquo;s 2nd serve have been distressing, it is a completely different story on his 1st serve (Fig. 2). In 2019, Zverev set career highs in $Prob(\mbox{1st Serve In})$ and $Prob(\mbox{Win on 1st Serve})$. What&rsquo;s more, his 1st serve has shown an impressively consistent improvement since stepping onto the tour. The evolution of Zverev&rsquo;s serves is the tennis equivalent to a split personality.</p>
+<div style="text-align: center;">
+<img src="/img/zverev_first_serve_trends.png" alt="two_first_serves" width="575" height="425"/>
+<figcaption>Fig. 2: Zverev’s career 1st serve trends.</figcaption>
+</div>
+<p>Zooming more closely into this timeframe, we can look at the match-by-match trajectory of Zverev&rsquo;s 2nd serve accuracy and get a better glimpse at <em>when</em> these 2nd serve struggles may have manifested.</p>
+<p>At the beginning of 2018, Zverev had demonstrated remarkable 2nd serve accuracy. This stretch featured an impressive showing at the 2018 Madrid Open (highlighted in red on Fig. 3) where Zverev played out of his mind. En route to the championship, Zverev won 5 matches - all in straight sets, which included bouts against Isner (QF), Shapovalov (SF) and Thiem (F). Perhaps a more impressive feat was the dominant way Zverev won these matches: only one recorded double fault (against Shapovalov) and a single break point faced in the 3rd round (which he later saved). An exemplary performance for any tennis player, this run can easily remind us of Zverev&rsquo;s special potential.</p>
+<div style="text-align: center;">
+<img src="/img/zverev_second_serve_match_level.png" alt="two_first_serves" width="575" height="425"/>
+<figcaption>Fig. 3: Zverev's Prob(2nd serve in) for matches played since 2018. A median filter with window size of 5 steps was applied to help remove noise in observed performances. Shaded areas represent one standard deviation above and below the median within the window of calculation. Red box highlights Zverev's performance at the 2018 Madrid Open.</figcaption>
+</div>
+<p>Unfortunately, his exceptional 2nd serve accuracy would not be sustained. From August 2018 onwards, cracks began emerging in Zverev&rsquo;s 2nd serve accuracy. By 2019, these cracks ultimately fissured into a worrisome declining slope including multiple $Prob(\mbox{2nd Serve In})$ performances below 60% (matches at the Rogers Cup and Cincinnati Open).</p>
+<p>Although we can never how 2020 would have compared if it had not been disrupted by the COVID-19 pandemic, Zverev&rsquo;s performances at the ATP Cup and Mexican Open in Acapulco painted a familiar, turbulent 2nd serve. In the aggregate of 11 recorded matches in 2020 (not including the recent Adria Tour debacle), Zverev was averaging a subpar <em>1 double fault per 4 second serve attempts</em> while the remaining ATP field was averaging about <em>1 double fault per 10 second serve attempts</em> (a rate respectably synonymous with Zverev&rsquo;s isolated 2020 Australian Open run).</p>
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:394px;float:right;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com/detail/1219966692" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:71.54882% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/1219966692?et=3WeBUA05Rcd1bNdfQRF7jw&tld=com&sig=XrijtV9pwjCMEwucz1CfR-QGjlSz7ow7DkmMFObX6WQ=&caption=true&ver=1" scrolling="no" frameborder="0" width="594" height="425" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+<p>On a positive note his 1st serve performance, especially in $Prob(\mbox{1st Serve In})$, continues to rise which allows Zverev to more comfortably and confidently play a higher level of tennis on his 1st serve, rather than being exploited on his shakier 2nd serve. However, on a more cautionary note Zverev&rsquo;s continual increase in $Prob(\mbox{1st Serve In})$ might eventually lead to a limited - or even reduced - return value in his $Prob(\mbox{Win | 1st Serve In})$. A serve likely becomes more predictable as a by-product of its efficiency and, like a seesaw, as one goes up the other <em>eventually</em> comes down. So, while Zverev has been steadily increasing in both 1st serve categories, he is likely to plateau in his overall 1st serve performance.</p>
+<h2 id="whats-up-with-zverevs-serve">What&rsquo;s up with Zverev&rsquo;s serve?</h2>
+<p>Given the clear gap between Zverev&rsquo;s 1st and 2nd serve, a natural follow-up is to probe what may be underlying his serve trends.</p>
+<p>If the loss in accuracy in Zverev&rsquo;s serve is due to technique, we might expect to see the loss in accuracy in all game situations.  We consider the current score on serve to explore difference game situations according to their pressure. All of the data that follows is based on play-by-play data for grand slam matches provided by <a href="https://github.com/JeffSackmann/tennis_atp">Jeff Sackmann&rsquo;s github repos</a>. Before moving to the analysis, we should note that the grand slams represent only a subset of matches played in a year. While they provide some useful information, they are not necessarily a representative sample of Zverev&rsquo;s entire body of work. For example, in 2019 the grand slams only accounted for 20% of his matches played that season.</p>
+<p>To assess serve risk tolerance on different pressure score situations, we compared Zverev&rsquo;s rate of double faults to his rate of aces hit. Inherently, taking more risk on serve should increase both the rate of double faults and aces, while taking less risk should reduce these serve rates.</p>
+<p>To simplify our comparisons, we amalgamated scores into 6 groups demarcated based on their impact and contextual meaning. The groupings, inspired by <a href="https://www.tennisanalytics.net/">Tennis Analytics</a>, are as follows:</p>
+<ul>
+<li>
+<p>Break Point: Score where Zverev is on brink of having serve broken. Ex: 40 - AD, 30 - 40, 4 - 6, etc</p>
+</li>
+<li>
+<p>Game Point: Score where Zverev has the opportunity to serve for the game. Ex: AD - 40, 40 -0, 6-4, etc</p>
+</li>
+<li>
+<p>First Point: First serve of each game</p>
+</li>
+<li>
+<p>Behind: Score where Zverev is trailing, but not including break points. Ex: 0 - 15,  15 - 30, 2 - 4, etc</p>
+</li>
+<li>
+<p>Ahead: Score where Zverev is leading, but not including game points. Ex: 15 - 0,  30 - 15, 4 - 2, etc</p>
+</li>
+<li>
+<p>Even: Tied score, but not including first points. Ex: 15 - 15, 30 - 30, 3 - 3, etc</p>
+</li>
+</ul>
+<p>With this grouping scheme, we don&rsquo;t necessarily get equal sample sizes across groups. For example, in 2019 Zverev had faced only 150 grand slam <em>break points</em> compared to a relatively larger 422 <em>ahead points</em>. The notion of a <em>sufficient sample size</em> is not clear, however we present our cautious note for transparency of our chosen methodology.</p>
+<h2 id="heading"></h2>
+<p>Consistently, Zverev&rsquo;s double fault rate increased across all 6 categories from 2018 compared to 2019. Interestingly, his highest double fault rate of 0.12 occurred on breakpoints: about 1 double fault for every 8 second serve attempts, which automatically conceded the service game to his opponent. What&rsquo;s more, Zverev also had a relatively large increase in his double fault rate when facing game point.</p>
+<div style="text-align: center;">
+<img src="/img/zverev_df_rate.png" alt="two_first_serves" width="575" height="425"/>
+<figcaption>Fig. 4: Zverev's 2018 and 2019 double fault rates at the grand slams.</figcaption>
+</div>
+<br>
+<p>An increase in double fault rates suggests that Zverev was systematically choosing more risk on his serve. Do we see the same on the first? Interestingly, what we observe is that his ace rates did not resoundingly increase across all 6 categories, as we saw previously for his double fault rates. For example, on break point we see only a modest increase from 0.062 to 0.073 in the rate of aces hit. Really, it is only in the <em>ahead</em> and <em>even</em> points where we see clear increases in the rate of aces hit.</p>
+<div style="text-align: center;">
+<img src="/img/zverev_ace_rate.png" alt="two_first_serves" width="575" height="425"/>
+<figcaption>Fig. 5: Zverev's 2018 and 2019 ace rates at the grand slams.</figcaption>
+</div>
+<br>
+<p>In summary, when Zverev is ahead or at least even in the service game, there is a reasonable tendency to take more risks on serve and hit a higher rate of aces. But when he&rsquo;s behind, and especially when on the verge of being broken, Zverev takes considerably much less risk as evident with his relatively lower ace rate. Also, during these high-pressure scores if he faults and is boxed into his second serve, then he has a dangerously high risk of double faulting.</p>
+<p>The broad increase in risk on the second serve along side the selective risk on first is all suggestive of a biomechanical or mental change on the 2nd serve rather than a conscious change in his risk strategy.</p>
+<h3 id="serve-speeds">Serve Speeds</h3>
+<p>Simply looking at rates of double faults or aces is somewhat limited as it does not directly describe the <em>intention</em> behind Zverev&rsquo;s serves. To investigate Zverev&rsquo;s serve process rather than his mere serve outcomes, we shift our focus now onto serve speeds. We looked only at the Australian Open (AO) campaign to limit tournament-specific speed measurement bias and because the AO provided the cleanest serve speed data among the grand slam tournaments.</p>
+<h2 id="heading-1"></h2>
+<p>At first glance, Zverev&rsquo;s speed distribution on 1st serve is consistently much faster than that on 2nd serve. His average 1st serve speed at the AO increased from 202 KM/H to 206 KM/H in 2018 to 2019, respectively: by contrast his average 2nd serve speed remained stagnant at an average of 167 KM/H. Unsurprisingly, most of his aces hit came off of his electric 1st serve.</p>
+<h2 id="heading-2"></h2>
+<p>Combining serve speed with score situation, we found that his 2nd serve speed was particularly slow when behind in the service game and especially when facing break point.</p>
+<p>This finding is likely not unique to Zverev, as break points are arguably the most uncomfortable points to serve free-flowingly in a match - particularly on 2nd serve. Nonetheless, it does corroborate our previous proposition that Zverev did not have much of an appetite for extra serve risk when falling behind in the service game. These visual findings are also consistent across the other 3 grand slams, <a href="https://ptea.shinyapps.io/shiny/">which you can view here.</a></p>
+<h2 id="heading-3"></h2>
+<div style="text-align: center;">
+<img src="/img/zverev_speed_boxplot.png" alt="two_first_serves" width="575" height="425"/>
+<figcaption>Fig. 6: Boxplots of Zverev's observed serve speed distributions on first and second serve at the Australian Open in 2018 and 2019. Horizontal dashed line represents Zverev's average 2nd serve speed at these venues (167 KM/H). Red dots in either box pairs represent recorded ace speeds. Blue dots in the second serve boxes represent recorded double fault speeds. Unfortunately, (single) fault speeds were not recorded.</figcaption>
+</div>
+<p>On a final note about serve speeds, we also looked at speeds where Zverev recorded aces (red dots) and double faults (blue dots). Our initial hypothesis was that if extremely high or low serve speeds by nature represent a deviation from the norm, then these outlying speeds may be more susceptible to an ace or double fault. But what we observe is that most ace and double fault speeds do not stray too far away from the center of each plotted distribution. Other factors, such as returner position and skill may more strongly influence these serve outcomes than mere serve speed in isolation.</p>
+<br>
+<p>Since 2019, Zverev&rsquo;s 2nd serve has been a conundrum. What&rsquo;s astounding is that despite having a tanking 2nd serve, Zverev was still able to consistently maintain a top 7 ATP ranking and hasn&rsquo;t fallen out of this position since mid 2017. At age 23 there is of course still plenty of time to grow, and he will no doubt have plenty of time for self-reflection after the failed Adria Tour. Wiser decisions and an overhaul of his second serve could all be in order if Zverev is ever to reach his peak potential.</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/strategy/" rel="tag">strategy</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2020/06/21/uts-cards/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">How to Game the UTS Cards</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
