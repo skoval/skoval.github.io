@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Serve Chronicles</title>
+      <link>https://skoval.github.io/2020/08/10/serve-chronicles/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2020/08/10/serve-chronicles/</guid>
+      <description>&lt;p&gt;For any tennis player, the &lt;em&gt;serve&lt;/em&gt; is a delicate balance between power and control. How well do the best players in the world manage this balance? Guest blogger, &lt;b&gt;&lt;a href=&#34;https://twitter.com/ptea_test?s=20&#34;&gt;Peter Tea&lt;/a&gt;&lt;/b&gt;, uses decades of match data to examine trends in the serve leaders and losers among top-ranked ATP and WTA players.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>When Two First Serves are Better Than One - Part 2</title>

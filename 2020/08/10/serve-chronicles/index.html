@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Serve Chronicles - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Serve Chronicles" />
+<meta property="og:description" content="For any tennis player, the serve is a delicate balance between power and control. How well do the best players in the world manage this balance? Guest blogger, Peter Tea, uses decades of match data to examine trends in the serve leaders and losers among top-ranked ATP and WTA players." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2020/08/10/serve-chronicles/" />
+<meta property="article:published_time" content="2020-08-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-08-10T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Serve Chronicles</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-08-10T00:00:00">August 10, 2020</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/strategy/" rel="category">strategy</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>For any tennis player, the <em>serve</em> is a delicate balance between power and control. How well do the best players in the world manage this balance? Guest blogger, <b><a href="https://twitter.com/ptea_test?s=20">Peter Tea</a></b>, uses decades of match data to examine trends in the serve leaders and losers among top-ranked ATP and WTA players.</p>
+<p>Our <a href="http://on-the-t.com/2020/06/27/when-two-first-serves-2/">recent posts</a> delving into the ups and downs of Sascha Zverev’s second serve showed that it has become a major liability of his game. Especially in 2019, Zverev struggled with his double fault control and lagged noticeably behind his peers on this grading scale. As a top 7 player, and arguably a legitimate contender on tour, has any other player with the same elite stature exhibited similar serve shortfalls?</p>
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:339px;float:right;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com/detail/118798270" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:135.30751% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/118798270?et=ENu-8TeXSY1DVbmqR2JSZg&tld=com&sig=UF-8326jtxkrTHi4DSYkRmGdIFLRYhcvwVeewg-SRsM=&caption=true&ver=1" scrolling="no" frameborder="0" width="439" height="594" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+<p>In this post, we look at players who—for better or for worse—had some conspicuous serve performances in recent memory. We’ll also look at the evolution of serve rates in the past decade-and-a-half, and see who might be heralded as the serve stars of tomorrow.</p>
+<p>For each year since 2003—a time when complete match data for both the <a href="https://github.com/JeffSackmann/tennis_wta">WTA</a> and <a href="https://github.com/JeffSackmann/tennis_atp">ATP</a> are available thanks to Jeff Sackmann—we calculated the average double fault rate for the top 50 year-end singles ranked players on tour, and plotted the most inclined double-faulters. To ease interpretation, the double fault rates are presented as the number of double faults per 10 <strong>second</strong> serve attempts.</p>
+<p>In blue, Zverev’s 2019 rate of over 2 double faults per 10 second serve attempts ranks him highest on our ATP board—tied with 2008 Fernando Verdasco. While Verdasco is a 6X double fault champion, he has mostly held ATP rankings outside the top 10 and does not hold the same notoriety as the perplexing Zverev.</p>
+<div style="text-align: center;">
+<img src="/img/worst_doublefaulters_by_year.png" alt="worst_doublefaulters_by_year" width="575" height="425"/>
+<figcaption>Fig. 1:  Lead Double Faulters for the top 50 year-end singles ranked players since 2003.</figcaption>
+</div>
+<br>
+<p>Fans of early 00’s tennis may remember former top 3 player Guillermo Coria—a.k.a. <a href="https://www.youtube.com/watch?v=PMcjgcc8S_M">El Mago</a>—who suffered from a severe case of the <code>yips</code>. Astonishingly, in 2006 <code>El Mago</code> averaged a deluge of <strong>4 double faults per 10 second serves</strong>—that’s over 40% of his second serve points donated to his opponent! Perhaps the most deserving of the all-time double fault throne, Coria unfortunately ranked 116th and did not qualify for our board. Officially retired in 2009, some say that Coria never recovered from his mental block and that his game really was <a href="https://www.essentialtennis.com/was-guillermo-coria-the-best-that-never-was/">gone by 2006</a>.</p>
+<p>Switching over to the WTA side, we see that Sharapova is a four-peat double fault champion from 2008 to 2012. Her distinguished career—decorated with 5 grand slam trophies—was also entrenched in double fault tribulations. Burdened with shoulder pains that eventually <a href="https://www.theglobeandmail.com/sports/more-sports/double-faults-sink-sharapova/article1379288/">necessitated surgery by the end of 2008</a>, these injuries may have facilitated Sharapova’s dubious distinction of double fault titlist during this four year block. But even outside this peculiar time frame, Sharapova has shown a career attachment to donating her 2nd serve points. In fact of her entire 16 year campaign on the main tour, 11 of those years averaged a dismal rate surpassing 2 double faults per 10 attempts.</p>
+<p>Sharapova was not the only former WTA grand slam winner to have manifested a malignant reputation of double faulting. Azarenka has averaged a rate greater than 2 double faults 6X in her career, while Kvitova and Bartoli have reached this milestone 3X and 2X, respectively.  And lastly, perhaps the most extreme case of double faulting from a top 50 player comes from Giorgi who averaged a shocking 3.7 double fault rate in 2015.</p>
+<p>Comparing the extreme cases from the WTA to the ATP, we see that the women on our leaderboard consistently surpassed the men in the rate of double faults hit.  Does this relationship exist if we instead consider a representative sample of both groups? Plotting the average double fault rate for the top 50 year-end ranked players, we can compare the WTA and ATP on a year-by-year basis. Since reliable ATP match data was recorded since 1991, we begin with the observed ATP rate preceding the WTA in time.</p>
+<div style="text-align: center;">
+<img src="/img/df_trend.gif" alt="worst_doublefaulters_by_year" width="575" height="425"/>
+<figcaption>Fig. 2: Historic Double Fault rates for the top 50 year-end singles ranked players since 1991 (ATP) and 2003 (WTA).</figcaption>
+</div>
+<br>
+<p>There is a huge drop-off in the double fault rate for the ATP compared to the WTA. Actually, this finding is consistent with some <a href="https://www.nytimes.com/2017/09/03/sports/tennis/us-open-wta-tour-serving.html">recent criticisms</a> on the lamented WTA service game from members of the tennis inner circle. However, it does seem like the WTA is trending positively in reducing double faults—although it still has plenty room for improvement.</p>
+<p>Double faults may provide some insight in how confident a player is in their serve, where more double faults usually signals a player&rsquo;s fragile state-of-mind. But in isolation, it does not always fully describe the serve performance. For instance, a player who chooses to deliberately hammer every serve—no matter the game situation at hand—will likely see an increase in double faults <em>and in aces too</em>. Ideally, this player would want a favourable <code>ace-to-double-fault-ratio</code>; that is, to minimize self-inflicted damage while simultaneously maximizing free points won.</p>
+<p>With this in mind, we calculate the ace-to-double-fault-ratio as:</p>
+<p>$$
+\text{Ace-to-Double-Fault-Ratio} = \frac{\text{Total Aces Hit}}{\text{Total Double Faults Hit}}
+$$</p>
+<p>Let’s take a look at some historic performances from players who had tremendous control of their ace-to-double-fault-ratio.</p>
+<div style="text-align: center;">
+<img src="/img/best_ace_df_ratio_year.png" alt="best_ace_df_ratio_year.png" width="575" height="425"/>
+<figcaption>Fig. 3: Lead ace-to-double-fault-ratio for the top 50 year-end singles ranked players since 2003.</figcaption>
+</div>
+<br>
+<p>On our ATP leaderboard we see 3 big guns who have regularly terrorized opponents with their lethal serves. American cannon Andy Roddick appears 5X on our board—all while ranked within the top 10. Croatian 6’11 giant Ivo Karlovic is another staple on our board, showing up 3X. And finally, the winner for the past 8 years—including a <em>ridiculous</em> 12.54 aces-to-double-fault ratio record set in 2019—John Isner.</p>
+<p>From the women’s side, there is no WTA player more synonymous with stringing aces—while also tapering double faults—than Serena Williams. She has consistently risen above the entire WTA field, and has flexed tremendous serve power and discipline in the past decade. These numbers back up the unassailable sentiment of Williams being the greatest WTA server of all time.</p>
+<p>Besides Williams, two potential successors who may one day bear the torch of excellence in women’s serving are Madison Keys and Naomi Osaka. In the past few years, this duo have surpassed Williams in the aces-to-double-fault ratio, and also have shown remarkable consistency on serve.</p>
+<p>Looking again through time, we can see how the general serve ratios among top players are now, and have been in the past.</p>
+<div style="text-align: center;">
+<img src="/img/ratio_trend.gif" alt="ratio_trend" width="575" height="425"/>
+<figcaption>Fig. 4: Historic ace-to-double-fault-ratio for the top 50 year-end singles ranked players since 1991 (ATP) and 2003 (WTA).</figcaption>
+</div>
+<br>
+<p>The ATP is consistently replete with skilled servers who maintain a high ace-to-double-fault ratio.This may be a reflection of the serve being more of an engine that drives the men’s game, which allows them to easily set the tone for the rest of the rally. For them, more free points in aces are bagged while any double fault damage is safely attenuated.</p>
+<p>Meanwhile, the WTA has historically seen some struggles among many of their top players. Sadly, it is only recently where the WTA began averaging an ace-to-double-fault ratio greater than 1. Hitting below this threshold signals an <em>awful</em> return on their serve risk investment—essentially getting burned by more double faults than hitting aces.</p>
+<p>Rarely do we find WTA players packing a barrage of aces in their serve repertoire—which is a deterrent from achieving a high ace-to-double-fault ratio.That is not to say that a strong ratio is unimportant in the WTA. In fact, many WTA players leading in this serve ratio category are ranked within the top 10. The women’s serve has seen a continual and optimistic rise in quality. Let&rsquo;s hope it continues to develop into a more common and reliable weapon.</p>
+<h3 id="appendix">Appendix</h3>
+<p>If you were curious about the leaders and the overall trend in aces—in isolation—we present them here. For aces, the rate is presented as the number of aces hit per 10 serve attempts since aces can be hit on either first or second serve—the former being the most common.</p>
+<div style="text-align: center;">
+<img src="/img/best_aces_by_year.png" alt="best_aces_by_year" width="575" height="425"/>
+<figcaption>Fig. 5:  Lead ace rates for the top 50 year-end singles ranked players since 2003</figcaption>
+</div>
+<br>
+<p>Looking at the trajectory of ace rates among the top players, we see that there is in general an increase in aces hit. Such a gradual improvement  may partially be attributed to the increase in <a href="https://longislandtennismagazine.com/evaluating-trends-sport-tennis">player height</a>, as well as perhaps upgraded racket and string technology which have added more speed and power to the balls struck. Again, we do see a discrepancy between the ATP and WTA in serve rates</p>
+<div style="text-align: center;">
+<img src="/img/ace_trend.gif" alt="ace_trend" width="575" height="425"/>
+<figcaption>Fig. 6: Historic double fault rates for the top 50 year-end singles ranked players since 1991 (ATP) and 2003 (WTA)</figcaption>
+</div>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/strategy/" rel="tag">strategy</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2020/06/27/when-two-first-serves-2/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">When Two First Serves are Better Than One - Part 2</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
