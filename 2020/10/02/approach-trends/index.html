@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Is the Approach Game Making a Comeback? - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Is the Approach Game Making a Comeback?" />
+<meta property="og:description" content="If you&rsquo;ve been tuning into the 2020 French Open and found yourself saying, &lsquo;man, seems like guys are going to the net a lot&rsquo;, you wouldn&rsquo;t be wrong. So far, the approach rate at RG this year is an average of 19 per 100 points compared to 17 per 100 points in 2019 and 15 per 100 points in 2017 and 2018. It may seem small, but an upward shift of this size requires multiple players to be going to the net at an above average rate. So who might be driving this shift? And is the shift more than a one-off?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2020/10/02/approach-trends/" />
+<meta property="article:published_time" content="2020-10-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-10-02T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Is the Approach Game Making a Comeback?</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-10-02T00:00:00">October 02, 2020</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/strategy/" rel="category">strategy</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>If you&rsquo;ve been tuning into the 2020 French Open and found yourself saying, &lsquo;man, seems like guys are going to the net a lot&rsquo;, you wouldn&rsquo;t be wrong. So far, the approach rate at RG this year is an average of 19 per 100 points compared to 17 per 100 points in 2019 and 15 per 100 points in 2017 and 2018. It may seem small, but an upward shift of this size requires multiple players to be going to the net at an above average rate. So who might be driving this shift? And is the shift more than a one-off?</p>
+<p>We all know that today&rsquo;s tennis is a baseliner&rsquo;s game. The widespread adoption of synthetic strings in the late 1990s and a general slowing of the pace of play have both been major factors behind the decrease in approach-focused play strategies like <a href="https://en.wikipedia.org/wiki/Serve-and-volley">serve-and-volley</a>.</p>
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:494px;float:right;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com.au/detail/1228543676" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:66.66667% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/1228543676?et=J0ZofJwrQvtsCifO94fmpg&tld=com.au&sig=Ck3zFUGavalG_6Dbnb7pB-VUYbTggtIYQCVrOUX7laM=&caption=true&ver=1" scrolling="no" frameborder="0" width="594" height="396" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+<p>Sure, some active guys have always bucked that trend (think Feliciano Lopez and Mischa Zverev). But they have been the exception. As much as coaches might urge their players to go to net (yes, Apostolos, we are talking to you), approaching is a scary proposition in the context of the modern game and most players haven&rsquo;t been able to pull it off successfully.</p>
+<p><em>But could things be changing?</em></p>
+<p>Watching the matches at the 2020 Roland Garros has certainly made me wonder. In multiple matches, next generation players like Denis Shapovalov, Alexander Bublik, Jannik Sinner were approaching at rates close to 1 in every 3 points. It wasn&rsquo;t just that all <em>players</em> seemed to be going to the net more but that <em>players I wouldn&rsquo;t expect</em> were.</p>
+<p>Still, impressions from a handful of matches don&rsquo;t mean much. I wanted to test my impression. To do that, I need some way to quantify the type of player we might expect to play an approach game and contrast that with the players going to net in recent majors.</p>
+<p>So who is the type of player that <em>should</em> go to net? Players who aren&rsquo;t comfortable rallying from the baseline would be top candidates. This would suggest big guys with big serves and limited agility. At a minimum then, a model of approach rate should account for player height, serve ability and rally ability.</p>
+<p>Other than height (assuming the heights reported in player bios are true), it isn&rsquo;t obvious how to best measure of serve and rally ability would be. As a ver basic start, I will focus on what is readily available for most matches: ace rate (aces to total points served) and return points won. Below is the distribution of height, ace rate, and return points won along with approach rate (approaches out of total points won). Sadly, outside of the <a href="http://www.tennisabstract.com/charting/meta.html">MCP</a>, approach stats aren&rsquo;t regularly tallied for matches outside of the Grand Slams so I am only including slam matches between 2005 and 2015.</p>
+<div style="text-align: center;">
+<img src="/img/panels_approach.png" width="90%" />
+<figcaption>Fig. 1: Pairs plot of potential approach features for men's singles at Grand Slams (2005-2015)</figcaption>
+</div>
+<br>
+<p>The main takeaway from above is that, if height, serve power, and rally ability (to the extent we are getting at them here), are related to a player&rsquo;s tendency to approach, the nature of that relationship is complicated. We don&rsquo;t see approach rate increasing strongly with a player&rsquo;s serve strength, for example.</p>
+<p>Now, it may be that these just aren&rsquo;t good feature for approach style. On the other hand, it might be that the approach tendency is non-linearly related to these factors. This would be true, for example, if greater height correlates with a better net game only up to some point, with freakishly tall players being better off to defend from the baseline. I don&rsquo;t know that to be true, but it would be the kind of scenario to induce a &ldquo;non-linear&rdquo; relationship with approach rate.</p>
+<p>When can use a GAM model to explore that possibility. Let&rsquo;s call a player&rsquo;s approach rate in a given match, $\lambda$, and use $h$, $s$ and $r$ to index effects for height, ace rate, and return ability, taking the averages of each of those over all of a player&rsquo;s matches in order to capture their average abilities. I am going to consider the following GAM model,</p>
+<p>$$
+\lambda = f(\theta_h, \theta_s, \theta_r) + \alpha_t
+$$</p>
+<p>where $f(.)$ is a trivariate smoothing function using regression plate functions. The $\alpha_t$ is a a tournament-specific intercept term.</p>
+<p>Fitting this model to Grand Slam matches between 2005 and 2015, what will serve as a historical baseline for approach tendencies, the above model explains 43% of the deviance in approach frequency. That is much better than the pairwise correlations above suggested, which would imply that non-linear effects are at play.</p>
+<p>We can confirm that below by looking at the predicted approach rate for different player types. This shows a clear cluster for players around 188 cm and taller with bigger than average serves and below average return ability. But there does appear to be a limit to that trend as we see players of 200 cm height and taller with lower approach rates in general.</p>
+<div style="text-align: center;">
+<img src="/img/approach_rate_heatmap.png" width="90%" />
+<figcaption>Fig. 2: Variation in expected approach rates by player height (cm), ace rate and return ability. Model data set are player match stats for the Grand Slams, 2005-2015.</figcaption>
+</div>
+<br>
+<p>Its a pretty basic model for approach behavior. Still it does capture some basic tendencies and, in doing so, can go some way in picking out the players we would, given patterns between 2005 and 2015, expect to be the most likely to go for an approach game. Applying this model to slam matches in the past 5 years, we can compare observed rates to the predicted rates, according to the height, serve power, and rally ability of the most recent slam players.</p>
+<p>Here is the summary in the approach rate minus expected rates. You&rsquo;ll notice no 2016 and no 2018 for the AO, which is owing to gaps in match stats in those years. There has been a clear upward trend in approach rates at the French Open, most starkly among the under 23s. Because we are adjusting for the factors in our approach model, this means that there is some change in the historical approach patterns at work on clay. The trends on other surfaces are less clear.</p>
+<div style="text-align: center;">
+<img src="/img/approach_rate_trends.png" width="90%" />
+<figcaption>Fig. 3: Difference in observed and expected approach rates at Grand Slams , 2016 - 2020.</figcaption>
+</div>
+<p>Who are contributing the most to these trends? The top 30 biggest residual performances in 2020 (below) show a mix of players who are huge and struggle at the baseline along with a log lithe, younger guys who have more of an all around game.</p>
+<div style="text-align: center;">
+<img src="/img/approach_rate_surprises.png" width="90%" />
+<figcaption>Fig. 4: The 30 matches with the highest deviations from expected approach rates in 2020.</figcaption>
+</div>
+<p>The increase in approach rates at Roland Garros is interesting but I think it is still too early to say if it is part of a broader trend. If the young stars keep making moves like we are seeing in the strange 2020 season, we should have plenty of opportunity to put this theory to the test.</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/strategy/" rel="tag">strategy</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2020/08/10/serve-chronicles/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Serve Chronicles</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
