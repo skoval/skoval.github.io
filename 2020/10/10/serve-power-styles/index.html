@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Who&#39;s Got the Power? - Classifying Speed Styles on Serve - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Who&#39;s Got the Power? - Classifying Speed Styles on Serve" />
+<meta property="og:description" content="A recent data feature on the ATP website gives us insight into the average speeds of shots at more top events than just the Grand Slams. What can these speed stats tell us about a player&rsquo;s style? In this post, I look at the speeds on first and second serve and use a mixture model to identify the different power styles that are used by today&rsquo;s top male players." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2020/10/10/serve-power-styles/" />
+<meta property="article:published_time" content="2020-10-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-10-10T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Who&#39;s Got the Power? - Classifying Speed Styles on Serve</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-10-10T00:00:00">October 10, 2020</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/style/" rel="category">style</a>, <a class="meta__link" href="/categories/mixture/" rel="category">mixture</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>A recent data feature on the ATP website gives us insight into the average speeds of shots at more top events than just the Grand Slams. What can these speed stats tell us about a player&rsquo;s style? In this post, I look at the speeds on first and second serve and use a mixture model to identify the different power styles that are used by today&rsquo;s top male players.</p>
+<p>If you have watched any of the first 10 days of the 2020 French Open, you will have likely noted that the picturesque clay courts have been framed, with all the elegance that we expect of RG, by multiple advertisements for the company Infosys. This is just the most recent sign of Infosys&rsquo;s increasing presence on the screens and websites at tennis events. Over the past 3 years, this IT corporation has secured data partnerships with the Australian Open, Roland Garros and the ATP Tour and taken over some aspects of the digital platforms of each.</p>
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:394px;float:left;padding:1%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com/detail/1272573721" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:66.66667% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/1272573721?et=F8ska2kmQAtJHZTqQ9zguw&tld=com&sig=na474p0QxGFQkyzkJ90fZ__xu8d1TTJLILcCcJ7RmRc=&caption=true&ver=1" scrolling="no" frameborder="0" width="594" height="396" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+<p>Although these partnerships have seemed to largely been a branding exercise for Infosys, there is at least one development that is a boon for tennis analytics. Starting in 2018, as part of the Infosys-ATP partnership, the ATP website includes &lsquo;second screen&rsquo; feature with match results that has a number of statistical summaries derived from Hawkeye tracking data. This is big deal because, although the data is highly aggregated, it is still the only public source of positional data for matches outside of the Grand Slams.</p>
+<p>Despite the tech acumen of Infosys, the feature is surprisingly hard to navigate to from the ATP&rsquo;s main site. If you want to see what is there, your best bet is to start from the <a href="https://www.atptour.com/en/scores/results-archive">Results Archive</a>, select the event of interest and look for the <code>2nd</code> link. The availability of the feature is a bit spotty, covering a few events in 2018 and most Master and 500 events starting in 2019.</p>
+<p>Two stats included in the second screen summaries are the average speed on first and second serve. These aren&rsquo;t the most revolutionary of data points, as serve speed has been regularly reported at Grand Slams for a number years. But having these stats for more matches over the season opens up gives us a more robust look at a player&rsquo;s tendencies and how they might change over time and with different match conditions.</p>
+<p>For now, I am going to focus on one very basic (and very statsy) question: <em>How can we describe the probable outcomes of a player&rsquo;s power on serve for any given match?</em></p>
+<p>Obviously, we need a model. But what model would give us a good description of the average match serve speeds? Let&rsquo;s have a look at the characteristics of the speeds in our match sample and see what that suggests.</p>
+<p>Below, we see all of the match summaries I managed to scrape from the 2nd screen feature of the ATP website. Each point in the scatterplot here represents one match and server. The first serve speeds have an average of 188 KPH and SD of 11. Although the empirical distribution is fairly normal, there is a pronounced left tail with a subset of matches having average first serves speeds of 160 KPH or less and a small number with averages of 125 KPH or less.  That last group made me suspicious about some error in the data. Three matches in that group were all from the 2018 Indian Wells, with serve performances for Diego Schwartzman, Hyeon Chung, and Dusan Lajovic. None the biggest hitters in the game, but I can&rsquo;t imagine any of them would be averaging a first serve speed that even I might have a chance of returning.</p>
+<div style="text-align: center;">
+<img src="/img/speeds_hist.png" width="90%" />
+<figcaption>Fig. 1: Pairs plot of average first and second serve speeds (KPH) for ATP matches from 2018-2020 </figcaption>
+</div>
+<br>
+<p>I have developed an outlier score to try to flag these weird cases. But there is no smoking gun for an error in these data. So, for the purpose of this analysis, rather than exclude suspicious cases entirely with some ad hoc rule, I am going to leave them in and look for a model that will do well in the presence of possible outlier matches.</p>
+<p>So back to the general characteristics of our serve data. We see that the second serve speeds are quite close to a bell curve in shape, with a mean of 153 KPH and SD of 10 KPH. The scatterplot in the bottom corner shows a tilted ellipse, reflecting the rough normality of each variable and the strong positive correlation between them.</p>
+<p>Taking all of this together, we could consider a bivariate normal distribution, which give us the approximate shape of the joint distribution of speeds and the tendency for servers with greater than average power of the first serve to have greater than average power on the second. But a simple bivariate normal would account for the asymmetry in the data and heavier-than-normal tails, a small number of which might be due to errors in the data collection but a larger number that could be due to differences in player serve styles, strategy, or match-to-match conditions like the a blustery day in Paris, for example.</p>
+<p>A better option is a normal mixture model. The idea with the normal mixture is to suppose that there are $K$ unknown &lsquo;power types&rsquo;  for the pair of first and second serve outcomes— these could correspond to styles or different levels of power depending on a player&rsquo;s build or anything we can think of that would account for systematic differences in the location and scale among serve performances.</p>
+<p>If we knew which $k$ group a server&rsquo;s match performance was in, we would model it with a $D=2$ dimensional normal distribution, having its own mean ($\mu_k$) and covariance ($\Sigma_k$),</p>
+<p>$$
+Y_D | k \sim MVN_D(\mu_k, \Sigma_k)
+$$</p>
+<p>But what do we do about this unknown $k$? How can we model what we don&rsquo;t observe?</p>
+<p>Well, this is where the strength of the mixture model comes in. And we actually have a number of options here but the most basic one is to assume the total number of components, $K$, is known. If we can do that, then likelihood principles will do the rest in finding the individual bivariate normal that provide the best description of the data. In the Bayesian setting, in addition to the standard priors for the hyperparameters, we would need a distribution for the mixture components. Since we can think of these components as latent subgroups, all we need is a distribution for the probabilities of the frequency of each type,</p>
+<p>$$
+\lambda \sim Dirichlet_K(\alpha)
+$$</p>
+<p>The Dirichlet is a common choice for a simplex variable, which is exactly what we want for the mixture weights, $\lambda$.</p>
+<p>One of the advantages of using a Bayesian approach is that we can easily incorporate additional information about the groups. If for example, we knew that players over 6ft 3in always serve over 188 on the first serve, it might be reasonable to build this into the component-specific hyperparameters. For this post, however, I am going to take a non-informative approach for all priors.</p>
+<p>I&rsquo;ve been using <code>stan</code> for most of my modeling in the last year. It is a great option for a lot of problems. For mixture models, I really appreciate how easy it is to apply a basic framework to different likelihoods, like adapting a finite mixture of normal data to count data for instance. The other thing that is a massive help are a number of highly-efficient diagnostic and model selection tools that the <code>stan</code> developers have made it easy to use with very little extra work for the modeller.</p>
+<p>To see what I mean, I&rsquo;ve put the full <code>stan</code> model code for the serve speed bivariate normal model at the end of this post. In this model, each match of <code>T</code> matches is structured in an array <code>y</code>, having a vector of first and second serve speeds for each element.</p>
+<p>The LKJ-Cholesky is used for a more efficient implementation of the multinormal model. The priors are otherwise standard non-informative choices.</p>
+<p>Looking at the model block, you may be wondering where the draws for the $k$ group assignments are? Well, we don&rsquo;t draw those directly. In fact, we couldn&rsquo;t sample them even if we wanted to in <code>stan</code>. Instead, we use the <em>marginalized</em> likelihood, by taking the weighted sum of the component-conditional observations, weighted by the component weights $\lambda$. This is collected in the <code>lp</code> variable for all match outcomes and added to the target posterior.</p>
+<div class="float" style="float:right;padding:1%;width:50%;text-align:center;" >
+<img src="/img/elpd_loo.png"  class="float" style="max-width:100%;" />
+<figcaption>Fig. 2: ELPD changes with increasing $K$ </figcaption>
+</div>
+<p>The last section of the code is the <code>generated quantities</code> block. This section of the code has no influence on the model&rsquo;s sampling (that is, the fit of the model). But it is essential for our diagnostics and for some convenient summaries of the model results. Specifically, the <code>loglik</code> variable is going to be what we will pass to the <a href="https://mc-stan.org/loo"><code>loo</code> package</a> and use to calculate the <a href="https://mc-stan.org/loo/reference/loo-glossary.html">expected log predictive density</a> for different values of $K$, choosing the number of components where the predictive performance of the model first levels off. The other part of this section are the <code>z</code> variables, that is the posterior draws from the component distribution that gives us the most probable <code>serve type</code> assignment for each observation.</p>
+<p>I ran the model using the variational inference method for $K=1,\dots,6$. You can see from the ELPD plot above that there is little predictive improvement after $K=3$, so that is a clear sign that three components are a sufficient description of the serve speed data.</p>
+<p>With a bivariate outcome, it is easy to summarize how the components differ by generating samples from each and visualizing them in a scatterplot. Those distributions below show us the Component 1 represents the average server, where first serve speeds are close to 188 KPH on average and second serve speeds are strongly correlated with the first.</p>
+<div style="text-align: center;">
+<img src="/img/component_posteriors.png" width="100%" style="max-width:80%;" />
+<figcaption>Fig. 3: Serve speed distributions for each mixture component.</figcaption>
+</div>
+<br>
+<p>Component 3 is a big server component, where the first serve speed average is closer to 200 KPH. Interestingly, the serves in this group show a weaker correlation between first and second serves, as we can see a big range of second serves are possible for each value of first serve speed in the center of the distribution.</p>
+<p>Finally, Component 2,  with extremely greater variance than either of the other serve components, appears to be a catch-all for strange serve performances. This could include those slow first serve speed matches discussed above, as well as some performances with extremely strong first serve performances, or strange combinations of first and second serve.</p>
+<p>One of the fun things we can do with this model is to look at differences in the mixture representation for specific servers. We can do this by drawing the posterior samples of the mixture component <code>z</code> for each match, and then summarize the distribution of the mixture components across a player&rsquo;s matches. The heatmap below shows the posterior mean probability of each component for 50 top servers, sorted by the frequency of Component 3 (our mixture for big first serves).</p>
+<div style="text-align: center;">
+<img src="/img/mixture_serve_components_players.png" width="100%" />
+<figcaption>Fig. 4: Server-specific distribution of serve power mixtures.</figcaption>
+</div>
+<p>As we might expect, Component 1 describes the match performances for most players. However, there are a number of players whose serve performances in some matches are most consistent with Component 3. More than 50% of the serve performances of John Isner, Milos Raonic and Andrey Rublev are in Component 3. The weight of Component 3 appears to be related to player height, with Rublev (a 6&rsquo;2&rsquo;') having the most power per inch of any of these players.</p>
+<p>Although more difficult to see, we can see a few players with more than zero probability for the weird Component 2. Alexander Zverev and Diego Schwartzman are too examples, which looks really surprising given that the serve speeds of these players have little in common. What could be going on?</p>
+<p>Below is a plot of these players and several other interesting comparisons that shows the mixture component for individual match performances. The Component 2 performances for Zverev are two matches with first serve speeds averages around 220 KPH and average second serve speeds of 140-150 KPH. These land in Component 2 because the other components would have expected much higher second serve speeds with that kind of power on the first.</p>
+<div style="text-align: center;">
+<img src="/img/player_mixture_serve_examples.png" width="100%" />
+<figcaption>Fig. 5: Serve power mixture assignments for matches of selected top players.</figcaption>
+</div>
+<p>For Schwartzman, the Component 2 cases are two matches with speeds on the first and second serve that are way outside the norm for either Component 1 or 3. So, two serves with similar weight on Component 2 doesn&rsquo;t mean their serve speeds are similar, just that they are similarly unusual.</p>
+<p>It is a similar thing with Rublev. When we see the breakdown of his match performances and their mixture assignments, we see that it isn&rsquo;t simply that he is serving like &lsquo;Isner&rsquo;. No, the heavier weight on Component 3 has more to do with having above average first serve speeds and below average second serve speeds, raising the question of what is going on with Rublev&rsquo;s second serve?</p>
+<p>It is interesting to see several of the tall Next Gen players getting a number of serve performances from Component 3. Whereas the Big 3 don&rsquo;t have a single serve performance from that mixture&rsquo;s distribution. That tells us they are more consistent in some sense, but it also means there is a limit to the power they generate on their serves that isn&rsquo;t the case for many of the tours rising stars.</p>
+<p>It could mean that the coming years of men&rsquo;s tennis could see a new reign of a big-serving, attacking style of play.</p>
+<h2 id="stan-code-for-serve-power-model">Stan Code for Serve Power Model</h2>
+<pre><code>    data {
+        int &lt;lower=0&gt; K;
+        int &lt;lower=0&gt; N; // Number of metrics
+        int &lt;lower=0&gt; T; // Number of observations
+        vector[N] y[T]; 
+    }
+
+    parameters {
+        vector[N] mu[K];
+        cholesky_factor_corr[N] Omega[K];
+        vector&lt;lower=0&gt;[N] Sigma_scale[K];
+        simplex[K] lambda;
+    }
+
+    transformed parameters {
+        cholesky_factor_cov[N] Sigma[K];
+
+        for(k in 1:K)
+            Sigma[k] = diag_pre_multiply(Sigma_scale[k], Omega[k]);
+    }
+
+    model {
+        real lp[T,K];
+        vector[K] alpha_lambda = rep_vector(1., K);
+        
+        lambda ~ dirichlet(alpha_lambda);
+
+        for(k in 1:K){
+            mu[k] ~ std_normal();
+            Sigma_scale[k] ~ student_t(1, 0, 1);
+            Omega[k] ~ lkj_corr_cholesky(1);
+        }
+
+        for(t in 1:T){
+            for(k in 1:K)
+                lp[t,k] = multi_normal_cholesky_lpdf(y[t]|mu[k], Sigma[k]) + log(lambda[k]);
+            target += log_sum_exp(lp[t]);
+            }
+
+    }
+
+    generated quantities {
+        vector[K] w[T];
+        real log_lik[T];
+        int z[T];
+
+        for(t in 1:T){
+            for(k in 1:K)
+                w[t,k] = multi_normal_cholesky_lpdf(y[t]|mu[k], Sigma[k]) + log(lambda[k]);
+            log_lik[t] = log_sum_exp(w[t]);
+            z[t] = categorical_logit_rng(w[t]);
+        }
+    }
+</code></pre>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/style/" rel="tag">style</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/mixture/" rel="tag">mixture</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2020/10/02/approach-trends/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Is the Approach Game Making a Comeback?</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
