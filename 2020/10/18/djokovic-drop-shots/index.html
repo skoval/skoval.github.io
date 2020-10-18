@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Was Djokovic&#39;s Drop Shot Strategy at the French Open a Mistake? - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Was Djokovic&#39;s Drop Shot Strategy at the French Open a Mistake?" />
+<meta property="og:description" content="The tennis world has now had a week to process the end of the 2020 French Open, but many of us are probably still struggling to understand how the 56th meeting of Novak Djokovic and Rafael Nadal could turn out so underwhelming. As one of the most noticeable changes in Djokovic&rsquo;s game strategy this year, it is tempting to point blame at the drop shot. But would that be a fair assessment? Using data from the Match Charting Project, let&rsquo;s see if we can determine if Djokovic&rsquo;s drop shot strategy was what cost him his latest chance at an 18th Major title." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2020/10/18/djokovic-drop-shots/" />
+<meta property="article:published_time" content="2020-10-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-10-18T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Was Djokovic&#39;s Drop Shot Strategy at the French Open a Mistake?</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-10-18T00:00:00">October 18, 2020</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/clay/" rel="category">clay</a>, <a class="meta__link" href="/categories/strategy/" rel="category">strategy</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>The tennis world has now had a week to process the end of the 2020 French Open, but many of us are probably still struggling to understand how the 56th meeting of Novak Djokovic and Rafael Nadal could turn out so underwhelming. As one of the most noticeable changes in Djokovic&rsquo;s game strategy this year, it is tempting to point blame at the <em>drop shot</em>. But would that be a fair assessment? Using data from the Match Charting Project, let&rsquo;s see if we can determine if Djokovic&rsquo;s drop shot strategy was what cost him his latest chance at an 18th Major title.</p>
+<p>Drop shots are one of those shot-level statistics that tennis just doesn&rsquo;t give us enough of. That was excruciatingly clear this month as so many players seemed to regard the covid-deferred end-of-year clay court season as a drop shot showcase. Sure, the 55 drop shots Hugo Gaston used against Dominic Thiem, when they met in the 4th round, was an extreme. But even World No. 1 Novak Djokovic seemed to want in on the trend.</p>
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:394px;float:left;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com.au/detail/1279655774" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:66.66667% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/1279655774?et=Im9qy3krQbZ7ToC7P4oRSg&tld=com.au&sig=qeCbV0tUZHziMiBIE5kTsiRmYKrPfMgAKSHknRVl3UA=&caption=true&ver=1" scrolling="no" frameborder="0" width="594" height="396" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+<p>It is difficult to dig into how much more Djokovic was using the drop shot at Roland Garros this year, because drop shot stats are rarely tabulated by events. The <a href="http://www.tennisabstract.com/charting/meta.html#NovakDjokovic">MCP</a> is the best open resource for this kind of question. And, although, only 22 of Novak Djokovic&rsquo;s matches at the French Open have been charted, 3 of those include his final rounds this year, which, I think, can give us some idea about any major shift in the frequency he went to the drop shot this year compared to the past.</p>
+<p>If we look at his rate at matches that have been charted, we see that his average has been 3 drop shots for every 10 rally shots, with roughly 85% coming off the backhand, where it is more difficult for an opponent to tell if a player is going for the drop or a slice shot (Fig. 1). In the semi against Stefanos Tsitsipas and the final versus Nadal this year, Djokovic went to the drop shot at twice his historical frequency. In fact, the only other charted match that comes close is his quarterfinal in 2006, the match that started the Djokovic-Nadal rivalry.</p>
+<div style="text-align: center;">
+<img src="/img/djokovic_rg_drop_shots.png" width="90%" style="max-width:70%;" />
+<figcaption>Fig. 1: Novak Djokovic rate of drop shots per 10 rally shots in matches played at Roland Garros.</figcaption>
+</div>
+<br>
+<p>It wasn&rsquo;t the greatest start for Novak, who eventually retired in the 3rd set. And it makes for strange bookends in the history of his rivalry against Nadal,at least, as that rivalry currently stands. Regrettably, with only one match from that 2006 RG, it is impossible to say if Novak&rsquo;s high rate of drop shots was a broader strategy back then or something that was more of a last resort when faced with an injury.</p>
+<p>Did the surge in the use of drop shots in 2020 coincide with a greater effectiveness?</p>
+<p>To answer that we need to look at the percentage of points Djokovic was winning out of the points he played the drop shot. But looking at the observed percentage can be misleading in matches when he rarely used it all. In his 2012 final against Nadal, for example, only 1 drop shot is recorded and Djokovic did win that point. We shouldn&rsquo;t believe from this that Djokovic&rsquo;s true drop shot effectiveness in that match—a match in which he was so intensely selective about using the drop shot at all—was 100%.</p>
+<p>A better estimate of Djokovic&rsquo;s drop shot effectiveness in any one match would need to account for the evidence the match gives us: in other words, the sample size of drop shots. One way to do this is with a beta-binomial empirical Bayes estimate. In the plot below, I&rsquo;ve used this correction, using the average drop shot performance over all matches as the prior with 1/7th it&rsquo;s actually sample size, so roughly the equivalent weight of 3 matches.  Somewhat arbitrary, but it does give us more realistic estimates of match performance than the observed percentage.</p>
+<p>What we can conclude from the below is that Djokovic clearly performed above expectation in the SF that sent &ldquo;The Greek God&rdquo; Tsitsipas packing. It was an unlucky day for Tsitsipas who came up against Djokovic on the day when he was not only going to his drop shot 60% of the time, but he was winning 62% of those points, +10 percentage points more than his average success rate.</p>
+<div style="text-align: center;">
+<img src="/img/djokovic_rg_drop_shots_effectiveness.png" width="90%" style="max-width:70%;" />
+<figcaption>Fig. 2: Novak Djokovic drop shot effectiveness (corrected for shrinkage) in matches played at Roland Garros.</figcaption>
+</div>
+<br>
+<p>The rest of Novak&rsquo;s charted 2020 matches had a success rate that was exactly in line with his average. This might come as a surprise, given his apparent under-performance in the final. It seems that his drop shot was no worse than usual, though a big drop off from his previous round.</p>
+<p>Interestingly, other periods in Novak&rsquo;s RG history show a string of above average effectiveness with the drop shot. His best stretches before 2020 being between 2014 and 2016, with one standout bad performance in the final of 2015 when his success was down to 46%.</p>
+<p>Judging a good strategy means more than success with that strategy. A strategy is always a choice to do one thing over another. The good choice being the one that yields better returns. So how does that apply here? Well, one comparison we can make is to Djokovic&rsquo;s success rate in rallies overall— basically, a comparison against anything else.</p>
+<p>Djokovic&rsquo;s success with the drop shot in contrast to his overall rally ability has been up and down at Roland Garros. Much of this could be due to the risky nature of the drop shot play: it work well some days more than others. But it is interesting to see how his aggressiveness with this shot worked well in his earliest years, until his rally game picked up steam. This made the choice to go to the drop shot a tougher one over the past decade: as it&rsquo;s benefit over other play strategy wasn&rsquo;t always guaranteed.</p>
+<div style="text-align: center;">
+<img src="/img/djokovic_rg_drop_shots_releffectiveness.png" width="70%" style="max-width:90%;" />
+<figcaption>Fig. 3: Novak Djokovic drop shot effectiveness (corrected for shrinkage) versus overall rally effectiveness in matches played at Roland Garros.</figcaption>
+</div>
+<br>
+<p>In 2020, from the quarterfinals onward, Djokovic was performing above his overall rally ability with the drop shot in both of his last matches. And it wasn&rsquo;t the final where the drop shot was his weakest weapon, but actually the quarterfinal against PCB.  This tells us that the use of the drop shot in the final was still a good strategy on a day when few of his usual weapons were working for him.</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/clay/" rel="tag">clay</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/strategy/" rel="tag">strategy</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2020/10/10/serve-power-styles/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Who&#39;s Got the Power? - Classifying Speed Styles on Serve</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

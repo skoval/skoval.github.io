@@ -6,10 +6,28 @@
     <description>Recent content in Categories on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>clay</title>
+      <link>https://skoval.github.io/categories/clay/</link>
+      <pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/clay/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>strategy</title>
+      <link>https://skoval.github.io/categories/strategy/</link>
+      <pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/strategy/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>mixture</title>
@@ -30,15 +48,6 @@
     </item>
     
     <item>
-      <title>strategy</title>
-      <link>https://skoval.github.io/categories/strategy/</link>
-      <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/strategy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>wikidraws</title>
       <link>https://skoval.github.io/categories/wikidraws/</link>
       <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
@@ -48,7 +57,7 @@
     </item>
     
     <item>
-      <title>elo</title>
+      <title>Elo</title>
       <link>https://skoval.github.io/categories/elo/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       
@@ -233,15 +242,6 @@
       <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/categories/singles/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>clay</title>
-      <link>https://skoval.github.io/categories/clay/</link>
-      <pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/clay/</guid>
       <description></description>
     </item>
     
