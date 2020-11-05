@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>What a Model of Player Availability Can Tell Us About Probable Injuries in Tennis - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="What a Model of Player Availability Can Tell Us About Probable Injuries in Tennis" />
+<meta property="og:description" content="The 2020 tennis calendar was put into a tailspin by the pandemic. In a normal year, a player&rsquo;s competitive schedule can tell us a lot about a player&rsquo;s overall readiness to play, what I will call a player&rsquo;s &lsquo;availability&rsquo;. In this post, I show how a Hidden Markov Model can be used to describe a player&rsquo;s competitive schedule as the output from periods of varying availability and how irregularities in availability can be a tell-tale sign of probable injury." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2020/11/03/schedule-hmm/" />
+<meta property="article:published_time" content="2020-11-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-03T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">What a Model of Player Availability Can Tell Us About Probable Injuries in Tennis</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-11-03T00:00:00">November 03, 2020</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/schedule/" rel="category">schedule</a>, <a class="meta__link" href="/categories/mixture-model/" rel="category">mixture model</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>The 2020 tennis calendar was put into a tailspin by the pandemic. In a normal year, a player&rsquo;s competitive schedule can tell us a lot about a player&rsquo;s overall readiness to play, what I will call a player&rsquo;s &lsquo;availability&rsquo;. In this post, I show how a Hidden Markov Model can be used to describe a player&rsquo;s competitive schedule as the output from periods of varying availability and how irregularities in availability can be a tell-tale sign of probable injury.</p>
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:246px;float:right;padding:3%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com/detail/1278248617" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:133.18387% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/1278248617?et=5QoacoRWTGtNHrriZHSnIA&tld=com&sig=LhT-B46xjEoCq8yu3mjLTS1i-xULSz1aEXumOFD0oVI=&caption=true&ver=1" scrolling="no" frameborder="0" width="446" height="594" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+<p>The concept of <em>player availability</em> is a common one in team sports, where &lsquo;available&rsquo; players are the ones who are fit and ready to compete if the coach chooses to put them on the starting lineup. This means that the observation of a player in competition, compared to a player on the bench or on an injury list, is telling us something about that player&rsquo;s fitness.</p>
+<p>Now, there are no rosters in tennis. But a player still has to be <em>available</em> to compete. And, like elite athletes in team sports, tennis players want to compete wherever they think they have a chance to win against strong opponents. So when they skip big opportunities, it is reasonable to suspect that something out-of-the ordinary is going on.</p>
+<p>We can see this with even a handful of playing schedules for top players. The chart below shows the weeks, out of the 46 weeks of the usual calendar, 30 of the top male players competed in 2019 (what feels like a bygone era now). For players that are eligible to compete in any week they like, we see that most are competing in 25 weeks or more, in other words, more than 55% of the time.</p>
+<div style="text-align: center;">
+<img src="/img/hmm_schedule_2019.png" alt="hmm schedule" width="90%" style="max-width:70%;" />
+<figcaption>Fig. 1: Competition weeks for top ATP players in 2019.</figcaption>
+</div>
+<br>
+<p>But we can also see a few players who didn&rsquo;t follow this pattern. In fact, I&rsquo;ve sorted the schedules from top to bottom in terms of the fewest competition weeks played. Big men Milos Raonic and John Isner were out of commission for extended periods in 2019. Rafael Nadal and Pablo Carreno Busta also had some surprising long absences from competition.</p>
+<p>If we wanted to know when a player had an unexpected absence from competition and what the cause might have been, we could comb through wiki pages and media reports and hope that someone out there was tracking the ins and outs of that player&rsquo;s scheduling decisions. But what if we wanted something more automatic? What if we wanted a more reliable way to detect periods of unusual gaps from competition that we could use for <em>every</em> top player?</p>
+<p>The sample of timelines from above tell us that a regular patterns should be easy to quantify. We just need a reasonable model to describe those patterns and a large enough sample of schedules to apply that model to.</p>
+<p>The first part of the model is the description of the underlying available states a player is in for any given week of the calendar (weeks 1 to 46 will be the model&rsquo;s time scale). A simple but reasonable starting point is to think of a player as being in one of two possible states at any time: <em>available</em> or <em>not available</em>. The available state would be when a player is fit and rested enough to compete that they are more likely than not to enter a tournament in a given week. The &lsquo;not available&rsquo; state is the opposite of this; which could include injury, suspension, or other personal reasons that would keep a player out of competition.</p>
+<p><img src="/img/hmm_availability_latent_states.png" alt="hmm latent model" width="30%" style="float:right;max-width:30%;" /></p>
+<p>Clearly the &lsquo;not available&rsquo; isn&rsquo;t very specific. And we can imagine breaking this out into more of the cause-specific states that would result in an unexpected absence. However, we need information to differentiate among them because we are assuming that these states can&rsquo;t be consistently observed.  These are hidden &lsquo;latent states&rsquo; that we will use the sequence of competition and rest weeks to infer. And from that data alone, we would have no way of differentiating a break due to a drug suspension say or a break due to a serious injury. So we will stick with the broad &lsquo;not available&rsquo; option.</p>
+<p><em>How is a player&rsquo;s available state in any week determined?</em></p>
+<p>Those moves are defined by a first-order Markov chain. Let&rsquo;s use $t$ to indicate the week in any given season and let $a_t$ be a player&rsquo;s available state $\lbrace 1 = available, 2 = not available \rbrace$. A player&rsquo;s initial state is a coin toss defined by the probability vector $\boldsymbol{\pi}$,</p>
+<p>$$
+a_1 \sim Categorical(\boldsymbol{\pi})
+$$</p>
+<p>And all subsequent <em>transitions</em> are coin tosses from a probability vector that is defined by the previous latent state. Thus, the Markov chain in an HMM is only concerned with the most recent state,</p>
+<p>$$
+a_{t + 1} \sim Categorical(\boldsymbol{\alpha}_{a_t})
+$$</p>
+<p>Each $\boldsymbol{\alpha}_a$ is a row in a transition matrix, which, after the initial state, fully describes the latent availability model,</p>
+<p>$$
+\begin{pmatrix}
+\alpha_{11} &amp; \alpha_{12}  \
+\alpha_{21} &amp; \alpha_{22} \<br>
+\end{pmatrix}
+$$</p>
+<p>But what about the actual data? So far everything we&rsquo;ve discussed has only been about the states we can&rsquo;t see. How does the competition data fit in? To answer that, we need the final piece of the model: the <em>observation</em> model.</p>
+<p><img src="/img/hmm_available_observed_states.png" alt="hmm observed model" width="30%" style="float:left;max-width:70%;padding:2%;" /></p>
+<p>The figure to the left is a visual summary of the observation model. There are two possible observed states in each competition week—a player is either in competition or not. And the probability of being in competition, $\theta$, is determined by which availability state a player is in that week. So the observational model is conditional on the unknown latent state.</p>
+<p>The observed outcome is a discrete event, like the availability states. This means that the draws describing the observation model have a very similar look to our latent state model. Specifically, the competition state $y_t$ is a coin toss that is dependent on the success probability $\theta_{a_t}$,</p>
+<p>$$
+y_t | a_t \sim Bernoulli(\theta_{a_t})
+$$</p>
+<p>Although HMMs can be fit with frequentist methods, a Bayesian model provides a number of advantage. First, languages for Bayesian inference, like <code>stan</code>, are low-level enough that we can build in a wide range of complexity for non-standard problems. Second, incorporating constraints on parameters, is quite straightforward and this can be crucial to avoid identifiability problems with latent variable models.</p>
+<p>Let&rsquo;s take our $\theta$ parameters for the availability HMM. These are the probabilities of competing in a given week: one when a player is available, $\theta_1$, and the other when he is not, $\theta_2$. Both are on the probability scale. But with no more information to distinguish one from the other, there would be no way to ensure that $\theta_1$ corresponds to the available state and vice versa.</p>
+<p>So we need to build in some more prior information. Now, if we think about a healthy tennis player, whose income and ranking both depend on competing regularly and going deep into events wherever possible, it would be reasonable to assume that he will be competing more than not during the tennis season. This would suggest constraining the probability of competing when available to be greater than 50%. When injured or otherwise not available, the opposite would be a reasonable expectation.</p>
+<p>A simple way to enforce these constraints is with a bounded inverse logit. The way this works is to sample a standard normal variable, $\tilde{\theta}_1$ and then set $\theta_1$ equal to,</p>
+<p>$$
+\theta_1 = 0.5  + 0.5\mbox{logit}^{-1}(\tilde{\theta}_1)
+$$</p>
+<p>Whereas for $\theta_2$, we would constrain it to be between (0, 0.5) with the following,</p>
+<p>$$
+\theta_2 = 0.5 \mbox{logit}^{-1}(\tilde{\theta}_2)
+$$</p>
+<p>The other hyperparameters will be given non-informative Dirichlet priors. The full stan model is given at the end of the post and makes use of <a href="https://statmodeling.stat.columbia.edu/2020/08/21/cmdstan-2-24-1-is-released/">new HMM functions</a>. There is <code>hmm_marginal</code> to calculate the marginalized log-likelihood and <code>hmm_latent_rng</code> to sample the latent states given an observed sequence of competition weeks.</p>
+<p>I fit the availability model for the competition schedules of the 30 players shown in Fig. 1 for years 2015 to 2019. Only ATP and Grand Slam events were considered. Any seasons where a player was under 18, and could still be competing on the junior circuit, were dropped.</p>
+<p>The first set of results we consider are the posterior means for the availability transition matrix (Fig. 2). Unsurprisingly, both states are <em>sticky</em>. This means that a player that is either available or not will tend to stay in that state for longer than a single week. In fact, we can estimate the expected duration of each available state pretty with a standard HMM because the time to a change is a geometric distribution with probability $1 - \alpha_{a_t}$. For the available state, this would imply an expected period of availability of 50 weeks, or more than a full season of availability for most players.</p>
+<div style="text-align:center;">
+<img src="/img/hmm_availability_transition_matrix.png" alt="hmm transition matrix" width="50%" style="max-width:70%;" />
+<figcaption>Fig. 2: Transition matrix for availability of top men's tennis players.</figcaption>
+</div>
+<br>
+<p>For a time-independent HMM, the transition matrix has a steady state and we can find that by raising the transition matrix to a high power. This is like going through many, many competition weeks and possible transitions. The steady state is useful because it tells us how often we would expect a random top player to be available or not available at any time during a season. From the transition matrix for this sample, we find that players are <em>not</em> available 10% of the time.</p>
+<div style="text-align:center;">
+<img src="/img/hmm_availability_stationary.png" alt="hmm stationary matrix" width="50%" style="max-width:70%;" />
+<figcaption>Fig. 3: Stationary distribution of available states.</figcaption>
+</div>
+<br>
+<p>What about competition weeks? The table below summarizes the results for the observation model, where the probability of competing in a given week is given for each latent state. When a player is fit and available to play, the model suggests that they are expected to be competing for 2 of every 3 weeks, on average. A player that is not available, however, may still compete but it would be very unlikely, the posterior mean chance being just 3%. Importantly, neither probability is close to the boundary of 50% that we set in the priors, which tells us that we are identifying the conditional probabilities while not biasing their actual fit.</p>
+<p><img src="/img/hmm_availability_player_availability.png" alt="hmm availability player" width="50%" style="float:right;padding:2%;max-width:70%;" /></p>
+<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Latent State </th>
+   <th style="text-align:center;"> Posterior Mean </th>
+   <th style="text-align:center;"> 95% Credible Interval </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Available </td>
+   <td style="text-align:center;"> 66 </td>
+   <td style="text-align:center;"> 64 - 67 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Not available </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 - 7 </td>
+  </tr>
+</tbody>
+</table>
+<p>While these general properties are interesting, the real interest with this kind of model is what it can tell us about the situation of individual players. One question is which of the players in our sample of top 30 players have been the <em>least</em> available in recent years? The chart to the right shows the overall estimated frequency of time in the &lsquo;not available&rsquo; latent state for each player. The majority of players are consistent with the steady state probability and are estimated to have been available 90% of the time or more. There are seven players who deviate from this pattern and were not available between 15% to 25% of the 2015 - 2019 period.</p>
+<p>We can get a better idea of where those mean summaries came from by looking at the week-to-week estimated availability for the players with the most time in the &lsquo;not available&rsquo; state. In the heatmaps below, the grey regions are the periods with the highest probability of a player not being available. The periods of injury and selective scheduling for Roger Federer, Rafael Nadal, Novak Djokovic and Stan Wawrinka are well known to us. And no one is likely to be surprised by the repeated absences of Milos Raonic, who has struggled to be fully healthy for a complete season since he turned pro.</p>
+<div style="text-align:center;">
+<img src="/img/hmm_availability_player_timelines.png" alt="hmm availability" width="80%" style="max-width:80%;" />
+<figcaption>Fig. 4: Estimated availability for the eight players who were <i>least</i> available in 2015 - 2019 among the top 30 ATP players.</figcaption>
+</div>
+<br>
+<p>Many readers are likely to know that Dan Evans was forced out of competition for a time in 2017-2018 due to a drug suspension. The breaks for Gael Monfils and Matteo Berrettini would be the cases that most of us aren&rsquo;t likely to have tracked as closely and would take a fair bit of googling to confirm. These examples alone make a strong case that even the most basic of availability models are giving us reasonable results and would already be a pretty useful tool for tracking the historical availability of players in an automated way.</p>
+<h2 id="stan-availability-model">Stan Availability Model</h2>
+<pre><code>functions {
+    matrix make_matrix(vector[] x, int d){
+        matrix[d,d] X;
+
+        for(i in 1:d)
+            X[i] = x[i]';
+
+    return X;
+    }    
+}
+
+data {
+    int&lt;lower=0&gt; N;  // Player seasons
+    int&lt;lower=0&gt; T; // Weeks
+    int&lt;lower=0&gt; S; // Latent states
+    matrix&lt;lower=0,upper=1&gt;[N,T] y; // Player x Observations
+}
+
+parameters {
+    simplex[S] rho; // Initial state prob
+    simplex[S] A[S]; // Transition matrix
+    real theta0[S]; // Emission prob
+}
+
+transformed parameters {
+    real&lt;lower=0,upper=1&gt; theta[S]; // Emission prob    
+
+    // Constraint
+    theta[1] = 0.5 + (1 - 0.5) * inv_logit(theta0[1]); // Greater than 50%
+    theta[2] = 0.5 * inv_logit(theta0[2]); // Less than 50%    
+}
+
+model {
+    matrix[S,T] yS[N]; // Hold log probabilities
+
+    for(n in 1:N)
+        for(s in 1:S)
+            yS[n, s] = log(y[n] * theta[s] + (1 - y[n]) * (1 - theta[s]));
+
+    for(s in 1:S)
+        theta0[s] ~ std_normal();
+
+    
+    for(s in 1:S)
+        A[s] ~ dirichlet(rep_vector(1., S));
+
+     rho ~ dirichlet(rep_vector(1., S));
+
+     for(n in 1:N)
+         target += hmm_marginal(yS[n], make_matrix(A, S), rho);
+}
+
+generated quantities {
+    int&lt;lower=0,upper=S&gt; latent_states[N,T];
+    matrix&lt;upper=0&gt;[S,T] yS[N]; // Hold log probabilities
+
+    for(n in 1:N)
+        for(s in 1:S)
+            yS[n, s] = log(y[n] * theta[s] + (1 - y[n]) * (1 - theta[s]));
+
+    for(n in 1:N)
+        latent_states[n] = hmm_latent_rng(yS[n], make_matrix(A, S), rho);
+}
+</code></pre>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/schedule/" rel="tag">schedule</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/mixture-model/" rel="tag">mixture model</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2020/10/25/sizing-up-height-advantage/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Sizing Up the Height Advantage on Serve</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
