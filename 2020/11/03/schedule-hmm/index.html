@@ -152,7 +152,6 @@ if (!doNotTrack) {
 		</header>
 	<div class="content post__content clearfix">
 			<p>The 2020 tennis calendar was put into a tailspin by the pandemic. In a normal year, a player&rsquo;s competitive schedule can tell us a lot about a player&rsquo;s overall readiness to play, what I will call a player&rsquo;s &lsquo;availability&rsquo;. In this post, I show how a Hidden Markov Model can be used to describe a player&rsquo;s competitive schedule as the output from periods of varying availability and how irregularities in availability can be a tell-tale sign of probable injury.</p>
-<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:246px;float:right;padding:3%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com/detail/1278248617" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:133.18387% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/1278248617?et=5QoacoRWTGtNHrriZHSnIA&tld=com&sig=LhT-B46xjEoCq8yu3mjLTS1i-xULSz1aEXumOFD0oVI=&caption=true&ver=1" scrolling="no" frameborder="0" width="446" height="594" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
 <p>The concept of <em>player availability</em> is a common one in team sports, where &lsquo;available&rsquo; players are the ones who are fit and ready to compete if the coach chooses to put them on the starting lineup. This means that the observation of a player in competition, compared to a player on the bench or on an injury list, is telling us something about that player&rsquo;s fitness.</p>
 <p>Now, there are no rosters in tennis. But a player still has to be <em>available</em> to compete. And, like elite athletes in team sports, tennis players want to compete wherever they think they have a chance to win against strong opponents. So when they skip big opportunities, it is reasonable to suspect that something out-of-the ordinary is going on.</p>
 <p>We can see this with even a handful of playing schedules for top players. The chart below shows the weeks, out of the 46 weeks of the usual calendar, 30 of the top male players competed in 2019 (what feels like a bygone era now). For players that are eligible to compete in any week they like, we see that most are competing in 25 weeks or more, in other words, more than 55% of the time.</p>
@@ -179,8 +178,8 @@ $$</p>
 <p>Each $\boldsymbol{\alpha}_a$ is a row in a transition matrix, which, after the initial state, fully describes the latent availability model,</p>
 <p>$$
 \begin{pmatrix}
-\alpha_{11} &amp; \alpha_{12}  \
-\alpha_{21} &amp; \alpha_{22} \<br>
+\alpha_{11} &amp; \alpha_{12}  \<br>
+\alpha_{21} &amp; \alpha_{22}
 \end{pmatrix}
 $$</p>
 <p>But what about the actual data? So far everything we&rsquo;ve discussed has only been about the states we can&rsquo;t see. How does the competition data fit in? To answer that, we need the final piece of the model: the <em>observation</em> model.</p>
@@ -205,7 +204,7 @@ $$</p>
 <p>I fit the availability model for the competition schedules of the 30 players shown in Fig. 1 for years 2015 to 2019. Only ATP and Grand Slam events were considered. Any seasons where a player was under 18, and could still be competing on the junior circuit, were dropped.</p>
 <p>The first set of results we consider are the posterior means for the availability transition matrix (Fig. 2). Unsurprisingly, both states are <em>sticky</em>. This means that a player that is either available or not will tend to stay in that state for longer than a single week. In fact, we can estimate the expected duration of each available state pretty with a standard HMM because the time to a change is a geometric distribution with probability $1 - \alpha_{a_t}$. For the available state, this would imply an expected period of availability of 50 weeks, or more than a full season of availability for most players.</p>
 <div style="text-align:center;">
-<img src="/img/hmm_availability_transition_matrix.png" alt="hmm transition matrix" width="50%" style="max-width:70%;" />
+<img src="/img/hmm_availability_transition_matrix.png" alt="hmm transition matrix" width="30%" style="max-width:70%;" />
 <figcaption>Fig. 2: Transition matrix for availability of top men's tennis players.</figcaption>
 </div>
 <br>
