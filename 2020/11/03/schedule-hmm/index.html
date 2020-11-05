@@ -176,12 +176,15 @@ $$</p>
 a_{t + 1} \sim Categorical(\boldsymbol{\alpha}_{a_t})
 $$</p>
 <p>Each $\boldsymbol{\alpha}_a$ is a row in a transition matrix, which, after the initial state, fully describes the latent availability model,</p>
-<p>$$
-\begin{pmatrix}
-\alpha_{11} &amp; \alpha_{12}  \<br>
-\alpha_{21} &amp; \alpha_{22}
-\end{pmatrix}
-$$</p>
+<div>
+$$
+\left[ \begin{matrix} 
+\alpha_{11} & \alpha_{12}  \\
+\alpha_{21} & \alpha_{22}
+\end{matrix}
+\right]
+$$
+</div>
 <p>But what about the actual data? So far everything we&rsquo;ve discussed has only been about the states we can&rsquo;t see. How does the competition data fit in? To answer that, we need the final piece of the model: the <em>observation</em> model.</p>
 <p><img src="/img/hmm_available_observed_states.png" alt="hmm observed model" width="30%" style="float:left;max-width:70%;padding:2%;" /></p>
 <p>The figure to the left is a visual summary of the observation model. There are two possible observed states in each competition week—a player is either in competition or not. And the probability of being in competition, $\theta$, is determined by which availability state a player is in that week. So the observational model is conditional on the unknown latent state.</p>
