@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>A Foray Into Return Impact Patterns - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="A Foray Into Return Impact Patterns" />
+<meta property="og:description" content="The serve return is the most important shot for a receiver.  What can receivers do to put themselves in a better position to make a good impact on the serve return? The answer to that question is too big a task for one blog post alone. As a small first step, I take a look at a new public data source that includes the position of players at the time of return impact in ATP matches. Through a handful of case studies, it delves into the kind of patterns in return positioning these data could help reveal." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2020/11/28/return-impact/" />
+<meta property="article:published_time" content="2020-11-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-28T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">A Foray Into Return Impact Patterns</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-11-28T00:00:00">November 28, 2020</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/return-impact/" rel="category">return impact</a>, <a class="meta__link" href="/categories/tracking-data/" rel="category">tracking data</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>The serve return is the most important shot for a receiver.  What can receivers do to put themselves in a better position to make a good impact on the serve return? The answer to that question is too big a task for one blog post alone. As a small first step, I take a look at a new public data source that includes the position of players at the time of return impact in ATP matches. Through a handful of case studies, it delves into the kind of patterns in return positioning these data could help reveal.</p>
+<p>The serve return is the shot we see receiver&rsquo;s take more than any other. This makes the serve return as important to the receiver as the serve is to the server. Yet, broadcast coverage of tennis matches give more attention to where player&rsquo;s position their water bottles than their strategy on the serve return.</p>
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:394px;float:left;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com/detail/1229720589" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:66.66667% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/1229720589?et=YSiEappmTQZB0qmyiDhmmQ&tld=com&sig=0LeDqjGMhtIabw94MO1-Btc2x8HHAYuGD0Ee2cfozY8=&caption=true&ver=1" scrolling="no" frameborder="0" width="594" height="396" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+<p>With the lack of attention the serve return receives, I suspect our understanding about patterns on the return is pretty rudimentary. This is definitely my case. I have a general idea that some players like to position themselves deeper than other players no matter what, and that players likely adjust depending on the match conditions (surface, court pace, etc.) and who is serving. But I couldn&rsquo;t say with much confidence what those adjustments look like or how consistently a player makes those adjustments from one match to the next.</p>
+<p>It&rsquo;s no mystery why the serve return remains a hard nut to crack. To really assess what is happening on the serve return, we need information about a player&rsquo;s position—their physical location on the court. For a long time, positional data was never collected at professional tennis matches. Since the mid-2000s, data on player position began to be regularly collected by tracking systems like Hawkeye. Yet these data have rarely been made publicly available, until now.</p>
+<p>Since 2018, a <a href="http://on-the-t.com/2020/10/10/serve-power-styles/">new digital feature</a> on the ATP Tour site has (no doubt inadvertently) made summaries of Hawkeye data collected at ATP events (250 level and above) available to all of us. These are <em>summaries</em> of tracking data not the raw data, so they come with a lot of limitations. <em>But</em> the data presented for a match do include the exact coordinates of players at the time of return impact for all return attempts, whether in play or not. Because the ATP calendar includes matches throughout the year on all of the major surfaces, it gives us a unique opportunity to look not only at a player&rsquo;s average tendencies, but also how tendencies might change in different settings or evolve over time.</p>
+<p>There is huge potential for analysis with the impact data. To give some sense of that potential, I wanted to start with a few descriptive case studies. These &lsquo;case studies&rsquo; are visual comparisons of the impact position of a few well-known players in matches against the same server. In this way, although not explicitly adjusting for the serve a player faced, we are making the between players more comparable by comparing them all against a common server.</p>
+<p>The first group of receivers are all players we would expect to be more aggressive than the average receiver: Nick Kyrgios, Roger Federer, and Alex De Minaur. Among the ATP 2nd Screen data for 2018 and 2019, each of these players had at least one match versus Stef Tsitsipas. The chart below shows their return impact position on the first and second serve in those matches. I should stress here that these points are the position <em>at impact</em>, which is the time when the receiver takes his shot not his position when the serve was hit. The x-axis is the position in meters from the net (at 0) and the y-axis is the meters from the center line (positive in the direction toward the Ad court and negative the direction to Deuce).</p>
+<div style="text-align: center;">
+<img src="/img/return_impact_aggressive_1.png" alt="return impact" width="90%" style="max-width:80%;" />
+</div>
+<br>
+<p>Kyrgios, Federer and De Minaur all appear to prefer to be close to the baseline when making an impact on the first serve (the vertical lines indicate the mean depth by serve number in the match). We also see that they have the tendency, at least against Tsitsipas on hard court, to take impact about a meter further forward on the second serve.</p>
+<p>Although all of the matches are on hard court and against the same server, we still see some notable differences in what a receiver does from one match to the next. Contrast De Minaur&rsquo;s position at the 2018 Next Gen Finals, where he was jumping 2 meters into the court when taking the second serve, and his strategy at the Paris Masters in 2019, where he was playing the first and second serves at a similar depth for most points, getting pulled deep back for two of the serves to Deuce.</p>
+<p>Federer, on the other hand, was extremely consistent in his impact patterns at Basel and Dubai in 2019. But was noticeably deeper in his position at the 2019 ATP Tour Finals, particularly on the second serve.</p>
+<p>The other thing that stands out to me is the incredible amount of clustering in Nick Kyrgios&rsquo;s impact position at the 2019 Washington. If I told you that Kyrgios was getting a second serve on the Ad court, you could guess his position within centimeters based on these data. Some of that surely has to do with the predictability of Tsitsipas going wide on the second serve, but we can see he is doing this against all of these opponents, yet there is more variation in where they make impact both in terms of depth and the lateral position. Is this a sign that De Minaur and Federer are making more adjustments with each serve? Was Tsitsipas giving them more variety in spin or angle than against Kyrgios? Or something else?</p>
+<p>What about the patterns of more defensive receivers? The next examples look at three players who are notorious for playing the serve return from a deep position: Rafael Nadal, Dominic Thiem and Daniil Medvedev. Luckily, like with our aggressive returners above, all of these players had matches against Stef Tsitsipas in 2018 and 2019, so we can contrast them all in matches against Tsitsipas.</p>
+<div style="text-align: center;">
+<img src="/img/return_impact_def_3.png" alt="return impact" width="90%" style="max-width:80%;" />
+</div>
+<br>
+<p>Both Medvedev and Nadal are making impact around 16 meters from the net on first serve no matter the surface. Thiem, on the other hand, made huge adjustments forward when playing Tsitsipas on hard court.  Another possible effect on surface we see is the gap in first and second serve on clay for Rafa Nadal. While all the players generally step forward and make impact from a shallower position on the second serve compared to their first serve position, Nadal seems to take first and second serves from the same depth when playing on clay, at least, against in his matches against Tsitsipas.</p>
+<p>Another pattern that stands out to me in the chart above is the bimodality in Medvedev&rsquo;s second serve impact position. Look, in particular, at the 2019 ATP Tour finals. His lateral position is largely unchanged, but for nearly half of the second serves he is at the baseline at impact. It almost looks like he was playing second serves like first serves for part of the match.</p>
+<p>How much do these patterns change against different servers? As an example, I pulled out two extremes along the serve spectrum for common opponents faced by Nadal, Thiem and Medvedev. The first case below are for matches played against Alexander Zverev, which are particularly interesting comparisons because all the matches were played at the 2019 ATP Tour Finals.</p>
+<p>All of the players positioned themselves defensively, overall, making impact on Zverev&rsquo;s first serve at 14 to 16 meters from the net. The really curious thing here, though, is the difference in the second serve approach. Medvedev came forward very little for most of the second serves. Thiem, on the other hand, was even deeper in his position on the second. No matter what the serve was, he was taking it two meters deeper than the first serve. Presumably, this was his preference for handling the greater bounce on the second serve, yet, it isn&rsquo;t a pattern we see in any of his other matches in this post.</p>
+<div style="text-align: center;">
+<img src="/img/return_impact_def_1.png" alt="return impact" width="90%" style="max-width:80%;" />
+</div>
+<br>
+<p>What about a server with less of a serve weapon? Do even the most defensive returners move to a more aggressive position against this type of server. The chart below suggests that they don&rsquo;t, or not as much as you might expect. All of the matches below are against Diego Schwartzman who, as one of the smallest man&rsquo;s on the tour, could be considered the opposite extreme from a server like Alexander Zverev. Despite this, Nadal, Thiem and Medvedev are sticking close to the first and second serve positions we observe in a number of their other hard court matches against more powerful servers.</p>
+<div style="text-align: center;">
+<img src="/img/return_impact_def_2.png" alt="return impact" width="90%" style="max-width:80%;" />
+</div>
+<br>
+<p>If you are like me, some of these patterns should come as a surprise and raise a number of questions. Like, what can explain some of the match to match differences in a players return position that can&rsquo;t be explained by the opponent or surface? What makes a player play even deeper on second serves than first serves? How often do players make adjustments to their return position within the same match?</p>
+<p>These and many other questions about the serve return remain unsettled. But, with the positional data we now have access to, new discoveries may just be an analysis away.</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/return-impact/" rel="tag">return impact</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/tracking-data/" rel="tag">tracking data</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2020/11/03/schedule-hmm/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">What a Model of Player Availability Can Tell Us About Probable Injuries in Tennis</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

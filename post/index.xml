@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skoval.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Foray Into Return Impact Patterns</title>
+      <link>https://skoval.github.io/2020/11/28/return-impact/</link>
+      <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2020/11/28/return-impact/</guid>
+      <description>&lt;p&gt;The serve return is the most important shot for a receiver.  What can receivers do to put themselves in a better position to make a good impact on the serve return? The answer to that question is too big a task for one blog post alone. As a small first step, I take a look at a new public data source that includes the position of players at the time of return impact in ATP matches. Through a handful of case studies, it delves into the kind of patterns in return positioning these data could help reveal.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>What a Model of Player Availability Can Tell Us About Probable Injuries in Tennis</title>
