@@ -18,12 +18,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/return-impact/</loc>
+    <loc>https://skoval.github.io/tags/return-impact/</loc>
     <lastmod>2020-11-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/return-impact/</loc>
+    <loc>https://skoval.github.io/categories/return-impact/</loc>
     <lastmod>2020-11-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -38,12 +38,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/tracking-data/</loc>
+    <loc>https://skoval.github.io/categories/tracking-data/</loc>
     <lastmod>2020-11-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/tracking-data/</loc>
+    <loc>https://skoval.github.io/tags/tracking-data/</loc>
     <lastmod>2020-11-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -58,12 +58,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/schedule/</loc>
+    <loc>https://skoval.github.io/tags/schedule/</loc>
     <lastmod>2020-11-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/schedule/</loc>
+    <loc>https://skoval.github.io/categories/schedule/</loc>
     <lastmod>2020-11-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -83,12 +83,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/serve/</loc>
+    <loc>https://skoval.github.io/categories/serve/</loc>
     <lastmod>2020-10-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/serve/</loc>
+    <loc>https://skoval.github.io/tags/serve/</loc>
     <lastmod>2020-10-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -98,17 +98,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/clay/</loc>
-    <lastmod>2020-10-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://skoval.github.io/tags/clay/</loc>
     <lastmod>2020-10-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/strategy/</loc>
+    <loc>https://skoval.github.io/categories/clay/</loc>
     <lastmod>2020-10-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -118,13 +113,13 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/2020/10/18/djokovic-drop-shots/</loc>
+    <loc>https://skoval.github.io/tags/strategy/</loc>
     <lastmod>2020-10-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/mixture/</loc>
-    <lastmod>2020-10-10T00:00:00+00:00</lastmod>
+    <loc>https://skoval.github.io/2020/10/18/djokovic-drop-shots/</loc>
+    <lastmod>2020-10-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -133,12 +128,17 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/style/</loc>
+    <loc>https://skoval.github.io/tags/mixture/</loc>
     <lastmod>2020-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://skoval.github.io/tags/style/</loc>
+    <lastmod>2020-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/style/</loc>
     <lastmod>2020-10-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -178,22 +178,22 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/wikidraws/</loc>
-    <lastmod>2020-05-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://skoval.github.io/categories/wikidraws/</loc>
     <lastmod>2020-05-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/elo/</loc>
-    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+    <loc>https://skoval.github.io/tags/wikidraws/</loc>
+    <lastmod>2020-05-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/elo/</loc>
+    <lastmod>2020-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/tags/elo/</loc>
     <lastmod>2020-04-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -218,12 +218,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/best-matches/</loc>
+    <loc>https://skoval.github.io/tags/best-matches/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/best-matches/</loc>
+    <loc>https://skoval.github.io/categories/best-matches/</loc>
     <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -243,22 +243,22 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/iid/</loc>
-    <lastmod>2020-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://skoval.github.io/tags/iid/</loc>
     <lastmod>2020-03-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/rankings/</loc>
-    <lastmod>2020-03-13T00:00:00+00:00</lastmod>
+    <loc>https://skoval.github.io/categories/iid/</loc>
+    <lastmod>2020-03-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/rankings/</loc>
+    <lastmod>2020-03-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/tags/rankings/</loc>
     <lastmod>2020-03-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -288,12 +288,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/set-scores/</loc>
+    <loc>https://skoval.github.io/tags/set-scores/</loc>
     <lastmod>2020-02-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/set-scores/</loc>
+    <loc>https://skoval.github.io/categories/set-scores/</loc>
     <lastmod>2020-02-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -383,12 +383,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/laver-cup/</loc>
+    <loc>https://skoval.github.io/categories/laver-cup/</loc>
     <lastmod>2019-09-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/laver-cup/</loc>
+    <loc>https://skoval.github.io/tags/laver-cup/</loc>
     <lastmod>2019-09-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -463,12 +463,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/ratings/</loc>
+    <loc>https://skoval.github.io/tags/ratings/</loc>
     <lastmod>2019-08-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/ratings/</loc>
+    <loc>https://skoval.github.io/categories/ratings/</loc>
     <lastmod>2019-08-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -488,22 +488,22 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/rating/</loc>
-    <lastmod>2019-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://skoval.github.io/tags/rating/</loc>
     <lastmod>2019-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/singles/</loc>
+    <loc>https://skoval.github.io/categories/rating/</loc>
     <lastmod>2019-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/singles/</loc>
+    <lastmod>2019-07-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/tags/singles/</loc>
     <lastmod>2019-07-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -518,12 +518,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/matchups/</loc>
+    <loc>https://skoval.github.io/categories/matchups/</loc>
     <lastmod>2019-04-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/matchups/</loc>
+    <loc>https://skoval.github.io/tags/matchups/</loc>
     <lastmod>2019-04-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -568,12 +568,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/atp/</loc>
+    <loc>https://skoval.github.io/tags/atp/</loc>
     <lastmod>2019-03-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/atp/</loc>
+    <loc>https://skoval.github.io/categories/atp/</loc>
     <lastmod>2019-03-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -593,12 +593,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/predictions/</loc>
+    <loc>https://skoval.github.io/tags/predictions/</loc>
     <lastmod>2019-03-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/predictions/</loc>
+    <loc>https://skoval.github.io/categories/predictions/</loc>
     <lastmod>2019-03-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -608,12 +608,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/wta/</loc>
+    <loc>https://skoval.github.io/categories/wta/</loc>
     <lastmod>2019-03-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/wta/</loc>
+    <loc>https://skoval.github.io/tags/wta/</loc>
     <lastmod>2019-03-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -663,12 +663,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/clutch/</loc>
+    <loc>https://skoval.github.io/categories/clutch/</loc>
     <lastmod>2019-01-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/clutch/</loc>
+    <loc>https://skoval.github.io/tags/clutch/</loc>
     <lastmod>2019-01-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -723,12 +723,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/gender/</loc>
+    <loc>https://skoval.github.io/tags/gender/</loc>
     <lastmod>2018-10-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/gender/</loc>
+    <loc>https://skoval.github.io/categories/gender/</loc>
     <lastmod>2018-10-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -743,12 +743,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/first-slam/</loc>
+    <loc>https://skoval.github.io/tags/first-slam/</loc>
     <lastmod>2018-09-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/first-slam/</loc>
+    <loc>https://skoval.github.io/categories/first-slam/</loc>
     <lastmod>2018-09-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -773,12 +773,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/weather/</loc>
+    <loc>https://skoval.github.io/categories/weather/</loc>
     <lastmod>2018-08-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/weather/</loc>
+    <loc>https://skoval.github.io/tags/weather/</loc>
     <lastmod>2018-08-31T00:00:00+00:00</lastmod>
   </url>
   
@@ -803,12 +803,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/grass/</loc>
+    <loc>https://skoval.github.io/categories/grass/</loc>
     <lastmod>2018-07-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/grass/</loc>
+    <loc>https://skoval.github.io/tags/grass/</loc>
     <lastmod>2018-07-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -838,12 +838,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/federer/</loc>
+    <loc>https://skoval.github.io/categories/federer/</loc>
     <lastmod>2018-06-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/federer/</loc>
+    <loc>https://skoval.github.io/tags/federer/</loc>
     <lastmod>2018-06-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -913,12 +913,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/serena/</loc>
+    <loc>https://skoval.github.io/categories/serena/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/serena/</loc>
+    <loc>https://skoval.github.io/tags/serena/</loc>
     <lastmod>2018-06-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -948,12 +948,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/zverev/</loc>
+    <loc>https://skoval.github.io/categories/zverev/</loc>
     <lastmod>2018-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/zverev/</loc>
+    <loc>https://skoval.github.io/tags/zverev/</loc>
     <lastmod>2018-05-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -983,12 +983,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/novak/</loc>
+    <loc>https://skoval.github.io/tags/novak/</loc>
     <lastmod>2018-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/novak/</loc>
+    <loc>https://skoval.github.io/categories/novak/</loc>
     <lastmod>2018-04-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -998,12 +998,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/nadal/</loc>
+    <loc>https://skoval.github.io/categories/nadal/</loc>
     <lastmod>2018-04-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/nadal/</loc>
+    <loc>https://skoval.github.io/tags/nadal/</loc>
     <lastmod>2018-04-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -1018,17 +1018,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/cutch/</loc>
-    <lastmod>2018-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://skoval.github.io/categories/cutch/</loc>
     <lastmod>2018-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/masters/</loc>
+    <loc>https://skoval.github.io/tags/cutch/</loc>
     <lastmod>2018-04-07T00:00:00+00:00</lastmod>
   </url>
   
@@ -1038,8 +1033,8 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/backhand/</loc>
-    <lastmod>2018-04-01T12:00:00+00:00</lastmod>
+    <loc>https://skoval.github.io/categories/masters/</loc>
+    <lastmod>2018-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1048,12 +1043,17 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/del-potro/</loc>
+    <loc>https://skoval.github.io/tags/backhand/</loc>
     <lastmod>2018-04-01T12:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://skoval.github.io/tags/del-potro/</loc>
+    <lastmod>2018-04-01T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/del-potro/</loc>
     <lastmod>2018-04-01T12:00:00+00:00</lastmod>
   </url>
   
@@ -1088,12 +1088,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/premiers/</loc>
+    <loc>https://skoval.github.io/tags/premiers/</loc>
     <lastmod>2018-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/premiers/</loc>
+    <loc>https://skoval.github.io/categories/premiers/</loc>
     <lastmod>2018-04-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -1123,12 +1123,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/data-science/</loc>
+    <loc>https://skoval.github.io/tags/data-science/</loc>
     <lastmod>2018-03-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/data-science/</loc>
+    <loc>https://skoval.github.io/categories/data-science/</loc>
     <lastmod>2018-03-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -1158,12 +1158,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/research/</loc>
+    <loc>https://skoval.github.io/tags/research/</loc>
     <lastmod>2018-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/research/</loc>
+    <loc>https://skoval.github.io/categories/research/</loc>
     <lastmod>2018-02-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -1173,12 +1173,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/sloan/</loc>
+    <loc>https://skoval.github.io/tags/sloan/</loc>
     <lastmod>2018-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/sloan/</loc>
+    <loc>https://skoval.github.io/categories/sloan/</loc>
     <lastmod>2018-02-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -1188,22 +1188,22 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/hackathon/</loc>
-    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://skoval.github.io/tags/hackathon/</loc>
     <lastmod>2018-02-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/draw/</loc>
-    <lastmod>2018-02-02T00:00:00+00:00</lastmod>
+    <loc>https://skoval.github.io/categories/hackathon/</loc>
+    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://skoval.github.io/tags/draw/</loc>
+    <lastmod>2018-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/draw/</loc>
     <lastmod>2018-02-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -1228,22 +1228,22 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/momentum/</loc>
-    <lastmod>2018-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://skoval.github.io/categories/momentum/</loc>
     <lastmod>2018-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/injury/</loc>
-    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
+    <loc>https://skoval.github.io/tags/momentum/</loc>
+    <lastmod>2018-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://skoval.github.io/categories/injury/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/tags/injury/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -1258,12 +1258,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/luck/</loc>
+    <loc>https://skoval.github.io/categories/luck/</loc>
     <lastmod>2018-01-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/luck/</loc>
+    <loc>https://skoval.github.io/tags/luck/</loc>
     <lastmod>2018-01-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -1273,12 +1273,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/demand/</loc>
+    <loc>https://skoval.github.io/tags/demand/</loc>
     <lastmod>2018-01-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/demand/</loc>
+    <loc>https://skoval.github.io/categories/demand/</loc>
     <lastmod>2018-01-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -1323,12 +1323,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/return/</loc>
+    <loc>https://skoval.github.io/tags/return/</loc>
     <lastmod>2017-12-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/return/</loc>
+    <loc>https://skoval.github.io/categories/return/</loc>
     <lastmod>2017-12-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -1383,12 +1383,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/importance/</loc>
+    <loc>https://skoval.github.io/categories/importance/</loc>
     <lastmod>2017-11-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/importance/</loc>
+    <loc>https://skoval.github.io/tags/importance/</loc>
     <lastmod>2017-11-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -1403,12 +1403,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/quality/</loc>
+    <loc>https://skoval.github.io/categories/quality/</loc>
     <lastmod>2017-10-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/quality/</loc>
+    <loc>https://skoval.github.io/tags/quality/</loc>
     <lastmod>2017-10-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -1443,12 +1443,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/scoreboard/</loc>
+    <loc>https://skoval.github.io/tags/scoreboard/</loc>
     <lastmod>2017-10-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/scoreboard/</loc>
+    <loc>https://skoval.github.io/categories/scoreboard/</loc>
     <lastmod>2017-10-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -1493,12 +1493,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/gaps/</loc>
+    <loc>https://skoval.github.io/categories/gaps/</loc>
     <lastmod>2017-08-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/gaps/</loc>
+    <loc>https://skoval.github.io/tags/gaps/</loc>
     <lastmod>2017-08-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -1513,12 +1513,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/surprising/</loc>
+    <loc>https://skoval.github.io/categories/surprising/</loc>
     <lastmod>2017-08-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/surprising/</loc>
+    <loc>https://skoval.github.io/tags/surprising/</loc>
     <lastmod>2017-08-20T00:00:00+00:00</lastmod>
   </url>
   
@@ -1558,12 +1558,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/leaders/</loc>
+    <loc>https://skoval.github.io/tags/leaders/</loc>
     <lastmod>2017-07-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/leaders/</loc>
+    <loc>https://skoval.github.io/categories/leaders/</loc>
     <lastmod>2017-07-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -1573,12 +1573,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/dominance/</loc>
+    <loc>https://skoval.github.io/categories/dominance/</loc>
     <lastmod>2017-07-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/dominance/</loc>
+    <loc>https://skoval.github.io/tags/dominance/</loc>
     <lastmod>2017-07-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -1603,22 +1603,22 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/gender-bias/</loc>
-    <lastmod>2017-06-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://skoval.github.io/tags/gender-bias/</loc>
     <lastmod>2017-06-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/serena-williams/</loc>
+    <loc>https://skoval.github.io/categories/gender-bias/</loc>
     <lastmod>2017-06-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://skoval.github.io/tags/serena-williams/</loc>
+    <lastmod>2017-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skoval.github.io/categories/serena-williams/</loc>
     <lastmod>2017-06-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -1648,12 +1648,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/leaderboards/</loc>
+    <loc>https://skoval.github.io/categories/leaderboards/</loc>
     <lastmod>2017-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/leaderboards/</loc>
+    <loc>https://skoval.github.io/tags/leaderboards/</loc>
     <lastmod>2017-06-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -2248,12 +2248,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/sports-analytics/</loc>
+    <loc>https://skoval.github.io/categories/sports-analytics/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/sports-analytics/</loc>
+    <loc>https://skoval.github.io/tags/sports-analytics/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -2268,12 +2268,12 @@
   </url>
   
   <url>
-    <loc>https://skoval.github.io/tags/tennis-news/</loc>
+    <loc>https://skoval.github.io/categories/tennis-news/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://skoval.github.io/categories/tennis-news/</loc>
+    <loc>https://skoval.github.io/tags/tennis-news/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
