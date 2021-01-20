@@ -6,26 +6,22 @@
     <description>Recent content in importance on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Nov 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://skoval.github.io/categories/importance/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 10 Nov 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/categories/importance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Many Sides of Excitement</title>
-      <link>https://skoval.github.io/2017/11/10/excitement-indices/</link>
+      <link>https://skoval.github.io/2017/11/10/Excitement-Indices/</link>
       <pubDate>Fri, 10 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2017/11/10/excitement-indices/</guid>
+      <guid>https://skoval.github.io/2017/11/10/Excitement-Indices/</guid>
       <description>&lt;p&gt;Having a metric for match excitement would be a useful tool for separating humdrum matches from thrillers. In this post, I have a look at two indices for measuring match excitement and discuss what&amp;rsquo;s to like and dislike about each.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>A Stat for Excitement and What It Reveals About the Best Men&#39;s Matches at the 2017 US Open</title>
-      <link>https://skoval.github.io/2017/11/03/us-open-excitement/</link>
+      <link>https://skoval.github.io/2017/11/03/US-Open-Excitement/</link>
       <pubDate>Fri, 03 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2017/11/03/us-open-excitement/</guid>
+      <guid>https://skoval.github.io/2017/11/03/US-Open-Excitement/</guid>
       <description>&lt;p&gt;The 2017 MLB World Series gave baseball fans a thrill-ride for the post-season. It also gives us an idea of how to size up the excitement of a sporting event. In this post, we look at an &amp;lsquo;excitement&amp;rsquo; statistic for tennis and use it to rank the excitement of men&amp;rsquo;s matches at the 2017 US Open.&lt;/p&gt;</description>
     </item>
     

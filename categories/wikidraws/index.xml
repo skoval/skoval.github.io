@@ -6,17 +6,13 @@
     <description>Recent content in wikidraws on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://skoval.github.io/categories/wikidraws/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 24 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/categories/wikidraws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Charting the Longest Slam Matches of All Time</title>
-      <link>https://skoval.github.io/2020/05/24/longest-all-time/</link>
+      <link>https://skoval.github.io/2020/05/24/Longest-All-Time/</link>
       <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2020/05/24/longest-all-time/</guid>
+      <guid>https://skoval.github.io/2020/05/24/Longest-All-Time/</guid>
       <description>&lt;p&gt;The suspension of the tennis season has given tennis fans time for a number of side projects. In this post, I share the story of my side endeavour to make a central database of the results of all Grand Slams singles matches ever played. Thanks to Wikipedia and weeks of data wrangling, I can now share the first analysis on this blog that includes the entire history at the Majors: an analysis of the longest matches of all time.&lt;/p&gt;</description>
     </item>
     

@@ -1,0 +1,140 @@
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.form-inline {
+  padding-top: 0%;
+  margin-left: -1%;
+  position: relative;
+  display: inline-block;
+  flex-flow: row wrap;
+  align-items: center;
+  text-align: center;
+}
+
+path.domain {
+  stroke-width: 0;
+}
+
+.grid line {
+  stroke: #dcdcdd;
+  stroke-opacity: 0.5;
+  shape-rendering: crispEdges;
+}
+
+line.courtline {
+  stroke: #c5c3c6;
+  stroke-width: 8;
+  stroke-opacity: 1;
+}
+
+line.gridline {
+  stroke: #c5c3c6;
+  stroke-width: 1;
+  stroke-opacity: 0.5;
+  shape-rendering: crispEdges;
+}        
+
+rect.courtrect {
+    fill: #dcdcdd;
+    fill-opacity: 0.3;
+}  
+
+rect.courtbg {
+  fill: #d5d5d5;
+  fill-opacity: 0.5;
+}    
+
+rect.plotbg {
+  fill: white;
+}          
+
+ .legendaxis line {
+    fill: none;
+    stroke:  #dcdcdd;
+    stroke-width: 3;
+ }
+
+ .legendtick line {
+    stroke-opacity: 0;
+ }
+
+ .grid text {
+    padding-left: 2%;
+    fill: #4c5c68;
+    font-size: 10px;
+ }         
+
+
+ .legendtick text {
+    fill: #4c5c68;
+    font-size: 18px;
+ }         
+
+ circle.highlighter-circle {
+    fill:  #f5d02d;
+ }
+
+ text.highlighter-title {
+    fill:  #4c5c68;
+    text-align: center;
+ }  
+
+
+@font-face {
+  font-family: Ubuntu-Medium;
+  src: url('../fonts/ubuntu/Ubuntu-Medium.ttf'); 
+}
+
+text {
+  font-family: Ubuntu-Medium, sans-serif;
+}
+
+
+ text.highlighter-coordinate {
+    fill:  #4c5c68;
+    font-size: 18px;
+    text-align: right;
+ }     
+
+input {
+  position: relative;
+  width: 30%;
+  border: 1px; 
+  background: #eaeaea; 
+  opacity: 0.8;
+  padding: 16px 28px; 
+  font-size: 18px; 
+  margin: 20px 10px 10px 0; 
+  color: #4c5c68;
+  font-family: Ubuntu-Medium, sans-serif;
+}
+
+input:focus {   
+  background-color: #f5d02d; 
+  outline: none;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin-left: 1%;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

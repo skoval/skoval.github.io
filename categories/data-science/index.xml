@@ -6,11 +6,7 @@
     <description>Recent content in data science on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Mar 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://skoval.github.io/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 18 Mar 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cape Town celebrates R and tennis data science at satRday</title>
       <link>https://skoval.github.io/2018/03/16/satrday-capetown/</link>
@@ -22,10 +18,10 @@
     
     <item>
       <title>AO to AI Hackathon Winners Announced</title>
-      <link>https://skoval.github.io/2018/02/19/ao-hackathon/</link>
+      <link>https://skoval.github.io/2018/02/19/AO-Hackathon/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2018/02/19/ao-hackathon/</guid>
+      <guid>https://skoval.github.io/2018/02/19/AO-Hackathon/</guid>
       <description>&lt;p&gt;As Roger Federer was crowned with his 20th Grand Slam title at the 2018 Australian Open, the winners of the first AO to AI Hackathon competition were being decided. In this post, I take a look at the winning models and discuss what they mean for the future of calling point outcomes in tennis.&lt;/p&gt;</description>
     </item>
     

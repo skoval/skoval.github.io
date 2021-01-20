@@ -6,53 +6,49 @@
     <description>Recent content in matchups on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Apr 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://skoval.github.io/tags/matchups/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 19 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/tags/matchups/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Putting a Basic Playing Style Classifier to the Test</title>
-      <link>https://skoval.github.io/2019/04/19/testing-match-stats-and-style/</link>
+      <link>https://skoval.github.io/2019/04/19/Testing-Match-Stats-And-Style/</link>
       <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2019/04/19/testing-match-stats-and-style/</guid>
+      <guid>https://skoval.github.io/2019/04/19/Testing-Match-Stats-And-Style/</guid>
       <description>&lt;p&gt;Any measure of playing style is only as good as what it can explain beyond player overall ability. If we apply this standard to playing style categories derived from basic match stats, how do they hold up?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>More Exploration on Using Match Stats to Classify Playing Styles</title>
-      <link>https://skoval.github.io/2019/04/12/match-stats-and-style/</link>
+      <link>https://skoval.github.io/2019/04/12/Match-Stats-And-Style/</link>
       <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2019/04/12/match-stats-and-style/</guid>
+      <guid>https://skoval.github.io/2019/04/12/Match-Stats-And-Style/</guid>
       <description>&lt;p&gt;Last week, I looked at whether basic match stats, like aces and minutes played per point, could help describe a player&amp;rsquo;s playing style. In this post, I expand on the set of style features and delve into the clusters of playing styles they reveal.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>What Can Match Stats Tell Us About Playing Styles?</title>
-      <link>https://skoval.github.io/2019/04/05/match-stats-and-style/</link>
+      <link>https://skoval.github.io/2019/04/05/Match-Stats-And-Style/</link>
       <pubDate>Fri, 05 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2019/04/05/match-stats-and-style/</guid>
+      <guid>https://skoval.github.io/2019/04/05/Match-Stats-And-Style/</guid>
       <description>&lt;p&gt;Recently, I&amp;rsquo;ve had a few posts on head-to-head effects. The biggest takeaway was one we probably all knew going in: Head-to-head effects may exist, but good luck finding them. With so many small sample sizes for most head-to-heads, we need a way to group &amp;lsquo;similar&amp;rsquo; players. In this post, I look at whether categorizing players by playing style might be possible using basic match stats.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>WTA Head-to-Head Effects</title>
-      <link>https://skoval.github.io/2019/03/22/head-to-head-effects-wta/</link>
+      <link>https://skoval.github.io/2019/03/22/Head-to-Head-Effects-WTA/</link>
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2019/03/22/head-to-head-effects-wta/</guid>
+      <guid>https://skoval.github.io/2019/03/22/Head-to-Head-Effects-WTA/</guid>
       <description>&lt;p&gt;If you thought Serena vs Maria was a lopsided head-to-head, you are right. But it isn&amp;rsquo;t the biggest head-to-head effect in recent WTA history.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Head-to-Head Effects</title>
-      <link>https://skoval.github.io/2019/03/15/head-to-head-effects/</link>
+      <link>https://skoval.github.io/2019/03/15/Head-to-Head-Effects/</link>
       <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2019/03/15/head-to-head-effects/</guid>
+      <guid>https://skoval.github.io/2019/03/15/Head-to-Head-Effects/</guid>
       <description>&lt;p&gt;Matchup effects are a common idea in tennis commentary. It is the thing at the heart of comments like &amp;lsquo;her game matches up well&amp;rsquo; against her opponent. One way to think of a matchup effect is as a surprising head-to-head, when results go against what the overall ability of both players would have us expect. Do such effects exist? And are they substantial enough that they matter when it comes to making better predictions about tennis results?&lt;/p&gt;</description>
     </item>
     

@@ -41,7 +41,7 @@
 	<meta property="og:title" content="Are Top ATP Players Non-IID?" />
 <meta property="og:description" content="With sport at a standstill, there is ample time for sports nerds to get really wonky. In this post, I look at a question that should go to the heart of any tennis analyst: are players non-iid? I look at how we can measure non-iid effects, why we should care, and who has been the most non-iid among the Top 50 ATP players." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://skoval.github.io/2020/03/20/non-iid-top50/" />
+<meta property="og:url" content="https://skoval.github.io/2020/03/20/Non-IID-Top50/" />
 <meta property="article:published_time" content="2020-03-20T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-03-20T00:00:00+00:00" />
 
@@ -140,10 +140,7 @@ if (!doNotTrack) {
 			<h1 class="post__title">Are Top ATP Players Non-IID?</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2020-03-20T00:00:00">March 20, 2020</time>
-</div>
-
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-03-20T00:00:00Z">March 20, 2020</time></div>
 <div class="meta__item-categories meta__item">
 	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
 	<span class="meta__text"><a class="meta__link" href="/categories/iid/" rel="category">iid</a>
@@ -160,7 +157,7 @@ if (!doNotTrack) {
 <p>If the study of Klaassen and Magnus teaches us anything, it is that the truth is somewhere in-between. What I mean is that, players are not iid but their non-iid effects are much smaller than our intuition would suggest. So small, in fact, that the iid assumption is a really close description of actual results in tennis for many cases.</p>
 <p>Although the effects may be small on average, it is still possible that individual players show greater non-iid behavior than others. This got me to thinking about who among the current top men&rsquo;s players would be least iid?</p>
 <p>One way to get an overall measure of non-iid effects in a match is to compare a player&rsquo;s actual service games won against the iid-predicted service games won. Let&rsquo;s call $g$ the actual proportion of service games won in a match. Now, take the player of interest&rsquo;s proportion of points won on serve in the match as $p$ and their opponent&rsquo;s serve win proportion as $q$. We can use a Monte Carlo to get an expected proportion of games won $\hat{g}(p, q)$ given the match serve characteristics.</p>
-<p>To give a specific example, in his last match before the current suspension of tour play, Novak Djokovic won 90% of service games, with a win percent on serve of 70% against Stefanos Tsitsipas&rsquo; 58%. So we would plug the 70% and 58% serve chances into the iid simulator for a best of 3 match and get the estimated service games won for some large number of simulated matches.</p>
+<p>To give a specific example, in his last match before the current suspension of tour play, Novak Djokovic won 90% of service games, with a win percent on serve of 70% against Stefanos Tsitsipas' 58%. So we would plug the 70% and 58% serve chances into the iid simulator for a best of 3 match and get the estimated service games won for some large number of simulated matches.</p>
 <p>I carried out this simulation for matches between 2018 and the present for all Top 50 ATP players (whatever those rankings still mean!). The chart to the right shows the results for all matches with the average non-iid in blue. The players are sorted from most positive average non-iid to least from top to bottom. Here, a positive effect means a player won more service games than expected given their serve win percentage on points and an iid assumption.</p>
 <div style="float:right;max-width:60%;padding:1%;">
 	<img src="/img/noniid_atp.png" style="text-align:center;max-width:100%;" />	
@@ -199,10 +196,10 @@ if (!doNotTrack) {
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/2020/03/13/rankings-winners-losers/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Winners and Losers of a Rankings Hiatus</p></a>
+		<a class="post-nav__link" href="/2020/03/13/Rankings-Winners-Losers/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Winners and Losers of a Rankings Hiatus</p></a>
 	</div>
 	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/2020/03/26/atp-best-matches/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">What Do I Watch Now?</p></a>
+		<a class="post-nav__link" href="/2020/03/26/ATP-Best-Matches/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">What Do I Watch Now?</p></a>
 	</div>
 </nav>
 
@@ -237,7 +234,7 @@ if (!doNotTrack) {
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2020 Stats On the T.
+			&copy; 2021 Stats On the T.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>

@@ -6,80 +6,76 @@
     <description>Recent content in elo on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://skoval.github.io/categories/elo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 18 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/categories/elo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Some of the Most Surprising Runs in Recent Grand Slam History</title>
-      <link>https://skoval.github.io/2020/04/18/slam-surprise-runs/</link>
+      <link>https://skoval.github.io/2020/04/18/Slam-Surprise-Runs/</link>
       <pubDate>Sat, 18 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2020/04/18/slam-surprise-runs/</guid>
+      <guid>https://skoval.github.io/2020/04/18/Slam-Surprise-Runs/</guid>
       <description>&lt;p&gt;With so much time these days to walk down tennis memory lane, I thought it would be fun to rank the wildest runs at the Grand Slams. In this post, I show how we can use the total gain in player ratings over an event to identify surprising individual results at the majors from the 1990s to the present.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Djokovic Regains No. 1 But His Climb in the Ratings Isn&#39;t Over</title>
-      <link>https://skoval.github.io/2018/11/02/djokovic-improving-2018/</link>
+      <link>https://skoval.github.io/2018/11/02/Djokovic-Improving-2018/</link>
       <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2018/11/02/djokovic-improving-2018/</guid>
+      <guid>https://skoval.github.io/2018/11/02/Djokovic-Improving-2018/</guid>
       <description>&lt;p&gt;On Monday, Novak Djokovic will regain the World No. 1 ranking, climbing from outside the top 20 at the start of the year. Djokovic&amp;rsquo;s comeback has been the major story this week. In this post, I look at his rise in terms of his match-by-match Elo rating and put it in context of his best season performances in 2011 and 2015.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Getting to the 2018 WTA Finals--An Elo Story</title>
-      <link>https://skoval.github.io/2018/10/20/wta-finals-2018/</link>
+      <link>https://skoval.github.io/2018/10/20/WTA-Finals-2018/</link>
       <pubDate>Sat, 20 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2018/10/20/wta-finals-2018/</guid>
+      <guid>https://skoval.github.io/2018/10/20/WTA-Finals-2018/</guid>
       <description>&lt;p&gt;The 2018 WTA Finals is upon us. With Simona Halep bowing out of the event, Caroline Wozniacki enters with the highest GIG Elo Rating. But what do the ratings trajectories of the 8 competitors reveal about who could have the most momentum and confidence heading into Singapore?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Djokovic and Bertens, Two of the Most Improved Players in 2018</title>
-      <link>https://skoval.github.io/2018/10/14/elo-update/</link>
+      <link>https://skoval.github.io/2018/10/14/Elo-Update/</link>
       <pubDate>Sun, 14 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2018/10/14/elo-update/</guid>
+      <guid>https://skoval.github.io/2018/10/14/Elo-Update/</guid>
       <description>&lt;p&gt;Novak Djokovic could continue a masterful run toward the end of the season when he goes for his second 2018 Masters 1000 title against Borna Coric in Shanghai. Even before the final, Djokovic sits at the top of men&amp;rsquo;s current all-surface Elo ratings. In this post we look at the how the current top 8 on the men&amp;rsquo;s and women&amp;rsquo;s tours have won there place among the ratings leaders.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Nadal Set for a 2017 Clay Season Repeat</title>
-      <link>https://skoval.github.io/2018/04/14/nadal-2017-repeat/</link>
+      <link>https://skoval.github.io/2018/04/14/Nadal-2017-Repeat/</link>
       <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2018/04/14/nadal-2017-repeat/</guid>
+      <guid>https://skoval.github.io/2018/04/14/Nadal-2017-Repeat/</guid>
       <description>&lt;p&gt;As the tour prepares for Monte Carlo, Rafael Nadal finds himself at the top of the clay-adjusted Elo ratings for the first time since 2014.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Serve and Return Elo Ratings</title>
-      <link>https://skoval.github.io/2017/11/18/elo-serve-return/</link>
+      <link>https://skoval.github.io/2017/11/18/Elo-Serve-Return/</link>
       <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2017/11/18/elo-serve-return/</guid>
+      <guid>https://skoval.github.io/2017/11/18/Elo-Serve-Return/</guid>
       <description>&lt;p&gt;The Elo rating system is one of the most popular tools for rating player and team performance. In this post, I show how we can take the Elo system beyond match wins and use it to rate players on the two most fundamental skills in the sport: serving and returning.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>The 2016 US Open Men Would Smash 2017</title>
-      <link>https://skoval.github.io/2017/09/02/weak-us-open/</link>
+      <link>https://skoval.github.io/2017/09/02/Weak-US-Open/</link>
       <pubDate>Sat, 02 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2017/09/02/weak-us-open/</guid>
+      <guid>https://skoval.github.io/2017/09/02/Weak-US-Open/</guid>
       <description>&lt;p&gt;There has been a lot of talk about the lacklustre men&amp;rsquo;s field at this year&amp;rsquo;s US Open. What better way to put this idea to the test than to have the 2017 US Open men&amp;rsquo;s draw go head-to-head against the draw of 2016?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Rethinking Women&#39;s French Open Seedings</title>
-      <link>https://skoval.github.io/2017/06/03/womens-seeds-french-open/</link>
+      <link>https://skoval.github.io/2017/06/03/Womens-Seeds-French-Open/</link>
       <pubDate>Sat, 03 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2017/06/03/womens-seeds-french-open/</guid>
+      <guid>https://skoval.github.io/2017/06/03/Womens-Seeds-French-Open/</guid>
       <description>&lt;p&gt;It only took a few days of main draw play for the 2017 French Open to give fodder to debates on the unpredictability of this year&amp;rsquo;s women&amp;rsquo;s tour. After two rounds, just 9 of the 32 seeds survived to the round of 32, 23 fewer than expected. Those numbers caused &lt;a href=&#34;http://www.tennis.com/pro-game/2017/06/tennis-channel-roland-garros-2017-wta-player-draft-update-french-open/66477/&#34;&gt;tennis.com&lt;/a&gt; to conclude that the women&amp;rsquo;s draw was &amp;ldquo;decimated&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     

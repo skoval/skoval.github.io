@@ -6,17 +6,13 @@
     <description>Recent content in singles on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jul 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://skoval.github.io/categories/singles/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 19 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/categories/singles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Player Ratings Tables Go Live!</title>
-      <link>https://skoval.github.io/2019/07/19/updating-player-ratings/</link>
+      <link>https://skoval.github.io/2019/07/19/Updating-Player-Ratings/</link>
       <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2019/07/19/updating-player-ratings/</guid>
+      <guid>https://skoval.github.io/2019/07/19/Updating-Player-Ratings/</guid>
       <description>&lt;p&gt;A new section of the website is debuted: &amp;lsquo;Ratings&amp;rsquo;. Here (the hope) is to provide the top 100 singles and doubles men and women on tour each week using MOV Elo ratings.&lt;/p&gt;</description>
     </item>
     
