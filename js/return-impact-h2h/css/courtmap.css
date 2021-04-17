@@ -1,0 +1,219 @@
+div.radio {
+  display: inline-block;
+  width: 8%;
+  vertical-align: middle;
+  padding-left: 0px;
+}
+
+input[type="radio"] {  
+  padding-top: 2em;
+  text-align: left;
+  display: inline-block;
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px; margin: -1px; 
+  overflow: hidden; 
+  position: absolute; 
+  width: 1px;
+}
+
+label {
+  position: relative;
+  cursor: pointer;
+  line-height: 2;
+  color: #4c5c68;
+  font-family: Ubuntu-Medium, sans-serif;
+  font-size: 14px;
+}
+
+input[type="radio"] + span {
+  display: block;
+  text-align: left;
+  position: relative;
+}
+
+input[type="radio"] + span:before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.25em;
+  border-radius: 1em;
+  border: 0.125em solid #fff;
+  box-shadow: 0 0 0 0.15em #4c5c68;
+  margin-right: 0.75em;
+  transition: 0.5s ease all;
+}
+
+[type="radio"]:checked + span:before {
+  background:  #f5d02d;
+}
+
+[type="radio"]:focus + span:after {
+  line-height: 1;
+  vertical-align: -0.125em;
+  color: #ea4b3c;
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form-inline {
+  padding-top: 0%;
+  margin-left: -1%;
+  display: inline-block;
+  flex-flow: row wrap;
+  align-items: left;
+  text-align: center;
+}
+
+path.domain {
+  stroke-width: 0;
+}
+
+.grid line {
+  stroke: #dcdcdd;
+  stroke-opacity: 0.5;
+  shape-rendering: crispEdges;
+}
+
+line.courtline {
+  stroke: #c5c3c6;
+  stroke-width: 8;
+  stroke-opacity: 1;
+}
+
+line.gridline {
+  stroke: #c5c3c6;
+  stroke-width: 1;
+  stroke-opacity: 0.5;
+  shape-rendering: crispEdges;
+}        
+
+rect.courtrect {
+    fill: #dcdcdd;
+    fill-opacity: 0.3;
+}  
+
+rect.courtbg {
+  fill: #d5d5d5;
+  fill-opacity: 0.5;
+}    
+
+rect.plotbg {
+  fill: white;
+}          
+
+ .legendaxis line {
+    fill: none;
+    stroke:  #dcdcdd;
+    stroke-width: 3;
+ }
+
+ .legendtick line {
+    stroke-opacity: 0;
+ }
+
+ .grid text {
+    padding-left: 2%;
+    fill: #d5d5d5;
+    font-size: 12px;
+ }           
+
+.top line {
+  stroke: #dcdcdd;
+  stroke-opacity: 0.5;
+  shape-rendering: crispEdges;
+}
+
+ .top text {
+    fill: #d5d5d5;
+    font-size: 12px;
+ }         
+
+
+ .legendtick text {
+    fill: #4c5c68;
+    font-size: 18px;
+ }         
+
+ circle.highlighter-circle {
+    fill:  #f5d02d;
+ }
+
+ text.highlighter-title {
+    fill:  #4c5c68;
+    text-align: center;
+ }  
+
+
+@font-face {
+  font-family: Ubuntu-Medium;
+  src: url('../fonts/ubuntu/Ubuntu-Medium.ttf'); 
+}
+
+text {
+  font-family: Ubuntu-Medium, sans-serif;
+}
+
+
+ text.highlighter-coordinate {
+    fill:  #4c5c68;
+    font-size: 18px;
+    text-align: right;
+ }     
+
+input {
+  position: relative;
+  border: 1px; 
+  background: #eaeaea; 
+  opacity: 0.8;
+  padding: 16px 28px; 
+  font-size: 14px; 
+  margin: 20px 10px 10px 0; 
+  color: #4c5c68;
+  font-family: Ubuntu-Medium, sans-serif;
+}
+
+input.players {   
+  width: 20%;
+  background: rgba(59, 187, 117, 0.3);
+}
+
+input.opponents {   
+  width: 20%;
+  background: rgba(231, 142, 12, 0.3);
+}
+
+input.surfaces {   
+  width: 15%;
+}
+
+input:focus {   
+ /* background-color: #f5d02d; */
+  outline: none;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin-left: 1%;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
