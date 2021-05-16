@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Stat for Change of Direction</title>
+      <link>https://skoval.github.io/2021/05/16/Change-of-Direction/</link>
+      <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2021/05/16/Change-of-Direction/</guid>
+      <description>&lt;p&gt;&lt;i&gt;Change of direction&lt;/i&gt; is the skill of moving the ball from one side of the court to the other. Being able to control the direction of the ball during a tennis point can be a key strategy for forcing an opponent out of a comfortable position and setting up a winning shot. With modern tracking data, where the trajectory of every shot in a point is known, we can begin to investigate how change of direction is best quantified. This post is a collection of some initial ideas on a statistic for change of direction.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>A Spatial Exploration of Serve Patterns</title>
       <link>https://skoval.github.io/2021/05/02/Spatial-Exploration-Serves/</link>
