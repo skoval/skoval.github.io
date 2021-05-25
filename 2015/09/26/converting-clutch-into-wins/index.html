@@ -149,7 +149,7 @@ if (!doNotTrack) {
 </figure>
 <p>Win prediction is often referred to as the &ldquo;holy grail&rdquo; in sports statistics. This was one of the first problems tackled by Bill James, the father of sabermetrics and catalyst of the <em>Moneyball</em> sea change in baseball. A major contribution James made earlier in his career was to derive a simple formula to calculate a team&rsquo;s season win expectations based on a single measure of strength: runs scored. James presented his formula in the <a href="http://baseballanalysts.com/archives/2004/08/abstracts_from_16.php">1981 Baseball Abstract</a>. Sadly, I couldn&rsquo;t find an electronic version of that piece so I will reproduce the formula here:</p>
 <p>$$
-Win% = RS^2/(RS^2 + RA^2)
+\mbox{Win%} = \frac{RS^2}{(RS^2 + RA^2)}
 $$</p>
 <p>Here, $RS$ are a team&rsquo;s runs scored in a season, summed over all games, and $RA$ is the corresponding runs allowed, that is, the sum of runs their opponents earned against them in the same games. Because of the similarity of its form with the Pythagorean theorem, it has become known as the Pythagorean expectation for wins.</p>
 <p>Since its discovery, versions of the Pythagorean formula have appeared in most major sports. Perhaps the most famous version is used in Ken Pomeroy&rsquo;s <a href="https://en.wikipedia.org/wiki/Pomeroy_College_Basketball_Ratings">NCAA basketball ratings</a>, which have become the go-to resource for predicting brackets for the March Madness tournament.</p>
@@ -159,7 +159,7 @@ $$</p>
 <p>In a talk presented at NESSIS, I extend the Pythagorean formula to tennis. The main question this work wanted to answer was whether there is a simple performance measure in tennis that approximates the Pythagorean relationship and is also an accurate measure of a player&rsquo;s match wins in a season? The surprising punchline is <em>yes</em>.</p>
 <p>When 14 common performance measures were plugged into the following general form of the Pythagorean model, using ATP match data for 2004  to 2014 (over 50,000 matches),</p>
 <p>$$
-Win% = X^\alpha/(X^\alpha + Y^\alpha)
+\mbox{Win%} = \frac{X^\alpha}{(X^\alpha + Y^\alpha)}
 $$</p>
 <p>several were found to give a coefficient close to the Pythagorean coefficient of 2. Interestingly, all relate to return performance: break points won, break point opportunities, first and second return points won. (Note that some measures, like total return points won, are not considered here because they were very highly correlated with one or more of the other measures considered.)</p>
 <figure style="float:left;">
