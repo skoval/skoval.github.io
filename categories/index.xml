@@ -6,7 +6,25 @@
     <description>Recent content in Categories on Stats On the T</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>nadal</title>
+      <link>https://skoval.github.io/categories/nadal/</link>
+      <pubDate>Mon, 24 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/nadal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ratings</title>
+      <link>https://skoval.github.io/categories/ratings/</link>
+      <pubDate>Mon, 24 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/ratings/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>tracking data</title>
       <link>https://skoval.github.io/categories/tracking-data/</link>
@@ -269,15 +287,6 @@
     </item>
     
     <item>
-      <title>ratings</title>
-      <link>https://skoval.github.io/categories/ratings/</link>
-      <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/ratings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>doubles</title>
       <link>https://skoval.github.io/categories/doubles/</link>
       <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
@@ -517,15 +526,6 @@
       <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/categories/novak/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nadal</title>
-      <link>https://skoval.github.io/categories/nadal/</link>
-      <pubDate>Wed, 25 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/nadal/</guid>
       <description></description>
     </item>
     
