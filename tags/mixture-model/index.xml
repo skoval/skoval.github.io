@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 03 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/tags/mixture-model/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What a Model of Player Availability Can Tell Us About Probable Injuries in Tennis</title>
-      <link>https://skoval.github.io/2020/11/03/Schedule-HMM/</link>
+      <link>https://skoval.github.io/2020/11/03/schedule-hmm/</link>
       <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2020/11/03/Schedule-HMM/</guid>
+      <guid>https://skoval.github.io/2020/11/03/schedule-hmm/</guid>
       <description>&lt;p&gt;The 2020 tennis calendar was put into a tailspin by the pandemic. In a normal year, a player&amp;rsquo;s competitive schedule can tell us a lot about a player&amp;rsquo;s overall readiness to play, what I will call a player&amp;rsquo;s &amp;lsquo;availability&amp;rsquo;. In this post, I show how a Hidden Markov Model can be used to describe a player&amp;rsquo;s competitive schedule as the output from periods of varying availability and how irregularities in availability can be a tell-tale sign of probable injury.&lt;/p&gt;</description>
     </item>
     

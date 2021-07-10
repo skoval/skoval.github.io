@@ -9,37 +9,37 @@
     <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/tags/prediction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Have Matches Become Harder to Predict in the Time of Covid?</title>
-      <link>https://skoval.github.io/2021/03/06/Unpredictable-Pandemic/</link>
+      <link>https://skoval.github.io/2021/03/06/unpredictable-pandemic/</link>
       <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/03/06/Unpredictable-Pandemic/</guid>
+      <guid>https://skoval.github.io/2021/03/06/unpredictable-pandemic/</guid>
       <description>&lt;p&gt;The pandemic has caused the most sustained disruption to the tennis calendar the sport has ever faced. And, while tennis has returned in some form over the past six months, it has not been a return to normal. With all of the challenges players and events have undergone, many of us are likely wondering whether pro competition has changed in some fundamental way? In this post, I try to shed light on this question by looking at trends in event predictability before and during the pandemic.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Assessing the Fit of a Serve Prediction Model</title>
-      <link>https://skoval.github.io/2019/02/22/Serve-Model-Check/</link>
+      <link>https://skoval.github.io/2019/02/22/serve-model-check/</link>
       <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2019/02/22/Serve-Model-Check/</guid>
+      <guid>https://skoval.github.io/2019/02/22/serve-model-check/</guid>
       <description>&lt;p&gt;A model that could predict a player&amp;rsquo;s performance on serve would have a number of interesting uses like forecasting the outcome of matches or identifying surprising performances. But for any of these uses the model would need to be accurate and reliable. How should we evaluate a model&amp;rsquo;s performance? And how do we know when a model is good enough?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Identifying Surprising Performances with Prediction Intervals</title>
-      <link>https://skoval.github.io/2019/02/15/Serve-Prediction-Interval/</link>
+      <link>https://skoval.github.io/2019/02/15/serve-prediction-interval/</link>
       <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2019/02/15/Serve-Prediction-Interval/</guid>
+      <guid>https://skoval.github.io/2019/02/15/serve-prediction-interval/</guid>
       <description>&lt;p&gt;Every player has days when everything seems to work and other days when nothing seems to go right. Saying when a player has truly over (or under) performed is tricky in tennis because there is always an opponent on the other side of the net that is also influencing the outcome of points. In this post, I look at a basic strategy to try to isolate the ability of the server and receiver, and discuss how this might be used to identify surprising performances on serve.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Shot Quality Maps</title>
-      <link>https://skoval.github.io/2017/10/27/Shot-Quality-Maps/</link>
+      <link>https://skoval.github.io/2017/10/27/shot-quality-maps/</link>
       <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2017/10/27/Shot-Quality-Maps/</guid>
+      <guid>https://skoval.github.io/2017/10/27/shot-quality-maps/</guid>
       <description>&lt;p&gt;Imagine you could measure the quality of every shot during a tennis match. What would it reveal about a player&amp;rsquo;s performance and where on the court they perform best?&lt;/p&gt;</description>
     </item>
     

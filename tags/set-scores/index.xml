@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 22 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/tags/set-scores/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Which Set Scores Are Most Likely for all Combinations of Servers?</title>
-      <link>https://skoval.github.io/2020/02/21/Probable-Set-Scores/</link>
+      <link>https://skoval.github.io/2020/02/21/probable-set-scores/</link>
       <pubDate>Sat, 22 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2020/02/21/Probable-Set-Scores/</guid>
+      <guid>https://skoval.github.io/2020/02/21/probable-set-scores/</guid>
       <description>&lt;p&gt;In her debut match after nearly 8 years out of professional play, Kim Clijsters impressed many by taking Garbine Muguruza to a second set tiebreak. Neither player was winning more than 60% of points on serve, which made me wonder how likely a tiebreak was in this case. In this post, I use a simple Monte Carlo model to examine the most likely set scores for a variety of server matchups.&lt;/p&gt;</description>
     </item>
     

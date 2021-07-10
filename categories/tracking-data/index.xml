@@ -9,46 +9,46 @@
     <lastBuildDate>Sun, 16 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/categories/tracking-data/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Stat for Change of Direction</title>
-      <link>https://skoval.github.io/2021/05/16/Change-of-Direction/</link>
+      <link>https://skoval.github.io/2021/05/16/change-of-direction/</link>
       <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/05/16/Change-of-Direction/</guid>
+      <guid>https://skoval.github.io/2021/05/16/change-of-direction/</guid>
       <description>&lt;p&gt;&lt;i&gt;Change of direction&lt;/i&gt; is the skill of moving the ball from one side of the court to the other. Being able to control the direction of the ball during a tennis point can be a key strategy for forcing an opponent out of a comfortable position and setting up a winning shot. With modern tracking data, where the trajectory of every shot in a point is known, we can begin to investigate how change of direction is best quantified. This post is a collection of some initial ideas on a statistic for change of direction.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>A Spatial Exploration of Serve Patterns</title>
-      <link>https://skoval.github.io/2021/05/02/Spatial-Exploration-Serves/</link>
+      <link>https://skoval.github.io/2021/05/02/spatial-exploration-serves/</link>
       <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/05/02/Spatial-Exploration-Serves/</guid>
+      <guid>https://skoval.github.io/2021/05/02/spatial-exploration-serves/</guid>
       <description>&lt;p&gt;Using a recently discovered source of summary tracking data for Grand Slam matches, &lt;a href=&#34;https://twitter.com/ptea_test?s=20&#34;&gt;Peter Tea&lt;/a&gt; explores the spatial features of top men&amp;rsquo;s and women&amp;rsquo;s serves.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Return Impact Head-to-Heads</title>
-      <link>https://skoval.github.io/2021/04/17/Return-Impact-H2H/</link>
+      <link>https://skoval.github.io/2021/04/17/return-impact-h2h/</link>
       <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/04/17/Return-Impact-H2H/</guid>
+      <guid>https://skoval.github.io/2021/04/17/return-impact-h2h/</guid>
       <description>&lt;p&gt;Head-to-heads are one of the most fascinating aspects of tennis. While it&amp;rsquo;s easy to look up who is ahead on one record or another, there are still many fundamental patterns of play that we can&amp;rsquo;t easily compare across players. This post goes a small (but I hope interesting) way towards remedying that by introducing a head-to-head visualization tool for comparing the return impact patterns of ATP players.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Introducing Return Impact Maps</title>
-      <link>https://skoval.github.io/2021/01/19/Return-Impact-Maps/</link>
+      <link>https://skoval.github.io/2021/01/19/return-impact-maps/</link>
       <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/01/19/Return-Impact-Maps/</guid>
+      <guid>https://skoval.github.io/2021/01/19/return-impact-maps/</guid>
       <description>&lt;p&gt;Which of the top ATP players are the most aggressive on the serve return? Which are the most defensive? Is Andrey Rublev&amp;rsquo;s serve return style closer to Roger Federer&amp;rsquo;s or Novak Djokovic&amp;rsquo;s? In this post, I introduce an interactive visualization tool to help answer these and many other questions about the return impact of top men&amp;rsquo;s tennis players.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>A Foray Into Return Impact Patterns</title>
-      <link>https://skoval.github.io/2020/11/28/Return-Impact/</link>
+      <link>https://skoval.github.io/2020/11/28/return-impact/</link>
       <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2020/11/28/Return-Impact/</guid>
+      <guid>https://skoval.github.io/2020/11/28/return-impact/</guid>
       <description>&lt;p&gt;The serve return is the most important shot for a receiver.  What can receivers do to put themselves in a better position to make a good impact on the serve return? The answer to that question is too big a task for one blog post alone. As a small first step, I take a look at a new public data source that includes the position of players at the time of return impact in ATP matches. Through a handful of case studies, it delves into the kind of patterns in return positioning these data could help reveal.&lt;/p&gt;</description>
     </item>
     

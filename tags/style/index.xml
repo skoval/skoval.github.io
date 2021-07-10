@@ -9,46 +9,46 @@
     <lastBuildDate>Sat, 23 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/tags/style/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hardcourt First Return Impact Styles</title>
-      <link>https://skoval.github.io/2021/01/23/Hardcourt-Return-Impact-Styles/</link>
+      <link>https://skoval.github.io/2021/01/23/hardcourt-return-impact-styles/</link>
       <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/01/23/Hardcourt-Return-Impact-Styles/</guid>
+      <guid>https://skoval.github.io/2021/01/23/hardcourt-return-impact-styles/</guid>
       <description>&lt;p&gt;Once we can measure player impact patterns on the return, it is natural to use these patterns to compare players. This post delves into these comparisons and presents a set of distinct impact types that describe the impact styles of top ATP players when returning the first serve on hardcourts.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Who&#39;s Got the Power? - Classifying Speed Styles on Serve</title>
-      <link>https://skoval.github.io/2020/10/10/Serve-Power-Styles/</link>
+      <link>https://skoval.github.io/2020/10/10/serve-power-styles/</link>
       <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2020/10/10/Serve-Power-Styles/</guid>
+      <guid>https://skoval.github.io/2020/10/10/serve-power-styles/</guid>
       <description>&lt;p&gt;A recent data feature on the ATP website gives us insight into the average speeds of shots at more top events than just the Grand Slams. What can these speed stats tell us about a player&amp;rsquo;s style? In this post, I look at the speeds on first and second serve and use a mixture model to identify the different power styles that are used by today&amp;rsquo;s top male players.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Putting a Basic Playing Style Classifier to the Test</title>
-      <link>https://skoval.github.io/2019/04/19/Testing-Match-Stats-And-Style/</link>
+      <link>https://skoval.github.io/2019/04/19/testing-match-stats-and-style/</link>
       <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2019/04/19/Testing-Match-Stats-And-Style/</guid>
+      <guid>https://skoval.github.io/2019/04/19/testing-match-stats-and-style/</guid>
       <description>&lt;p&gt;Any measure of playing style is only as good as what it can explain beyond player overall ability. If we apply this standard to playing style categories derived from basic match stats, how do they hold up?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>More Exploration on Using Match Stats to Classify Playing Styles</title>
-      <link>https://skoval.github.io/2019/04/12/Match-Stats-And-Style/</link>
+      <link>https://skoval.github.io/2019/04/12/match-stats-and-style/</link>
       <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2019/04/12/Match-Stats-And-Style/</guid>
+      <guid>https://skoval.github.io/2019/04/12/match-stats-and-style/</guid>
       <description>&lt;p&gt;Last week, I looked at whether basic match stats, like aces and minutes played per point, could help describe a player&amp;rsquo;s playing style. In this post, I expand on the set of style features and delve into the clusters of playing styles they reveal.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>What Can Match Stats Tell Us About Playing Styles?</title>
-      <link>https://skoval.github.io/2019/04/05/Match-Stats-And-Style/</link>
+      <link>https://skoval.github.io/2019/04/05/match-stats-and-style/</link>
       <pubDate>Fri, 05 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2019/04/05/Match-Stats-And-Style/</guid>
+      <guid>https://skoval.github.io/2019/04/05/match-stats-and-style/</guid>
       <description>&lt;p&gt;Recently, I&amp;rsquo;ve had a few posts on head-to-head effects. The biggest takeaway was one we probably all knew going in: Head-to-head effects may exist, but good luck finding them. With so many small sample sizes for most head-to-heads, we need a way to group &amp;lsquo;similar&amp;rsquo; players. In this post, I look at whether categorizing players by playing style might be possible using basic match stats.&lt;/p&gt;</description>
     </item>
     

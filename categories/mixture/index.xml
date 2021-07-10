@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 10 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/categories/mixture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Who&#39;s Got the Power? - Classifying Speed Styles on Serve</title>
-      <link>https://skoval.github.io/2020/10/10/Serve-Power-Styles/</link>
+      <link>https://skoval.github.io/2020/10/10/serve-power-styles/</link>
       <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2020/10/10/Serve-Power-Styles/</guid>
+      <guid>https://skoval.github.io/2020/10/10/serve-power-styles/</guid>
       <description>&lt;p&gt;A recent data feature on the ATP website gives us insight into the average speeds of shots at more top events than just the Grand Slams. What can these speed stats tell us about a player&amp;rsquo;s style? In this post, I look at the speeds on first and second serve and use a mixture model to identify the different power styles that are used by today&amp;rsquo;s top male players.&lt;/p&gt;</description>
     </item>
     
