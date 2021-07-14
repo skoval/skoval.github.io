@@ -17,15 +17,6 @@
     </item>
     
     <item>
-      <title>ratings</title>
-      <link>https://skoval.github.io/categories/ratings/</link>
-      <pubDate>Mon, 24 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://skoval.github.io/categories/ratings/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>tracking data</title>
       <link>https://skoval.github.io/categories/tracking-data/</link>
       <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate>
@@ -283,6 +274,15 @@
       <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://skoval.github.io/categories/compeitiveness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ratings</title>
+      <link>https://skoval.github.io/categories/ratings/</link>
+      <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/categories/ratings/</guid>
       <description></description>
     </item>
     
