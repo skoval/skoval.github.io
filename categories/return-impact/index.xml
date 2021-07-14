@@ -9,28 +9,28 @@
     <lastBuildDate>Sat, 17 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/categories/return-impact/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Return Impact Head-to-Heads</title>
-      <link>https://skoval.github.io/2021/04/17/return-impact-h2h-/</link>
+      <link>https://skoval.github.io/2021/04/17/return-impact-h2h/</link>
       <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/04/17/return-impact-h2h-/</guid>
+      <guid>https://skoval.github.io/2021/04/17/return-impact-h2h/</guid>
       <description>&lt;p&gt;Head-to-heads are one of the most fascinating aspects of tennis. While it&amp;rsquo;s easy to look up who is ahead on one record or another, there are still many fundamental patterns of play that we can&amp;rsquo;t easily compare across players. This post goes a small (but I hope interesting) way towards remedying that by introducing a head-to-head visualization tool for comparing the return impact patterns of ATP players.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hardcourt First Return Impact Styles</title>
-      <link>https://skoval.github.io/2021/01/23/hardcourt-return-impact-styles-/</link>
+      <link>https://skoval.github.io/2021/01/23/hardcourt-return-impact-styles/</link>
       <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/01/23/hardcourt-return-impact-styles-/</guid>
+      <guid>https://skoval.github.io/2021/01/23/hardcourt-return-impact-styles/</guid>
       <description>&lt;p&gt;Once we can measure player impact patterns on the return, it is natural to use these patterns to compare players. This post delves into these comparisons and presents a set of distinct impact types that describe the impact styles of top ATP players when returning the first serve on hardcourts.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Introducing Return Impact Maps</title>
-      <link>https://skoval.github.io/2021/01/19/return-impact-maps-/</link>
+      <link>https://skoval.github.io/2021/01/19/return-impact-maps/</link>
       <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/01/19/return-impact-maps-/</guid>
+      <guid>https://skoval.github.io/2021/01/19/return-impact-maps/</guid>
       <description>&lt;p&gt;Which of the top ATP players are the most aggressive on the serve return? Which are the most defensive? Is Andrey Rublev&amp;rsquo;s serve return style closer to Roger Federer&amp;rsquo;s or Novak Djokovic&amp;rsquo;s? In this post, I introduce an interactive visualization tool to help answer these and many other questions about the return impact of top men&amp;rsquo;s tennis players.&lt;/p&gt;</description>
     </item>
     
