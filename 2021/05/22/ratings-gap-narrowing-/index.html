@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>The Clay Ratings Gap is Narrowing - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="The Clay Ratings Gap is Narrowing" />
+<meta property="og:description" content="In just one week, Rafael Nadal will begin his journey towards a 14th Roland Garros title. Since his first win in Paris in 2005, Nadal has dominated the surface and only injury has been a consistent foe. Will 2021 continue that pattern? This post looks at the trends in player clay ratings ahead of the French Open main draw and the story they tell about a growing threat to Nadal&rsquo;s reign as the definitive &lsquo;King of Clay&rsquo;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2021/05/22/ratings-gap-narrowing-/" />
+<meta property="article:published_time" content="2021-05-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-05-24T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">The Clay Ratings Gap is Narrowing</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-05-24T00:00:00Z">May 24, 2021</time></div>
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/nadal/" rel="category">nadal</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>In just one week, Rafael Nadal will begin his journey towards a 14th Roland Garros title. Since his first win in Paris in 2005, Nadal has dominated the surface and only injury has been a consistent foe. Will 2021 continue that pattern? This post looks at the trends in player clay ratings ahead of the French Open main draw and the story they tell about a growing threat to Nadal&rsquo;s reign as the definitive &lsquo;King of Clay&rsquo;.</p>
+<p>In a few days, when main draw play begins at the French Open, all attention will be on Rafael Nadal and whether he can extend his already incredible record on the red dirt once again. The clay warmup is our best indicator of Nadal&rsquo;s form and readiness for a 14-peat title. And that warmup performance could best be described as mixed. There were the two quarterfinal losses at Monte Carlo and Madrid along side two title wins in Barcelona and Rome.</p>
+<p>Chinks in Nadal&rsquo;s armour were present throughout his warmup events. There were multiple sets where Nadal&rsquo;s first serve and normally-deadly forehand appeared to have gone AWOL. And Nadal dropped sets in the finals of both of his title wins. That may seem a small point but it becomes more telling when one considers that Nadal has had straight-set final wins at a clay warm-up event at least once in every year from 2007 to 2018.</p>
+<p>The highs and lows of Nadal&rsquo;s performance in the last weeks make it difficult to know exactly where he stands at this stage both relative to the field and to his historical self. Is Nadal in the same position he was ahead of the 2020 French Open? Is it possible that he is no longer the favorite for the French Open title?</p>
+<p>It&rsquo;s exactly in this situation where systems like Elo ratings become so useful. They tick along in the background as every match completes and adjust the estimates of player strength according each result and the quality of opponent that result was earned against. So what can these ratings tells us about Nadal&rsquo;s position going into the French Open?</p>
+<p>The chart below are the pre-French Open rating of Nadal based on clay-adjusted MOV Elo ratings from 2018 to now. I&rsquo;ve used this period because I think 2018 is the most recent time when Nadal was almost invincible on clay. The points in grey are the 9 competitors whose ratings are nearest to Nadal&rsquo;s. As in previous years, we see that Nadal is the ratings favorite for the title. But, crucially, since 2018, the security of his top position has been declining with each year, going from a stratospheric +2742 in 2018 to +2623 in 2021— a still massive number but a more than 100 point shift that both Nadal and his competitors must feel.</p>
+<div style="text-align: center;">
+<figcaption>Figure 1. Clay-Adjusted margin of victory Elo ratings going into Roland Garros, 2018 to 2021.</figcaption>
+<img src="/img/nadal_opponents_clay_elo_gaps.png"  width="90%" style="max-width:70%;" />
+</div>
+<br>
+<p>The other thing that stands out when we look at top clay ratings trends in the past few years is the number of players that are now in the conversation for vying with Nadal. It use to be that Djokovic and Thiem were the only players with a non-zero chance of dethroning Nadal on clay. For the first time in years, there are 8 players who are within 300 points of Nadal&rsquo;s rating. In probability terms, that means players with more than a 15% chance of winning a match against Nadal on clay.</p>
+<p>One of the things that the current ratings miss is <em>momentum</em>. That is, the players who have gotten to where they are on an upward trend. We can see below that several of the players among the most highly rated going into Paris have been on serious tears, most notably Tsitsipas, Sinner, Berrettini, Ruud and Rublev (Karatsev is just outside the top 10 and has had the most dramatic improvement of any player in recent history). To the extent that momentum gives a player an edge (which is often assumed yet rarely demonstrated), this would be another way in which a number in the field would have a potential advantage over Nadal.</p>
+<div style="text-align: center;">
+<figcaption>Figure 2. Clay-Adjusted margin of victory Elo ratings trends of top 10 rated players going into the 2021 Roland Garros.</figcaption>
+<img src="/img/nadal_opponents_clay_elo_2021.png"  width="90%" style="max-width:70%;" />
+</div>
+<p>It&rsquo;s interesting that, even with all of the intangibles that these ratings don&rsquo;t account for (impact of the covid pandemic, player injuries, player confidence, etc.), they still align pretty well with my intuition after watching the European clay-court warmups. They show us that experience and sheer mastery of technique on clay make Nadal the favorite but that he is, at the same time, more vulnerable than ever for a major upset. They also show us that, in spite of all that tennis and the world have been through in the last 16 months, many of the top players are playing at an impressively high level. So time to start practicing those <em>allezs</em>!</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/nadal/" rel="tag">nadal</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/ratings/" rel="tag">ratings</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2021/05/16/change-of-direction-/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">A Stat for Change of Direction</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

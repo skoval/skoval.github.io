@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>A Search for Surprisingly Sparse Head-to-Heads - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="A Search for Surprisingly Sparse Head-to-Heads" />
+<meta property="og:description" content="Small sample size is typical of head-to-heads in pro tennis. Both seeding and knockout tournament designs mean that many pro players have played each other no more than a handful of times or sometimes never at all. Still, I find myself frequently surprised when I come across sparse head-to-heads between some seasoned players. It got me thinking if that reaction is even reasonable and how you might quantify how much some matchups are overdue?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2021/03/14/sparse-head-to-heads-/" />
+<meta property="article:published_time" content="2021-03-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-03-14T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">A Search for Surprisingly Sparse Head-to-Heads</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-03-14T00:00:00Z">March 14, 2021</time></div>
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/head-to-head/" rel="category">head-to-head</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>Small sample size is typical of head-to-heads in pro tennis. Both seeding and knockout tournament designs mean that many pro players have played each other no more than a handful of times or sometimes never at all. Still, I find myself frequently surprised when I come across sparse head-to-heads between some seasoned players. It got me thinking if that reaction is even reasonable and how you might quantify how much some matchups are <i>overdue</i>?</p>
+<p>If you have ever tried to predict outcomes in tennis, you&rsquo;ve had to think about the &lsquo;head-to-head&rsquo;. It is something that commentators also get worked up about, and— <i>Did you factor in their head-to-head?</i>— is likely the first thing they will ask about any model to predict wins in tennis.</p>
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:394px;float:right;padding:2%;"><div style="padding:0;margin:0;text-align:left;"><a href="http://www.gettyimages.com.au/detail/1306520221" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:66.66667% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/1306520221?et=UF8HwRUPRQtE0SQu-mBJaA&tld=com.au&sig=zTeIgms-BOiRDugrajKmPkUIaJAOWBYro9cptyd8cUs=&caption=true&ver=1" scrolling="no" frameborder="0" width="594" height="396" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+<p>The amount of attention on head-to-head has always seemed to me to be out of proportion to the actual information most head-to-heads contain. You look at players rated 1800 or higher at any point in time and the head-to-head is 0.6 on average. So you pick out two top players at random and they are quite likely to have never played each other before.</p>
+<p>I think people look at the 50+ head-to-heads among the Big 3 and somehow think this is representative of the sport, when it&rsquo;s exactly the opposite. I was reminded of that this week when Roger Federer made his return to tour competition in Doha after a 13-month hiatus. With a narrow win over Dan Evans (a H2H = 3 before that match), Federer advanced to play Nikoloz Basilashvili who he had only played once before. With 32 years of pro-level play between them, this seemed to me an unusually sparse history.</p>
+<p><i>But is it? How can we even say what a typical head-to-head should be?</i></p>
+<p>That got me thinking about what factors might be predictive of the length of a head-to-head. Players who can reach later rounds of a tournament make a meeting more likely, so that would suggest the overall skill of two players to be a key factor. And having more years on tour with more events played increases the opportunities for adding to the tally of any possible head-to-head.</p>
+<p>Do skill and match age explain head-to-head counts? I gathered the year-end cumulative head-to-heads of all male players with ratings of 1800 or more (a reasonable definition of &lsquo;top&rsquo; players) from 2003 to the present. Using the combined ratings as a measure of total skill and the combined career matches played as &lsquo;pro age&rsquo;, the chart below summarizes what I found.</p>
+<div style="text-align: center;">
+<figcaption>Figure 1: Head-to-head by competitor combined ratings and career-to-date matches played, 2003 - Present.</figcaption>
+<img src="/img/h2h_ratings.png" alt="h2h exploratory plot" width="90%" style="max-width:70%;" />
+</div>
+<p>The plot reminds me a bit of a high-jump ramp, with head-to-heads of 10+ being outliers among the large mass of low counts. But when those more frequent matchups occur, they do appear to be more common among the more experienced and more highly-rated players. The chance of zero or one head-to-head is quite likely for everyone but still less so for stronger players with more years on tour.</p>
+<p>Given the non-linear nature of the relationships in Figure 1, I used a GAM model for the head-to-head count with the log of combined skill and log of combined career matches as a bivariate smooth. Letting $Y$ be the cumulative head-to-head for two players in a given season, the expected count is</p>
+<p>$$
+log(E[Y]) = \mu + f(\mbox{log_skill}, \mbox{log_matches};\theta)
+$$</p>
+<p>and $Y \sim Poisson(E[Y])$. The $f(.)$ is a smooth that allows us to capture non-linear patterns that might best describe the relationship between skill or match age and head-to-head counts.</p>
+<p>The results from that model are summarized in the heatmap below. Here we see the expected head-to-head count by the total skill and total career matches of the competitors. What should immediately standout is the large swathe of player types expected to have 1 or fewer meetings. Even a head-to-head of 5 would be too small to say much about matchup effects, yet you would need players with 1600 matches or more played and 4000+ combined rating (both the upper 25th percentile of these attributes among possible matchups) to even expect to get that much history between players.</p>
+<div style="text-align: center;">
+<figcaption>Figure 2:  Expected head-to-head for men's singles according to their combined skill and career matches played.</figcaption>
+<img src="/img/h2h_expected_grid.png" alt="h2h expected grid" width="90%" style="max-width:70%;" />
+</div>
+<p>When they met in Doha, Federer and Basilashvili has a combined rating of +4400 and career tour-level matches played just over 1,700, which would suggest an expected head-to-head closer to 6 than 1.</p>
+<p>With a model for expected head-to-head, it is easy to then look for those head-to-heads that are actually well below expectation. I used the model to find the most surprising 0 counts among head-to-heads. The following table are 10 of the most surprisingly sparse. We see the Big 3 among all of these, as the long experience and high-rating of these players means they should have played just about every good player out there at this point. Yet we&rsquo;ve so far been denied clashes between Andrey Rublev and Djokovic, as well as Dustin Brown and Roger Federer. Interestingly, Ricardas Berankis has escaped that challenge twofold, having never met Roger Federer or Rafa Nadal so far in his career. A pro player of his talent and experience would have been expected to have played them each 3 to 4 times by now.</p>
+<table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<caption>Table 1. Current ten most surprising n=0 head-to-heads.</caption>
+<thead>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Player</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Opponent</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Expected H2H</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: center;'>Novak Djokovic</td>
+<td style='text-align: center;'>Pablo Cuevas</td>
+<td style='text-align: center;'>4.4</td>
+</tr>
+<tr style='background-color: #f7f7f7;'>
+<td style='background-color: #f7f7f7; text-align: center;'>Ricardas Berankis</td>
+<td style='background-color: #f7f7f7; text-align: center;'>Roger Federer</td>
+<td style='background-color: #f7f7f7; text-align: center;'>4.2</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Rafael Nadal</td>
+<td style='text-align: center;'>Ricardas Berankis</td>
+<td style='text-align: center;'>3.9</td>
+</tr>
+<tr style='background-color: #f7f7f7;'>
+<td style='background-color: #f7f7f7; text-align: center;'>Roger Federer</td>
+<td style='background-color: #f7f7f7; text-align: center;'>Pablo Andujar</td>
+<td style='background-color: #f7f7f7; text-align: center;'>3.9</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Novak Djokovic</td>
+<td style='text-align: center;'>Andrey Rublev</td>
+<td style='text-align: center;'>3.8</td>
+</tr>
+<tr style='background-color: #f7f7f7;'>
+<td style='background-color: #f7f7f7; text-align: center;'>Dustin Brown</td>
+<td style='background-color: #f7f7f7; text-align: center;'>Roger Federer</td>
+<td style='background-color: #f7f7f7; text-align: center;'>3.8</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Martin Klizan</td>
+<td style='text-align: center;'>Roger Federer</td>
+<td style='text-align: center;'>3.7</td>
+</tr>
+<tr style='background-color: #f7f7f7;'>
+<td style='background-color: #f7f7f7; text-align: center;'>Jiri Vesely</td>
+<td style='background-color: #f7f7f7; text-align: center;'>Roger Federer</td>
+<td style='background-color: #f7f7f7; text-align: center;'>3.6</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Tobias Kamke</td>
+<td style='text-align: center;'>Novak Djokovic</td>
+<td style='text-align: center;'>3.4</td>
+</tr>
+<tr style='background-color: #f7f7f7;'>
+<td style='background-color: #f7f7f7; border-bottom: 2px solid grey; text-align: center;'>Novak Djokovic</td>
+<td style='background-color: #f7f7f7; border-bottom: 2px solid grey; text-align: center;'>Radu Albot</td>
+<td style='background-color: #f7f7f7; border-bottom: 2px solid grey; text-align: center;'>3.2</td>
+</tr>
+</tbody>
+</table>
+<p>Even a pretty simple model for head-to-head counts raises some interesting conclusions. First, adjusting for head-to-head is actually a pretty challenging statistical problem in tennis, given that most head-to-heads are a sample size of 1 or less. The paucity of long head-to-heads also suggests that the belief in style clashes or players who &ldquo;don&rsquo;t match up well&rdquo; against each other is either overblown or based on some gut feeling that can&rsquo;t be easily tested.</p>
+<p>Finally, the small-sample rivalries among tennis players makes you wonder whether the sport, in using knockout designs as their main event structure, might be missing the boat in some sense. If rivalries drive a lot of the interest in individual sports, shouldn&rsquo;t the sport look for ways to encourage deeper head-to-heads? Weighting draw selection by the inverse of head-to-heads could be the least radical option. Some bolder choices could involve using more round robin stages with shorter match formats to allow more meetings while keeping the overall time on court in a season to its current level. If designed well, such a structure could not only add to head-to-head counts but even improve the chance that better players advance out of the group stage and into later rounds. I&rsquo;m not sure the tour finals is the right model here, even end-of-season effects aside, but some variants on that theme could be worth considering.</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/head-to-head/" rel="tag">head-to-head</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2021/03/06/unpredictable-pandemic-/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Have Matches Become Harder to Predict in the Time of Covid?</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/2021/04/17/return-impact-h2h-/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Return Impact Head-to-Heads</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

@@ -9,73 +9,73 @@
     <lastBuildDate>Mon, 24 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Clay Ratings Gap is Narrowing</title>
-      <link>https://skoval.github.io/2021/05/22/ratings-gap-narrowing/</link>
+      <link>https://skoval.github.io/2021/05/22/ratings-gap-narrowing-/</link>
       <pubDate>Mon, 24 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/05/22/ratings-gap-narrowing/</guid>
+      <guid>https://skoval.github.io/2021/05/22/ratings-gap-narrowing-/</guid>
       <description>&lt;p&gt;In just one week, Rafael Nadal will begin his journey towards a 14th Roland Garros title. Since his first win in Paris in 2005, Nadal has dominated the surface and only injury has been a consistent foe. Will 2021 continue that pattern? This post looks at the trends in player clay ratings ahead of the French Open main draw and the story they tell about a growing threat to Nadal&amp;rsquo;s reign as the definitive &amp;lsquo;King of Clay&amp;rsquo;.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>A Stat for Change of Direction</title>
-      <link>https://skoval.github.io/2021/05/16/change-of-direction/</link>
+      <link>https://skoval.github.io/2021/05/16/change-of-direction-/</link>
       <pubDate>Sun, 16 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/05/16/change-of-direction/</guid>
+      <guid>https://skoval.github.io/2021/05/16/change-of-direction-/</guid>
       <description>&lt;p&gt;&lt;i&gt;Change of direction&lt;/i&gt; is the skill of moving the ball from one side of the court to the other. Being able to control the direction of the ball during a tennis point can be a key strategy for forcing an opponent out of a comfortable position and setting up a winning shot. With modern tracking data, where the trajectory of every shot in a point is known, we can begin to investigate how change of direction is best quantified. This post is a collection of some initial ideas on a statistic for change of direction.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>A Spatial Exploration of Serve Patterns</title>
-      <link>https://skoval.github.io/2021/05/02/spatial-exploration-serves/</link>
+      <link>https://skoval.github.io/2021/05/02/spatial-exploration-serves-/</link>
       <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/05/02/spatial-exploration-serves/</guid>
+      <guid>https://skoval.github.io/2021/05/02/spatial-exploration-serves-/</guid>
       <description>&lt;p&gt;Using a recently discovered source of summary tracking data for Grand Slam matches, &lt;a href=&#34;https://twitter.com/ptea_test?s=20&#34;&gt;Peter Tea&lt;/a&gt; explores the spatial features of top men&amp;rsquo;s and women&amp;rsquo;s serves.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Return Impact Head-to-Heads</title>
-      <link>https://skoval.github.io/2021/04/17/return-impact-h2h/</link>
+      <link>https://skoval.github.io/2021/04/17/return-impact-h2h-/</link>
       <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/04/17/return-impact-h2h/</guid>
+      <guid>https://skoval.github.io/2021/04/17/return-impact-h2h-/</guid>
       <description>&lt;p&gt;Head-to-heads are one of the most fascinating aspects of tennis. While it&amp;rsquo;s easy to look up who is ahead on one record or another, there are still many fundamental patterns of play that we can&amp;rsquo;t easily compare across players. This post goes a small (but I hope interesting) way towards remedying that by introducing a head-to-head visualization tool for comparing the return impact patterns of ATP players.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>A Search for Surprisingly Sparse Head-to-Heads</title>
-      <link>https://skoval.github.io/2021/03/14/sparse-head-to-heads/</link>
+      <link>https://skoval.github.io/2021/03/14/sparse-head-to-heads-/</link>
       <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/03/14/sparse-head-to-heads/</guid>
+      <guid>https://skoval.github.io/2021/03/14/sparse-head-to-heads-/</guid>
       <description>&lt;p&gt;Small sample size is typical of head-to-heads in pro tennis. Both seeding and knockout tournament designs mean that many pro players have played each other no more than a handful of times or sometimes never at all. Still, I find myself frequently surprised when I come across sparse head-to-heads between some seasoned players. It got me thinking if that reaction is even reasonable and how you might quantify how much some matchups are &lt;i&gt;overdue&lt;/i&gt;?&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Have Matches Become Harder to Predict in the Time of Covid?</title>
-      <link>https://skoval.github.io/2021/03/06/unpredictable-pandemic/</link>
+      <link>https://skoval.github.io/2021/03/06/unpredictable-pandemic-/</link>
       <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/03/06/unpredictable-pandemic/</guid>
+      <guid>https://skoval.github.io/2021/03/06/unpredictable-pandemic-/</guid>
       <description>&lt;p&gt;The pandemic has caused the most sustained disruption to the tennis calendar the sport has ever faced. And, while tennis has returned in some form over the past six months, it has not been a return to normal. With all of the challenges players and events have undergone, many of us are likely wondering whether pro competition has changed in some fundamental way? In this post, I try to shed light on this question by looking at trends in event predictability before and during the pandemic.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hardcourt First Return Impact Styles</title>
-      <link>https://skoval.github.io/2021/01/23/hardcourt-return-impact-styles/</link>
+      <link>https://skoval.github.io/2021/01/23/hardcourt-return-impact-styles-/</link>
       <pubDate>Sat, 23 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/01/23/hardcourt-return-impact-styles/</guid>
+      <guid>https://skoval.github.io/2021/01/23/hardcourt-return-impact-styles-/</guid>
       <description>&lt;p&gt;Once we can measure player impact patterns on the return, it is natural to use these patterns to compare players. This post delves into these comparisons and presents a set of distinct impact types that describe the impact styles of top ATP players when returning the first serve on hardcourts.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Introducing Return Impact Maps</title>
-      <link>https://skoval.github.io/2021/01/19/return-impact-maps/</link>
+      <link>https://skoval.github.io/2021/01/19/return-impact-maps-/</link>
       <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://skoval.github.io/2021/01/19/return-impact-maps/</guid>
+      <guid>https://skoval.github.io/2021/01/19/return-impact-maps-/</guid>
       <description>&lt;p&gt;Which of the top ATP players are the most aggressive on the serve return? Which are the most defensive? Is Andrey Rublev&amp;rsquo;s serve return style closer to Roger Federer&amp;rsquo;s or Novak Djokovic&amp;rsquo;s? In this post, I introduce an interactive visualization tool to help answer these and many other questions about the return impact of top men&amp;rsquo;s tennis players.&lt;/p&gt;</description>
     </item>
     
