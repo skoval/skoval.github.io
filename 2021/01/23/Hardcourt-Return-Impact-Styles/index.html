@@ -41,7 +41,7 @@
 	<meta property="og:title" content="Hardcourt First Return Impact Styles" />
 <meta property="og:description" content="Once we can measure player impact patterns on the return, it is natural to use these patterns to compare players. This post delves into these comparisons and presents a set of distinct impact types that describe the impact styles of top ATP players when returning the first serve on hardcourts." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://skoval.github.io/2021/01/23/hardcourt-return-impact-styles/" />
+<meta property="og:url" content="https://skoval.github.io/2021/01/23/Hardcourt-Return-Impact-Styles/" />
 <meta property="article:published_time" content="2021-01-23T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-01-23T00:00:00+00:00" />
 
@@ -149,10 +149,10 @@ if (!doNotTrack) {
 		</header>
 	<div class="content post__content clearfix">
 			<p>Once we can measure player impact patterns on the return, it is natural to use these patterns to compare players. This post delves into these comparisons and presents a set of distinct impact types that describe the impact styles of top ATP players when returning the first serve on hardcourts.</p>
-<p>I recently introduced the <a href="http://on-the-t.com/2021/01/19/return-impact-maps/">Return Impact Map</a>: an interactive visualization tool for exploring the impact characteristics of receivers. That mapping tool is ideal for seeing the tendencies of individual players. However, focusing on individual players does not make it easy to see common tendencies across players or determine which players are more or less similar.</p>
+<p>I recently introduced the <a href="http://on-the-t.com/2021/01/19/Return-Impact-Maps/">Return Impact Map</a>: an interactive visualization tool for exploring the impact characteristics of receivers. That mapping tool is ideal for seeing the tendencies of individual players. However, focusing on individual players does not make it easy to see common tendencies across players or determine which players are more or less similar.</p>
 <p>So, to complement the detailed views of the Return Impact Map, this post will present a summary of the distinct impact styles of top ATP players.</p>
 <p>When I refer to &lsquo;an  impact style&rsquo;, I am trying to get at an impact pattern that is representative of a group of players. This suggests that identifying a style is the same as finding players whose impact characteristics are similar in some sense.</p>
-<p>Finding similar players starts by measuring the distance between each player&rsquo;s impact characteristics. In any given situation a player&rsquo;s impact is measured by the expected <code>X</code> and <code>Y</code> (depth and width) coordinate of the ball at impact, estimated from the plus-minus model used for the <a href="http://on-the-t.com/2021/01/19/return-impact-maps/">Return Impact Map</a>.</p>
+<p>Finding similar players starts by measuring the distance between each player&rsquo;s impact characteristics. In any given situation a player&rsquo;s impact is measured by the expected <code>X</code> and <code>Y</code> (depth and width) coordinate of the ball at impact, estimated from the plus-minus model used for the <a href="http://on-the-t.com/2021/01/19/Return-Impact-Maps/">Return Impact Map</a>.</p>
 <p>On any surface, a player has 9 parameters describing the  <code>X</code> and <code>Y</code> expected position for each court side and serve type. Lets use <code>$\boldsymbol{\theta}_i = (\theta_{1}, \theta_{2}, \ldots)$</code> as the collection of these parameters for the $i$th player.  We then standardize each element of $\boldsymbol{\theta}_i$ across players to have zero mean and standard deviation one, which will have the effect of giving each variable (whether depth or width) an equal contribution to our similarity measure. Call the standardized parameters $\bar{\boldsymbol{\theta}}_i$. The distance (or <em>dissimilarity</em>) between two players is the Euclidean distance between their standardized impact vectors,</p>
 <p><code>$$ d(\bar{\boldsymbol{\theta}}_i, \bar{\boldsymbol{\theta}}_j) = \sqrt{\sum_{k} (\bar{\theta}_{ik} - \bar{\theta}_{jk})^2} $$</code></p>
 <p>So a player that is 1 standard deviation deeper on all wide serves compared to the average would have a distance of $\sqrt{2}$ from a player with an impact vector equal to the average.</p>
@@ -173,7 +173,7 @@ if (!doNotTrack) {
 <p>There is also some interesting patterns in the lateral position. The more defensively positioned players tend to be pulled out wider on impact when served out side. We can see this for style groups 4, 6 and 8. Although group 8 (which includes Thiem among it&rsquo;s players) has some surprising patterns on the Deuce side, where player tend to be further from the center when making impact on T serves than most other players. Style group 1 also has an unusual pattern of being generally wider  when making impact on T serves to the Ad but closer to the center line than average when seeing T serves to Deuce.</p>
 <p>The standardized scale has been a good tool for making like-for-like comparisons across the depth and lateral dimensions of impact. But it loses the connection to the <em>actual</em> position of players. So I&rsquo;ve selected one player from each style cluster and mapped a map of their expected impact position for first serve returns on hardcourt. The darker and more concentrated contours indicate the regions of the court with the greatest chance of being the position of the ball at impact.</p>
 <p>It&rsquo;s clear from these that the lateral variation is much more narrow than depth. Though I do think we can see a player like Nadal having to cover more area along the width of the court than a player like Federer of Djokovic. Federer is interesting in how close he stays to the baseline and shows a strong symmetry in his impact on Ad and Deuce. Contrast that with a player like Thiem who in addition to being deeper back in general is also clearly more centrally positioned on the Deuce side.</p>
-<p>For finer grained exploration of individual players, the  <a href="http://on-the-t.com/2021/01/19/return-impact-maps/">Return Impact Map</a> is your best option. I hope these style summaries show that there is a fascinating variety of impact patterns worth exploring and point to some of the main ways player&rsquo;s differentiate themselves in the way they approach the first serve return.</p>
+<p>For finer grained exploration of individual players, the  <a href="http://on-the-t.com/2021/01/19/Return-Impact-Maps/">Return Impact Map</a> is your best option. I hope these style summaries show that there is a fascinating variety of impact patterns worth exploring and point to some of the main ways player&rsquo;s differentiate themselves in the way they approach the first serve return.</p>
 <div style="text-align: center;">
 <figcaption>Figure 3: Hardcourt First Return Impact Map for Illustrative Players of Each Style Type.</figcaption>
 <img src="/img/first_return_cluster_map_hardcourt.png" alt="representative maps" width="90%" style="max-width:70%;" />
@@ -206,10 +206,10 @@ if (!doNotTrack) {
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/2021/01/19/return-impact-maps/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Introducing Return Impact Maps</p></a>
+		<a class="post-nav__link" href="/2021/01/19/Return-Impact-Maps/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Introducing Return Impact Maps</p></a>
 	</div>
 	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/2021/03/06/unpredictable-pandemic/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Have Matches Become Harder to Predict in the Time of Covid?</p></a>
+		<a class="post-nav__link" href="/2021/03/06/Unpredictable-Pandemic/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Have Matches Become Harder to Predict in the Time of Covid?</p></a>
 	</div>
 </nav>
 
