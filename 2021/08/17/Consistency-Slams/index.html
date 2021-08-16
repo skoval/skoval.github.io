@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Does Consistency Win Slams? - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Does Consistency Win Slams?" />
+<meta property="og:description" content="With 7 consecutive match wins standing between a pro player and a Grand Slam title, it would seem obvious that consistency in performance is essential to a major win. But no player can play to their best in every match. And no player can avoid the occasional off day. This raises a more interesting question with a less obvious answer: what level of consistency must a player maintain to win a slam?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2021/08/17/Consistency-Slams/" />
+<meta property="article:published_time" content="2021-08-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-16T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Does Consistency Win Slams?</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-08-16T00:00:00Z">August 16, 2021</time></div>
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/consistency/" rel="category">consistency</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>With 7 consecutive match wins standing between a pro player and a Grand Slam title, it would seem obvious that consistency in performance is essential to a major win. But no player can play to their best in every match. And no player can avoid the occasional off day. This raises a more interesting question with a less obvious answer: what <em>level</em> of consistency must a player maintain to win a slam?</p>
+<p>&lsquo;Consistency&rsquo; is a trait that is if often used in conversations about tennis players. It&rsquo;s what we usually mean by a player who can be relied on to deliver a similar level of performance from match to match, for better or worse. Asked on the spot, I&rsquo;m sure any avid tennis fan could come up with a handful of &lsquo;inconsistent&rsquo; players (think Monfils, Fognini, or Kyrgios, for instance). The list of consistent players is a no-brainer with each of the careers of the <em>Big 3</em> defined by their mastery of consistency.</p>
+<div class="getty embed image" style="background-color:#fff;display:inline-block;font-family:Roboto,sans-serif;color:#a7a7a7;font-size:11px;width:100%;max-width:494px;"><div style="padding:0;margin:0;text-align:left;float:right;padding:2%;"><a href="http://www.gettyimages.com/detail/1234678505" target="_blank" style="color:#a7a7a7;text-decoration:none;font-weight:normal !important;border:none;display:inline-block;">Embed from Getty Images</a></div><div style="overflow:hidden;position:relative;height:0;padding:66.66667% 0 0 0;width:100%;"><iframe src="//embed.gettyimages.com/embed/1234678505?et=Vx8-iEfcTIFjziigqqKzSw&tld=com&sig=yyS5-oqRhUmxCgJC9PQB-Dq_FKHyiuh2_gmjsKeoYdg=&caption=true&ver=1" scrolling="no" frameborder="0" width="594" height="396" style="display:inline-block;position:absolute;top:0;left:0;width:100%;height:100%;margin:0;"></iframe></div></div>
+<p>We all have a pretty good idea of what consistency in tennis means and that it is an important trait for a champion, yet it is one of those things that we don&rsquo;t spend a lot of time trying to quantify. That&rsquo;s a shame because reasonable measures of consistency shouldn&rsquo;t be hard to come up with.</p>
+<p>Just consider the illustration below. Imagine serve performance on one axis and return performance on the other. Each player is targeting the same goal on serve and return, highlighted by the red circle. Both players are hitting the target <em>on average</em> but the player on the left is within the target much more often than the player on the right.</p>
+<div style="text-align: center;">
+<figcaption>Figure 1. A demonstration of a contrast in consistency.</figcaption>
+<img src="/img/sabalenka_consistency_target.gif"  width="90%" style="max-width:70%;" />
+</div>
+<br>
+<p>This simple illustration makes the point that consistency goes hand in hand with variation. In fact, consistency is exactly the inverse of variance. The bigger the swings in a player&rsquo;s performance — swings that can&rsquo;t be explained by any knowable causes — the less consistent that player is.</p>
+<p>There are many players that we could make the centerpiece of a conversation about consistency (or the lack thereof). One that I think makes a particularly interesting case for this topic is Aryna Sabalenka. The current World No. 3 has won 10 WTA singles titles in her career yet it took until this summer to earn her best result at a Grand Slam, a loss in the semifinal at Wimbledon.</p>
+<p>Sabalenka has been in the conversation for a first slam title for some time, especially since 2018 when she broke into the top 15 of the WTA rankings and top 10 of WTA Elo ratings. Given the expectations that have surrounded her in recent years, the fact that she has been a match win away from a slam final only once and done no better than a 4th round finish otherwise has been a disappointment. And cause to ask why Sabalenka hasn&rsquo;t yet lived up to her potential at slams?</p>
+<p>Sabalenka is a classic case of a high-risk, high-reward player. She is a ball basher with the ability to overpower any player on tour on a good day. Yet on another day, it wouldn&rsquo;t be a surprise to see Sabalenka bageled by a lesser competitor. Sabalenka&rsquo;s intimidating weapons are also one of her biggest weaknesses because playing such low-percentage tennis is incredibly hard to sustain. Add the inherent randomness of best of 3 Grand Slam formats to the mix and you have yourself the perfect recipe for inconsistency.</p>
+<p>But maybe I&rsquo;m leaping to conclusions here. What evidence is there <em>actually</em> that Sabalenka is a high-variance player?</p>
+<p>To get at this, we can focus on one of the most relevant stats for winning matches: the probability of winning a point on serve. One way to define an inconsistent player is one who has high match-to-match serve win performance. That&rsquo;s easy enough. What&rsquo;s hard here is that we don&rsquo;t observe a player&rsquo;s true serve win probability in a match, we observe the percentage of points won on serve against a specific opponent, who is obviously going to influence those outcomes as well. So we need to correct for that, at a minimum. Here is a basic regression model to get a true serve performance:</p>
+<p>$$
+g(E[Serve]<em>{ij}) = \beta_0 + \beta_1 ( log(Elo)</em>{i} + log(Elo)<em>j) + \beta_2 ( log(Elo)</em>{i} - log(Elo)_j)
+$$</p>
+<p>Here the $g(E[Serve]_{ij})$ is the logit of serve win percentage of player $i$ versus player $j$. We model the log odds as a linear function of the sum of the Elo ratings of the two players (on the log scale) and the difference in their Elo ratings (on the log scale).</p>
+<p>Now we can look at performance adjusted for expectations: $R_{ij} = Y_{ij} - E[Serve]_{ij}$. This is simply the residual of actual serve win percentage against the expected. There is certainly more that could explain performance but this at least goes far in removing opponent effects when looking at match-to-match variation in serve performance.</p>
+<p>Below is the density of these residuals for Sabalenka&rsquo;s matches from 2019 thru 2021, centered at a fixed 60% serve win in each year. There is some difference from year to year but in all years we see multiple match results that are more than 10% below and above her average. Interestingly, there is more skew in 2021 and the upper end of her performance swings up to 20% above her average.</p>
+<div style="text-align: center;">
+<figcaption>Figure 2. Sabalenka's opponent-adjusted match serve win performance, centered at 60%, her expected win percentage against a top opponent.</figcaption>
+<img src="/img/sabalenka_serve_won.png"  width="90%" style="max-width:70%;" />
+</div>
+<br>
+<p>So we are looking at performances on serve that could be anywhere on a 20 to 30% range. That seems big but is it really? Well let&rsquo;s contrast with another top player, Ash Barty. Immediately we see much narrower densities for Barty with 2020 and 2021 in particular spanning a range closer to 10%.</p>
+<div style="text-align: center;">
+<figcaption>Figure 3. Ashleigh Barty's opponent-adjusted match serve win performance, centered at 60%, her expected win percentage against a top opponent.</figcaption>
+<img src="/img/barty_serve_won.png"  width="90%" style="max-width:70%;" />
+</div>
+<br>
+<p><em>What I want to look at next is to what extent the level of variation we see in Sabalenka&rsquo;s serve performance could be making the path to a slam title that much harder?</em></p>
+<p>We know that point outcomes in tennis are strongly related to the serve ability of each player. Using this, we can build a tournament simulation for a best of 3 Grand Slam that can let us see how changing the variation in Sabalenka&rsquo;s serve and that alone influences her chance of a title win.</p>
+<p><strong>Tournament Simulator</strong></p>
+<ul>
+<li>For each match over 7 rounds&hellip;</li>
+<li>Step 1. Draw $p_0$: the serve probability of opponent from a low-variance distribution with an average at 55%</li>
+<li>Step 2. Draw $p_1$: the serve probability for &lsquo;Sabalenka&rsquo; from a distribution with an average of 60% and variance based on the consistency condition</li>
+<li>Step 3. Simulate tennis match given $(p_0, p_1)$ and determine winner</li>
+<li>Repeat Steps 1 thru 3 1,000,000 times to get a distribution for the Grand Slam outcomes under the given consistency condition</li>
+</ul>
+<p>By assuming the same strength of opponent for all matches, we aren&rsquo;t reflecting the actual reality that opponents should generally get more difficult with each round. So are absolute win chance won&rsquo;t be a good estimate for the real case. But this simplification shouldn&rsquo;t prevent us from seeing how increasing variation in performance from match to match could make 7 consecutive match wins <em>relatively</em> harder.</p>
+<p>What are the consistency conditions that I considered? There were a total of 10 and the distributions of the serve probability are shown below. The colors indicate the <em>inconsistency</em> in terms of the frequency that a match serve win chance is more than 2 percentage points away from the mean. It is a bit arbitrary but I think a measure that is easier to wrap our heads around than the standard deviation. The most consistent case has 40% of match performances outside this range while the most inconsistent has 97% of cases more than 2 percentage points away from the mean.</p>
+<div style="text-align: center;">
+<figcaption>Figure 4. Consistency conditions used for Sabalenka's serve performance for the Grand Slam simulation.</figcaption>
+<img src="/img/sabalenka_simulation_setting.png"  width="90%" style="max-width:70%;" />
+</div>
+<p>And the punch line&hellip;Starting with a slam title and 7 consecutive match wins, we see a clear negative effect of inconsistency. In fact, in terms of the 2% region, there is a steep drop off once more than 70% of performances are more than 2 percentage points from the mean. In relation to the standard deviation in performance, the title win chances are close to linear and we see a drop in chances of about 2 percent with every 5 percentage point increase in SD. We see similar effects for 5 and 6 consecutive match wins though the overall win percentage is obviously higher for each condition.</p>
+<div style="text-align: center;">
+<figcaption>Figure 5. Change in </figcaption>
+<img src="/img/sabalenka_simulation_results.png"  width="90%" style="max-width:70%;" />
+</div>
+<p>Now, these are extreme consistency conditions. In reality, Sabalenka is probably somewhere in the 10 to 15 point SD range so, supposing she could reduce that variance by half, we are looking at a gain of several percentage points in her overall win percentage. Not a massive contribution but, with only 4 opportunities a year at Grand Slams, it is a difference we can&rsquo;t shrug off.</p>
+<p>This small study of one aspect of consistency shows that the tournament simulator is a useful tool for investigating questions around match-to-match variance. And there are many more questions worth exploring.</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/consistency/" rel="tag">consistency</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2021/05/22/Ratings-Gap-Narrowing/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">The Clay Ratings Gap is Narrowing</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
