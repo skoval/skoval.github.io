@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fantasy on Stats On the T</title>
+    <link>https://skoval.github.io/tags/fantasy/</link>
+    <description>Recent content in fantasy on Stats On the T</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://skoval.github.io/tags/fantasy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Winning the Fantasy Game</title>
+      <link>https://skoval.github.io/2021/09/12/Fantasy-Tennis/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://skoval.github.io/2021/09/12/Fantasy-Tennis/</guid>
+      <description>&lt;p&gt;The US Open introduced an extra way to engage with the event this year with a &lt;a href=&#34;https://games.usopen.org/roster&#34;&gt;Fantasy Tennis&lt;/a&gt; competition.  In this post, I share a simulation model that can help with fantasy strategizing. The basic idea is to run outcomes of the US Open men&amp;rsquo;s and women&amp;rsquo;s draws, predict match statistics for each hypothetical match, and tabulate the corresponding fantasy points that are up for grabs with each match. This model alone won&amp;rsquo;t win you the fantasy game, where so much luck is involved, but it can be a useful tool for choosing more winnable strategies.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

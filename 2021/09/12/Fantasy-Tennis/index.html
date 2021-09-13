@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Winning the Fantasy Game - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Winning the Fantasy Game" />
+<meta property="og:description" content="The US Open introduced an extra way to engage with the event this year with a Fantasy Tennis competition.  In this post, I share a simulation model that can help with fantasy strategizing. The basic idea is to run outcomes of the US Open men&rsquo;s and women&rsquo;s draws, predict match statistics for each hypothetical match, and tabulate the corresponding fantasy points that are up for grabs with each match. This model alone won&rsquo;t win you the fantasy game, where so much luck is involved, but it can be a useful tool for choosing more winnable strategies." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2021/09/12/Fantasy-Tennis/" />
+<meta property="article:published_time" content="2021-09-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-09-12T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Winning the Fantasy Game</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-09-12T00:00:00Z">September 12, 2021</time></div>
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/fantasy/" rel="category">fantasy</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>The US Open introduced an extra way to engage with the event this year with a <a href="https://games.usopen.org/roster">Fantasy Tennis</a> competition.  In this post, I share a simulation model that can help with fantasy strategizing. The basic idea is to run outcomes of the US Open men&rsquo;s and women&rsquo;s draws, predict match statistics for each hypothetical match, and tabulate the corresponding fantasy points that are up for grabs with each match. This model alone won&rsquo;t win you the fantasy game, where so much luck is involved, but it can be a useful tool for choosing more winnable strategies.</p>
+<p>If you didn&rsquo;t attempt the IBM-sponsored <a href="https://games.usopen.org/roster">Fantasy Tennis</a> for this year&rsquo;s US Open, here are the basic rules. Competitors build a roster of one player from each quarter of the men&rsquo;s and women&rsquo;s draws. Only one player in the top 16 seed is available. In each round, players earn 100 points for a match win, 5 points for each break of serve and 2 points for each ace. There was some allowance for a reshuffling of the roster after the 4th round, but I don&rsquo;t know exactly how that worked so I will just focus on the outcome of the initial rosters.</p>
+<p>So the main question is how to pick a good roster? Well, you have to start by defining what you mean by <em>good</em>. I think a reasonable starting point for a &lsquo;good&rsquo; strategy is to maximize some measure of roster point distributions. This means that a crucial first step is estimating the fantasy point distribution for each player in the draw.</p>
+<p>The easiest way to think about how to do this is to focus on one match. Given a specific player and opponent, we want to predict the winner and the breaks and aces earned by each player. There are myriad ways to predict match outcomes in tennis and I went with Elo ratings. For the match statistics, we need to know the likely duration of the match to have a better idea of the total count of any in-match statistic. Total service games seemed a natural choice to me since both breaks and aces can only be earned on return or service games, not both. If we can estimate the likely service games, all that remains is to predict the probable breaks and aces with each service game played.</p>
+<div style="text-align: center;">
+<figcaption>Figure 1. Illustration of the model components for the fantasy point prediction for each match of the US Open.</figcaption>
+<img src="/img/fantasy-diagram.png"  width="90%" style="max-width:70%;" />
+</div>
+<p>The diagram above summarizes all of the components and the basic modeling technique. I built Poisson GBM models for each of the match statistics using the following features:</p>
+<ul>
+<li>Surface category</li>
+<li>QF or better indicator</li>
+<li>&lsquo;Best of&rsquo; indicator (for men only)</li>
+<li>Elo rating total (player + opponent)</li>
+<li>Elo rating difference  (player + opponent)</li>
+<li>Serve win percent total  (player + opponent)</li>
+<li>Serve win percent difference  (player + opponent)</li>
+</ul>
+<p>All together, these factors get at the major match conditions that can influence match statistics, as well as the overall quality and competitiveness of the match based on the player&rsquo;s overall talent and serve performance. Here, the serve win percent are the observed performance but rather the <em>expected</em> serve performance for the given player and year, based on a linear mixed model. The purpose of this is to control for the different matches played and opponents faced by each player, which can add noise to their actual serve results.</p>
+<p>The advantage of the GBM here is to capture possible interactions or non-linearities that may be present about these features. Although, to be honest, the GBM doesn&rsquo;t do much better than a simple log-linear model. But it is a more flexible approach to build on.</p>
+<p>With all of these components in place, setting up a Monte Carlo simulation should hopefully be easy to see. We start with the first round matches, draw an Elo-based winner for each match, predict the games, breaks and aces for each player with the GBM-based event rates for a hardcourt slam match and the two players facing off. Assign the fantasy points according to the game rules and go through the same process for the next round. I repeated the whole process 10,000 times for the men&rsquo;s and women&rsquo;s draws to get the fantasy point distribution for every player.</p>
+<p>How useful this exercise is will depend in large part to the quality of the predictions. The Elo model is well-known to be a solid approach for tennis match predictions with 70%+ accuracy at Grand Slams. For the match statistics, the distributions below give a comparison against the hardcourt majors over the past decade. We can see that we are capturing a lot of the major properties of each statistics. There is some suggestion of over-estimating aces and service games for men (Figure 2).</p>
+<div style="text-align: center;">
+<figcaption>Figure 2. Validation of ATP match stat predictions for the US open against hardcourt slam results from 2010 to the present.</figcaption>
+<img src="/img/atp_fantasy_distributions.png"  width="90%" style="max-width:70%;" />
+</div>
+<p>On the women&rsquo;s side, the predicted distributions for each match statistic is generally good (Figure 3). There is a bimodality in the service games for the WTA that isn&rsquo;t predicted by the model, but the mean and variance of the distribution is still in good agreement. So, definitely some room for improvement, but a good starting point for deriving the fantasy point distribution.</p>
+<div style="text-align: center;">
+<figcaption>Figure 3. Validation of WTA match stat predictions for the US open against hardcourt slam results from 2010 to the present.</figcaption>
+<img src="/img/wta_fantasy_distributions.png"  width="90%" style="max-width:70%;" />
+</div>
+<p>When I first read the rules of the fantasy game, one of the questions I had was how much to weight aces and breaks of service relative to match wins. With 100 points per win, it seemed clear that winning would make up the majority of points, but <em>how</em> big a majority? I wasn&rsquo;t sure. Here is one of the ways our simulator can lend a hand.</p>
+<p>Based on all the matches in our event simulations, the mean points among match winners show that the points for winning make up 75% of the total fantasy points in men&rsquo;s matches. Interestingly, the aces and breaks have a roughly equal share of the remaining points. This tells us that the points for breaks and aces are approximately equal to the standard deviation of the other stat.  The plot on the bottom row shows the lower and upper 10th percentile of points for each match stat and we see a range of +/- 6 points for aces and +/- 8 points for breaks.</p>
+<div style="text-align: center;">
+<figcaption>Figure 4. Relative weight of expected fantasy points per ATP match.</figcaption>
+<img src="/img/atp_fantasy_weights.png"  width="90%" style="max-width:70%;" />
+</div>
+<p>On the women&rsquo;s side, match wins make up an even higher percentage of the total points. This is due to the lower frequency of aces in the women&rsquo;s game. In fact, aces account for a meagre 4% of the fantasy points in a typical women&rsquo;s match.</p>
+<div style="text-align: center;">
+<figcaption>Figure 5. Relative weight of expected fantasy points per WTA match.</figcaption>
+<img src="/img/wta_fantasy_weights.png"  width="90%" style="max-width:70%;" />
+</div>
+<p><em>What does our simulator suggest about the point distribution for players at the start of the event?</em> On the men&rsquo;s side, the four semifinalists end up at the top in terms of expected fantasy points, with Zverev, Medvedev and Djokovic all expected to earn over 500 points on average. It is also notable that the majority of the top 32 are seeded players, but not all. Players like Frances Tiafoe and Ilya Ivashka were two examples of ATP players who were expected to out-perform their ranking.</p>
+<div style="text-align: center;">
+<figcaption>Figure 6. Top 32 ATP players for expected fantasy points at the start of the 2021 US Open.</figcaption>
+<img src="/img/atp_fantasy_top32.png"  width="80%" style="max-width:60%;" />
+</div>
+<p>Considering the representation by quarter, we find that Q1 and Q3 were the most stacked with point potential. Indeed, among the ten players with the highest expected points, only 1 was from Q2 and only 2 were from Q4.</p>
+<p>Examining the lower 10th and upper 10th point intervals in the player point distributions is also revealing (Figure 6). For instance, all but the top players have a lower interval that is less than 100 points, which tells us that that scenario driving the lower tail of the distribution is the scenario where those players lose in the first round. On the other hand, few players have an upper range beyond the 500 points range, indicating that the best-case scenario for the large majority of players is no better than a quarterfinal win. It is at these extremes of the point distribution where we see more extreme draw effects.</p>
+<p>While the player point breakdowns are interesting, the ultimate decision with the fantasy competition is the roster construction. Suppose we have a point criteria for each player. One way to find the optimal roster is to start by selecting the top 16 player from each quarter that maximizes the criteria and do the same for the outsider-16 players in each remaining quarter. This would result in 4 possible rosters which we could then compare on the combined points.</p>
+<p><em>But what is the point criteria we should use?</em> Well, this comes down to the risk we are willing to take. One approach is the &ldquo;in expectation&rdquo; strategy, where we go with the maximal points assuming players play to their average. Another option is the worst-case or minimax strategy where we assume players play to their worse and we maximize the points in the worst-case scenario. The flipside of the worst-case scenario is the best-case scenario. Below we consider all three options and the rosters that would be suggested with each.</p>
+<p>When it comes to the top seed choice for Q1, Q2 and Q4; we would opt for the same player under any of the risk strategies (Figure 7). For Q3, there is a difference in the top seed choice if we want to minimize our loss under the worst-case scenario. This is because Christian Garin was predicted to earn more points in a first round loss than Andrey Rublev, so those two were close enough in this case that the impact of draw becomes more important here.</p>
+<div style="text-align: center;">
+<figcaption>Figure 7. 2021 US Open men's fantasy roster options for different risk strategies.</figcaption>
+<img src="/img/atp_fantasy_rosters.png"  width="80%" style="max-width:60%;" />
+</div>
+<p>Still that is all pretty moot given the superior outcomes for the rosters anchored by Novak Djokovic or Daniil Medvedev. So that would have been a major decision point for the men&rsquo;s roster this year: Djokovic or Medvedev. Outside of that choice, it is interesting that Humbert dominated the Q3 strategy, being the probabilistic best choice under all of the risk scenarios. That made the remaining two quarters the ones with the most options and greatest uncertainty.</p>
+<p>On the women&rsquo;s side, a probabilistically-guided roster would look pretty silly this year with such a fairytale result for Leylah Fernandez and Emma Raducanu. In fact, Fernandez would not even rank in the top 32 on expected points while Raducanu would just edge out the 32nd spot. At the start of the event, Osaka and Barty would have been the top statistical choices for building rosters around, with both players expected to get at least two wins even in the worst-case scenario.</p>
+<div style="text-align: center;">
+<figcaption>Figure 8. Top 32 WTA players for expected fantasy points at the start of the 2021 US Open.</figcaption>
+<img src="/img/wta_fantasy_top32.png"  width="80%" style="max-width:60%;" />
+</div>
+<p>It&rsquo;s noteworthy how clustered the distributions of the top fantasy prospects were on the women&rsquo;s draw. Outside of Osaka and Barty, the top 32 expected points are all within the range of 153 to 398, meaning there was just a 245 point spread separating the expected total fantasy points among 30 of the top women&rsquo;s players.  Contrast that with the 390 points separating the expected points of the top 30 men&rsquo;s players after Djokovic and Medvedev.</p>
+<p>As you might expect, this results in more variety of roster options under the different risk approaches. On the women&rsquo;s side, there was the most uncertainty in the top seed choice for Q4 where Krejicova or Sabalenka would both be reasonable choices under different risk strategies. We also find no player outside of the top 16 dominating all risk strategies in any of the quarters.</p>
+<div style="text-align: center;">
+<figcaption>Figure 9. 2021 US Open women's fantasy roster options for different risk strategies.</figcaption>
+<img src="/img/wta_fantasy_rosters.png"  width="80%" style="max-width:60%;" />
+</div>
+<p>My attempt at a fantasy simulator shows how we can factor in point weights, the luck of the draw and match statistics when evaluating the best prospects for a fantasy roster. In the case of the US Open rules, we see that match wins was the major stat determining point outcomes, and this put a huge weight on predicting who will make it to the latest rounds. A statistically-based approach would have held up well on the men&rsquo;s side but been crushed on the women&rsquo;s side in the first year in Grand Slam history that a qualifier took the title. It&rsquo;s a stark reminder that the quality of a betting strategy can&rsquo;t be judged by just one trial and that leaving room for some surprises may make for a more robust roster in the long run.</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/fantasy/" rel="tag">fantasy</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2021/08/17/Consistency-Slams/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Does Consistency Win Slams?</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
