@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Roland Garros Men&#39;s Watchability Ratings - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Roland Garros Men&#39;s Watchability Ratings" />
+<meta property="og:description" content="The draws are out for the 2022 edition of Roland Garros. With Rafael Nadal&rsquo;s drought in clay Masters titles this season, it has been one of the more surprising lead ups to the clay slam in over a decade. With the skyrocketing success of Carlos Alcaraz, signs that Novak Djokovic is returning to form, and Nadal&rsquo;s fitness up in the air; the stage is set for a thrilling fight for the French Open men&rsquo;s title. Which matches are more likely to deliver the most thrills in the first rounds?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2022/05/20/Roland-Garros-Men&#39;s-Watchability-Ratings/" />
+<meta property="article:published_time" content="2022-05-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-05-20T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Roland Garros Men&#39;s Watchability Ratings</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-05-20T00:00:00Z">May 20, 2022</time></div>
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/watchability/" rel="category">watchability</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>The draws are out for the 2022 edition of Roland Garros. With Rafael Nadal&rsquo;s drought in clay Masters titles this season, it has been one of the more surprising lead ups to the clay slam in over a decade. With the skyrocketing success of Carlos Alcaraz, signs that Novak Djokovic is returning to form, and Nadal&rsquo;s fitness up in the air; the stage is set for a thrilling fight for the French Open men&rsquo;s title. Which matches are more likely to deliver the most thrills in the first rounds?</p>
+<p>Watchability ratings combine the quality and competitiveness of match to give an overall &lsquo;watchability&rsquo; score. The technical details can be found <a href="http://on-the-t.com/2019/08/09/must-see-matches/">here</a>. The figure below shows the breakdown of the expected quality and competitiveness of the first round and probable second round matches at Roland Garros (excluding matches with still to be determined qualifiers , and the overall Watchabilty that these translate to.<br><br>The tables that follow order each round&rsquo;s matches by their Watchability, helping fans to prioritize their watchlist for the coming days of the Paris slam.
+<div style="text-align: center;"></p>
+<figcaption>Figure 1. Distribution of Watchability Ratings for first round and probable second round matches.</figcaption>
+<img src="/img/2022-05-20-Roland-Garros-Men's-Watchability-Ratings.png" width="90%" style="max-width:70%;" />
+</div>
+<h2 id="first-round">First Round</h2>
+<table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>player</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>opponent</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>quality</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>competitiveness</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>watchability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: center;'>Denis Shapovalov</td>
+<td style='text-align: center;'>Holger Vitus Nodskov Rune</td>
+<td style='text-align: center;'>2178.9</td>
+<td style='text-align: center;'>94.1</td>
+<td style='text-align: center;'>2051</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Hugo Dellien</td>
+<td style='text-align: center;'>Dominic Thiem</td>
+<td style='text-align: center;'>2068.3</td>
+<td style='text-align: center;'>97.9</td>
+<td style='text-align: center;'>2025</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Thanasi Kokkinakis</td>
+<td style='text-align: center;'>Albert Ramos-Vinolas</td>
+<td style='text-align: center;'>2035.1</td>
+<td style='text-align: center;'>99.4</td>
+<td style='text-align: center;'>2022</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Benjamin Bonzi</td>
+<td style='text-align: center;'>Frances Tiafoe</td>
+<td style='text-align: center;'>2041.1</td>
+<td style='text-align: center;'>99.1</td>
+<td style='text-align: center;'>2022</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Cristian Garin</td>
+<td style='text-align: center;'>Tommy Paul</td>
+<td style='text-align: center;'>2073.2</td>
+<td style='text-align: center;'>97.1</td>
+<td style='text-align: center;'>2013</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Francisco Cerundolo</td>
+<td style='text-align: center;'>Daniel Evans</td>
+<td style='text-align: center;'>2013.8</td>
+<td style='text-align: center;'>99.2</td>
+<td style='text-align: center;'>1997</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Lloyd Harris</td>
+<td style='text-align: center;'>Richard Gasquet</td>
+<td style='text-align: center;'>1969.2</td>
+<td style='text-align: center;'>100.0</td>
+<td style='text-align: center;'>1969</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Filip Krajinovic</td>
+<td style='text-align: center;'>Reilly Opelka</td>
+<td style='text-align: center;'>2098.7</td>
+<td style='text-align: center;'>91.1</td>
+<td style='text-align: center;'>1911</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Kamil Majchrzak</td>
+<td style='text-align: center;'>Brandon Nakashima</td>
+<td style='text-align: center;'>1978.8</td>
+<td style='text-align: center;'>96.2</td>
+<td style='text-align: center;'>1905</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Steve Johnson</td>
+<td style='text-align: center;'>Jiri Vesely</td>
+<td style='text-align: center;'>1968.5</td>
+<td style='text-align: center;'>93.5</td>
+<td style='text-align: center;'>1841</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Borna Coric</td>
+<td style='text-align: center;'>Carlos Taberner</td>
+<td style='text-align: center;'>1989.5</td>
+<td style='text-align: center;'>92.3</td>
+<td style='text-align: center;'>1837</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Alexander Bublik</td>
+<td style='text-align: center;'>Arthur Rinderknech</td>
+<td style='text-align: center;'>2001.6</td>
+<td style='text-align: center;'>91.6</td>
+<td style='text-align: center;'>1833</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Aljaz Bedene</td>
+<td style='text-align: center;'>Christopher O'Connell</td>
+<td style='text-align: center;'>1965.9</td>
+<td style='text-align: center;'>91.6</td>
+<td style='text-align: center;'>1800</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Federico Delbonis</td>
+<td style='text-align: center;'>Adrian Mannarino</td>
+<td style='text-align: center;'>1898.5</td>
+<td style='text-align: center;'>93.6</td>
+<td style='text-align: center;'>1778</td>
+</tr>
+<tr>
+<td style='text-align: center;'>David Goffin</td>
+<td style='text-align: center;'>Jiri Lehecka</td>
+<td style='text-align: center;'>2083.7</td>
+<td style='text-align: center;'>80.9</td>
+<td style='text-align: center;'>1687</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Pablo Cuevas</td>
+<td style='text-align: center;'>Jenson Brooksby</td>
+<td style='text-align: center;'>2001.7</td>
+<td style='text-align: center;'>83.4</td>
+<td style='text-align: center;'>1670</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Federico Coria</td>
+<td style='text-align: center;'>Alex Molcan</td>
+<td style='text-align: center;'>1998.3</td>
+<td style='text-align: center;'>83.0</td>
+<td style='text-align: center;'>1658</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Tallon Griekspoor</td>
+<td style='text-align: center;'>Alejandro Davidovich Fokina</td>
+<td style='text-align: center;'>2103.1</td>
+<td style='text-align: center;'>78.1</td>
+<td style='text-align: center;'>1644</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Daniel Altmaier</td>
+<td style='text-align: center;'>Jaume Antoni Munar Clar</td>
+<td style='text-align: center;'>2065.6</td>
+<td style='text-align: center;'>76.7</td>
+<td style='text-align: center;'>1584</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Dusan Lajovic</td>
+<td style='text-align: center;'>Sebastian Baez</td>
+<td style='text-align: center;'>2098.7</td>
+<td style='text-align: center;'>75.1</td>
+<td style='text-align: center;'>1576</td>
+</tr>
+<tr>
+<td style='text-align: center;'>James Duckworth</td>
+<td style='text-align: center;'>Mikael Ymer</td>
+<td style='text-align: center;'>1847.7</td>
+<td style='text-align: center;'>83.9</td>
+<td style='text-align: center;'>1550</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Laslo Djere</td>
+<td style='text-align: center;'>Richard Berankis</td>
+<td style='text-align: center;'>2025.8</td>
+<td style='text-align: center;'>76.4</td>
+<td style='text-align: center;'>1548</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Sebastian Korda</td>
+<td style='text-align: center;'>John Millman</td>
+<td style='text-align: center;'>2047.8</td>
+<td style='text-align: center;'>75.0</td>
+<td style='text-align: center;'>1535</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Oscar Otte</td>
+<td style='text-align: center;'>Roberto Carballes Baena</td>
+<td style='text-align: center;'>1978.8</td>
+<td style='text-align: center;'>75.9</td>
+<td style='text-align: center;'>1503</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Emil Ruusuvuori</td>
+<td style='text-align: center;'>Ugo Humbert</td>
+<td style='text-align: center;'>1922.0</td>
+<td style='text-align: center;'>77.6</td>
+<td style='text-align: center;'>1492</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Stan Wawrinka</td>
+<td style='text-align: center;'>Corentin Moutet</td>
+<td style='text-align: center;'>1997.1</td>
+<td style='text-align: center;'>74.7</td>
+<td style='text-align: center;'>1492</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Stefanos Tsitsipas</td>
+<td style='text-align: center;'>Lorenzo Musetti</td>
+<td style='text-align: center;'>2299.5</td>
+<td style='text-align: center;'>64.2</td>
+<td style='text-align: center;'>1476</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Quentin Halys</td>
+<td style='text-align: center;'>John Isner</td>
+<td style='text-align: center;'>2035.7</td>
+<td style='text-align: center;'>72.5</td>
+<td style='text-align: center;'>1475</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Alexei Popyrin</td>
+<td style='text-align: center;'>Fabio Fognini</td>
+<td style='text-align: center;'>1999.5</td>
+<td style='text-align: center;'>73.5</td>
+<td style='text-align: center;'>1470</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Nikoloz Basilashvili</td>
+<td style='text-align: center;'>Maxime Cressy</td>
+<td style='text-align: center;'>1947.7</td>
+<td style='text-align: center;'>74.7</td>
+<td style='text-align: center;'>1456</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Henri Laaksonen</td>
+<td style='text-align: center;'>Pedro Martinez Portero</td>
+<td style='text-align: center;'>1954.2</td>
+<td style='text-align: center;'>74.1</td>
+<td style='text-align: center;'>1448</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Alex De Minaur</td>
+<td style='text-align: center;'>Hugo Gaston</td>
+<td style='text-align: center;'>2029.3</td>
+<td style='text-align: center;'>70.0</td>
+<td style='text-align: center;'>1421</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Benoit Paire</td>
+<td style='text-align: center;'>Ilya Ivashka</td>
+<td style='text-align: center;'>1940.1</td>
+<td style='text-align: center;'>72.0</td>
+<td style='text-align: center;'>1397</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Taro Daniel</td>
+<td style='text-align: center;'>Gregoire Barrere</td>
+<td style='text-align: center;'>1945.1</td>
+<td style='text-align: center;'>71.6</td>
+<td style='text-align: center;'>1393</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Miomir Kecmanovic</td>
+<td style='text-align: center;'>Tomas Martin Etcheverry</td>
+<td style='text-align: center;'>2071.4</td>
+<td style='text-align: center;'>66.9</td>
+<td style='text-align: center;'>1385</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Grigor Dimitrov</td>
+<td style='text-align: center;'>Marcos Giron</td>
+<td style='text-align: center;'>2076.0</td>
+<td style='text-align: center;'>65.2</td>
+<td style='text-align: center;'>1354</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Pablo Andujar</td>
+<td style='text-align: center;'>Marco Cecchinato</td>
+<td style='text-align: center;'>1882.6</td>
+<td style='text-align: center;'>70.7</td>
+<td style='text-align: center;'>1330</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Lorenzo Sonego</td>
+<td style='text-align: center;'>Peter Gojowczyk</td>
+<td style='text-align: center;'>1899.1</td>
+<td style='text-align: center;'>68.8</td>
+<td style='text-align: center;'>1307</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Facundo Bagnis</td>
+<td style='text-align: center;'>Daniil Medvedev</td>
+<td style='text-align: center;'>2133.8</td>
+<td style='text-align: center;'>59.2</td>
+<td style='text-align: center;'>1264</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Marin Cilic</td>
+<td style='text-align: center;'>Attila Balazs</td>
+<td style='text-align: center;'>2001.5</td>
+<td style='text-align: center;'>62.9</td>
+<td style='text-align: center;'>1259</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Soon-Woo Kwon</td>
+<td style='text-align: center;'>Andrey Rublev</td>
+<td style='text-align: center;'>2100.4</td>
+<td style='text-align: center;'>59.6</td>
+<td style='text-align: center;'>1251</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Casper Ruud</td>
+<td style='text-align: center;'>Jo-Wilfried Tsonga</td>
+<td style='text-align: center;'>2096.8</td>
+<td style='text-align: center;'>59.4</td>
+<td style='text-align: center;'>1245</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Cameron Norrie</td>
+<td style='text-align: center;'>Manuel Guinard</td>
+<td style='text-align: center;'>2008.1</td>
+<td style='text-align: center;'>62.0</td>
+<td style='text-align: center;'>1245</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Yoshihito Nishioka</td>
+<td style='text-align: center;'>Novak Djokovic</td>
+<td style='text-align: center;'>2256.1</td>
+<td style='text-align: center;'>55.1</td>
+<td style='text-align: center;'>1244</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Jordan Thompson</td>
+<td style='text-align: center;'>Rafael Nadal</td>
+<td style='text-align: center;'>2192.8</td>
+<td style='text-align: center;'>51.5</td>
+<td style='text-align: center;'>1128</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: center;'>Pablo Carreno-Busta</td>
+<td style='border-bottom: 2px solid grey; text-align: center;'>Gilles Simon</td>
+<td style='border-bottom: 2px solid grey; text-align: center;'>1956.6</td>
+<td style='border-bottom: 2px solid grey; text-align: center;'>54.0</td>
+<td style='border-bottom: 2px solid grey; text-align: center;'>1056</td>
+</tr>
+</tbody>
+</table>
+<h2 id="most-probable-second-round">Most Probable Second Round</h2>
+<table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+<thead>
+<tr>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>player</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>opponent</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>quality</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>competitiveness</th>
+<th style='font-weight: 900; border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>watchability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: center;'>Jaume Antoni Munar Clar</td>
+<td style='text-align: center;'>Diego Sebastian Schwartzman</td>
+<td style='text-align: center;'>2177.9</td>
+<td style='text-align: center;'>93.0</td>
+<td style='text-align: center;'>2026</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Botic Van De Zandschulp</td>
+<td style='text-align: center;'>Fabio Fognini</td>
+<td style='text-align: center;'>2123.2</td>
+<td style='text-align: center;'>93.9</td>
+<td style='text-align: center;'>1994</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Ilya Ivashka</td>
+<td style='text-align: center;'>Tommy Paul</td>
+<td style='text-align: center;'>2066.8</td>
+<td style='text-align: center;'>95.2</td>
+<td style='text-align: center;'>1968</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Hugo Dellien</td>
+<td style='text-align: center;'>Karen Khachanov</td>
+<td style='text-align: center;'>2110.5</td>
+<td style='text-align: center;'>90.1</td>
+<td style='text-align: center;'>1902</td>
+</tr>
+<tr>
+<td style='text-align: center;'>John Isner</td>
+<td style='text-align: center;'>Taro Daniel</td>
+<td style='text-align: center;'>2100.1</td>
+<td style='text-align: center;'>87.8</td>
+<td style='text-align: center;'>1845</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Christopher O'Connell</td>
+<td style='text-align: center;'>Jenson Brooksby</td>
+<td style='text-align: center;'>2028.6</td>
+<td style='text-align: center;'>90.6</td>
+<td style='text-align: center;'>1838</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Marton Fucsovics</td>
+<td style='text-align: center;'>Marin Cilic</td>
+<td style='text-align: center;'>2118.1</td>
+<td style='text-align: center;'>86.2</td>
+<td style='text-align: center;'>1825</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Frances Tiafoe</td>
+<td style='text-align: center;'>David Goffin</td>
+<td style='text-align: center;'>2098.9</td>
+<td style='text-align: center;'>84.8</td>
+<td style='text-align: center;'>1780</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Nikoloz Basilashvili</td>
+<td style='text-align: center;'>Mackenzie Mcdonald</td>
+<td style='text-align: center;'>1995.1</td>
+<td style='text-align: center;'>86.2</td>
+<td style='text-align: center;'>1720</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Denis Shapovalov</td>
+<td style='text-align: center;'>Pedro Martinez Portero</td>
+<td style='text-align: center;'>2126.6</td>
+<td style='text-align: center;'>80.2</td>
+<td style='text-align: center;'>1705</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Alejandro Tabilo</td>
+<td style='text-align: center;'>Reilly Opelka</td>
+<td style='text-align: center;'>2060.1</td>
+<td style='text-align: center;'>80.9</td>
+<td style='text-align: center;'>1666</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Francisco Cerundolo</td>
+<td style='text-align: center;'>Mikael Ymer</td>
+<td style='text-align: center;'>1961.2</td>
+<td style='text-align: center;'>84.6</td>
+<td style='text-align: center;'>1658</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Alexander Zverev</td>
+<td style='text-align: center;'>Sebastian Baez</td>
+<td style='text-align: center;'>2304.5</td>
+<td style='text-align: center;'>71.8</td>
+<td style='text-align: center;'>1655</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Miomir Kecmanovic</td>
+<td style='text-align: center;'>Arthur Rinderknech</td>
+<td style='text-align: center;'>2120.6</td>
+<td style='text-align: center;'>76.3</td>
+<td style='text-align: center;'>1618</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Laslo Djere</td>
+<td style='text-align: center;'>Daniil Medvedev</td>
+<td style='text-align: center;'>2223.5</td>
+<td style='text-align: center;'>72.2</td>
+<td style='text-align: center;'>1606</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Sebastian Korda</td>
+<td style='text-align: center;'>Richard Gasquet</td>
+<td style='text-align: center;'>2056.3</td>
+<td style='text-align: center;'>76.8</td>
+<td style='text-align: center;'>1580</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Kamil Majchrzak</td>
+<td style='text-align: center;'>Alejandro Davidovich Fokina</td>
+<td style='text-align: center;'>2088.2</td>
+<td style='text-align: center;'>74.8</td>
+<td style='text-align: center;'>1562</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Grigor Dimitrov</td>
+<td style='text-align: center;'>Borna Coric</td>
+<td style='text-align: center;'>2120.7</td>
+<td style='text-align: center;'>73.1</td>
+<td style='text-align: center;'>1551</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Felix Auger Aliassime</td>
+<td style='text-align: center;'>Aslan Karatsev</td>
+<td style='text-align: center;'>2121.7</td>
+<td style='text-align: center;'>72.7</td>
+<td style='text-align: center;'>1543</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Pablo Andujar</td>
+<td style='text-align: center;'>Hubert Hurkacz</td>
+<td style='text-align: center;'>2103.1</td>
+<td style='text-align: center;'>73.3</td>
+<td style='text-align: center;'>1541</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Oscar Otte</td>
+<td style='text-align: center;'>Jannik Sinner</td>
+<td style='text-align: center;'>2196.3</td>
+<td style='text-align: center;'>68.9</td>
+<td style='text-align: center;'>1514</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Joao Sousa</td>
+<td style='text-align: center;'>Lorenzo Sonego</td>
+<td style='text-align: center;'>1942.9</td>
+<td style='text-align: center;'>77.7</td>
+<td style='text-align: center;'>1510</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Pablo Carreno-Busta</td>
+<td style='text-align: center;'>Jiri Vesely</td>
+<td style='text-align: center;'>2112.4</td>
+<td style='text-align: center;'>69.9</td>
+<td style='text-align: center;'>1476</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Casper Ruud</td>
+<td style='text-align: center;'>Emil Ruusuvuori</td>
+<td style='text-align: center;'>2149.7</td>
+<td style='text-align: center;'>66.0</td>
+<td style='text-align: center;'>1418</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Cameron Norrie</td>
+<td style='text-align: center;'>Denis Kudla</td>
+<td style='text-align: center;'>2038.6</td>
+<td style='text-align: center;'>66.2</td>
+<td style='text-align: center;'>1350</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Stan Wawrinka</td>
+<td style='text-align: center;'>Rafael Nadal</td>
+<td style='text-align: center;'>2326.4</td>
+<td style='text-align: center;'>56.4</td>
+<td style='text-align: center;'>1313</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Novak Djokovic</td>
+<td style='text-align: center;'>Alex Molcan</td>
+<td style='text-align: center;'>2284.7</td>
+<td style='text-align: center;'>57.0</td>
+<td style='text-align: center;'>1302</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Michael Mmoh</td>
+<td style='text-align: center;'>Taylor Harry Fritz</td>
+<td style='text-align: center;'>2042.6</td>
+<td style='text-align: center;'>62.4</td>
+<td style='text-align: center;'>1275</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Andrey Rublev</td>
+<td style='text-align: center;'>Federico Delbonis</td>
+<td style='text-align: center;'>2108.1</td>
+<td style='text-align: center;'>60.4</td>
+<td style='text-align: center;'>1272</td>
+</tr>
+<tr>
+<td style='text-align: center;'>Albert Ramos-Vinolas</td>
+<td style='text-align: center;'>Carlos Alcaraz</td>
+<td style='text-align: center;'>2284.7</td>
+<td style='text-align: center;'>55.5</td>
+<td style='text-align: center;'>1267</td>
+</tr>
+<tr>
+<td style='border-bottom: 2px solid grey; text-align: center;'>Lucas Pouille</td>
+<td style='border-bottom: 2px solid grey; text-align: center;'>Stefanos Tsitsipas</td>
+<td style='border-bottom: 2px solid grey; text-align: center;'>2169.1</td>
+<td style='border-bottom: 2px solid grey; text-align: center;'>53.6</td>
+<td style='border-bottom: 2px solid grey; text-align: center;'>1162</td>
+</tr>
+</tbody>
+</table>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/watchability/" rel="tag">watchability</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2022/05/20/Roland-Garros-Women%27s-Watchability-Ratings/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Roland Garros Women&#39;s Watchability Ratings</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
