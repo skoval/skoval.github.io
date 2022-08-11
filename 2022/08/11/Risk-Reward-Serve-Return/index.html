@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>The Risk and Reward of Serve Return Positioning - Stats On the T</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	 <script src="https://d3js.org/d3.v4.js"></script>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<script type="text/javascript" async
+	  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	  MathJax.Hub.Config({
+	  tex2jax: {
+	    inlineMath: [['$','$'], ['\\(','\\)']],
+	    displayMath: [['$$','$$']],
+	    processEscapes: true,
+	    processEnvironments: true,
+	    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+	    TeX: { equationNumbers: { autoNumber: "AMS" },
+	         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+	  }
+	  });
+	  MathJax.Hub.Queue(function() {
+	    
+	    
+	    
+	    var all = MathJax.Hub.getAllJax(), i;
+	    for(i = 0; i < all.length; i += 1) {
+	        all[i].SourceElement().parentNode.className += ' has-jax';
+	    }
+	  });
+
+	  MathJax.Hub.Config({
+	  
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+	  });
+	</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="The Risk and Reward of Serve Return Positioning" />
+<meta property="og:description" content="The serve return is the shot that begins the defensive battle of any receiving point. This makes the serve return one of the most important shots of the return game.  So why do patterns on serve return get so little attention?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skoval.github.io/2022/08/11/Risk-Reward-Serve-Return/" />
+<meta property="article:published_time" content="2022-08-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-08-11T00:00:00+00:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-100138539-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Stats On the T" rel="home">
+				<div class="logo__title">Stats On the T</div>
+				<div class="logo__tagline">Dedicated to data, statistics, and tennis</div>
+			</a>
+			<div class="logo-img">
+				<img src="/img/logo.png" />
+			</div>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/contact/">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/features/">
+				
+				<span class="menu__text">Features</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/ratings/ratings/">
+				
+				<span class="menu__text">Ratings</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/research/">
+				
+				<span class="menu__text">Research</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/software/">
+				
+				<span class="menu__text">Software</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">The Risk and Reward of Serve Return Positioning</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-08-11T00:00:00Z">August 11, 2022</time></div>
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/return/" rel="category">return</a>
+	</span>
+</div></div>
+		</header>
+	<div class="content post__content clearfix">
+			<p>The serve return is the shot that begins the defensive battle of any receiving point. This makes the serve return one of the most important shots of the return game.  So why do patterns on serve return get so little attention?</p>
+<p>Although the defensive analog of the serve, the serve has received overwhelmingly more attention. Avid fans of the sport could probable say which among the top players prefer to make the serve return from a deep position behind the baseline and which prefer a more aggressive stance. But <em>which</em> of these patterns is the better choice is far less understood.</p>
+<div style="text-align:center;float:right;width:50%;padding-left:2%;">
+<figcaption>@BaselineMedia has published a full video analyzing men's return impact patterns, which you can view here.</figcaption>
+<iframe src = "https://t.co/sWli9mjcm9"></iframe>
+</div>
+<p>The return impact is the position of the serve return when the ball and racquet make contact.  When we look at the elite of the current mens game, there are dramatic differences in return impact patterns. Let&rsquo;s consider the hard court return impact patterns for four of the top male players.</p>
+<h2 id="daniil-medvedev">Daniil Medvedev</h2>
+<p>Daniil Medvedev is one of the most defensive receivers in the sport. Medvedev typical mode is to be at a depth of 4 or 5 meters behind the baseline when he makes contact with the serve. Even on second serve, when players tend to be aggressive, Medvedev still prefers to take a position that is quite similar to his first serve return position. He <em>can</em> sometimes play more forward on both serves, but that is more the exception than the rule.</p>
+<div style="text-align: center;">
+<figcaption>Figure 1. Daniil Medvedev first serve return impact patterns on AD.</figcaption>
+<img src="/img/medvedev_return_impact_1.png" width="90%" style="max-width:70%;" />
+</div>
+<div style="text-align: center;">
+<figcaption>Figure 2. Daniil Medvedev first serve return impact patterns on Deuce.</figcaption>
+<img src="/img/medvedev_return_impact_2.png" width="90%" style="max-width:70%;" />
+</div>
+<div style="text-align: center;">
+<figcaption>Figure 3. Daniil Medvedev second serve return impact patterns on Ad.</figcaption>
+<img src="/img/medvedev_return_impact_3.png" width="90%" style="max-width:70%;" />
+</div>
+<div style="text-align: center;">
+<figcaption>Figure 4. Daniil Medvedev second serve return impact patterns on Deuce.</figcaption>
+<img src="/img/medvedev_return_impact_4.png" width="90%" style="max-width:70%;" />
+</div>
+<h2 id="rafael-nadal">Rafael Nadal</h2>
+<p>Nadal is also a defensive receiver but to less an extreme as Medvedev. On hard courts, Nadal is usually 2-4 meters behind the baseline, depending on the court side and type of serve he is returning. Also, unlike Medvedev, there is more consistency in Nadal&rsquo;s impact behavior, that is, we are less likely to find him outside of his typical depth pattern.</p>
+<p>On second serve, Nadal has two clear modes: defensive (like on first serve) and aggressive at the baseline, and there is a relatively even split between the two.</p>
+<p>It&rsquo;s noteworthy that players with these dual models on return impact can switch between them within a match, showing that the choice has more to do with the within match conditions than any particular opponent.</p>
+<div style="text-align: center;">
+<figcaption>Figure 5. Rafael Nadal first serve return impact patterns on AD.</figcaption>
+<img src="/img/nadal_return_impact_1.png" width="90%" style="max-width:70%;" />
+</div>
+<div style="text-align: center;">
+<figcaption>Figure 6. Rafael Nadal first serve return impact patterns on Deuce.</figcaption>
+<img src="/img/nadal_return_impact_2.png" width="90%" style="max-width:70%;" />
+</div>
+<div style="text-align: center;">
+<figcaption>Figure 7. Rafael Nadal second serve return impact patterns on Ad.</figcaption>
+<img src="/img/nadal_return_impact_3.png" width="90%" style="max-width:70%;" />
+</div>
+<div style="text-align: center;">
+<figcaption>Figure 8. Rafael Nadal second serve return impact patterns on Deuce.</figcaption>
+<img src="/img/nadal_return_impact_4.png" width="90%" style="max-width:70%;" />
+</div>
+<h2 id="novak-djokovic">Novak Djokovic</h2>
+<p>Djokovic, considered one of the most skillful returners the sport has ever seen, is aggressive in his return impact position. Djokovic is usually taking the first serve on the rise at 1 to 2 meters behind the baseline, rarely deeper. On second serve, Djokovic is even further into the court, most often inside the baseline than behind.</p>
+<div style="text-align: center;">
+<figcaption>Figure 9. Novak Djokovic first serve return impact patterns on AD.</figcaption>
+<img src="/img/djokovic_return_impact_1.png" width="90%" style="max-width:70%;" />
+</div>
+<div style="text-align: center;">
+<figcaption>Figure 10. Novak Djokovic first serve return impact patterns on Deuce.</figcaption>
+<img src="/img/djokovic_return_impact_2.png" width="90%" style="max-width:70%;" />
+</div>
+<div style="text-align: center;">
+<figcaption>Figure 11. Novak Djokovic second serve return impact patterns on Ad.</figcaption>
+<img src="/img/djokovic_return_impact_3.png" width="90%" style="max-width:70%;" />
+</div>
+<div style="text-align: center;">
+<figcaption>Figure 12. Novak Djokovic second serve return impact patterns on Deuce.</figcaption>
+<img src="/img/djokovic_return_impact_4.png" width="90%" style="max-width:70%;" />
+</div>
+<h2 id="nick-kyrgios">Nick Kyrgios</h2>
+<p>Nick Kyrgios, never to back down from a challenge or follow convention, has the most unconventionally aggressive return position of this group of top players. We can get a sense of that by noting that Kyrgios&rsquo;s first serve return position is most similar to Djokovic&rsquo;s second serve return impact patterns. On second serve, Kyrgios is well within 1 meter inside the baseline, virtually on top of the service box.</p>
+<div style="text-align: center;">
+<figcaption>Figure 13. Nick Kyrgios first serve return impact patterns on AD.</figcaption>
+<img src="/img/kyrgios_return_impact_1.png" width="90%" style="max-width:70%;" />
+</div>
+<div style="text-align: center;">
+<figcaption>Figure 14. Nick Kyrgios first serve return impact patterns on Deuce.</figcaption>
+<img src="/img/kyrgios_return_impact_2.png" width="90%" style="max-width:70%;" />
+</div>
+<div style="text-align: center;">
+<figcaption>Figure 15. Nick Kyrgios second serve return impact patterns on Ad.</figcaption>
+<img src="/img/kyrgios_return_impact_3.png" width="90%" style="max-width:70%;" />
+</div>
+<div style="text-align: center;">
+<figcaption>Figure 16. Nick Kyrgios second serve return impact patterns on Deuce.</figcaption>
+<img src="/img/kyrgios_return_impact_4.png" width="90%" style="max-width:70%;" />
+</div>
+<h2 id="neutralizing-serve">Neutralizing Serve</h2>
+<p>We&rsquo;ve seen that top players can have a wide range in approaches to the return impact position. So what is best? What is best is ultimately what should give a player the long-run advantage in points. There are several factors to that advantage. The first is how much the choice of position helps a player to prevent an ace or service winner.</p>
+<p>The plot below shows how that &lsquo;neutralizing effect&rsquo; varies with the depth of the returner&rsquo;s position, which is where the returner is positioned at the start of the serve. On first serve, depths between 2 to 4 meters have an average rate of ~45% of getting the serve return in play. Deeper than that tends to reduce the neutralizing impact, which is likely due to wide serves that have a wider point of impact the deeper a player stands.</p>
+<p>On second serve, the story is more complex, with high neutralizing at or within the baseline and very deep, at 4 to 5 meters behind the baseline. This can be explained by every shot having two optimal impact regions, on the rise and on the drop. Making contact at either of these regions has more of a role on the second the first serve because of the prominence of the high-bouncing kick serve on second serve.</p>
+<div style="text-align: center;">
+<figcaption>Figure 17.  "Neutralizing effect" is the probability that a serve will be returned. The plot shows how the "neutralizing effect" varies with return position in top men's tennis.</figcaption>
+<img src="/img/neutralizing_effect.png" width="90%" style="max-width:70%;" />
+</div>
+<h2 id="third-shot">Third Shot</h2>
+<p>Getting the return in play isn&rsquo;t the only factor in where a player <em>should</em> position on the return. A player also has to consider what the server will do with their next shot, the third shot of the point. If a player stands deep to neutralize, this could come at the cost of being out of position when the third shot is made.</p>
+<p>The chart below shows the average chance of returning the third shot in hard court Grand Slams given where the receiver is positioned when the third shot is made. We see a clear relationship between the distance from the center of the baseline and the reduction in the chance of getting the ball back over the net. Players positioned close to the baseline have close to an 80% chance of keeping the ball in play. But receivers who are 3 meters or more deep or pulled out to the singles line or wider will be on the back foot in the rally.</p>
+<div style="text-align: center;">
+<figcaption>Figure 18.  The prediction surface in this plot shows the chance of returning a third shot based on where the receiver was positioned on the serve return.</figcaption>
+<img src="/img/third_shot_patterns.png" width="90%" style="max-width:70%;" />
+</div>
+<p>There is clearly a trade-off between neutralizing the serve and reducing court coverage when points extend to the third shot and beyond. This trade-off was on stark display in the recent meeting between Nick Kyrgios and Daniil Medvedev at the Rogers Cup. Medvedev took his usual highly defensive stance against the powerful Kyrgios serve, which helped him to get more serves in play but opened up opportunities for Kyrgios to take advantage of a more open court on the third shot. Kyrgios, by contrast, kept close to the baseline on the return, which made it easier for Medvedev to ace Kyrgios but gave Kyrgios the upperhand when he did get a return in play. In this case, the more aggressive return strategy won.</p>
+<p>What is the right choice for any individual receiver and server will depend on a receiver&rsquo;s comfort level with taking the ball on the rise as well as their ease of movement. A deeper stance on return is undoubtedly the more physically demanding style, as players have to be prepared several meters more to get back to center with any wide serve.</p>
+<p>In this sense, Djokovic&rsquo;s return impact patterns may have the best balance of effectiveness and efficiency. This deeper dive into the different sides of return impact also reveal how the choice of return position could be the first ingredient of what makes Djokovic&rsquo;s return game so lethal and a factor to how, in his mid-30s, he continues to be one of the fittest players at the top of mens tennis.</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/return/" rel="tag">return</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Stephanie Kovalchik avatar" src="/img/IMG_0842.JPG" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Stephanie Kovalchik</span>
+	</div>
+	<div class="authorbox__description">
+		Senior data scientist at Zelus Analytics, dedicated to using advanced stats to get more value out of performance analysis in elite sport.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/2022/06/25/Men%27s-Wimbledon-Watchability-Ratings/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Men&#39;s Wimbledon Watchability Ratings</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "on-the-t-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Stats On the T.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>
